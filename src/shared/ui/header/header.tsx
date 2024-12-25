@@ -14,37 +14,20 @@ const Header: React.FC = () => {
   const locale = useLocale();
   const t = useTranslations("nav");
   return (
-    <header className="fixed h-20 top-0 left-0 w-full border-b-2 border-b-neutral-900 backdrop-blur-sm">
-      <div className="flex max-w-screen-2xl justify-between items-center md:mx-auto px-6">
+    <header className="fixed top-0 left-0 w-full border-b-2 border-b-neutral-900 backdrop-blur-sm">
+      <div className="flex max-w-screen-2xl justify-between items-center md:mx-auto px-6 py-2">
         <Link href="/">
           <BrandLogo size={80} />
         </Link>
         <div className="flex items-center gap-6">
           <HeaderMenu>
-            <HeaderLink href="/#team" data-cursor-text={t("team")}>
-              {t("team")}
-            </HeaderLink>
-            <HeaderLink href="/#features" data-cursor-text={t("features")}>
-              {t("features")}
-            </HeaderLink>
-            <HeaderLink href="/#download" mobile>
-              {t("download")}
-            </HeaderLink>
-            <HeaderLink href="/legal/privacy" mobile>
-              {t("privacy")}
-            </HeaderLink>
-            <HeaderLink href="https://github.com/exteraSquad" mobile>
-              {t("source")}
-            </HeaderLink>
-            <HeaderLink href="https://t.me/exteraChat" mobile>
-              {t("chats")}
-            </HeaderLink>
+            iohohio
           </HeaderMenu>
 
           <LocaleSwitcher currentLocale={locale} />
           <Link href="/#download" className="hidden md:block">
             <Button className="w-14 overflow-hidden md:w-48 word-spacing-6 px-[0!important]">
-              <Marquee repeatCount={2}>{t("download")}</Marquee>
+              <Marquee repeatCount={2}>{t("contact")}</Marquee>
             </Button>
           </Link>
         </div>

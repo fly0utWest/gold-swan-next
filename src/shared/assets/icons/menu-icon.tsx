@@ -1,11 +1,11 @@
-interface CloseIconProps {
+interface MenuIconProps {
   width?: number;
   height?: number;
   size?: number;
   color?: string;
 }
 
-const CloseIcon: React.FC<CloseIconProps> = ({
+const MenuIcon: React.FC<MenuIconProps> = ({
   width,
   height,
   size = 30,
@@ -30,3 +30,5 @@ const CloseIcon: React.FC<CloseIconProps> = ({
     </svg>
   );
 };
+
+export default MenuIcon;

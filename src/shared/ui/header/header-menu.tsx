@@ -1,9 +1,9 @@
 "use client";
 
-import { createContext, ReactNode, useState } from "react";
-import CloseIcon from "@/shared/assets/icons/close.svg";
-import OpenIcon from "@/shared/assets/icons/menu.svg";
-import Image from "next/image";
+import { createContext, ReactNode, useEffect, useState } from "react";
+import CloseIcon from "@/shared/assets/icons/close-icon";
+import MenuIcon from "@/shared/assets/icons/menu-icon";
+import { useTheme } from "next-themes";
 
 export const MenuContext = createContext({
   open: false,
@@ -12,6 +12,14 @@ export const MenuContext = createContext({
 
 export default function HeaderMenu({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+  const { theme } = useTheme();
+  const [mounted, setMount] = useState(false);
+
+  useEffect(() => {
+    setMount(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <MenuContext.Provider
@@ -21,11 +29,11 @@ export default function HeaderMenu({ children }: { children: ReactNode }) {
       }}
     >
       <div className="md:hidden cursor-pointer" onClick={() => setOpen(true)}>
-        <Image src={OpenIcon} alt="Open menu" width={32} height={32} />
+        <MenuIcon width={32} height={32} />
       </div>
       <nav
         className={`flex md:opacity-100 items-center md:bg-transparent fixed md:static gap-8 md:text-2xl text-4xl 
-                inset-0 w-screen md:w-auto h-screen md:h-auto flex-col md:flex-row justify-center bg-white text-center z-10
+                inset-0 w-screen md:w-auto h-screen md:h-auto flex-col md:flex-row justify-center bg-background text-center z-10
                 ${
                   open ? "translate-y-0" : "-translate-y-full"
                 } md:translate-y-0 transition-transform duration-700 ease-in-out`}
@@ -34,7 +42,11 @@ export default function HeaderMenu({ children }: { children: ReactNode }) {
           className="absolute top-4 right-8 md:hidden cursor-pointer"
           onClick={() => setOpen(false)}
         >
-          <Image src={CloseIcon} alt="Close menu" width={32} height={32} />
+          <CloseIcon
+            width={32}
+            height={32}
+            color={theme === "dark" ? "white" : "black"}
+          />
         </div>
         {children}
       </nav>
