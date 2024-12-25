@@ -2,9 +2,13 @@
 
 import BrandLogo from "@/shared/ui/brand-logo";
 import React from "react";
-import { Link } from "@/shared/config/i18n/routing";
+import Link from "../link";
+import HeaderLink from "./header-link";
 import { useTranslations, useLocale } from "next-intl";
 import LocaleSwitcher from "@/shared/ui/locale-switcher";
+import Marquee from "../marquee";
+import HeaderMenu from "./header-menu";
+import Button from "../button";
 
 const Header: React.FC = () => {
   const locale = useLocale();
@@ -16,13 +20,33 @@ const Header: React.FC = () => {
           <BrandLogo size={80} />
         </Link>
         <div className="flex items-center gap-6">
-          <nav className="flex flex-row gap-4">
-            <Link href="/services">{t("services")}</Link>
-            <Link href="/projects">{t("contact")}</Link>
-            <Link href="/contact">{t("contact")}</Link>
-          </nav>
+          <HeaderMenu>
+            <HeaderLink href="/#team" data-cursor-text={t("team")}>
+              {t("team")}
+            </HeaderLink>
+            <HeaderLink href="/#features" data-cursor-text={t("features")}>
+              {t("features")}
+            </HeaderLink>
+            <HeaderLink href="/#download" mobile>
+              {t("download")}
+            </HeaderLink>
+            <HeaderLink href="/legal/privacy" mobile>
+              {t("privacy")}
+            </HeaderLink>
+            <HeaderLink href="https://github.com/exteraSquad" mobile>
+              {t("source")}
+            </HeaderLink>
+            <HeaderLink href="https://t.me/exteraChat" mobile>
+              {t("chats")}
+            </HeaderLink>
+          </HeaderMenu>
 
           <LocaleSwitcher currentLocale={locale} />
+          <Link href="/#download" className="hidden md:block">
+            <Button className="w-14 overflow-hidden md:w-48 word-spacing-6 px-[0!important]">
+              <Marquee repeatCount={2}>{t("download")}</Marquee>
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
