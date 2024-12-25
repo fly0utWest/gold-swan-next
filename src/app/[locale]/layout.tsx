@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Oswald, Geist_Mono } from "next/font/google";
 import "../_styles/globals.css";
-import Header from "@/widgets/Header/Header";
+import Header from "@/shared/ui/header/header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { routing } from "@/shared/config/i18n/routing";
-import { notFound } from "next/navigation";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
@@ -17,19 +15,22 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default async function RootLayout({
-  children,
-  params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
+export default async function RootLayout(
+  props: Readonly<{
+    children: React.ReactNode;
+    params: { locale: string };
+  }>
+) {
+  const params = await props.params;
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
+  const {
+    locale
+  } = params;
+
+  const {
+    children
+  } = props;
+
   const messages = await getMessages();
 
   return (
