@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed inset-x-0 w-full">
-      <div className="flex flex-row max-w-screen-2xl w-full justify-between items-center md:mx-auto">
+    <header className="fixed h-20 top-0 left-0 w-full border-b-2 border-b-neutral-900 backdrop-blur-sm">
+      <div className="flex max-w-screen-2xl justify-between items-center md:mx-auto px-6">
         <Link href="/">
           <BrandLogo size={80} />
         </Link>
