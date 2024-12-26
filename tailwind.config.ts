@@ -52,6 +52,7 @@ export default {
     },
   },
   plugins: [
+    require("tailwindcss-intersect"),
     plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {

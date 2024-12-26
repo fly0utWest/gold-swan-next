@@ -5,6 +5,8 @@ import Header from "@/shared/ui/header/header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
+import ClientObserver from "@/shared/utils/client-observer";
+import Footer from "@/shared/ui/footer/footer";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
@@ -31,12 +33,18 @@ export default async function RootLayout(
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth *:selection:bg-primary-500 *:selection:text-foreground" suppressHydrationWarning>
+    <html
+      lang={locale}
+      className="scroll-smooth *:selection:bg-primary-500 *:selection:text-foreground"
+      suppressHydrationWarning
+    >
       <body className={`${oswaldSans.className} antialiased`}>
+        <ClientObserver />
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider enableSystem attribute="class">
+          <ThemeProvider defaultTheme="dark" attribute="class">
             <Header />
-            <main className="my-24 min-h-screen">{children}</main>
+            <main className="my-24 min-h-[90dvh]">{children}</main>
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

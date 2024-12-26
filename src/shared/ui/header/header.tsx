@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const locale = useLocale();
   const t = useTranslations("nav");
   return (
-    <header className="fixed top-0 left-0 w-full border-b-2 border-b-neutral-900 backdrop-blur-md z-10">
+    <header className="fixed top-0 left-0 w-full border-b-2 border-b-neutral-900 backdrop-blur-md z-10" id="top">
       <div className="flex max-w-screen-2xl justify-between items-center md:mx-auto px-6 py-2">
         <Link href="/">
           <BrandLogo size={80} />
