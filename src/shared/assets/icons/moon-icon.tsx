@@ -9,7 +9,7 @@ const MoonIcon: React.FC<MoonIconProps> = ({
   width,
   height,
   size = 32,
-  color = "white",
+  color = "var(--foreground)",
 }) => {
   return (
     <svg

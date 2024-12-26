@@ -4,10 +4,10 @@ import Image from "next/image";
 
 interface BrandLogoProps {
   className?: string;
-  size: number;
+  size?: number;
 }
 
-const BrandLogo: React.FC<BrandLogoProps> = ({ className, size }) => {
+const BrandLogo: React.FC<BrandLogoProps> = ({ className, size = 150 }) => {
   return (
     <Image
       width={size}

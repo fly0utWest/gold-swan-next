@@ -6,15 +6,34 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      keyframes: {
+        opacityIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideInFromRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInFromLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+      },
+      animation: {
+        slideInFromRight: "slideInFromRight 1s ease-out forwards",
+        slideInFromLeft: "slideInFromLeft 1s ease-out forwards",
+        opacityIn: "opacityIn 1s ease-out forwards",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          50: "#FBF8ED", // Very light tint
-          100: "#F5EFD9", // Light tint
-          200: "#EDE3B5", // Softer tint
-          400: "#D5C18A", // Medium shade
-          500: "#C0AC72", // Rich tone
+          50: "#FBF8ED",
+          100: "#F5EFD9",
+          200: "#EDE3B5",
+          400: "#D5C18A",
+          500: "#C0AC72",
         },
       },
       borderRadius: {
@@ -43,7 +62,6 @@ export default {
         { values: theme("margin") }
       );
     }),
-
     plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
@@ -54,29 +72,25 @@ export default {
         { values: theme("wordSpacing") }
       );
     }),
-
     plugin(function ({ addUtilities, theme }) {
-      const generateColorMap = (colors: any, callback: any): any => {
-        return Object.entries(colors).reduce((acc: any, [color, value]) => {
-          if (typeof value === "string") {
-            return { ...acc, ...callback(color, value) };
-          } else {
-            const nestedColors = generateColorMap(value, callback);
-            return { ...acc, ...nestedColors };
-          }
-        }, {});
-      };
+      const colors = theme("colors");
+      const textOutlineUtilities: Record<string, any> = {};
 
-      const colorMap = generateColorMap(
-        theme("colors"),
-        (color: string, value: string) => ({
-          [`.text-outline-${color}`]: {
-            textShadow: `-2px -2px 0 ${value}, 2px -2px 0 ${value}, -2px 2px 0 ${value}, 2px 2px 0 ${value}`,
-          },
-        })
-      );
+      Object.entries(colors as any).forEach(([colorName, colorValue]) => {
+        if (typeof colorValue === "string") {
+          textOutlineUtilities[`.text-outline-${colorName}`] = {
+            textShadow: `-2px -2px 0 ${colorValue}, 2px -2px 0 ${colorValue}, -2px 2px 0 ${colorValue}, 2px 2px 0 ${colorValue}`,
+          };
+        } else if (typeof colorValue === "object") {
+          Object.entries(colorValue as any).forEach(([shade, shadeValue]) => {
+            textOutlineUtilities[`.text-outline-${colorName}-${shade}`] = {
+              textShadow: `-2px -2px 0 ${shadeValue}, 2px -2px 0 ${shadeValue}, -2px 2px 0 ${shadeValue}, 2px 2px 0 ${shadeValue}`,
+            };
+          });
+        }
+      });
 
-      addUtilities(colorMap);
+      addUtilities(textOutlineUtilities);
     }),
   ],
 } satisfies Config;

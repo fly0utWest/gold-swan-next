@@ -29,7 +29,7 @@ export default function HeaderMenu({ children }: { children: ReactNode }) {
       }}
     >
       <div className="md:hidden cursor-pointer" onClick={() => setOpen(true)}>
-        <MenuIcon width={32} height={32} />
+        <MenuIcon width={32} height={32} color="var(--foreground)"/>
       </div>
       <nav
         className={`flex md:opacity-100 items-center md:bg-transparent fixed md:static gap-8 md:text-2xl text-4xl 
@@ -45,7 +45,7 @@ export default function HeaderMenu({ children }: { children: ReactNode }) {
           <CloseIcon
             width={32}
             height={32}
-            color={theme === "dark" ? "white" : "black"}
+            color="var(--foreground)"
           />
         </div>
         {children}

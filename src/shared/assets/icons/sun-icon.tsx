@@ -9,7 +9,7 @@ const SunIcon: React.FC<SunIconProps> = ({
   width,
   height,
   size = 32,
-  color = "black",
+  color = "var(--foreground)",
 }) => {
   return (
     <svg

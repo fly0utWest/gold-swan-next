@@ -9,7 +9,7 @@ const CloseIcon: React.FC<CloseIconProps> = ({
   width,
   height,
   size = 30,
-  color = "white",
+  color = "var(--foreground)",
 }) => {
   return (
     <svg

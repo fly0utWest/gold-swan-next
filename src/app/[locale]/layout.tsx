@@ -31,7 +31,7 @@ export default async function RootLayout(
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
+    <html lang={locale} className="scroll-smooth *:selection:bg-primary-500 *:selection:text-foreground" suppressHydrationWarning>
       <body className={`${oswaldSans.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider enableSystem attribute="class">
