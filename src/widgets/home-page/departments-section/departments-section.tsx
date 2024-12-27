@@ -1,76 +1,86 @@
-import React from 'react';
-import DragSlider from '../drag-slider';
-import DepartmentCard from './department-card';
-import ProgrammingIcon from '@/shared/assets/icons/programming-icon';
+import React from "react";
+import DragSlider from "../drag-slider";
+import DepartmentCard from "./department-card";
+import ProgrammingIcon from "@/shared/assets/icons/programming-icon";
+import { Camera } from "solar-icon-set";
+import { DepartmentButton } from "@/shared/ui/department-button";
+import {MoneyBag} from "solar-icon-set";
+import {Programming} from "solar-icon-set";
+import {Safe2} from "solar-icon-set";
+import {Star2} from "solar-icon-set";
+import {PieChart2} from "solar-icon-set";
+
+
 
 const departments = [
   {
-    title: "Digital Marketing",
-    description: "We provide comprehensive digital marketing services to help you reach your target audience and achieve your business goals.",
-    icon: <ProgrammingIcon />,
+    icon: <MoneyBag size={64}/>,
     href: "/digital-marketing",
-    buttonText: "Learn More",
-    name: "Digital Marketing"
+    name: "Digital Marketing",
   },
   {
     title: "Brand Development and PR",
-    description: "Our team specializes in brand development and public relations to enhance your brand's image and reputation.",
-    icon: <ProgrammingIcon />,
+    description:
+      "Our team specializes in brand development and public relations to enhance your brand's image and reputation.",
+    icon: <Star2 size={64} />,
     href: "/brand-development-pr",
     buttonText: "Learn More",
-    name: "Brand Development and PR"
+    name: "Brand Development and PR",
   },
   {
     title: "Reputation and Data Protection",
-    description: "We offer services to protect your online reputation and ensure the security of your data.",
-    icon: <ProgrammingIcon />,
+    description:
+      "We offer services to protect your online reputation and ensure the security of your data.",
+    icon: <Safe2 size={64} />,
     href: "/reputation-data-protection",
     buttonText: "Learn More",
-    name: "Reputation and Data Protection"
+    name: "Reputation and Data Protection",
   },
   {
     title: "Analytics and Strategy",
-    description: "Our analytics and strategy services help you make data-driven decisions to drive your business forward.",
-    icon: <ProgrammingIcon />,
+    description:
+      "Our analytics and strategy services help you make data-driven decisions to drive your business forward.",
+    icon: <PieChart2 size={64} />,
     href: "/analytics-strategy",
     buttonText: "Learn More",
-    name: "Analytics and Strategy"
+    name: "Analytics and Strategy",
   },
   {
     title: "Photo and Video Shooting Services",
-    description: "We provide professional photo and video shooting services to capture your brand's essence.",
-    icon: <ProgrammingIcon />,
+    description:
+      "We provide professional photo and video shooting services to capture your brand's essence.",
+    icon: <Camera size={64} />,
     href: "/photo-video-shooting",
     buttonText: "Learn More",
-    name: "Photo and Video Shooting Services"
+    name: "Photo and Video Shooting Services",
   },
   {
     title: "Web and Web Application Development",
-    description: "Our team develops high-quality websites and web applications tailored to your business needs.",
-    icon: <ProgrammingIcon />,
+    description:
+      "Our team develops high-quality websites and web applications tailored to your business needs.",
+    icon: <Programming size={64} />,
     href: "/web-development",
     buttonText: "Learn More",
-    name: "Web and Web Application Development"
+    name: "Web and Web Application Development",
   },
 ];
 
 const DepartmentSection = () => {
   return (
-    <section className="w-full flex justify-center items-center flex-col gap-16 mb-32">
-      <h2 className="font-display font-bold text-5xl lg:text-7xl text-center">
+    <section className="w-full flex justify-center items-center flex-col px-5 md:px-8 gap-8 md:gap-16">
+      <h2 className="font-bold text-5xl lg:text-7xl text-center">
         Departments
       </h2>
-      <DragSlider>
+      <div className="flex flex-row flex-wrap gap-8 justify-center w-full">
         {departments.map((department, index) => (
-          <DepartmentCard
+          <DepartmentButton
             key={index}
-            title={department.title}
             icon={department.icon}
             href={department.href}
-            buttonText={department.buttonText}
+            name={department.name}
           />
         ))}
-      </DragSlider>
+      </div>
     </section>
   );
 };

@@ -34,7 +34,7 @@ const ThemeSwitcher: React.FC = () => {
           }`}
         ></div>
       </div>
-      <span className="md:hidden font-semibold">
+      <span className="md:hidden font-normal">
         {currentTheme === "dark" ? "Dark theme" : "Light theme"}
       </span>
     </div>

@@ -10,8 +10,8 @@ export default function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
-      <DepartmentSection />
       <MarqeeSection />
+      <DepartmentSection />
     </>
   );
 }

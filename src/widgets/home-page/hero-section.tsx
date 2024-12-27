@@ -2,8 +2,10 @@ import React from "react";
 import BrandLogo from "@/shared/ui/brand-logo";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
+import Marquee from "@/shared/ui/marquee";
 
 const HeroSection = () => {
+  
   return (
     <section className="p-6 flex flex-col items-center  gap-16 overflow-y-hidden bg-neutral-100 relative dark:bg-black min-h-[100dvh] overflow-x-hidden">
       <div className=" space-y-4">
@@ -22,11 +24,11 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      <Link href="#contact">
-      <Button>
-        Contact Us
-      </Button>
-      </Link>
+            <Link href="/#download" className="block">
+              <Button className="overflow-hidden w-48 word-spacing-6 px-[0!important]">
+                <Marquee repeatCount={2}>CONTACT</Marquee>
+              </Button>
+            </Link>
     </section>
   );
 };
