@@ -1,6 +1,60 @@
 {
   "nav": {
     "services": "Þjónusta",
-    "contact": "Hafðu samband"
+    "contact": "Hafðu samband",
+    "projects": "Verkefni"
+  },
+  "contact-form": {
+    "name": "Nafn þitt",
+    "email": "Netfang þitt",
+    "phone": "Símanúmer þitt (WhatsApp eða Telegram)",
+    "countryCode": "+33",
+    "servicesInterest": "Hvaða þjónustu hefur þú áhuga á?",
+    "services": {
+      "digitalMarketing": "Stafrænn markaðssetning",
+      "brandDevelopmentPR": "Vörumerkjaþróun og almannatengsl",
+      "reputationDataProtection": "Orðspor og gagnavernd",
+      "analyticsStrategy": "Greiningar og stefnumótun",
+      "photoVideoShooting": "Ljósmyndun og myndbandsupptökur",
+      "webDevelopment": "Vefsíðu- og vefumsóknarþróun",
+      "personalizedService": "Sérsniðin þjónusta"
+    },
+    "industrySector": "Í hvaða iðnaði eða geira starfar fyrirtækið þitt?",
+    "industries": {
+      "retailEcommerce": "Smásala og netverslun",
+      "technologySoftware": "Tækni og hugbúnaður",
+      "healthcarePharmaceuticals": "Heilbrigðisþjónusta og lyfjaframleiðsla",
+      "financeInsurance": "Fjármál og tryggingar",
+      "educationTraining": "Menntun og þjálfun",
+      "hospitalityTourism": "Ferðaþjónusta og gestrisni",
+      "manufacturingProduction": "Framleiðsla og framleiðsla",
+      "realEstateConstruction": "Fasteignir og byggingariðnaður",
+      "artsEntertainmentMedia": "Listir, skemmtun og fjölmiðlar",
+      "transportationLogistics": "Samgöngur og flutningar",
+      "nonprofitCommunityServices": "Góðgerðarsamtök og samfélagsþjónusta",
+      "other": "Annað (vinsamlegast tilgreindu)"
+    },
+    "previouslyWorked": "Hefur þú áður unnið með svipaðri þjónustu eða veitanda?",
+    "yes": "Já",
+    "no": "Nei",
+    "customAnswer": "Þín sérsniðna svar",
+    "hearAboutUs": "Hvernig heyrðir þú um stofuna okkar?",
+    "hearOptions": {
+      "friends": "Ráð frá vinum",
+      "family": "Ráð frá fjölskyldumeðlimum",
+      "dentist": "Ráð frá öðrum tannlækni",
+      "advertising": "Auglýsingar"
+    },
+    "businessOperation": "Hversu lengi hefur fyrirtækið þitt verið starfandi?",
+    "operationOptions": {
+      "lessThanYear": "Minna en ár",
+      "oneYear": "Eitt ár",
+      "twoYears": "Tvö ár",
+      "threeYears": "Meira en þrjú ár",
+      "fiveYears": "Meira en fimm ár"
+    },
+    "additionalResources": "Viltu fá viðbótarauðlindir eða efni eftir ráðgjöfina?",
+    "message": "Skilaboð",
+    "submit": "Senda"
   }
 }

@@ -1,70 +1,73 @@
-import React from 'react'
+"use client";
+
+import { useTranslations } from "next-intl";
+import Input from "./input";
+import React from "react";
+import { User } from "solar-icon-set";
+import { Mailbox } from "solar-icon-set";
+import { Phone } from "solar-icon-set";
 
 const ContactForm = () => {
+  const t = useTranslations("contact-form");
+
   return (
-    <form className="flex flex-col gap-8 w-full max-w-lg">
-      <input
+    <form className="flex flex-col gap-8 py-6 w-full max-w-lg">
+      <Input
+        icon={<User size={32} />}
+        placeholder={t("name")}
         type="text"
-        placeholder="Your name"
-        className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
+        id="email"
       />
-      <input
-        type="email"
-        placeholder="Your email"
-        className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
+      <Input
+        icon={<Mailbox size={32} />}
+        placeholder={t("email")}
+        type="text"
       />
-      <input
+      <Input
         type="tel"
-        placeholder="Your phone number (WhatsApp or Telegram)"
-        className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
+        placeholder={t("phone")}
+        icon={<Phone size={32} />}
+        id="phone"
       />
       <input
         type="text"
-        placeholder="+33"
+        placeholder={t("countryCode")}
         className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
       />
       <label className="text-neutral-800 dark:text-neutral-300">
-        Which of our services are you interested in?
+        {t("servicesInterest")}
       </label>
       <select className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800">
-        <option>Digital Marketing</option>
-        <option>Brand Development and PR</option>
-        <option>Reputation and Data Protection</option>
-        <option>Analytics and Strategy</option>
-        <option>Photo and Video Shooting</option>
-        <option>Website and Web Application Development</option>
-        <option>Personalized service type</option>
+        <option>{t("services.digitalMarketing")}</option>
+        <option>{t("services.brandDevelopmentPR")}</option>
+        <option>{t("services.reputationDataProtection")}</option>
+        <option>{t("services.analyticsStrategy")}</option>
+        <option>{t("services.photoVideoShooting")}</option>
+        <option>{t("services.webDevelopment")}</option>
+        <option>{t("services.personalizedService")}</option>
       </select>
       <label className="text-neutral-800 dark:text-neutral-300">
-        Which industry or sector does your business operate in?
+        {t("industrySector")}
       </label>
       <select className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800">
-        <option>Retail and E-commerce</option>
-        <option>Technology and Software</option>
-        <option>Healthcare and Pharmaceuticals</option>
-        <option>Finance and Insurance</option>
-        <option>Education and Training</option>
-        <option>Hospitality and Tourism</option>
-        <option>Manufacturing and Production</option>
-        <option>Real Estate and Construction</option>
-        <option>Arts, Entertainment, and Media</option>
-        <option>Transportation and Logistics</option>
-        <option>Nonprofit and Community Services</option>
-        <option>Other (please specify)</option>
+        <option>{t("industries.retailEcommerce")}</option>
+        <option>{t("industries.technologySoftware")}</option>
+        <option>{t("industries.healthcarePharmaceuticals")}</option>
+        <option>{t("industries.financeInsurance")}</option>
+        <option>{t("industries.educationTraining")}</option>
+        <option>{t("industries.hospitalityTourism")}</option>
+        <option>{t("industries.manufacturingProduction")}</option>
+        <option>{t("industries.realEstateConstruction")}</option>
+        <option>{t("industries.artsEntertainmentMedia")}</option>
+        <option>{t("industries.transportationLogistics")}</option>
+        <option>{t("industries.nonprofitCommunityServices")}</option>
+        <option>{t("industries.other")}</option>
       </select>
       <label className="text-neutral-800 dark:text-neutral-300">
-        Have you previously worked with a similar service or provider?
+        {t("previouslyWorked")}
       </label>
       <div className="flex flex-col gap-2">
-        <label className="flex items-center">
-          <input
-            type="radio"
-            name="previouslyWorked"
-            value="yes"
-            className="mr-2"
-          />
-          Yes
-        </label>
+        <label className="flex items-center">{t("yes")}</label>
         <label className="flex items-center">
           <input
             type="radio"
@@ -72,16 +75,16 @@ const ContactForm = () => {
             value="no"
             className="mr-2"
           />
-          No
+          {t("no")}
         </label>
         <input
           type="text"
-          placeholder="Your custom answer"
+          placeholder={t("customAnswer")}
           className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
         />
       </div>
       <label className="text-neutral-800 dark:text-neutral-300">
-        How did you hear about our agency?
+        {t("hearAboutUs")}
       </label>
       <div className="flex flex-col gap-2">
         <label className="flex items-center">
@@ -91,7 +94,7 @@ const ContactForm = () => {
             value="friends"
             className="mr-2"
           />
-          Advice from friends
+          {t("hearOptions.friends")}
         </label>
         <label className="flex items-center">
           <input
@@ -100,7 +103,7 @@ const ContactForm = () => {
             value="family"
             className="mr-2"
           />
-          Advice from family members
+          {t("hearOptions.family")}
         </label>
         <label className="flex items-center">
           <input
@@ -109,7 +112,7 @@ const ContactForm = () => {
             value="dentist"
             className="mr-2"
           />
-          Advice from another dentist
+          {t("hearOptions.dentist")}
         </label>
         <label className="flex items-center">
           <input
@@ -118,16 +121,16 @@ const ContactForm = () => {
             value="advertising"
             className="mr-2"
           />
-          Advertising
+          {t("hearOptions.advertising")}
         </label>
         <input
           type="text"
-          placeholder="Your custom answer"
+          placeholder={t("customAnswer")}
           className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
         />
       </div>
       <label className="text-neutral-800 dark:text-neutral-300">
-        How long has your business been in operation?
+        {t("businessOperation")}
       </label>
       <div className="flex flex-col gap-2">
         <label className="flex items-center">
@@ -137,7 +140,7 @@ const ContactForm = () => {
             value="lessThanYear"
             className="mr-2"
           />
-          Less than a year
+          {t("operationOptions.lessThanYear")}
         </label>
         <label className="flex items-center">
           <input
@@ -146,7 +149,7 @@ const ContactForm = () => {
             value="oneYear"
             className="mr-2"
           />
-          One year
+          {t("operationOptions.oneYear")}
         </label>
         <label className="flex items-center">
           <input
@@ -155,7 +158,7 @@ const ContactForm = () => {
             value="twoYears"
             className="mr-2"
           />
-          Two years
+          {t("operationOptions.twoYears")}
         </label>
         <label className="flex items-center">
           <input
@@ -164,7 +167,7 @@ const ContactForm = () => {
             value="threeYears"
             className="mr-2"
           />
-          More than three years
+          {t("operationOptions.threeYears")}
         </label>
         <label className="flex items-center">
           <input
@@ -173,17 +176,16 @@ const ContactForm = () => {
             value="fiveYears"
             className="mr-2"
           />
-          More than five years
+          {t("operationOptions.fiveYears")}
         </label>
         <input
           type="text"
-          placeholder="Your custom answer"
+          placeholder={t("customAnswer")}
           className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
         />
       </div>
       <label className="text-neutral-800 dark:text-neutral-300">
-        Would you like to receive additional resources or materials after the
-        consultation?
+        {t("additionalResources")}
       </label>
       <div className="flex flex-col gap-2">
         <label className="flex items-center">
@@ -193,7 +195,7 @@ const ContactForm = () => {
             value="yes"
             className="mr-2"
           />
-          Yes
+          {t("yes")}
         </label>
         <label className="flex items-center">
           <input
@@ -202,21 +204,21 @@ const ContactForm = () => {
             value="no"
             className="mr-2"
           />
-          No
+          {t("no")}
         </label>
       </div>
       <textarea
-        placeholder="Message"
+        placeholder={t("message")}
         className="rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 px-5 py-4 dark:bg-black bg-white dark:text-neutral-300 text-neutral-800"
       />
       <button
         type="submit"
         className="rounded-3xl bg-primary-500 text-white px-5 py-4 hover:bg-primary-400 transition-colors"
       >
-        Submit
+        {t("submit")}
       </button>
     </form>
   );
-}
+};
 
-export default ContactForm
+export default ContactForm;
