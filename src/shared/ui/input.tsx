@@ -6,6 +6,7 @@ type InputProps = {
   placeholder: string;
   icon?: React.ReactNode;
   disabled?: boolean;
+  value?: string;
   id?: string;
   required?: boolean;
 };
@@ -14,8 +15,9 @@ const Input: React.FC<InputProps> = ({
   type,
   placeholder,
   icon,
-  disabled,
+  disabled = false,
   id,
+  value,
   required = false,
 }) => {
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -38,6 +40,7 @@ const Input: React.FC<InputProps> = ({
         className="rounded-r-3xl w-full bg-transparent outline-none disabled:cursor-not-allowed disabled:bg-transparent dark:text-neutral-300 text-neutral-800"
         ref={inputRef}
         {...(id ? { id } : {})}
+        {...(value ? { value } : {})}
         required={required}
       />
     </div>

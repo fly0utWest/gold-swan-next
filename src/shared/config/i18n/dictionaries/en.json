@@ -8,7 +8,6 @@
     "name": "Your name",
     "email": "Your email",
     "phone": "Your phone number (WhatsApp or Telegram)",
-    "countryCode": "+33",
     "servicesInterest": "Which of our services are you interested in?",
     "services": {
       "digitalMarketing": "Digital Marketing",
