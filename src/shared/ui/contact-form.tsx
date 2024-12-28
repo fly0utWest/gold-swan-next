@@ -11,7 +11,6 @@ import {
   CheckSquare,
   CloseSquare,
   Traffic,
-  TrafficEconomy,
 } from "solar-icon-set";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -35,34 +34,31 @@ const ContactFormSchema = z
 type ContactFormType = z.infer<typeof ContactFormSchema>;
 
 const services = [
-  { value: "digitalMarketing", label: "Digital Marketing" },
-  { value: "brandDevelopmentPR", label: "Brand Development and PR" },
+  { label: "digitalMarketing", value: "Digital Marketing" },
+  { label: "brandDevelopmentPR", value: "Brand Development and PR" },
   {
-    value: "reputationDataProtection",
-    label: "Reputation and Data Protection",
+    label: "reputationDataProtection",
+    value: "Reputation and Data Protection",
   },
-  { value: "analyticsStrategy", label: "Analytics and Strategy" },
-  { value: "photoVideoShooting", label: "Photo and Video Shooting" },
-  { value: "webDevelopment", label: "Web Application Development" },
+  { label: "analyticsStrategy", value: "Analytics and Strategy" },
+  { label: "photoVideoShooting", value: "Photo and Video Shooting" },
+  { label: "webDevelopment", value: "Web Application Development" },
 ];
 
 const industries = [
-  { value: "retailEcommerce", label: "Retail and E-commerce" },
-  { value: "technologySoftware", label: "Technology and Software" },
+  { label: "retailEcommerce", value: "Retail & E-commerce" },
+  { label: "technologySoftware", value: "Technology & Software" },
+  { label: "healthcarePharmaceuticals", value: "Healthcare & Pharmaceuticals" },
+  { label: "financeInsurance", value: "Finance & Insurance" },
+  { label: "educationTraining", value: "Education & Training" },
+  { label: "hospitalityTourism", value: "Hospitality & Tourism" },
+  { label: "manufacturingProduction", value: "Manufacturing & Production" },
+  { label: "realEstateConstruction", value: "Real Estate & Construction" },
+  { label: "artsEntertainmentMedia", value: "Arts, Entertainment & Media" },
+  { label: "transportationLogistics", value: "Transportation & Logistics" },
   {
-    value: "healthcarePharmaceuticals",
-    label: "Healthcare and Pharmaceuticals",
-  },
-  { value: "financeInsurance", label: "Finance and Insurance" },
-  { value: "educationTraining", label: "Education and Training" },
-  { value: "hospitalityTourism", label: "Hospitality and Tourism" },
-  { value: "manufacturingProduction", label: "Manufacturing and Production" },
-  { value: "realEstateConstruction", label: "Real Estate and Construction" },
-  { value: "artsEntertainmentMedia", label: "Arts, Entertainment, and Media" },
-  { value: "transportationLogistics", label: "Transportation and Logistics" },
-  {
-    value: "nonprofitCommunityServices",
-    label: "Nonprofit and Community Services",
+    label: "nonprofitCommunityServices",
+    value: "Nonprofit & Community Services",
   },
 ];
 
@@ -134,11 +130,11 @@ const ContactForm = () => {
             type="checkbox"
             icon={<CloseSquare size={24} />}
             checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
-            key={service.value}
-            label={t(`services.${service.value}`)}
+            key={service.label}
+            label={t(`services.${service.label}`)}
             {...register("services")}
-            value={service.label}
-            checked={checkedServices.includes(service.label)}
+            value={service.value}
+            checked={checkedServices.includes(service.value)}
           />
         ))}
         <Checkbox
@@ -166,17 +162,25 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("servicesInterest")}</h2>
+        <h2 className="text-lg font-medium">{t("industryInterest")}</h2>
+
         {industries.map((industry) => (
           <Checkbox
-            key={industry.value}
+            key={industry.label}
             type="radio"
             icon={<Traffic size={24} />}
-            checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
-            label={t(`services.custom`)}
-            checked={showCustomInput}
+            checkedIcon={<Traffic size={24} color="var(--primary-500)" />}
+            label={t(`industries.${industry.label}`)} // Display translated label
+            value={industry.value} // Submit value to the server
+            {...register("industry")} // Register the "industry" field
           />
         ))}
+
+        {errors.industry && (
+          <span className="text-red-500 text-sm">
+            {errors.industry.message}
+          </span>
+        )}
       </div>
 
       <button
