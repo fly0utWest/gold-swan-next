@@ -7,7 +7,7 @@ const TG_API = `${process.env.TG_API_URL}${TG_TOKEN}/sendMessage`;
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, services, customService } = body;
+    const { name, email, phone, services, customService, industry } = body;
     const servicesString =
       services?.length > 0
         ? services.join("\n")
@@ -18,7 +18,10 @@ export async function POST(request: Request) {
 *Phone*: ${phone}
 
 *Ordered services:*
-${servicesString}`;
+${servicesString}
+
+*Industry*: ${industry}
+`;
 
     await fetch(TG_API, {
       method: "POST",
@@ -36,5 +39,5 @@ ${servicesString}`;
   } catch (error: any) {
     console.log("Pinus");
     return new NextResponse("Message not sent", { status: 500 });
-  };
+  }
 }

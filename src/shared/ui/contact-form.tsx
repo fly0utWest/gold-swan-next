@@ -11,6 +11,7 @@ import {
   CheckSquare,
   CloseSquare,
   Traffic,
+  TrafficEconomy,
 } from "solar-icon-set";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,7 +25,7 @@ const ContactFormSchema = z
     phone: z.string().nonempty(),
     services: z.array(z.string()),
     customService: z.string().optional(),
-    industry: z.string(),
+    industry: z.string().nonempty("Please select an industry"),
   })
   .refine((data) => data.services.length > 0 || data.customService, {
     message: "Please select at least one service or specify a custom service",
@@ -65,6 +66,7 @@ const industries = [
 const ContactForm = () => {
   const t = useTranslations("contact-form");
   const [showCustomInput, setShowCustomInput] = useState(false);
+  const [showCustomIndustry, setShowCustomIndustry] = useState(false);
 
   const {
     register,
@@ -75,6 +77,7 @@ const ContactForm = () => {
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       services: [],
+      industry: "",
     },
   });
 
@@ -162,19 +165,40 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("industryInterest")}</h2>
+        <h2 className="text-lg font-medium">{t("industriesInterest")}</h2>
 
         {industries.map((industry) => (
           <Checkbox
             key={industry.label}
             type="radio"
             icon={<Traffic size={24} />}
-            checkedIcon={<Traffic size={24} color="var(--primary-500)" />}
-            label={t(`industries.${industry.label}`)} // Display translated label
-            value={industry.value} // Submit value to the server
-            {...register("industry")} // Register the "industry" field
+            checkedIcon={
+              <TrafficEconomy size={24} color="var(--primary-500)" />
+            }
+            label={t(`industries.${industry.label}`)}
+            value={industry.value}
+            {...register("industry")}
+            checked={watch("industry") === industry.value} // Check if the radio is selected
           />
         ))}
+
+        <Checkbox
+          type="radio"
+          icon={<Traffic size={24} />}
+          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          label={t(`industries.custom`)}
+          
+          {...register("industry")}
+          checked={showCustomIndustry}
+          
+        />
+        {showCustomIndustry && (
+          <Input
+            type="text"
+            placeholder={t("industries.custom")}
+            {...register("industry")}
+          />
+        )}
 
         {errors.industry && (
           <span className="text-red-500 text-sm">

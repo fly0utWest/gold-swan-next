@@ -18,7 +18,7 @@
       "webDevelopment": "Web Application Development",
       "custom": "Personalized service type"
     },
-    "industrySector": "Which industry or sector does your business operate in?",
+    "industriesInterest": "Which industry or sector does your business operate in?",
     "industries": {
       "retailEcommerce": "Retail and E-commerce",
       "technologySoftware": "Technology and Software",
@@ -28,32 +28,11 @@
       "hospitalityTourism": "Hospitality and Tourism",
       "manufacturingProduction": "Manufacturing and Production",
       "realEstateConstruction": "Real Estate and Construction",
-      "artsEntertainmentMedia": "Arts, Entertainment, and Media",
+      "artsEntertainmentMedia": "Arts, Entertainment and Media",
       "transportationLogistics": "Transportation and Logistics",
       "nonprofitCommunityServices": "Nonprofit and Community Services",
-      "other": "Other (please specify)"
+      "custom": "Other (please specify)"
     },
-    "previouslyWorked": "Have you previously worked with a similar service or provider?",
-    "yes": "Yes",
-    "no": "No",
-    "customAnswer": "Your custom answer",
-    "hearAboutUs": "How did you hear about our agency?",
-    "hearOptions": {
-      "friends": "Advice from friends",
-      "family": "Advice from family members",
-      "dentist": "Advice from another dentist",
-      "advertising": "Advertising"
-    },
-    "businessOperation": "How long has your business been in operation?",
-    "operationOptions": {
-      "lessThanYear": "Less than a year",
-      "oneYear": "One year",
-      "twoYears": "Two years",
-      "threeYears": "More than three years",
-      "fiveYears": "More than five years"
-    },
-    "additionalResources": "Would you like to receive additional resources or materials after the consultation?",
-    "message": "Message",
     "submit": "Submit"
   }
 }
