@@ -49,10 +49,10 @@ const ContactForm = () => {
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       services: [],
-    }
+    },
   });
 
-  const isServicesChecked = watch("services");
+  const checkedServices = watch("services");
 
   const onSubmit = async (data: ContactFormType) => {
     try {
@@ -105,6 +105,7 @@ const ContactForm = () => {
             label={t(`services.${service.value}`)}
             {...register("services")}
             value={service.label}
+            checked={checkedServices.includes(service.label)}
           />
         ))}
         <Checkbox
