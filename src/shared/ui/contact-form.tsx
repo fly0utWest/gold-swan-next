@@ -3,12 +3,20 @@
 import { useTranslations } from "next-intl";
 import Input from "./input";
 import React, { useState } from "react";
-import { User, Mailbox, Phone, Plain } from "solar-icon-set";
+import {
+  User,
+  Mailbox,
+  Phone,
+  Plain,
+  CheckSquare,
+  CloseSquare,
+  Traffic,
+  TrafficEconomy,
+} from "solar-icon-set";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Checkbox from "./checkbox";
-import { CheckSquare, CloseSquare } from "solar-icon-set";
 
 const ContactFormSchema = z
   .object({
@@ -36,6 +44,26 @@ const services = [
   { value: "analyticsStrategy", label: "Analytics and Strategy" },
   { value: "photoVideoShooting", label: "Photo and Video Shooting" },
   { value: "webDevelopment", label: "Web Application Development" },
+];
+
+const industries = [
+  { value: "retailEcommerce", label: "Retail and E-commerce" },
+  { value: "technologySoftware", label: "Technology and Software" },
+  {
+    value: "healthcarePharmaceuticals",
+    label: "Healthcare and Pharmaceuticals",
+  },
+  { value: "financeInsurance", label: "Finance and Insurance" },
+  { value: "educationTraining", label: "Education and Training" },
+  { value: "hospitalityTourism", label: "Hospitality and Tourism" },
+  { value: "manufacturingProduction", label: "Manufacturing and Production" },
+  { value: "realEstateConstruction", label: "Real Estate and Construction" },
+  { value: "artsEntertainmentMedia", label: "Arts, Entertainment, and Media" },
+  { value: "transportationLogistics", label: "Transportation and Logistics" },
+  {
+    value: "nonprofitCommunityServices",
+    label: "Nonprofit and Community Services",
+  },
 ];
 
 const ContactForm = () => {
@@ -137,9 +165,19 @@ const ContactForm = () => {
         )}
       </div>
 
-      {/* <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
         <h2 className="text-lg font-medium">{t("servicesInterest")}</h2>
-      </div> */}
+        {industries.map((industry) => (
+          <Checkbox
+            key={industry.value}
+            type="radio"
+            icon={<Traffic size={24} />}
+            checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+            label={t(`services.custom`)}
+            checked={showCustomInput}
+          />
+        ))}
+      </div>
 
       <button
         type="submit"
