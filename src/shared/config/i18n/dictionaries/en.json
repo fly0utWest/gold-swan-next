@@ -15,8 +15,8 @@
       "reputationDataProtection": "Reputation and Data Protection",
       "analyticsStrategy": "Analytics and Strategy",
       "photoVideoShooting": "Photo and Video Shooting",
-      "webDevelopment": "Website and Web Application Development",
-      "personalizedService": "Personalized service type"
+      "webDevelopment": "Web Application Development",
+      "custom": "Personalized service type"
     },
     "industrySector": "Which industry or sector does your business operate in?",
     "industries": {

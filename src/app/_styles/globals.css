@@ -5,12 +5,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Primary colors */
+  --primary-50: #fbf8ed;
+  --primary-100: #f5efd9;
+  --primary-200: #ede3b5;
+  --primary-400: #d5c18a;
+  --primary-500: #c0ac72;
 }
 
-  :root.dark {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
 
 body {
   color: var(--foreground);
