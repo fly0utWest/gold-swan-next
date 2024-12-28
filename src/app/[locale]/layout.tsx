@@ -44,7 +44,7 @@ export default async function RootLayout(
           <ThemeProvider defaultTheme="dark" attribute="class">
             <Header />
             <main className="my-24 min-h-[90dvh]">{children}</main>
-            <Footer />
+            {/* <Footer /> */}
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

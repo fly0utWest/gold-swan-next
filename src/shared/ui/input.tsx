@@ -1,50 +1,45 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { useRef } from "react";
+import { FieldError, UseFormRegister } from "react-hook-form";
 
 type InputProps = {
-  type: string;
-  placeholder: string;
   icon?: React.ReactNode;
-  disabled?: boolean;
-  value?: string;
-  id?: string;
-  required?: boolean;
-};
+  error?: FieldError;
+} & React.ComponentPropsWithoutRef<"input">;
 
-const Input: React.FC<InputProps> = ({
-  type,
-  placeholder,
-  icon,
-  disabled = false,
-  id,
-  value,
-  required = false,
-}) => {
-  const inputRef = useRef<HTMLInputElement | null>(null);
+const Input = forwardRef<HTMLInputElement, InputProps>(
+  ({ icon, disabled, error, ...props }, ref) => {
+    return (
+      <label
+        className={`flex items-center gap-4 px-5 py-4 rounded-3xl border-2 
+          focus-within:border-primary-500 dark:focus-within:border-primary-500 
+          dark:text-neutral-300 text-neutral-800 group transition-colors
+          ${
+            error
+              ? "border-red-500 dark:border-red-500 focus-within:border-red-500 dark:focus-within:border-red-500 focus-within:bg-red-300 dark:focus-within:bg-red-300"
+              : ""
+          }
+          ${
+            disabled
+              ? "bg-transparent hover:cursor-not-allowed"
+              : "hover:cursor-text dark:border-neutral-800 border-neutral-200 dark:bg-black bg-white"
+          }`}
+      >
+        {icon}
+        <input
+          ref={ref}
+          className={`w-full bg-transparent outline-none disabled:cursor-not-allowed ${
+            error ? "placeholder:text-red-400" : ""
+          }`}
+          disabled={disabled}
+          {...props}
+        />
+        {error && <span>{error.message}</span>}
+      </label>
+    );
+  }
+);
 
-  return (
-    <div
-      className={`flex items-center gap-4 px-5 py-4 rounded-3xl border-2  dark:text-neutral-300 text-neutral-800 group focus-within:border-primary-500 dark:focus-within:border-primary-500 transition-colors ${
-        disabled
-          ? "bg-transparent hover:cursor-not-allowed focus:border-neutral-800 dark:focus:border-neutral-800"
-          : "hover:cursor-text dark:focus:text-primary-500 focus:text-primary-500 focus:border-primary-500 dark:focus:border-primary-500 dark:border-neutral-800  border-neutral-200  dark:bg-black bg-white"
-      }`}
-      tabIndex={0}
-      onFocus={() => inputRef.current?.focus()}
-    >
-      {icon ?? null}
-      <input
-        type={type}
-        placeholder={placeholder}
-        disabled={disabled}
-        className="rounded-r-3xl w-full bg-transparent outline-none disabled:cursor-not-allowed disabled:bg-transparent dark:text-neutral-300 text-neutral-800"
-        ref={inputRef}
-        {...(id ? { id } : {})}
-        {...(value ? { value } : {})}
-        required={required}
-      />
-    </div>
-  );
-};
+Input.displayName = "Input";
 
 export default Input;

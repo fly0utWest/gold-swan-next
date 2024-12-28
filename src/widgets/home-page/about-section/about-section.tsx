@@ -24,7 +24,7 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <section className="bg-neutral-100 dark:bg-black pb-10 px-6">
+    <section className="bg-neutral-100 dark:bg-black pb-10 px-6  rounded-b-3xl md:rounded-b-5xl">
       <div className="max-w-screen-xl mx-auto space-y-10">
         <div className="flex flex-col text-center md:text-left gap-6 md:flex-row md:justify-between items-center">
           <h2 className="text-5xl uppercase text-outline-primary-400 dark:text-black  text-neutral-100 text-nowrap">
