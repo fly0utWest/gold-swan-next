@@ -3,15 +3,17 @@ import { forwardRef } from "react";
 import { CheckSquare, CloseSquare } from "solar-icon-set";
 
 type CheckboxProps = {
+  icon: React.ReactNode;
+  checkedIcon: React.ReactNode;
   label: string;
 } & React.ComponentPropsWithoutRef<"input">;
 
 const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ label, id, checked,  ...props }, ref) => {
+  ({ label, id, type, checked, ...props }, ref) => {
     return (
       <label htmlFor={id} className="flex items-center gap-2 w-fit">
         <input
-          type="checkbox"
+          type={type}
           ref={ref}
           {...props}
           className="w-5 h-5 rounded border-2 border-neutral-300 hidden"

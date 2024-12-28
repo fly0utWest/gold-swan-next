@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Checkbox from "./checkbox";
+import { CheckSquare, CloseSquare } from "solar-icon-set";
 
 const ContactFormSchema = z
   .object({
@@ -16,6 +17,7 @@ const ContactFormSchema = z
     phone: z.string().nonempty(),
     services: z.array(z.string()),
     customService: z.string().optional(),
+    industry: z.string(),
   })
   .refine((data) => data.services.length > 0 || data.customService, {
     message: "Please select at least one service or specify a custom service",
@@ -101,6 +103,9 @@ const ContactForm = () => {
 
         {services.map((service) => (
           <Checkbox
+            type="checkbox"
+            icon={<CloseSquare size={24} />}
+            checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
             key={service.value}
             label={t(`services.${service.value}`)}
             {...register("services")}
@@ -109,6 +114,9 @@ const ContactForm = () => {
           />
         ))}
         <Checkbox
+          type="checkbox"
+          icon={<CloseSquare size={24} />}
+          checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
           label={t(`services.custom`)}
           onChange={(e) => setShowCustomInput(e.target.checked)}
           checked={showCustomInput}
@@ -128,6 +136,10 @@ const ContactForm = () => {
           </span>
         )}
       </div>
+
+      {/* <div className="flex flex-col gap-4">
+        <h2 className="text-lg font-medium">{t("servicesInterest")}</h2>
+      </div> */}
 
       <button
         type="submit"
