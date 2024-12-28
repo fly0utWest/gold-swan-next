@@ -9,7 +9,7 @@ type CheckboxProps = {
 const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   ({ label, id, checked,  ...props }, ref) => {
     return (
-      <label htmlFor={id} className="flex items-center gap-2">
+      <label htmlFor={id} className="flex items-center gap-2 w-fit">
         <input
           type="checkbox"
           ref={ref}
@@ -21,7 +21,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         ) : (
           <CloseSquare size={24} />
         )}
-        <span>{label}</span>
+        <span className={`${checked ? "text-primary-500" : ""}`}>{label}</span>
       </label>
     );
   }

@@ -111,6 +111,7 @@ const ContactForm = () => {
         <Checkbox
           label={t(`services.custom`)}
           onChange={(e) => setShowCustomInput(e.target.checked)}
+          checked={showCustomInput}
         />
 
         {showCustomInput && (
