@@ -12,6 +12,7 @@ import {
   CloseSquare,
   Traffic,
   TrafficEconomy,
+  CheckCircle,
 } from "solar-icon-set";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -101,7 +102,7 @@ const ContactForm = () => {
     setValue,
     watch,
     trigger,
-    formState: { errors, isSubmitting },
+    formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<ContactFormType>({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -162,7 +163,9 @@ const ContactForm = () => {
       />
 
       <div className="flex flex-col gap-4">
-        <Heading as="h3" className="text-lg font-medium">{t("servicesInterest")}</Heading>
+        <Heading as="h3" className="text-lg font-medium">
+          {t("servicesInterest")}
+        </Heading>
         {services.map((service) => (
           <Checkbox
             type="checkbox"
@@ -213,7 +216,9 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <Heading as="h3" className="text-lg font-medium">{t("industriesInterest")}</Heading>
+        <Heading as="h3" className="text-lg font-medium">
+          {t("industriesInterest")}
+        </Heading>
 
         {industries.map((industry) => (
           <Checkbox
@@ -264,7 +269,9 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <Heading as="h3" className="text-lg font-medium">{t("experienceInterest")}</Heading>
+        <Heading as="h3" className="text-lg font-medium">
+          {t("experienceInterest")}
+        </Heading>
 
         {previousExperience.map((experience) => (
           <Checkbox
@@ -321,7 +328,9 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <Heading as="h3" className="text-lg font-medium">{t("howDidYouHearInterest")}</Heading>
+        <Heading as="h3" className="text-lg font-medium">
+          {t("howDidYouHearInterest")}
+        </Heading>
         {howDidYouHearOptions.map((option) => (
           <Checkbox
             key={option.label}
@@ -448,10 +457,16 @@ const ContactForm = () => {
       {/* Submit Button */}
       <button
         type="submit"
-        className="flex items-center gap-2 justify-center rounded-3xl bg-primary-500 text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase"
+        className={`flex items-center gap-2 justify-center rounded-3xl text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase ${
+          isSubmitSuccessful
+            ? "bg-green-400 hover:bg-green-600"
+            : "bg-primary-500"
+        }`}
       >
         {isSubmitting ? (
           <Plain size={24} className="animate-spin" />
+        ) : isSubmitSuccessful ? (
+          <CheckCircle size={24} />
         ) : (
           <>
             <Plain size={24} />
