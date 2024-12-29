@@ -39,6 +39,14 @@
       "negative": "Nei",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
+    "howDidYouHearInterest": "Hvernig heyrðir þú um okkur?",
+    "howDidYouHear": {
+      "friends": "Ráðleggingar frá vinum",
+      "family": "Ráðleggingar frá fjölskyldumeðlimum",
+      "dentist": "Ráðleggingar frá öðrum tannlækni",
+      "advertising": "Auglýsingar",
+      "custom": "Annað (vinsamlegast tilgreindu)"
+    },
     "submit": "Senda"
   }
 }
