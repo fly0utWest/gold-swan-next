@@ -57,7 +57,6 @@ ${aditionalComment ? `*Additional Comments*: ${aditionalComment}` : ""}
 
     return new NextResponse("Message sent", { status: 200 });
   } catch (error: any) {
-    console.log("Pinus");
     return new NextResponse("Message not sent", { status: 500 });
   }
 }
