@@ -5,6 +5,14 @@
     "projects": "Verkefni"
   },
   "contact-form": {
+    "nameRequired": "Vinsamlegast sláðu inn nafn þitt",
+    "invalidEmail": "Vinsamlegast sláðu inn gilt netfang",
+    "phoneRequired": "Vinsamlegast sláðu inn símanúmer",
+    "industryRequired": "Vinsamlegast veldu iðnað",
+    "previousExperienceRequired": "Vinsamlegast veldu þá valkost sem passar við fyrri reynslu þína",
+    "howDidYouHearRequired": "Vinsamlegast veldu hvernig þú heyrðir um okkur",
+    "businessOperationDurationRequired": "Vinsamlegast veldu hversu lengi fyrirtækið þitt hefur verið í rekstri",
+    "selectServiceOrCustom": "Vinsamlegast veldu að minnsta kosti eina þjónustu eða tilgreindu sérstaka þjónustu",
     "name": "Nafn þitt",
     "email": "Netfang þitt",
     "phone": "Símanúmer þitt (WhatsApp eða Telegram)",

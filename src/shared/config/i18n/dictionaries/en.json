@@ -5,6 +5,14 @@
     "projects": "Projects"
   },
   "contact-form": {
+    "nameRequired": "Please enter your name",
+    "invalidEmail": "Please enter a valid email",
+    "phoneRequired": "Please enter a phone number",
+    "industryRequired": "Please select an industry",
+    "previousExperienceRequired": "Please select the variant that suits your previous experience",
+    "howDidYouHearRequired": "Please select how you heard about us",
+    "businessOperationDurationRequired": "Please select how long your business has been in operation",
+    "selectServiceOrCustom": "Please select at least one service or specify a custom service",
     "name": "Your name",
     "email": "Your email",
     "phone": "Your phone number (WhatsApp or Telegram)",
