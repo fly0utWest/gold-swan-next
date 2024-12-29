@@ -202,7 +202,7 @@ const ContactForm = () => {
           checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
           label={t("industries.custom")}
           checked={!industries.some((ind) => ind.value === selectedIndustry)}
-          onChange={() => setValue("industry", "")}
+          onClick={() => setValue("industry", "")}
         />
 
         {(!industries.some((ind) => ind.value === selectedIndustry)) && (
@@ -246,7 +246,7 @@ const ContactForm = () => {
           checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
           label={t("previousExperience.custom")}
           checked={!previousExperience.some((exp) => exp.value === selectedExperience)}
-          onChange={() => setValue("previousExperience", "")}
+          onClick={() => setValue("previousExperience", "")}
         />
 
         {!previousExperience.some((ind) => ind.value === selectedExperience) && (
