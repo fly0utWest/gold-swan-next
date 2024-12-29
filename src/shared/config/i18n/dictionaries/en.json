@@ -33,6 +33,12 @@
       "nonprofitCommunityServices": "Nonprofit and Community Services",
       "custom": "Other (please specify)"
     },
+    "experienceInterest": "Have you previously worked with a similar service or provider?",
+    "previousExperience": {
+      "positive": "Yes",
+      "negative": "No",
+      "custom": "Other (please specify)"
+    },
     "submit": "Submit"
   }
 }
