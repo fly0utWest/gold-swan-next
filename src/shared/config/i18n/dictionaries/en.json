@@ -39,6 +39,14 @@
       "negative": "No",
       "custom": "Other (please specify)"
     },
+    "howDidYouHearInterest": "How did you hear about us?",
+    "howDidYouHear": {
+      "friends": "Advice from friends",
+      "family": "Advice from family members",
+      "dentist": "Advice from another dentist",
+      "advertising": "Advertising",
+      "custom": "Other (please specify)"
+    },
     "submit": "Submit"
   }
 }
