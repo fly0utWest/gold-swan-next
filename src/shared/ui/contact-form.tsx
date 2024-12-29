@@ -25,8 +25,8 @@ const ContactFormSchema = z
     phone: z.string().nonempty(),
     services: z.array(z.string()),
     customService: z.string().optional(),
-    industry: z.coerce.string().nonempty("Please select an industry"),
-    previousExperience: z
+    industry: z.coerce.string().min(1, {message: "Please select an industry"}),
+    previousExperience: z.coerce
       .string()
       .nonempty("Please select variant that suits your previous experience"),
   })
@@ -205,7 +205,7 @@ const ContactForm = () => {
           onClick={() => setValue("industry", "")}
         />
 
-        {(!industries.some((ind) => ind.value === selectedIndustry)) && (
+        {!industries.some((ind) => ind.value === selectedIndustry) && (
           <Input
             type="text"
             placeholder={t("industries.custom")}
@@ -245,11 +245,15 @@ const ContactForm = () => {
           icon={<Traffic size={24} />}
           checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
           label={t("previousExperience.custom")}
-          checked={!previousExperience.some((exp) => exp.value === selectedExperience)}
+          checked={
+            !previousExperience.some((exp) => exp.value === selectedExperience)
+          }
           onClick={() => setValue("previousExperience", "")}
         />
 
-        {!previousExperience.some((ind) => ind.value === selectedExperience) && (
+        {!previousExperience.some(
+          (ind) => ind.value === selectedExperience
+        ) && (
           <Input
             type="text"
             placeholder={t("previousExperience.custom")}
@@ -264,8 +268,6 @@ const ContactForm = () => {
           </span>
         )}
       </div>
-
-
 
       <button
         type="submit"

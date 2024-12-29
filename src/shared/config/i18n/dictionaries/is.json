@@ -33,6 +33,12 @@
       "nonprofitCommunityServices": "Góðgerðarsamtök og samfélagsþjónusta",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
+    "experienceInterest": "Hefur þú áður unnið með svipaða þjónustu eða veitanda?",
+    "previousExperience": {
+      "positive": "Já",
+      "negative": "Nei",
+      "custom": "Annað (vinsamlegast tilgreindu)"
+    },
     "submit": "Senda"
   }
 }
