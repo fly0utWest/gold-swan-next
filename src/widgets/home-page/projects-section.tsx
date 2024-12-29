@@ -6,10 +6,10 @@ import ProjectCard from "@/shared/ui/project-card";
 const ProjectsSection: React.FC = () => {
   const projects = [
     {
-      Icon: <Help size={64} color="var(--primary-500)"/>,
+      Icon: Help,
       title: "AI-Powered Support",
       description:
-        "Our AI-Powered Support redefines customer service by addressing common challenges such as high costs, limited availability, and outdated solutions.",
+        "Our AI-Powered Support redefines customer service by addressing common challenges such as high costs, limited availability, and outdated solutions. With 24/7 availability, cost-efficient automation, and personalized interactions, the system seamlessly integrates with communication channels like messengers and email. It learns from customer queries, scales to handle simultaneous requests, and provides actionable analytics to improve service quality. This innovation ensures businesses can deliver exceptional support while optimizing resources.",
       features: [
         "24/7 availability",
         "Cost-efficient automation",
@@ -21,33 +21,33 @@ const ProjectsSection: React.FC = () => {
       ],
     },
     {
-      Icon: <ChartSquare />,
-      title: "AI-Driven Analytics",
+      Icon: ChartSquare,
+      title: "NFC-Driven Automated Review Generation",
       description:
-        "Our AI-Driven Analytics platform revolutionizes data analysis by leveraging advanced machine learning algorithms to uncover deep insights from complex datasets.",
+        "Our NFC-Driven Automated Review Generation system revolutionizes how businesses gather customer feedback. By automating the process with NFC tags and AI, reviews are collected quickly and easily, reducing manual efforts and costs. Customers benefit from a streamlined experience, while businesses enjoy increased engagement, accurate feedback, and enhanced ratings. Scalable and equipped with detailed analytics, this solution helps industries like hospitality, retail, and dining boost their reputations efficiently.",
       features: [
-        "Real-time data processing",
-        "Intuitive visualizations",
-        "Automated report generation",
-        "Adaptive to various data sources",
-        "Scalable for large data volumes",
-        "Continuous improvement of analytical models",
-        "Pattern recognition and predictive modeling",
+        "Streamlined feedback collection with NFC",
+        "Automated review process",
+        "Increased engagement",
+        "Accurate and timely feedback",
+        "Enhanced ratings and reputation",
+        "Detailed analytics for improvement",
+        "Scalable across industries",
       ],
     },
     {
-      Icon: <Bottle size={64}/>,
-      title: "Intelligent Automation",
+      Icon: Bottle,
+      title: "Crypto Marketing Package for Utility Projects",
       description:
-        "Our Intelligent Automation solution streamlines business processes by combining AI, machine learning, and robotic process automation to enhance efficiency and reduce errors.",
+        "Our Crypto Marketing Package is tailored exclusively for utility crypto projects, supporting them at every stage of development. The package includes brand strategy, content creation, community engagement, and influencer outreach. From optimized websites to targeted advertising and PR campaigns, our approach ensures increased visibility, trust, and adoption. Designed with scalability and measurable results in mind, this service drives growth while meeting the unique demands of the crypto landscape.",
       features: [
-        "Process analysis and optimization",
-        "Automated workflow creation",
-        "Integration with existing systems",
-        "Natural language processing capabilities",
-        "Adaptive learning for process improvement",
-        "Real-time monitoring and reporting",
-        "Scalable across multiple departments",
+        "Comprehensive brand strategy",
+        "Content creation for engagement",
+        "Community building and outreach",
+        "Influencer partnerships",
+        "Optimized websites and PR campaigns",
+        "Scalable marketing efforts",
+        "Measurable growth and visibility",
       ],
     },
   ];
@@ -68,7 +68,7 @@ const ProjectsSection: React.FC = () => {
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
-              icon={project.Icon}
+              Icon={project.Icon}
               title={project.title}
               description={project.description}
               features={project.features}
@@ -80,4 +80,4 @@ const ProjectsSection: React.FC = () => {
   );
 };
 
-export default ProjectsSection
+export default ProjectsSection;

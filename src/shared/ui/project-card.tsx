@@ -1,15 +1,16 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
+import { IconProps } from "solar-icon-set/dist/types";
 
 interface ProjectCardProps {
-  icon?: React.ReactNode;
+  Icon: (allProps: IconProps) => JSX.Element;
   title: string;
   description: string;
   features: string[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  icon,
+  Icon,
   title,
   description,
   features,
@@ -19,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="lg:w-1/2">
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>
-          {icon}
+          <Icon size={64} color="var(--primary-500)" />
           <Heading as="h3" className="text-3xl font-bold">
             {title}
           </Heading>
