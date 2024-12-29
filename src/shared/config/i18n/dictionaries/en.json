@@ -47,6 +47,15 @@
       "advertising": "Advertising",
       "custom": "Other (please specify)"
     },
+    "businessOperationInterest": "How long has your business been in operation?",
+    "businessOperationDuration": {
+      "lessThanOneYear": "Less than a year",
+      "oneYear": "One year",
+      "twoYears": "Two years",
+      "moreThanThreeYears": "More than three years",
+      "moreThanFiveYears": "More than five years",
+      "custom": "Other (please specify)"
+    },
     "submit": "Submit"
   }
 }

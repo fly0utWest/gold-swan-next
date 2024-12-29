@@ -47,6 +47,15 @@
       "advertising": "Auglýsingar",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
+    "businessOperationInterest": "Hversu lengi hefur fyrirtækið þitt verið í rekstri?",
+    "businessOperationDuration": {
+      "lessThanOneYear": "Minna en eitt ár",
+      "oneYear": "Eitt ár",
+      "twoYears": "Tveir ár",
+      "moreThanThreeYears": "Meira en þrjú ár",
+      "moreThanFiveYears": "Meira en fimm ár",
+      "custom": "Annað (vinsamlegast tilgreindu)"
+    },
     "submit": "Senda"
   }
 }
