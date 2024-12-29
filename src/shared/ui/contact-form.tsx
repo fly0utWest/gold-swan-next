@@ -17,6 +17,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Checkbox from "./checkbox";
+import Textarea from "./textarea";
 
 const ContactFormSchema = z
   .object({
@@ -36,7 +37,8 @@ const ContactFormSchema = z
       .nonempty("Please select how you heard about us"),
     businessOperationDuration: z.coerce
       .string()
-      .nonempty("Please select how long your business has been in operation"), // New field
+      .nonempty("Please select how long your business has been in operation"),
+    aditionalComment: z.string().optional(),
   })
   .refine((data) => data.services.length > 0 || data.customService, {
     message: "Please select at least one service or specify a custom service",
@@ -141,19 +143,19 @@ const ContactForm = () => {
     >
       {/* Name, Email, Phone */}
       <Input
-        icon={<User size={32} />}
+        icon={<User size={32} color={`${errors.name ? "var(--error)" : "" }`} />}
         placeholder={t("name")}
         error={errors.name}
         {...register("name")}
       />
       <Input
-        icon={<Mailbox size={32} />}
+        icon={<Mailbox size={32} color={`${errors.email ? "var(--error)" : "" }`}/>}
         placeholder={t("email")}
         error={errors.email}
         {...register("email")}
       />
       <Input
-        icon={<Phone size={32} />}
+        icon={<Phone size={32} color={`${errors.phone ? "var()" : "" }`} />}
         placeholder={t("phone")}
         error={errors.phone}
         {...register("phone")}
@@ -394,6 +396,13 @@ const ContactForm = () => {
             {errors.businessOperationDuration.message}
           </span>
         )}
+      </div>
+
+      <div className="flex flex-col gap-4">
+        <h2 className="text-lg font-medium">
+          {t("businessOperationInterest")}
+        </h2>
+        <Textarea {...register("aditionalComment")} />
       </div>
 
       <button

@@ -7,20 +7,33 @@ const TG_API = `${process.env.TG_API_URL}${TG_TOKEN}/sendMessage`;
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, services, customService, industry } = body;
+    const { name, email, phone, services, customService, industry, previousExperience, howDidYouHear, businessOperationDuration, aditionalComment } = body;
     const servicesString =
       services?.length > 0
         ? services.join("\n")
         : customService || "No services selected";
 
-    const message = `*Name*: ${name}
+    const message = `*New Contact Form Submission*
+
+*Personal Information*
+*Name*: ${name}
 *Email*: \`${email}\`
 *Phone*: ${phone}
 
-*Ordered services:*
+*Ordered Services*
 ${servicesString}
+${customService ? `*Custom Service*: ${customService}` : ''}
 
 *Industry*: ${industry}
+
+*Experience*
+*Previous Experience*: ${previousExperience}
+
+*How Did You Hear About Us*: ${howDidYouHear}
+
+*Business Operation Duration*: ${businessOperationDuration}
+
+${aditionalComment ? `*Additional Comments*: ${aditionalComment}` : ''}
 `;
 
     await fetch(TG_API, {

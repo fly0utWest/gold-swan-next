@@ -10,8 +10,9 @@ type InputProps = {
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ icon, disabled, error, ...props }, ref) => {
     return (
-      <label
-        className={`flex items-center gap-4 px-5 py-4 rounded-3xl border-2 
+      <div className="flex flex-col gap-2">
+        <label
+          className={`flex items-center gap-4 px-5 py-4 rounded-3xl border-2 
           focus-within:border-primary-500 dark:focus-within:border-primary-500 
           dark:text-neutral-300 text-neutral-800 group transition-colors
           ${
@@ -24,18 +25,19 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               ? "bg-transparent hover:cursor-not-allowed"
               : "hover:cursor-text dark:border-neutral-800 border-neutral-200 dark:bg-black bg-white"
           }`}
-      >
-        {icon}
-        <input
-          ref={ref}
-          className={`w-full bg-transparent outline-none disabled:cursor-not-allowed ${
-            error ? "placeholder:text-red-400" : ""
-          }`}
-          disabled={disabled}
-          {...props}
-        />
-        {error && <span>{error.message}</span>}
-      </label>
+        >
+          {icon}
+          <input
+            ref={ref}
+            className={`w-full bg-transparent outline-none disabled:cursor-not-allowed ${
+              error ? "placeholder:text-red-400" : ""
+            }`}
+            disabled={disabled}
+            {...props}
+          />
+        </label>
+        {error && <span className="text-red-500">{error.message}</span>}
+      </div>
     );
   }
 );
