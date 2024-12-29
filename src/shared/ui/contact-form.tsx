@@ -25,7 +25,10 @@ const ContactFormSchema = z
     phone: z.string().nonempty(),
     services: z.array(z.string()),
     customService: z.string().optional(),
-    industry: z.string().nonempty("Please select an industry"),
+    industry: z.coerce.string().nonempty("Please select an industry"),
+    previousExperience: z
+      .string()
+      .nonempty("Please select variant that suits your previous experience"),
   })
   .refine((data) => data.services.length > 0 || data.customService, {
     message: "Please select at least one service or specify a custom service",
@@ -63,6 +66,11 @@ const industries = [
   },
 ];
 
+const previousExperience = [
+  { label: "positive", value: "Yes" },
+  { label: "negative", value: "No" },
+];
+
 const ContactForm = () => {
   const t = useTranslations("contact-form");
 
@@ -76,12 +84,12 @@ const ContactForm = () => {
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       services: [],
-      industry: "",
     },
   });
 
   const checkedServices = watch("services");
   const selectedIndustry = watch("industry");
+  const selectedExperience = watch("previousExperience");
 
   const onSubmit = async (data: ContactFormType) => {
     try {
@@ -197,13 +205,12 @@ const ContactForm = () => {
           onChange={() => setValue("industry", "")}
         />
 
-        {!industries.some((ind) => ind.value === selectedIndustry) && (
+        {(!industries.some((ind) => ind.value === selectedIndustry)) && (
           <Input
             type="text"
             placeholder={t("industries.custom")}
             value={selectedIndustry}
             onChange={(e) => setValue("industry", e.target.value)}
-            error={errors.industry}
           />
         )}
 
@@ -214,7 +221,52 @@ const ContactForm = () => {
         )}
       </div>
 
-      {/* Submit Button */}
+      <div className="flex flex-col gap-4">
+        <h2 className="text-lg font-medium">{t("experienceInterest")}</h2>
+
+        {previousExperience.map((experience) => (
+          <Checkbox
+            key={experience.label}
+            type="radio"
+            icon={<Traffic size={24} />}
+            checkedIcon={
+              <TrafficEconomy size={24} color="var(--primary-500)" />
+            }
+            label={t(`previousExperience.${experience.label}`)}
+            value={experience.value}
+            {...register("industry")}
+            checked={selectedExperience === experience.value}
+            onChange={() => setValue("previousExperience", experience.value)}
+          />
+        ))}
+
+        <Checkbox
+          type="radio"
+          icon={<Traffic size={24} />}
+          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          label={t("previousExperience.custom")}
+          checked={!previousExperience.some((exp) => exp.value === selectedExperience)}
+          onChange={() => setValue("previousExperience", "")}
+        />
+
+        {!previousExperience.some((ind) => ind.value === selectedExperience) && (
+          <Input
+            type="text"
+            placeholder={t("previousExperience.custom")}
+            value={selectedExperience}
+            onChange={(e) => setValue("previousExperience", e.target.value)}
+          />
+        )}
+
+        {errors.previousExperience && (
+          <span className="text-red-500 text-sm">
+            {errors.previousExperience.message}
+          </span>
+        )}
+      </div>
+
+
+
       <button
         type="submit"
         className="flex items-center gap-2 justify-center rounded-3xl bg-primary-500 text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase"
