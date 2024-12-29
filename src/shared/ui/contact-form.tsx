@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Input from "./input";
-import React, { useState } from "react";
+import React from "react";
 import {
   User,
   Mailbox,
@@ -18,34 +18,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Checkbox from "./checkbox";
 import Textarea from "./textarea";
-
-const ContactFormSchema = z
-  .object({
-    name: z.string().nonempty(),
-    email: z.string().email(),
-    phone: z.string().nonempty(),
-    services: z.array(z.string()),
-    customService: z.string().optional(),
-    industry: z.coerce
-      .string()
-      .min(1, { message: "Please select an industry" }),
-    previousExperience: z.coerce
-      .string()
-      .nonempty("Please select variant that suits your previous experience"),
-    howDidYouHear: z.coerce
-      .string()
-      .nonempty("Please select how you heard about us"),
-    businessOperationDuration: z.coerce
-      .string()
-      .nonempty("Please select how long your business has been in operation"),
-    aditionalComment: z.string().optional(),
-  })
-  .refine((data) => data.services.length > 0 || data.customService, {
-    message: "Please select at least one service or specify a custom service",
-    path: ["services"], // Shows error on services field
-  });
-
-type ContactFormType = z.infer<typeof ContactFormSchema>;
 
 const services = [
   { label: "digitalMarketing", value: "Digital Marketing" },
@@ -99,16 +71,44 @@ const businessOperationDurationOptions = [
 const ContactForm = () => {
   const t = useTranslations("contact-form");
 
+  // Refactor schema to be static
+  const ContactFormSchema = z
+    .object({
+      name: z.string().nonempty(t("nameRequired")),
+      email: z.string().email(t("invalidEmail")),
+      phone: z.string().nonempty(t("phoneRequired")),
+      services: z.array(z.string()),
+      customService: z.string().optional(),
+      industry: z.string().nonempty(t("industryRequired")),
+      previousExperience: z.string().nonempty(t("previousExperienceRequired")),
+      howDidYouHear: z.string().nonempty(t("howDidYouHearRequired")),
+      businessOperationDuration: z
+        .string()
+        .nonempty(t("businessOperationDurationRequired")),
+      aditionalComment: z.string().optional(),
+    })
+    .refine((data) => data.services.length > 0 || data.customService, {
+      message: t("selectServiceOrCustom"),
+      path: ["services"],
+    });
+
+  type ContactFormType = z.infer<typeof ContactFormSchema>;
+
   const {
     register,
     handleSubmit,
     setValue,
     watch,
+    trigger,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormType>({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       services: [],
+      industry: "",
+      previousExperience: "",
+      howDidYouHear: "",
+      businessOperationDuration: "",
     },
   });
 
@@ -141,30 +141,27 @@ const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-8 py-6 w-full max-w-lg"
     >
-      {/* Name, Email, Phone */}
       <Input
-        icon={<User size={32} color={`${errors.name ? "var(--error)" : "" }`} />}
+        icon={<User size={32} color={errors.name ? "var(--error)" : ""} />}
         placeholder={t("name")}
         error={errors.name}
         {...register("name")}
       />
       <Input
-        icon={<Mailbox size={32} color={`${errors.email ? "var(--error)" : "" }`}/>}
+        icon={<Mailbox size={32} color={errors.email ? "var(--error)" : ""} />}
         placeholder={t("email")}
         error={errors.email}
         {...register("email")}
       />
       <Input
-        icon={<Phone size={32} color={`${errors.phone ? "var()" : "" }`} />}
+        icon={<Phone size={32} color={errors.phone ? "var(--error)" : ""} />}
         placeholder={t("phone")}
         error={errors.phone}
         {...register("phone")}
       />
 
-      {/* Services Section */}
       <div className="flex flex-col gap-4">
         <h2 className="text-lg font-medium">{t("servicesInterest")}</h2>
-
         {services.map((service) => (
           <Checkbox
             type="checkbox"
@@ -175,6 +172,15 @@ const ContactForm = () => {
             {...register("services")}
             value={service.value}
             checked={checkedServices.includes(service.value)}
+            onChange={(e) => {
+              setValue(
+                "services",
+                e.target.checked
+                  ? [...checkedServices, service.value]
+                  : checkedServices.filter((item) => item !== service.value)
+              );
+              trigger("services");
+            }}
           />
         ))}
 
@@ -183,9 +189,11 @@ const ContactForm = () => {
           icon={<CloseSquare size={24} />}
           checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
           label={t(`services.custom`)}
-          onChange={(e) =>
-            setValue("customService", e.target.checked ? "" : undefined)
-          }
+          onChange={(e) => {
+            const isChecked = e.target.checked;
+            setValue("customService", isChecked ? "" : undefined);
+            trigger("customService");
+          }}
           checked={watch("customService") !== undefined}
         />
 
@@ -194,13 +202,12 @@ const ContactForm = () => {
             type="text"
             placeholder={t("services.custom")}
             {...register("customService")}
+            onChange={() => trigger("services")}
           />
         )}
 
         {errors.services && (
-          <span className="text-red-500 text-sm">
-            {errors.services.message}
-          </span>
+          <span className="text-red-500">{errors.services.message}</span>
         )}
       </div>
 
@@ -219,7 +226,10 @@ const ContactForm = () => {
             value={industry.value}
             {...register("industry")}
             checked={selectedIndustry === industry.value}
-            onChange={() => setValue("industry", industry.value)}
+            onChange={() => {
+              setValue("industry", industry.value);
+              trigger("industry");
+            }}
           />
         ))}
 
@@ -229,7 +239,10 @@ const ContactForm = () => {
           checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
           label={t("industries.custom")}
           checked={!industries.some((ind) => ind.value === selectedIndustry)}
-          onClick={() => setValue("industry", "")}
+          onClick={() => {
+            setValue("industry", "");
+            trigger("industry");
+          }}
         />
 
         {!industries.some((ind) => ind.value === selectedIndustry) && (
@@ -237,14 +250,15 @@ const ContactForm = () => {
             type="text"
             placeholder={t("industries.custom")}
             value={selectedIndustry}
-            onChange={(e) => setValue("industry", e.target.value)}
+            onChange={(e) => {
+              setValue("industry", e.target.value);
+              trigger("industry");
+            }}
           />
         )}
 
         {errors.industry && (
-          <span className="text-red-500 text-sm">
-            {errors.industry.message}
-          </span>
+          <span className="text-red-500">{errors.industry.message}</span>
         )}
       </div>
 
@@ -263,7 +277,10 @@ const ContactForm = () => {
             value={experience.value}
             {...register("industry")}
             checked={selectedExperience === experience.value}
-            onChange={() => setValue("previousExperience", experience.value)}
+            onChange={() => {
+              setValue("previousExperience", experience.value);
+              trigger("previousExperience");
+            }}
           />
         ))}
 
@@ -275,7 +292,10 @@ const ContactForm = () => {
           checked={
             !previousExperience.some((exp) => exp.value === selectedExperience)
           }
-          onClick={() => setValue("previousExperience", "")}
+          onClick={() => {
+            setValue("previousExperience", "");
+            trigger("previousExperience");
+          }}
         />
 
         {!previousExperience.some(
@@ -285,12 +305,15 @@ const ContactForm = () => {
             type="text"
             placeholder={t("previousExperience.custom")}
             value={selectedExperience}
-            onChange={(e) => setValue("previousExperience", e.target.value)}
+            onChange={(e) => {
+              setValue("previousExperience", e.target.value);
+              trigger("previousExperience");
+            }}
           />
         )}
 
         {errors.previousExperience && (
-          <span className="text-red-500 text-sm">
+          <span className="text-red-500">
             {errors.previousExperience.message}
           </span>
         )}
@@ -310,7 +333,10 @@ const ContactForm = () => {
             value={option.value}
             {...register("howDidYouHear")}
             checked={selectedHowDidYouHear === option.value}
-            onChange={() => setValue("howDidYouHear", option.value)}
+            onChange={() => {
+              setValue("howDidYouHear", option.value);
+              trigger("howDidYouHear");
+            }}
           />
         ))}
 
@@ -324,7 +350,10 @@ const ContactForm = () => {
               (opt) => opt.value === selectedHowDidYouHear
             )
           }
-          onClick={() => setValue("howDidYouHear", "")}
+          onClick={() => {
+            setValue("howDidYouHear", "");
+            trigger("howDidYouHear");
+          }}
         />
 
         {!howDidYouHearOptions.some(
@@ -334,14 +363,15 @@ const ContactForm = () => {
             type="text"
             placeholder={t("howDidYouHear.custom")}
             value={selectedHowDidYouHear}
-            onChange={(e) => setValue("howDidYouHear", e.target.value)}
+            onChange={(e) => {
+              setValue("howDidYouHear", e.target.value);
+              trigger("howDidYouHear");
+            }}
           />
         )}
 
         {errors.howDidYouHear && (
-          <span className="text-red-500 text-sm">
-            {errors.howDidYouHear.message}
-          </span>
+          <span className="text-red-500">{errors.howDidYouHear.message}</span>
         )}
       </div>
 
@@ -361,7 +391,10 @@ const ContactForm = () => {
             value={option.value}
             {...register("businessOperationDuration")}
             checked={selectedBusinessOperationDuration === option.value}
-            onChange={() => setValue("businessOperationDuration", option.value)}
+            onChange={() => {
+              setValue("businessOperationDuration", option.value);
+              trigger("businessOperationDuration");
+            }}
           />
         ))}
 
@@ -375,7 +408,10 @@ const ContactForm = () => {
               (opt) => opt.value === selectedBusinessOperationDuration
             )
           }
-          onClick={() => setValue("businessOperationDuration", "")}
+          onClick={() => {
+            setValue("businessOperationDuration", "");
+            trigger("businessOperationDuration");
+          }}
         />
 
         {!businessOperationDurationOptions.some(
@@ -385,14 +421,15 @@ const ContactForm = () => {
             type="text"
             placeholder={t("businessOperationDuration.custom")}
             value={selectedBusinessOperationDuration}
-            onChange={(e) =>
-              setValue("businessOperationDuration", e.target.value)
-            }
+            onChange={(e) => {
+              setValue("businessOperationDuration", e.target.value);
+              trigger("businessOperationDuration");
+            }}
           />
         )}
 
         {errors.businessOperationDuration && (
-          <span className="text-red-500 text-sm">
+          <span className="text-red-500">
             {errors.businessOperationDuration.message}
           </span>
         )}
@@ -402,9 +439,12 @@ const ContactForm = () => {
         <h2 className="text-lg font-medium">
           {t("businessOperationInterest")}
         </h2>
-        <Textarea {...register("aditionalComment")} />
+        <Textarea
+          placeholder="Aditional comment"
+          {...register("aditionalComment")}
+        />
       </div>
-
+      {/* Submit Button */}
       <button
         type="submit"
         className="flex items-center gap-2 justify-center rounded-3xl bg-primary-500 text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase"
