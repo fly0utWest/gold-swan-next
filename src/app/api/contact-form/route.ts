@@ -30,8 +30,7 @@ export async function POST(request: Request) {
 
 *Ordered Services*
 ${servicesString}
-${customService ? `*Custom Service*: ${customService}` : ""}
-
+${customService ? `*Custom Service*: ${customService}\n` : ""}
 *Industry*: ${industry}
 
 *Previous Experience*: ${previousExperience}
