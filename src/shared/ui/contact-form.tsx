@@ -81,7 +81,6 @@ const howDidYouHearOptions = [
   { label: "family", value: "Advice from family members" },
   { label: "dentist", value: "Advice from another dentist" },
   { label: "advertising", value: "Advertising" },
-  { label: "custom", value: "Your custom answer" },
 ];
 
 const ContactForm = () => {
@@ -282,15 +281,17 @@ const ContactForm = () => {
         )}
       </div>
 
- <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("howDidYouHear")}</h2>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-lg font-medium">{t("howDidYouHearInterest")}</h2>
         {howDidYouHearOptions.map((option) => (
           <Checkbox
             key={option.label}
             type="radio"
             icon={<Traffic size={24} />}
-            checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
-            label={option.value}
+            checkedIcon={
+              <TrafficEconomy size={24} color="var(--primary-500)" />
+            }
+            label={t(`howDidYouHear.${option.label}`)}
             value={option.value}
             {...register("howDidYouHear")}
             checked={selectedHowDidYouHear === option.value}
@@ -303,11 +304,17 @@ const ContactForm = () => {
           icon={<Traffic size={24} />}
           checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
           label={t("howDidYouHear.custom")}
-          checked={!howDidYouHearOptions.some((opt) => opt.value === selectedHowDidYouHear)}
+          checked={
+            !howDidYouHearOptions.some(
+              (opt) => opt.value === selectedHowDidYouHear
+            )
+          }
           onClick={() => setValue("howDidYouHear", "")}
         />
 
-        {!howDidYouHearOptions.some((opt) => opt.value === selectedHowDidYouHear) && (
+        {!howDidYouHearOptions.some(
+          (opt) => opt.value === selectedHowDidYouHear
+        ) && (
           <Input
             type="text"
             placeholder={t("howDidYouHear.custom")}
