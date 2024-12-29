@@ -25,10 +25,15 @@ const ContactFormSchema = z
     phone: z.string().nonempty(),
     services: z.array(z.string()),
     customService: z.string().optional(),
-    industry: z.coerce.string().min(1, {message: "Please select an industry"}),
+    industry: z.coerce
+      .string()
+      .min(1, { message: "Please select an industry" }),
     previousExperience: z.coerce
       .string()
       .nonempty("Please select variant that suits your previous experience"),
+    howDidYouHear: z.coerce
+      .string()
+      .nonempty("Please select how you heard about us"), // New field
   })
   .refine((data) => data.services.length > 0 || data.customService, {
     message: "Please select at least one service or specify a custom service",
@@ -71,6 +76,14 @@ const previousExperience = [
   { label: "negative", value: "No" },
 ];
 
+const howDidYouHearOptions = [
+  { label: "friends", value: "Advice from friends" },
+  { label: "family", value: "Advice from family members" },
+  { label: "dentist", value: "Advice from another dentist" },
+  { label: "advertising", value: "Advertising" },
+  { label: "custom", value: "Your custom answer" },
+];
+
 const ContactForm = () => {
   const t = useTranslations("contact-form");
 
@@ -90,7 +103,7 @@ const ContactForm = () => {
   const checkedServices = watch("services");
   const selectedIndustry = watch("industry");
   const selectedExperience = watch("previousExperience");
-
+  const selectedHowDidYouHear = watch("howDidYouHear");
   const onSubmit = async (data: ContactFormType) => {
     try {
       const response = await fetch("/api/contact-form", {
@@ -265,6 +278,47 @@ const ContactForm = () => {
         {errors.previousExperience && (
           <span className="text-red-500 text-sm">
             {errors.previousExperience.message}
+          </span>
+        )}
+      </div>
+
+ <div className="flex flex-col gap-4">
+        <h2 className="text-lg font-medium">{t("howDidYouHear")}</h2>
+        {howDidYouHearOptions.map((option) => (
+          <Checkbox
+            key={option.label}
+            type="radio"
+            icon={<Traffic size={24} />}
+            checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+            label={option.value}
+            value={option.value}
+            {...register("howDidYouHear")}
+            checked={selectedHowDidYouHear === option.value}
+            onChange={() => setValue("howDidYouHear", option.value)}
+          />
+        ))}
+
+        <Checkbox
+          type="radio"
+          icon={<Traffic size={24} />}
+          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          label={t("howDidYouHear.custom")}
+          checked={!howDidYouHearOptions.some((opt) => opt.value === selectedHowDidYouHear)}
+          onClick={() => setValue("howDidYouHear", "")}
+        />
+
+        {!howDidYouHearOptions.some((opt) => opt.value === selectedHowDidYouHear) && (
+          <Input
+            type="text"
+            placeholder={t("howDidYouHear.custom")}
+            value={selectedHowDidYouHear}
+            onChange={(e) => setValue("howDidYouHear", e.target.value)}
+          />
+        )}
+
+        {errors.howDidYouHear && (
+          <span className="text-red-500 text-sm">
+            {errors.howDidYouHear.message}
           </span>
         )}
       </div>
