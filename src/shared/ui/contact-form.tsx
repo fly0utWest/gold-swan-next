@@ -18,6 +18,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Checkbox from "./checkbox";
 import Textarea from "./textarea";
+import Heading from "./heading";
 
 const services = [
   { label: "digitalMarketing", value: "Digital Marketing" },
@@ -161,7 +162,7 @@ const ContactForm = () => {
       />
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("servicesInterest")}</h2>
+        <Heading as="h3" className="text-lg font-medium">{t("servicesInterest")}</Heading>
         {services.map((service) => (
           <Checkbox
             type="checkbox"
@@ -212,7 +213,7 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("industriesInterest")}</h2>
+        <Heading as="h3" className="text-lg font-medium">{t("industriesInterest")}</Heading>
 
         {industries.map((industry) => (
           <Checkbox
@@ -263,7 +264,7 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("experienceInterest")}</h2>
+        <Heading as="h3" className="text-lg font-medium">{t("experienceInterest")}</Heading>
 
         {previousExperience.map((experience) => (
           <Checkbox
@@ -320,7 +321,7 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">{t("howDidYouHearInterest")}</h2>
+        <Heading as="h3" className="text-lg font-medium">{t("howDidYouHearInterest")}</Heading>
         {howDidYouHearOptions.map((option) => (
           <Checkbox
             key={option.label}
@@ -376,9 +377,9 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">
+        <Heading as="h3" className="text-lg font-medium">
           {t("businessOperationInterest")}
-        </h2>
+        </Heading>
         {businessOperationDurationOptions.map((option) => (
           <Checkbox
             key={option.label}
@@ -436,9 +437,9 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h2 className="text-lg font-medium">
+        <Heading as="h3" className="text-lg font-medium">
           {t("businessOperationInterest")}
-        </h2>
+        </Heading>
         <Textarea
           placeholder="Aditional comment"
           {...register("aditionalComment")}
