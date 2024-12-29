@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
-import { useRef } from "react";
-import { FieldError, UseFormRegister } from "react-hook-form";
+import { FieldError } from "react-hook-form";
 
 type InputProps = {
   icon?: React.ReactNode;
@@ -30,7 +29,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           <input
             ref={ref}
             className={`w-full bg-transparent outline-none disabled:cursor-not-allowed ${
-              error ? "placeholder:text-red-400" : ""
+              error ? "placeholder:text-red-400 text-red-500" : ""
             }`}
             disabled={disabled}
             {...props}
