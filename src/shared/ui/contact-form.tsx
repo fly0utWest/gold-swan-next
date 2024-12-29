@@ -65,12 +65,11 @@ const industries = [
 
 const ContactForm = () => {
   const t = useTranslations("contact-form");
-  const [showCustomInput, setShowCustomInput] = useState(false);
-  const [showCustomIndustry, setShowCustomIndustry] = useState(false);
 
   const {
     register,
     handleSubmit,
+    setValue,
     watch,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormType>({
@@ -82,6 +81,7 @@ const ContactForm = () => {
   });
 
   const checkedServices = watch("services");
+  const selectedIndustry = watch("industry");
 
   const onSubmit = async (data: ContactFormType) => {
     try {
@@ -106,6 +106,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-8 py-6 w-full max-w-lg"
     >
+      {/* Name, Email, Phone */}
       <Input
         icon={<User size={32} />}
         placeholder={t("name")}
@@ -125,6 +126,7 @@ const ContactForm = () => {
         {...register("phone")}
       />
 
+      {/* Services Section */}
       <div className="flex flex-col gap-4">
         <h2 className="text-lg font-medium">{t("servicesInterest")}</h2>
 
@@ -140,16 +142,19 @@ const ContactForm = () => {
             checked={checkedServices.includes(service.value)}
           />
         ))}
+
         <Checkbox
           type="checkbox"
           icon={<CloseSquare size={24} />}
           checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
           label={t(`services.custom`)}
-          onChange={(e) => setShowCustomInput(e.target.checked)}
-          checked={showCustomInput}
+          onChange={(e) =>
+            setValue("customService", e.target.checked ? "" : undefined)
+          }
+          checked={watch("customService") !== undefined}
         />
 
-        {showCustomInput && (
+        {watch("customService") !== undefined && (
           <Input
             type="text"
             placeholder={t("services.custom")}
@@ -178,7 +183,8 @@ const ContactForm = () => {
             label={t(`industries.${industry.label}`)}
             value={industry.value}
             {...register("industry")}
-            checked={watch("industry") === industry.value} // Check if the radio is selected
+            checked={selectedIndustry === industry.value}
+            onChange={() => setValue("industry", industry.value)}
           />
         ))}
 
@@ -186,17 +192,18 @@ const ContactForm = () => {
           type="radio"
           icon={<Traffic size={24} />}
           checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
-          label={t(`industries.custom`)}
-          
-          {...register("industry")}
-          checked={showCustomIndustry}
-          
+          label={t("industries.custom")}
+          checked={!industries.some((ind) => ind.value === selectedIndustry)}
+          onChange={() => setValue("industry", "")}
         />
-        {showCustomIndustry && (
+
+        {!industries.some((ind) => ind.value === selectedIndustry) && (
           <Input
             type="text"
             placeholder={t("industries.custom")}
-            {...register("industry")}
+            value={selectedIndustry}
+            onChange={(e) => setValue("industry", e.target.value)}
+            error={errors.industry}
           />
         )}
 
@@ -207,6 +214,7 @@ const ContactForm = () => {
         )}
       </div>
 
+      {/* Submit Button */}
       <button
         type="submit"
         className="flex items-center gap-2 justify-center rounded-3xl bg-primary-500 text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase"
