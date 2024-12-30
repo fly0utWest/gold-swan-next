@@ -1,9 +1,8 @@
-import Image from "next/image";
-import logo from "@/app/[locale]/_assets/logos/logo.png";
 import Link from "../link";
 import { SquareArrowUp } from "solar-icon-set";
 import { useTranslations } from "next-intl";
 import BrandLogo from "../brand-logo";
+import FooterLink from "./footer-link";
 
 export default function Footer() {
   const t = useTranslations("nav");
@@ -12,16 +11,21 @@ export default function Footer() {
     <footer className="flex flex-col gap-16 mt-16 px-8 md:px-16 bg-neutral-100 dark:bg-black pt-4 pb-16">
       <div className="flex flex-col lg:flex-row w-full justify-between items-center gap-8">
         <div className="flex flex-col gap-4 items-center lg:items-start mb-12 md:mb-0">
-        <BrandLogo />
-          <h3 className="font-display font-bold text-4xl md:text-5xl cursor-help w-full max-w-xs text-center lg:text-left">
-
-          </h3>
+          <BrandLogo />
+          <h3 className="font-display font-bold text-4xl md:text-5xl cursor-help w-full max-w-xs text-center lg:text-left"></h3>
           <p className="text-xl text-neutral-800 w-full max-w-sm text-center lg:text-left">
             {t("description")}
           </p>
         </div>
         <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
-
+          <FooterLink href="/#download">{t("home")}</FooterLink>
+          <FooterLink href="/legal/privacy">{t("contact")}</FooterLink>
+        </div>
+        <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
+          <FooterLink href="https://github.com/exteraSquad">
+            {t("services")}
+          </FooterLink>
+          <FooterLink href="https://t.me/exteraChat">{t("projects")}</FooterLink>
         </div>
         <Link
           href="#top"
@@ -37,28 +41,6 @@ export default function Footer() {
             <SquareArrowUp size={60} iconStyle="Bold" />
           </div>
         </Link>
-      </div>
-      <div className="flex flex-col lg:flex-row w-full justify-center items-center gap-2 lg:gap-8 text-neutral-800">
-        <div className="hover:font-semibold transition-all flex gap-1">
-          {t("credits.design") + " "}
-          <Link
-            href="https://t.me/Design480"
-            className="text-primary-500"
-            underline
-          >
-            480 Design
-          </Link>
-        </div>
-        <div className="hover:font-semibold transition-all flex gap-1">
-          {t("credits.dev") + " "}
-          <Link
-            href="https://github.com/exteraSquad"
-            className="text-primary-500"
-            underline
-          >
-            exteraSquad
-          </Link>
-        </div>
       </div>
     </footer>
   );
