@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="lg:w-1/2">
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>
-          <Icon size={64} color="var(--primary-500)" />
+          <Icon size={64} color="var(--primary-500)" iconStyle="Bold"/>
           <Heading as="h3" className="text-3xl font-bold">
             {title}
           </Heading>

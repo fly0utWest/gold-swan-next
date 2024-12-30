@@ -1,0 +1,49 @@
+import { Help, Translation2, HandMoney } from "solar-icon-set";
+
+export const upcomingProjects = [
+  {
+    Icon: Help,
+    title: "aiSupport.title",
+    description: "aiSupport.description",
+    features: [
+      "aiSupport.features.availability",
+      "aiSupport.features.automation",
+      "aiSupport.features.integration",
+      "aiSupport.features.learning",
+      "aiSupport.features.analytics",
+      "aiSupport.features.scalability",
+      "aiSupport.features.automation",
+      "aiSupport.features.interactions",
+    ],
+  },
+  {
+    Icon: Translation2,
+    title: "nfcReviews.title",
+    description: "nfcReviews.description",
+    features: [
+      "nfcReviews.features.automation",
+      "nfcReviews.features.nfcIntegration",
+      "nfcReviews.features.aiProcessing",
+      "nfcReviews.features.customerExperience",
+      "nfcReviews.features.analytics",
+      "nfcReviews.features.scalability",
+      "nfcReviews.features.efficiency",
+      "nfcReviews.features.engagement",
+    ],
+  },
+  {
+    Icon: HandMoney,
+    title: "cryptoMarketing.title",
+    description: "cryptoMarketing.description",
+    features: [
+      "cryptoMarketing.features.strategy",
+      "cryptoMarketing.features.content",
+      "cryptoMarketing.features.community",
+      "cryptoMarketing.features.influencers",
+      "cryptoMarketing.features.optimization",
+      "cryptoMarketing.features.advertising",
+      "cryptoMarketing.features.pr",
+      "cryptoMarketing.features.analytics",
+    ],
+  },
+];

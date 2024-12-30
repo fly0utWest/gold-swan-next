@@ -19,6 +19,34 @@
           "scalability": "Scalable to handle simultaneous requests",
           "analytics": "Actionable analytics for service improvement"
         }
+      },
+      "nfcReviews": {
+        "title": "NFC-Driven Automated Review Generation",
+        "description": "Our NFC-Driven Automated Review Generation system revolutionizes how businesses gather customer feedback. By automating the process with NFC tags and AI, reviews are collected quickly and easily, reducing manual efforts and costs. Customers benefit from a streamlined experience, while businesses enjoy increased engagement, accurate feedback, and enhanced ratings. Scalable and equipped with detailed analytics, this solution helps industries like hospitality, retail, and dining boost their reputations efficiently",
+        "features": {
+          "automation": "Automated review collection",
+          "nfcIntegration": "Seamless NFC tag integration",
+          "aiProcessing": "AI-powered feedback analysis",
+          "customerExperience": "Streamlined customer experience",
+          "analytics": "Detailed performance analytics",
+          "scalability": "Scalable across multiple locations",
+          "efficiency": "Reduced manual effort and costs",
+          "engagement": "Increased customer engagement"
+        }
+      },
+      "cryptoMarketing": {
+        "title": "Crypto Marketing Package for Utility Projects",
+        "description": "Our Crypto Marketing Package is tailored exclusively for utility crypto projects, supporting them at every stage of development. The package includes brand strategy, content creation, community engagement, and influencer outreach. From optimized websites to targeted advertising and PR campaigns, our approach ensures increased visibility, trust, and adoption. Designed with scalability and measurable results in mind, this service drives growth while meeting the unique demands of the crypto landscape",
+        "features": {
+          "strategy": "Comprehensive brand strategy",
+          "content": "Professional content creation",
+          "community": "Active community engagement",
+          "influencers": "Strategic influencer outreach",
+          "optimization": "Website and SEO optimization",
+          "advertising": "Targeted advertising campaigns",
+          "pr": "Crypto-focused PR campaigns",
+          "analytics": "Performance tracking and analytics"
+        }
       }
     }
   },

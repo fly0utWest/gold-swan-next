@@ -1,27 +1,11 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
-import { Help, ChartSquare, Bottle } from "solar-icon-set";
+import { upcomingProjects } from "@/shared/models/projects";
 import ProjectCard from "@/shared/ui/project-card";
 import { getTranslations } from "next-intl/server";
 
 const ProjectsSection: React.FC = async () => {
   const t = await getTranslations("projects.upcoming");
-
-  const project = {
-    Icon: Help,
-    title: "aiSupport.title",
-    description: "aiSupport.description",
-    features: [
-      "aiSupport.features.availability",
-      "aiSupport.features.automation",
-      "aiSupport.features.integration",
-      "aiSupport.features.learning",
-      "aiSupport.features.analytics",
-      "aiSupport.features.scalability",
-      "aiSupport.features.automation",
-      "aiSupport.features.interactions",
-    ],
-  };
 
   return (
     <div
@@ -36,12 +20,15 @@ const ProjectsSection: React.FC = async () => {
       </Heading>
       <section className="w-full">
         <div className="flex flex-col gap-8 lg:items-center">
-          <ProjectCard
-            Icon={project.Icon}
-            title={t(project.title)}
-            description={t(project.description)}
-            features={project.features.map((feature) => t(feature))}
-          />
+          {upcomingProjects.map((project) => (
+            <ProjectCard
+              key={project.title}
+              Icon={project.Icon}
+              title={t(project.title)}
+              description={t(project.description)}
+              features={project.features.map((feature) => t(feature))}
+            />
+          ))}
         </div>
       </section>
     </div>
