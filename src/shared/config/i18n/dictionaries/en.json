@@ -4,6 +4,24 @@
     "contact": "Contact",
     "projects": "Projects"
   },
+  "projects": {
+    "upcoming": {
+      "heading": "Upcoming Projects",
+      "aiSupport": {
+        "title": "AI-Powered Support",
+        "description": "Our AI-Powered Support redefines customer service by addressing common challenges such as high costs, limited availability, and outdated solutions. With 24/7 availability, cost-efficient automation, and personalized interactions, the system seamlessly integrates with communication channels like messengers and email. It learns from customer queries, scales to handle simultaneous requests, and provides actionable analytics to improve service quality. This innovation ensures businesses can deliver exceptional support while optimizing resources",
+        "features": {
+          "availability": "24/7 availability",
+          "automation": "Cost-efficient automation",
+          "interactions": "Personalized interactions",
+          "integration": "Seamless integration with communication channels",
+          "learning": "Continuous learning from customer queries",
+          "scalability": "Scalable to handle simultaneous requests",
+          "analytics": "Actionable analytics for service improvement"
+        }
+      }
+    }
+  },
   "contact-form": {
     "nameRequired": "Please enter your name",
     "invalidEmail": "Please enter a valid email",
