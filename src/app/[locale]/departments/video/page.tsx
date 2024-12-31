@@ -71,7 +71,7 @@ export default function PhotoAndVideoShootingPage() {
         }))}
       />
       <SectionDelimeter />
-      {strategies.map((strategy, index) => (
+      {strategies.map((strategy) => (
         <div key={strategy.key}>
           <StrategySteps
             Icon={Camera}

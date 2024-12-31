@@ -1,12 +1,10 @@
-import { ReactNode } from "react";
 import Link from "./link";
-import {IconProps} from "solar-icon-set";
 
 export type DepartmentButtonProps = {
   disabled?: boolean;
   href?: string;
   name: string;
-  Icon: (allProps: IconProps) => JSX.Element;
+  Icon: (allProps: any) => JSX.Element;
 } & ({ disabled?: true } | { disabled?: false | undefined; href: string });
 
 export function DepartmentButton({

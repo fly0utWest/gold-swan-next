@@ -55,7 +55,7 @@ ${aditionalComment ? `*Additional Comments*: ${aditionalComment}` : ""}
     });
 
     return new NextResponse("Message sent", { status: 200 });
-  } catch (error: any) {
-    return new NextResponse("Message not sent", { status: 500 });
+  } catch (error: unknown) {
+    return NextResponse.json({ error: error }, { status: 500 });
   }
 }

@@ -98,7 +98,7 @@ export default function BrandDevelopmentPage() {
         }))}
       />
       <SectionDelimeter />
-      {strategies.map((strategy, index) => (
+      {strategies.map((strategy) => (
         <div key={strategy.key}>
           <StrategySteps
             Icon={StarRainbow}

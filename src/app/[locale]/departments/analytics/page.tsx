@@ -66,7 +66,7 @@ export default function AnalyticsAndStrategyPage() {
         }))}
       />
       <SectionDelimeter />
-      {strategies.map((strategy, index) => (
+      {strategies.map((strategy) => (
         <div key={strategy.key}>
           <StrategySteps
             Icon={PieChart3}

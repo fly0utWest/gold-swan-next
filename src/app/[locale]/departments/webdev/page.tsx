@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import AboutDepartment from "@/widgets/departments/about-department";
 import DepartmentOverview from "@/widgets/departments/department-overview";
 import DepartmentTools from "@/widgets/departments/department-tools";
-import StrategySteps from "@/widgets/departments/strategy-steps";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";

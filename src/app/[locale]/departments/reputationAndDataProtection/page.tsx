@@ -75,7 +75,7 @@ export default function ReputationAndDataProtectionPage() {
         }))}
       />
       <SectionDelimeter />
-      {strategies.map((strategy, index) => (
+      {strategies.map((strategy) => (
         <div key={strategy.key}>
           <StrategySteps
             Icon={ShieldCheck}

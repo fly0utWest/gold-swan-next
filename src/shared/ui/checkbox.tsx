@@ -1,6 +1,5 @@
 import React from "react";
 import { forwardRef } from "react";
-import { CheckSquare, CloseSquare } from "solar-icon-set";
 import { ReactNode } from "react";
 
 type CheckboxProps = {

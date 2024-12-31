@@ -1,10 +1,9 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
-import { IconProps } from "solar-icon-set/dist/types";
 import { useTranslations } from "next-intl";
 
 interface ProjectCardProps {
-  Icon: (allProps: IconProps) => JSX.Element;
+  Icon: (allProps: any) => JSX.Element;
   title: string;
   description: string;
   features: string[];

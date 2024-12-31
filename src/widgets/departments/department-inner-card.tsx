@@ -1,9 +1,8 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
-import { IconProps } from "solar-icon-set";
 
 export interface DepartmentInnerCardProps {
-  Icon?: (allProps: IconProps) => JSX.Element;
+  Icon?: (allProps: any) => JSX.Element;
   heading: {
     headingLevel: keyof JSX.IntrinsicElements;
     headingText: string;

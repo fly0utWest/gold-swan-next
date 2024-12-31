@@ -1,5 +1,4 @@
 import Link from "@/shared/ui/link";
-import Image from "next/image";
 import React from "react";
 
 export type DepartmentCardProps = {

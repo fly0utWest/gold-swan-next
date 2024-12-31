@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Oswald, Geist_Mono } from "next/font/google";
+import { Oswald} from "next/font/google";
 import "../_styles/globals.css";
 import Header from "@/shared/ui/header/header";
 import { NextIntlClientProvider } from "next-intl";
