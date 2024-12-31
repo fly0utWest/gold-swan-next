@@ -44,100 +44,547 @@
           "description": "Creating and distributing valuable content to attract customers."
         }
       },
-      "history": {
-        "title": "Historical Background",
-        "description": "Digital marketing began to actively develop in the 1990s with the mass adoption of the internet. Initially, it involved simple banner ads. By the 2000s, SEO and PPC became key tools. In the 2010s, the rise of social media made marketing more interactive and personalized."
-      },
-      "contentStrategy": {
-        "title": "Content and Posting Strategy",
-        "steps": {
-          "analyzeAudience": "Analyze the audience: Study the interests, needs, and pain points of the target audience.",
-          "createContentPlan": "Create a content plan: Plan posts based on key queries, goals, and trends.",
-          "seoOptimization": "SEO Optimization: Integrate keywords and structure materials for search engines.",
-          "useMultimediaFormats": "Use multimedia formats: Text, video, infographics, stories, and podcasts.",
-          "publishAndAnalyze": "Regularly publish high-quality content and analyze engagement."
-        },
-        "example": {
-          "description": "An online clothing store might publish:",
-          "details": {
-            "stylingRecommendations": "Articles with styling recommendations.",
-            "videoReviews": "Video reviews of new collections.",
-            "materialCare": "Photos and infographics on materials and fabric care."
-          }
-        }
-      },
-      "socialMediaManagement": {
-        "title": "Account Management and Promotion",
-        "steps": {
-          "createContent": "Create content: Develop posts, stories, videos, and creatives.",
-          "engageWithFollowers": "Engage with followers: Respond to comments and messages.",
-          "analyzeData": "Analyze data: Evaluate engagement, reach, and audience growth.",
-          "runTargetedAds": "Run targeted ads: Launch paid campaigns to attract the target audience."
-        },
-        "example": {
-          "description": "A cosmetics brand ran a campaign with video reviews and blogger collaborations, resulting in:",
-          "results": {
-            "increaseInFollowers": "A 35% increase in followers.",
-            "increaseInReach": "A 60% increase in reach."
-          }
-        }
-      },
-      "adCampaigns": {
-        "title": "Organizing Advertising Campaigns on Social Media",
-        "steps": {
-          "setUpTargeting": "Set up targeting: Based on interests, age, gender, and location.",
-          "createAdCreatives": "Create ad creatives: Develop compelling text, images, and videos.",
-          "optimizeBudget": "Optimize budget: Monitor and improve ad efficiency.",
-          "testAds": "A/B test ads: Compare versions to identify top performers."
-        },
-        "example": {
-          "description": "A restaurant launched an ad campaign offering delivery discounts to city residents.",
-          "results": {
-            "newOrders": "120 new orders within a week."
-          }
-        }
-      },
-      "emailMarketing": {
-        "title": "Email Marketing",
-        "steps": {
-          "segmentAudience": "Segment the audience: Divide subscribers based on behavior and interests.",
-          "createEmails": "Create emails: Include welcome series, promotions, updates, and reminders.",
-          "conductTesting": "Conduct A/B testing: Test headlines and email content to improve open rates.",
-          "analyzeResults": "Analyze results: Track metrics like open rates, CTR, and conversions."
-        },
-        "example": {
-          "description": "An online store sent reminder emails about abandoned carts offering a 10% discount.",
-          "results": {
-            "completedPurchases": "20% of customers completed their purchases."
-          }
-        }
-      },
-      "seoPpc": {
-        "seo": {
-          "title": "SEO (Search Engine Optimization)",
+      "strategies": {
+        "contentStrategy": {
+          "title": "Content Strategy",
           "steps": {
-            "technicalOptimization": "Technical optimization: Speed up websites and fix errors.",
-            "createSeoContent": "Create SEO content: Write articles and pages optimized with keywords.",
-            "buildLinks": "Build links: Place external links to boost website authority."
-          }
-        },
-        "ppc": {
-          "title": "PPC (Pay-Per-Click)",
-          "steps": {
-            "createAdCampaigns": "Create ad campaigns: Set up ads targeting key queries.",
-            "optimizeBudgets": "Optimize budgets: Monitor bids and improve ROI.",
-            "analyzeResults": "Analyze results: Evaluate conversions and campaign performance."
+            "analyze": "Study audience interests and needs.",
+            "plan": "Create a trend-based content plan.",
+            "optimize": "Integrate keywords for SEO.",
+            "execute": "Include text, video, and infographics.",
+            "review": "Publish and track engagement."
           },
-          "example": {
-            "description": "An electronics store launched a PPC ad campaign targeting queries like 'laptops on sale.'",
-            "results": {
-              "clicks": "2,000 clicks and 150 sales in one month."
-            }
+          "example": "Styling articles. Collection reviews. Infographics on care."
+        },
+        "socialMediaManagement": {
+          "title": "Social Media Management",
+          "steps": {
+            "analyze": "Track engagement and growth.",
+            "plan": "Develop posts, stories, and videos.",
+            "optimize": "Launch targeted ads.",
+            "execute": "Respond to followers.",
+            "review": "Evaluate performance metrics."
+          },
+          "example": "Cosmetics brand with blogger reviews. 35% growth in followers. 60% increase in reach."
+        },
+        "adCampaigns": {
+          "title": "Social Media Ads",
+          "steps": {
+            "analyze": "Evaluate ad performance.",
+            "plan": "Set criteria (age, location, interests).",
+            "optimize": "Monitor and adjust spending.",
+            "execute": "Run A/B tests.",
+            "review": "Assess campaign results."
+          },
+          "example": "Restaurant delivery discounts. 120 new orders in a week."
+        },
+        "emailMarketing": {
+          "title": "Email Marketing",
+          "steps": {
+            "analyze": "Monitor conversions and CTR.",
+            "plan": "Group subscribers by behavior.",
+            "optimize": "A/B test for open rates.",
+            "execute": "Send welcome and promo emails.",
+            "review": "Track campaign success."
+          },
+          "example": "Cart recovery emails with discounts. 20% cart completion."
+        },
+        "seoPpc": {
+          "seo": {
+            "title": "SEO",
+            "steps": {
+              "analyze": "Fix errors and improve speed.",
+              "plan": "Write keyword-optimized articles.",
+              "optimize": "Boost authority with backlinks.",
+              "execute": "Implement content and technical fixes.",
+              "review": "Track rankings and traffic."
+            },
+            "example": "Blog post optimization for 'how to bake a cake'. 30% increase in organic traffic. 15% higher search engine rankings for target keywords."
+          },
+          "ppc": {
+            "title": "PPC",
+            "steps": {
+              "analyze": "Evaluate clicks and sales.",
+              "plan": "Run ads for target queries.",
+              "optimize": "Adjust ROI.",
+              "execute": "Launch ad campaigns.",
+              "review": "Assess ad performance."
+            },
+            "example": "Electronics ads for 'laptops on sale.' 2,000 clicks. 150 sales in a month."
           }
+        }
+      }
+    },
+    "brandDevelopment": {
+      "title": "Brand Development and PR",
+      "description": "Marketing is the backbone of any business strategy, focusing on creating value for customers and maintaining strong customer relationships. It includes a range of activities like brand development, advertising, public relations, and market research, which aim to reach target audiences and influence their purchasing decisions.",
+      "overview": {
+        "title": "Overview",
+        "definition": "Brand development and public relations are essential tools for building strong, recognizable brands and maintaining positive relationships with the public. These strategies ensure brands thrive in competitive markets and remain resilient to challenges.",
+        "benefits": {
+          "strongBrandIdentity": "Developing a unique and strong brand identity",
+          "enhancedPublicImage": "Establishing a positive public image",
+          "longTermSuccess": "Ensuring long-term business success"
+        }
+      },
+      "tools": {
+        "title": "Key Tools",
+        "brandBook": {
+          "title": "Brand Book Creation",
+          "description": "A brand book serves as a comprehensive guide that defines the visual and communicative identity of a business. It ensures consistency across all platforms and touchpoints."
+        },
+        "brandPositioning": {
+          "title": "Brand Positioning",
+          "description": "Brand positioning differentiates a company in the market by highlighting its unique value proposition (UVP) and establishing a clear identity."
+        },
+        "uspDevelopment": {
+          "title": "Unique Selling Proposition (USP) Development",
+          "description": "A strong USP defines why customers should choose a particular product or service over competitors."
+        },
+        "creativeAdvertising": {
+          "title": "Creative Advertising Campaigns",
+          "description": "Creative advertising engages audiences through innovative concepts, visuals, and messaging that stand out."
+        },
+        "prAndMediaRelations": {
+          "title": "PR and Media Relations",
+          "description": "Public relations (PR) focuses on managing communications between a company and its audience to enhance credibility and trust."
+        },
+        "influencerMarketing": {
+          "title": "Influencer Marketing",
+          "description": "Influencer marketing leverages trusted voices in a niche to promote a brand’s products or services."
+        },
+        "eventOrganization": {
+          "title": "Event Organization",
+          "description": "Hosting events boosts brand visibility, strengthens relationships with customers, and generates positive publicity."
+        },
+        "crisisPRManagement": {
+          "title": "Crisis PR Management",
+          "description": "Crisis PR focuses on protecting a brand’s image during negative situations or reputational threats."
+        }
+      },
+      "strategies": {
+        "contentStrategy": {
+          "title": "Brand Strategy",
+          "steps": {
+            "research": "Analyze the brand’s mission, values, and audience expectations.",
+            "design": "Develop logo concepts, select color schemes, and refine typography.",
+            "documentation": "Compile all elements into a brand book with usage guidelines.",
+            "audienceResearch": "Identify customer needs and preferences.",
+            "valueMapping": "Highlight unique features and benefits that appeal to the audience.",
+            "strategyImplementation": "Align messaging and marketing campaigns with the positioning strategy."
+          },
+          "example": "A tech startup developed a brand book that included a sleek logo, modern fonts, and a minimalistic color palette, ensuring consistent design across its website, social media, and marketing materials."
+        },
+        "positioning": {
+          "title": "Brand Positioning Strategy",
+          "steps": {
+            "defineUVP": "Identify what sets the brand apart from competitors.",
+            "keyMessaging": "Craft concise and impactful messages for target audiences.",
+            "competitorAnalysis": "Evaluate competitors’ strengths and weaknesses to position the brand effectively."
+          },
+          "example": "A coffee shop positioned itself as the 'eco-friendly, artisanal choice' by emphasizing sustainable sourcing and craftsmanship, attracting environmentally conscious customers."
+        },
+        "usp": {
+          "title": "USP Development",
+          "steps": {
+            "featureAnalysis": "Identify product strengths and benefits.",
+            "targetedMessaging": "Create clear, concise statements that appeal to the target market.",
+            "proofPoints": "Demonstrate the USP through real examples or data."
+          },
+          "example": "A delivery service highlighted its USP as 'Guaranteed delivery within 30 minutes or it’s free,' gaining a competitive edge and customer loyalty."
+        },
+        "advertisingCampaigns": {
+          "title": "Creative Advertising Campaigns",
+          "steps": {
+            "ideaGeneration": "Brainstorm unique concepts that resonate with the audience.",
+            "contentProduction": "Develop visuals, copy, and multimedia materials.",
+            "crossPlatformDistribution": "Launch campaigns across online and offline channels.",
+            "performanceAnalysis": "Monitor results and adjust campaigns for maximum impact."
+          },
+          "example": "A clothing brand ran a viral ad campaign featuring short-form videos on TikTok, showcasing diverse fashion styles and achieving millions of views."
+        },
+        "prRelations": {
+          "title": "PR and Media Relations",
+          "steps": {
+            "messageCrafting": "Develop key talking points for PR communication.",
+            "distribution": "Send press releases to targeted media contacts.",
+            "followUp": "Engage with media to ensure coverage and address queries."
+          },
+          "example": "A tech company announced a new product launch via press releases and media interviews, gaining widespread coverage in industry publications."
+        },
+        "influencerCampaigns": {
+          "title": "Influencer Marketing Campaigns",
+          "steps": {
+            "research": "Identify relevant influencers based on audience size, engagement, and niche.",
+            "collaboration": "Develop campaigns that align with both the influencer’s style and the brand’s goals.",
+            "analysis": "Track performance metrics such as reach, clicks, and conversions."
+          },
+          "example": "A beauty brand partnered with top beauty bloggers to showcase new skincare products, resulting in increased sales and brand awareness."
+        },
+        "eventPlanning": {
+          "title": "Event Organization",
+          "steps": {
+            "conceptCreation": "Define the purpose and format of the event.",
+            "execution": "Organize all logistics, from invitations to on-site activities.",
+            "followUp": "Share event highlights through content to maximize exposure."
+          },
+          "example": "A fashion brand hosted a runway show to present its latest collection, attracting media coverage and influencers to promote the event."
+        },
+        "crisisManagement": {
+          "title": "Crisis PR Management",
+          "steps": {
+            "situationAnalysis": "Assess the crisis and its impact on the brand.",
+            "responseStrategy": "Communicate clear, solution-focused messages to stakeholders.",
+            "monitoring": "Track public sentiment and adjust communication as needed."
+          },
+          "example": "A company issued a formal apology and outlined immediate corrective actions after a product recall, regaining customer trust and confidence."
+        }
+      }
+    },
+    "reputationAndDataProtection": {
+      "title": "Reputation and Data Protection",
+      "description": "Reputation is a critical asset for any brand, and safeguarding it in the digital age requires a structured and proactive approach. This section highlights services designed to monitor, enhance, and protect online reputations while ensuring robust data security measures are in place.",
+      "overview": {
+        "title": "Overview",
+        "definition": "Safeguard your brand’s reputation and data security through structured, effective strategies.",
+        "benefits": {
+          "proactiveReputationManagement": "Proactive reputation management to safeguard your brand.",
+          "enhancedCustomerTrust": "Enhanced customer trust through robust data protection.",
+          "crisisPreparedness": "Preparedness for crises with clear action plans."
+        }
+      },
+      "tools": {
+        "title": "Tools",
+        "brandMonitoring": {
+          "title": "Brand Monitoring",
+          "description": "Real-time tracking of brand mentions and sentiment across platforms."
+        },
+        "sentimentAnalysis": {
+          "title": "Sentiment Analysis",
+          "description": "AI-driven tools to gauge public sentiment and adapt strategies accordingly."
+        },
+        "dataProtection": {
+          "title": "Data Protection",
+          "description": "Secure sensitive data through encryption, access controls, and audits."
+        },
+        "crisisManagement": {
+          "title": "Crisis Management",
+          "description": "Develop and execute crisis communication strategies effectively."
+        },
+        "negativeContentMitigation": {
+          "title": "Negative Content Mitigation",
+          "description": "Remove or suppress harmful online content to protect brand image."
+        }
+      },
+      "strategies": {
+        "onlineReputationManagement": {
+          "title": "Online Reputation Management",
+          "steps": {
+            "audit": "Assess current online sentiment and identify areas needing improvement.",
+            "strategyDevelopment": "Create a personalized action plan to enhance online reputation.",
+            "execution": "Publish high-quality content, manage reviews, and address negative mentions effectively."
+          },
+          "example": "A restaurant improved its Google rating by addressing complaints, publishing positive stories, and engaging with reviewers."
+        },
+        "negativeContentRemoval": {
+          "title": "Negative Content Removal and Mitigation",
+          "steps": {
+            "contentIdentification": "Monitor platforms for harmful mentions.",
+            "removalAssessment": "Evaluate the most effective removal strategies (legal, platform-based, or SEO).",
+            "execution": "Take legal action or suppress visibility through SEO tactics."
+          },
+          "example": "A small business reduced the impact of defamatory blog posts using legal tools and SEO improvements."
+        },
+        "crisisManagement": {
+          "title": "Crisis Management",
+          "steps": {
+            "assessTheCrisis": "Understand the scale and nature of the issue.",
+            "rapidResponse": "Release official statements and manage public communications.",
+            "continuousMonitoring": "Track sentiment and adjust strategies as needed."
+          },
+          "example": "A company addressed social media backlash transparently and regained public trust through effective crisis communication."
+        },
+        "sentimentAnalysis": {
+          "title": "Sentiment Analysis",
+          "steps": {
+            "dataMining": "Collect interactions and mentions across platforms.",
+            "categorization": "Segment data into positive, neutral, and negative sentiment.",
+            "insightGeneration": "Share tailored recommendations to enhance brand perception."
+          },
+          "example": "An e-commerce brand used sentiment analysis to address complaints about delivery delays, increasing customer satisfaction."
+        },
+        "continuousMonitoring": {
+          "title": "Continuous Brand Monitoring",
+          "steps": {
+            "toolSetup": "Use platforms like Google Alerts and custom dashboards.",
+            "monitorMetrics": "Track sentiment scores and audience reach.",
+            "rapidResponse": "Address potential concerns promptly to minimize impact."
+          },
+          "example": "A tech company resolved a customer complaint on Twitter before it escalated, preserving its reputation."
+        },
+        "dataProtection": {
+          "title": "Data Protection Services",
+          "steps": {
+            "systemAssessment": "Conduct a full audit of current security measures.",
+            "implementation": "Apply encryption, firewalls, and access controls.",
+            "training": "Educate staff on best practices to prevent breaches."
+          },
+          "example": "A financial institution implemented two-factor authentication and advanced encryption, reducing the risk of data breaches."
+        }
+      }
+    },
+    "analyticsAndStrategy": {
+      "title": "Analytics and Strategy",
+      "description": "Analytics and Strategy are the backbone of successful business decision-making and growth. This department focuses on empowering companies with actionable insights, detailed market analysis, strategic planning, and data-driven decision-making processes.",
+      "overview": {
+        "title": "Overview",
+        "definition": "Empowering companies with data-driven decision-making, insights, and strategic planning to ensure long-term growth.",
+        "benefits": {
+          "actionableInsights": "Actionable insights to drive business growth.",
+          "dataDrivenDecisionMaking": "Data-driven decision-making for sustainable progress.",
+          "competitiveAdvantage": "Gaining a competitive advantage through strategic analysis."
+        }
+      },
+      "tools": {
+        "title": "Tools",
+        "businessAnalytics": {
+          "title": "Business Analytics",
+          "description": "The practice of iterative exploration of data to drive decision-making and improve outcomes."
+        },
+        "marketResearch": {
+          "title": "Market Research",
+          "description": "Systematic collection and analysis of data about customers, competitors, and market conditions."
+        },
+        "strategicPlanning": {
+          "title": "Strategic Planning",
+          "description": "A process for outlining long-term goals, resource allocation, and risk management."
+        },
+        "predictiveAnalytics": {
+          "title": "Predictive Analytics",
+          "description": "Using AI and machine learning to forecast trends and guide strategic decisions."
+        }
+      },
+      "strategies": {
+        "businessAnalytics": {
+          "title": "Business Analytics",
+          "steps": {
+            "dataCollection": "Gathering relevant data from multiple sources.",
+            "dataAnalysis": "Analyzing the data to uncover patterns and insights.",
+            "reporting": "Delivering actionable insights through reports."
+          },
+          "example": "A retail company used analytics to optimize inventory management, cutting costs by 15%."
+        },
+        "marketResearch": {
+          "title": "Market Research",
+          "steps": {
+            "dataCollection": "Gathering qualitative and quantitative data from surveys and interviews.",
+            "trendAnalysis": "Analyzing market trends and consumer behavior.",
+            "strategicRecommendations": "Providing actionable insights to refine business strategies."
+          },
+          "example": "A tech startup increased user acquisition by 30% through market research and refinement."
+        },
+        "strategicPlanning": {
+          "title": "Strategic Planning",
+          "steps": {
+            "goalSetting": "Defining long-term objectives and short-term milestones.",
+            "riskAssessment": "Identifying and mitigating potential challenges.",
+            "execution": "Executing the strategic plan with constant monitoring."
+          },
+          "example": "A manufacturing company achieved 25% growth by expanding into new markets through strategic planning."
+        },
+        "dataDrivenDecisionMaking": {
+          "title": "Data-Driven Decision Making",
+          "steps": {
+            "dataConsolidation": "Consolidating data from all departments for comprehensive analysis.",
+            "analysis": "Using predictive models to anticipate trends and outcomes.",
+            "implementation": "Applying insights to shape strategies and decisions."
+          },
+          "example": "A logistics company reduced transportation costs by 20% with predictive analytics to optimize delivery routes."
+        }
+      }
+    },
+
+    "photoVideoShooting": {
+      "title": "Photo and Video Shooting Services",
+      "description": "Creating impactful visual content is essential for brands aiming to connect with their audience effectively. Photo and Video Shooting Services focus on delivering professional-grade visuals tailored to diverse business needs, ranging from commercial campaigns to personal events. With advanced techniques and innovative approaches, this department ensures each project resonates with its intended audience.",
+      "overview": {
+        "title": "Overview",
+        "definition": "Photo and Video Shooting Services provide high-quality visuals that enhance brand communication through commercial photography, event photography, video production, drone photography, and editing. These services are designed to meet the diverse needs of businesses and individuals.",
+        "benefits": {
+          "professionalVisualContent": "Professional visual content that aligns with brand identity.",
+          "enhancedBrandEngagement": "Enhanced brand engagement through high-quality imagery and videos.",
+          "highImpactMarketing": "High-impact marketing through compelling visual storytelling."
+        }
+      },
+      "tools": {
+        "title": "Our Services",
+        "commercialPhotography": {
+          "title": "Commercial Photography",
+          "description": "Commercial photography elevates brand image by producing visually stunning content that attracts customers and enhances brand perception."
+        },
+        "eventPhotography": {
+          "title": "Event Photography",
+          "description": "Event photography captures the essence of live experiences, preserving moments that create lasting impressions."
+        },
+        "videoProduction": {
+          "title": "Video Production",
+          "description": "Video production transforms ideas into engaging narratives, helping brands communicate their messages with clarity and impact."
+        },
+        "dronePhotography": {
+          "title": "Drone Photography",
+          "description": "Drone photography offers a bird’s-eye view, providing dramatic perspectives that elevate storytelling and visual impact."
+        },
+        "editingPostProduction": {
+          "title": "Editing and Post-Production",
+          "description": "Editing and post-production refine raw visuals, transforming them into captivating content that aligns with a brand’s identity."
+        }
+      },
+      "strategies": {
+        "commercialPhotography": {
+          "title": "Commercial Photography",
+          "steps": {
+            "productPhotography": "Showcasing products with high-quality images for e-commerce, catalogs, and advertisements.",
+            "corporatePortraits": "Professional visuals for team profiles, executive headshots, and corporate branding.",
+            "advertisingShoots": "Creative photography for marketing campaigns, billboards, and social media ads."
+          },
+          "example": "A retail clothing brand increased its online conversions by 25% after updating its website with professionally styled and shot product photos."
+        },
+        "eventPhotography": {
+          "title": "Event Photography",
+          "steps": {
+            "corporateEvents": "Documenting conferences, product launches, and company milestones.",
+            "privateCelebrations": "Capturing special occasions like weddings, anniversaries, and family gatherings.",
+            "promotionalEvents": "Showcasing brand activations and experiential marketing campaigns."
+          },
+          "example": "A tech startup used professionally shot images from their product launch to create a compelling social media campaign, boosting their audience engagement by 40%."
+        },
+        "videoProduction": {
+          "title": "Video Production",
+          "steps": {
+            "conceptDevelopment": "Collaborating with clients to craft a unique storyline.",
+            "filming": "Using high-quality equipment and techniques for precise execution.",
+            "editing": "Adding animations, soundtracks, and effects to deliver polished final videos."
+          },
+          "example": "A financial services firm gained 50% more leads by introducing an explainer video that simplified their complex offerings for potential clients."
+        },
+        "dronePhotography": {
+          "title": "Drone Photography",
+          "steps": {
+            "aerialEventCoverage": "Capturing large-scale events with stunning overhead views.",
+            "propertyShowcases": "Enhancing real estate listings with high-quality aerial visuals.",
+            "scenicPhotography": "Documenting landscapes and architectural marvels from unique angles."
+          },
+          "example": "A real estate agency increased property sales by 30% after incorporating drone footage into their marketing materials."
+        },
+        "editingPostProduction": {
+          "title": "Editing and Post-Production",
+          "steps": {
+            "photoEditing": "Adjusting lighting, colors, and composition for maximum appeal.",
+            "videoEnhancements": "Adding transitions, effects, and music for professional-grade videos.",
+            "advancedTechniques": "Applying motion graphics, animations, and color grading."
+          },
+          "example": "A luxury restaurant improved its online presence by featuring expertly edited food photography, increasing reservations by 20%."
+        }
+      }
+    },
+    "webdev": {
+      "title": "Website and Web Application Development",
+      "description": "In today's digital landscape, a strong online presence is the foundation of business success. The Website and Web Application Development department specializes in building innovative, user-friendly, and technically sound platforms tailored to meet diverse business needs. From custom websites to advanced applications, this department ensures businesses thrive in the competitive digital space.",
+      "sections": {
+        "websiteDevelopment": {
+          "title": "Website Development",
+          "description": "A well-designed website is more than a digital storefront—it’s the face of your brand and a key driver of engagement and conversions.",
+          "features": {
+            "customWebsiteDesign": "Tailored designs reflecting the brand's identity and audience preferences.",
+            "responsiveDesign": "Optimized for seamless performance across all devices.",
+            "cms": "Utilizing platforms like WordPress or Joomla for easy content updates."
+          },
+          "howItWorks": {
+            "conceptDevelopment": "Collaborating to define the website's goals and structure.",
+            "designAndBuild": "Combining creative design with robust technical development.",
+            "launchAndOptimization": "Testing extensively before going live to ensure a smooth user experience."
+          },
+          "example": "A retail brand revamped its website, focusing on speed and user-friendliness, leading to a 35% increase in online sales."
+        },
+        "eCommerceSolutions": {
+          "title": "E-commerce Solutions",
+          "description": "E-commerce platforms transform how businesses sell, enabling global reach and frictionless transactions.",
+          "features": {
+            "onlineStoreDevelopment": "Secure payment systems and intuitive navigation.",
+            "integrationServices": "Adding essential tools like inventory tracking and customer reviews.",
+            "performanceOptimization": "Ensuring fast loading times and minimal downtime."
+          },
+          "howItWorks": {
+            "platformSelection": "Identifying the right e-commerce framework for your needs.",
+            "designAndIntegration": "Building features that enhance usability and efficiency.",
+            "maintenanceAndUpgrades": "Ensuring continuous performance improvements."
+          },
+          "example": "An e-commerce store doubled its revenue within six months of launching an optimized, user-centric online platform."
+        },
+        "webApplicationDevelopment": {
+          "title": "Web Application Development",
+          "description": "Web applications deliver interactive and dynamic solutions, streamlining operations and enhancing user engagement.",
+          "features": {
+            "customApplications": "Tailored tools for operations, analysis, or user interaction.",
+            "apiIntegration": "Connecting with external systems to expand capabilities.",
+            "scalableSolutions": "Designed to grow with the business."
+          },
+          "howItWorks": {
+            "needsAnalysis": "Understanding the challenges and goals.",
+            "development": "Building secure and scalable applications using modern frameworks.",
+            "deployment": "Rigorous testing before launch to ensure functionality and security."
+          },
+          "example": "A logistics company implemented a custom app for real-time tracking, improving efficiency by 40%."
+        },
+        "mobileWebDevelopment": {
+          "title": "Mobile Web Development",
+          "description": "With the rise of mobile users, mobile-first design ensures websites are effective and engaging across all devices.",
+          "features": {
+            "mobileOptimization": "Designing for speed and usability on small screens.",
+            "adaptiveInterfaces": "Dynamic layouts for a seamless experience.",
+            "seoBestPractices": "Improving visibility on search engines with mobile-friendly design."
+          },
+          "howItWorks": {
+            "mobileFirstStrategy": "Prioritizing mobile design during development.",
+            "crossDeviceTesting": "Ensuring compatibility with multiple devices and platforms.",
+            "feedbackIntegration": "Iterative improvements based on real-world usage."
+          },
+          "example": "A news portal increased mobile traffic by 60% with a redesign focused on mobile usability."
+        },
+        "uxUiDesign": {
+          "title": "UX/UI Design",
+          "description": "Exceptional UX/UI design turns platforms into intuitive, visually appealing tools that users enjoy interacting with.",
+          "features": {
+            "prototyping": "Developing blueprints to test and refine ideas.",
+            "userCenteredDesign": "Aligning with user needs and behaviors.",
+            "aestheticEnhancements": "Cohesive color schemes, typography, and layout."
+          },
+          "howItWorks": {
+            "research": "Analyzing user behaviors and expectations.",
+            "designProcess": "Creating visually stunning and user-friendly interfaces.",
+            "usabilityTesting": "Collecting feedback for continuous refinement."
+          },
+          "example": "A fintech app reduced user churn by 25% after implementing a more intuitive interface."
+        },
+        "pwa": {
+          "title": "Progressive Web Applications (PWA)",
+          "description": "PWAs merge the best features of websites and mobile apps, offering speed, reliability, and offline access.",
+          "features": {
+            "offlineFunctionality": "Ensuring usability without an internet connection.",
+            "appLikeExperience": "Push notifications and full-screen navigation.",
+            "crossBrowserCompatibility": "Reliable performance on various platforms."
+          },
+          "howItWorks": {
+            "pwaDesign": "Mapping features to user needs.",
+            "development": "Leveraging frameworks like Angular or React.",
+            "launchAndMaintenance": "Continuous improvements for optimal performance."
+          },
+          "example": "An educational platform boosted engagement by 50% with a PWA offering offline lessons."
         }
       }
     }
   },
+
   "projects": {
     "upcoming": {
       "heading": "Upcoming Projects",

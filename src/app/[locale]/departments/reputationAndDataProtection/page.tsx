@@ -7,42 +7,49 @@ import StrategySteps from "@/widgets/departments/strategy-steps";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import { GraphNewUp } from "solar-icon-set";
+import { ShieldCheck } from "solar-icon-set";
 
-export default function MarketingPage() {
-  const t = useTranslations("departments.marketing");
+export default function ReputationAndDataProtectionPage() {
+  const t = useTranslations("departments.reputationAndDataProtection");
 
   const benefits = [
-    "preciseAudienceTargeting",
-    "realTimeResults",
-    "costEfficientCampaigns",
+    "proactiveReputationManagement",
+    "crisisPreparedness",
+    "enhancedCustomerTrust",
   ];
 
-  const tools = ["smm", "ppc", "seo", "emailMarketing", "contentMarketing"];
+  const tools = [
+    "brandMonitoring",
+    "negativeContentMitigation",
+    "crisisManagement",
+    "sentimentAnalysis",
+    "dataProtection",
+  ];
+
   const strategies = [
     {
-      key: "contentStrategy",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "onlineReputationManagement",
+      steps: ["audit", "strategyDevelopment", "execution"],
     },
     {
-      key: "socialMediaManagement",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "negativeContentRemoval",
+      steps: ["contentIdentification", "removalAssessment", "execution"],
     },
     {
-      key: "adCampaigns",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "crisisManagement",
+      steps: ["assessTheCrisis", "rapidResponse", "continuousMonitoring"],
     },
     {
-      key: "emailMarketing",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "sentimentAnalysis",
+      steps: ["dataMining", "categorization", "insightGeneration"],
     },
     {
-      key: "seoPpc.seo",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "continuousMonitoring",
+      steps: ["toolSetup", "monitorMetrics", "rapidResponse"],
     },
     {
-      key: "seoPpc.ppc",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "dataProtection",
+      steps: ["systemAssessment", "implementation", "training"],
     },
   ];
 
@@ -69,18 +76,17 @@ export default function MarketingPage() {
       />
       <SectionDelimeter />
       {strategies.map((strategy, index) => (
-        <>
+        <div key={strategy.key}>
           <StrategySteps
-            key={strategy.key}
-            Icon={GraphNewUp}
+            Icon={ShieldCheck}
             heading={t(`strategies.${strategy.key}.title`)}
             steps={strategy.steps.map((step) =>
               t(`strategies.${strategy.key}.steps.${step}`)
             )}
             example={t(`strategies.${strategy.key}.example`)}
           />
-          <SectionDelimeter key={index} />
-        </>
+          <SectionDelimeter />
+        </div>
       ))}
       <Link href="/contact" className="block w-fit mx-auto mt-16">
         <Button className="w-48 px-[0!important]">CONTACT US</Button>

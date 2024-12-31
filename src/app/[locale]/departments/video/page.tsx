@@ -7,42 +7,45 @@ import StrategySteps from "@/widgets/departments/strategy-steps";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import { GraphNewUp } from "solar-icon-set";
+import { Camera } from "solar-icon-set";
 
-export default function MarketingPage() {
-  const t = useTranslations("departments.marketing");
+export default function PhotoAndVideoShootingPage() {
+  const t = useTranslations("departments.photoVideoShooting");
 
   const benefits = [
-    "preciseAudienceTargeting",
-    "realTimeResults",
-    "costEfficientCampaigns",
+    "professionalVisualContent",
+    "enhancedBrandEngagement",
+    "highImpactMarketing",
   ];
 
-  const tools = ["smm", "ppc", "seo", "emailMarketing", "contentMarketing"];
+  const tools = [
+    "commercialPhotography",
+    "eventPhotography",
+    "videoProduction",
+    "dronePhotography",
+    "editingPostProduction",
+  ];
+
   const strategies = [
     {
-      key: "contentStrategy",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "commercialPhotography",
+      steps: ["productPhotography", "corporatePortraits", "advertisingShoots"],
     },
     {
-      key: "socialMediaManagement",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "eventPhotography",
+      steps: ["corporateEvents", "privateCelebrations", "promotionalEvents"],
     },
     {
-      key: "adCampaigns",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "videoProduction",
+      steps: ["conceptDevelopment", "filming", "editing"],
     },
     {
-      key: "emailMarketing",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "dronePhotography",
+      steps: ["aerialEventCoverage", "propertyShowcases", "scenicPhotography"],
     },
     {
-      key: "seoPpc.seo",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-    {
-      key: "seoPpc.ppc",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "editingPostProduction",
+      steps: ["photoEditing", "videoEnhancements", "advancedTechniques"],
     },
   ];
 
@@ -69,18 +72,17 @@ export default function MarketingPage() {
       />
       <SectionDelimeter />
       {strategies.map((strategy, index) => (
-        <>
+        <div key={strategy.key}>
           <StrategySteps
-            key={strategy.key}
-            Icon={GraphNewUp}
+            Icon={Camera}
             heading={t(`strategies.${strategy.key}.title`)}
             steps={strategy.steps.map((step) =>
               t(`strategies.${strategy.key}.steps.${step}`)
             )}
             example={t(`strategies.${strategy.key}.example`)}
           />
-          <SectionDelimeter key={index} />
-        </>
+          <SectionDelimeter />
+        </div>
       ))}
       <Link href="/contact" className="block w-fit mx-auto mt-16">
         <Button className="w-48 px-[0!important]">CONTACT US</Button>

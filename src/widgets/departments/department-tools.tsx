@@ -3,6 +3,7 @@ import Heading from "@/shared/ui/heading";
 import DepartmentInnerCard, {
   DepartmentInnerCardProps,
 } from "./department-inner-card";
+import { Key } from "solar-icon-set";
 
 interface DepartmentToolsProps {
   heading: string;
@@ -15,9 +16,12 @@ const DepartmentTools: React.FC<DepartmentToolsProps> = ({
 }) => {
   return (
     <div className="max-w-screen-2xl p-6 md:mx-auto w-full space-y-6">
-      <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
-        {heading}
-      </Heading>
+      <div className="flex gap-2">
+        <Key size={32} color="var(--primary-500)" />
+        <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
+          {heading}
+        </Heading>
+      </div>
 
       <section className="flex flex-col gap-6 lg:flex-row flex-wrap">
         {tools.map((tool, index) => (

@@ -7,42 +7,72 @@ import StrategySteps from "@/widgets/departments/strategy-steps";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import { GraphNewUp } from "solar-icon-set";
+import { StarRainbow } from "solar-icon-set";
 
-export default function MarketingPage() {
-  const t = useTranslations("departments.marketing");
+export default function BrandDevelopmentPage() {
+  const t = useTranslations("departments.brandDevelopment");
 
   const benefits = [
-    "preciseAudienceTargeting",
-    "realTimeResults",
-    "costEfficientCampaigns",
+    "strongBrandIdentity",
+    "enhancedPublicImage",
+    "longTermSuccess",
   ];
 
-  const tools = ["smm", "ppc", "seo", "emailMarketing", "contentMarketing"];
+  const tools = [
+    "brandBook",
+    "brandPositioning",
+    "uspDevelopment",
+    "creativeAdvertising",
+    "prAndMediaRelations",
+    "influencerMarketing",
+    "eventOrganization",
+    "crisisPRManagement",
+  ];
+
   const strategies = [
     {
       key: "contentStrategy",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      steps: [
+        "research",
+        "design",
+        "documentation",
+        "audienceResearch",
+        "valueMapping",
+        "strategyImplementation",
+      ],
     },
     {
-      key: "socialMediaManagement",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "positioning",
+      steps: ["defineUVP", "keyMessaging", "competitorAnalysis"],
     },
     {
-      key: "adCampaigns",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "usp",
+      steps: ["featureAnalysis", "targetedMessaging", "proofPoints"],
     },
     {
-      key: "emailMarketing",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "advertisingCampaigns",
+      steps: [
+        "ideaGeneration",
+        "contentProduction",
+        "crossPlatformDistribution",
+        "performanceAnalysis",
+      ],
     },
     {
-      key: "seoPpc.seo",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "prRelations",
+      steps: ["messageCrafting", "distribution", "followUp"],
     },
     {
-      key: "seoPpc.ppc",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
+      key: "influencerCampaigns",
+      steps: ["research", "collaboration", "analysis"],
+    },
+    {
+      key: "eventPlanning",
+      steps: ["conceptCreation", "execution", "followUp"],
+    },
+    {
+      key: "crisisManagement",
+      steps: ["situationAnalysis", "responseStrategy", "monitoring"],
     },
   ];
 
@@ -69,18 +99,17 @@ export default function MarketingPage() {
       />
       <SectionDelimeter />
       {strategies.map((strategy, index) => (
-        <>
+        <div key={strategy.key}>
           <StrategySteps
-            key={strategy.key}
-            Icon={GraphNewUp}
+            Icon={StarRainbow}
             heading={t(`strategies.${strategy.key}.title`)}
             steps={strategy.steps.map((step) =>
               t(`strategies.${strategy.key}.steps.${step}`)
             )}
             example={t(`strategies.${strategy.key}.example`)}
           />
-          <SectionDelimeter key={index} />
-        </>
+          <SectionDelimeter />
+        </div>
       ))}
       <Link href="/contact" className="block w-fit mx-auto mt-16">
         <Button className="w-48 px-[0!important]">CONTACT US</Button>

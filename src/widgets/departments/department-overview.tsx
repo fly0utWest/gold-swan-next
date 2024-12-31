@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
+import { QuestionCircle } from "solar-icon-set";
 
 interface DepartmentOverviewProps {
   heading: string;
@@ -15,9 +16,12 @@ const DepartmentOverview: React.FC<DepartmentOverviewProps> = ({
   return (
     <div className="max-w-screen-2xl p-6 md:mx-auto w-full space-y-6">
       <div className="flex flex-col gap-4 text-xl">
-        <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
-          {heading}
-        </Heading>
+        <div className="flex items-center gap-2">
+          <QuestionCircle size={32} color="var(--primary-500)" />
+          <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
+            {heading}
+          </Heading>
+        </div>
         <p>{definition}</p>
       </div>
 

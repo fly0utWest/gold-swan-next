@@ -17,7 +17,7 @@ const DepartmentInnerCard: React.FC<DepartmentInnerCardProps> = ({
   description,
 }) => {
   return (
-    <div className="p-6 bg-gray-100 dark:bg-black border-2 border-primary-400 rounded-lg">
+    <div className="p-6 bg-gray-100 dark:bg-black border-2 border-primary-400 rounded-2xl">
       <div className="flex gap-4">
         {Icon ? <Icon size={32} color="var(--primary-500)" /> : null}
         <Heading
