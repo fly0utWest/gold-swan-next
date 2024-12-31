@@ -1,8 +1,142 @@
 {
   "nav": {
+    "home": "Home",
+    "departments": "Departments",
     "services": "Services",
     "contact": "Contact",
-    "projects": "Projects"
+    "projects": "Projects",
+    "description": "We are a digital agency that specializes in web development and marketing"
+  },
+  "departments": {
+    "marketing": {
+      "title": "Digital Marketing",
+      "description": "Comprehensive strategies and tools for promoting brands, products, and services in the digital space.",
+      "overview": {
+        "title": "Overview",
+        "definition": "Digital marketing is a set of strategies and tools for promoting brands, products, and services in the digital space. It allows companies to precisely target audiences, measure results in real-time, and optimize campaigns efficiently.",
+        "benefits": {
+          "title": "Common Benefits",
+          "preciseAudienceTargeting": "Precise audience targeting through data segmentation",
+          "realTimeResults": "Real-time results measurement",
+          "costEfficientCampaigns": "Cost-efficient campaign optimization"
+        }
+      },
+      "tools": {
+        "title": "Key Tools",
+        "seo": {
+          "title": "SEO (Search Engine Optimization)",
+          "description": "Optimizing websites to improve visibility in search engines like Google and Yandex."
+        },
+        "ppc": {
+          "title": "PPC (Pay-Per-Click)",
+          "description": "Paid advertising where advertisers pay for each click."
+        },
+        "smm": {
+          "title": "SMM (Social Media Marketing)",
+          "description": "Promoting brands through social media channels."
+        },
+        "emailMarketing": {
+          "title": "Email Marketing",
+          "description": "Using newsletters to engage with the audience."
+        },
+        "contentMarketing": {
+          "title": "Content Marketing",
+          "description": "Creating and distributing valuable content to attract customers."
+        }
+      },
+      "history": {
+        "title": "Historical Background",
+        "description": "Digital marketing began to actively develop in the 1990s with the mass adoption of the internet. Initially, it involved simple banner ads. By the 2000s, SEO and PPC became key tools. In the 2010s, the rise of social media made marketing more interactive and personalized."
+      },
+      "contentStrategy": {
+        "title": "Content and Posting Strategy",
+        "steps": {
+          "analyzeAudience": "Analyze the audience: Study the interests, needs, and pain points of the target audience.",
+          "createContentPlan": "Create a content plan: Plan posts based on key queries, goals, and trends.",
+          "seoOptimization": "SEO Optimization: Integrate keywords and structure materials for search engines.",
+          "useMultimediaFormats": "Use multimedia formats: Text, video, infographics, stories, and podcasts.",
+          "publishAndAnalyze": "Regularly publish high-quality content and analyze engagement."
+        },
+        "example": {
+          "description": "An online clothing store might publish:",
+          "details": {
+            "stylingRecommendations": "Articles with styling recommendations.",
+            "videoReviews": "Video reviews of new collections.",
+            "materialCare": "Photos and infographics on materials and fabric care."
+          }
+        }
+      },
+      "socialMediaManagement": {
+        "title": "Account Management and Promotion",
+        "steps": {
+          "createContent": "Create content: Develop posts, stories, videos, and creatives.",
+          "engageWithFollowers": "Engage with followers: Respond to comments and messages.",
+          "analyzeData": "Analyze data: Evaluate engagement, reach, and audience growth.",
+          "runTargetedAds": "Run targeted ads: Launch paid campaigns to attract the target audience."
+        },
+        "example": {
+          "description": "A cosmetics brand ran a campaign with video reviews and blogger collaborations, resulting in:",
+          "results": {
+            "increaseInFollowers": "A 35% increase in followers.",
+            "increaseInReach": "A 60% increase in reach."
+          }
+        }
+      },
+      "adCampaigns": {
+        "title": "Organizing Advertising Campaigns on Social Media",
+        "steps": {
+          "setUpTargeting": "Set up targeting: Based on interests, age, gender, and location.",
+          "createAdCreatives": "Create ad creatives: Develop compelling text, images, and videos.",
+          "optimizeBudget": "Optimize budget: Monitor and improve ad efficiency.",
+          "testAds": "A/B test ads: Compare versions to identify top performers."
+        },
+        "example": {
+          "description": "A restaurant launched an ad campaign offering delivery discounts to city residents.",
+          "results": {
+            "newOrders": "120 new orders within a week."
+          }
+        }
+      },
+      "emailMarketing": {
+        "title": "Email Marketing",
+        "steps": {
+          "segmentAudience": "Segment the audience: Divide subscribers based on behavior and interests.",
+          "createEmails": "Create emails: Include welcome series, promotions, updates, and reminders.",
+          "conductTesting": "Conduct A/B testing: Test headlines and email content to improve open rates.",
+          "analyzeResults": "Analyze results: Track metrics like open rates, CTR, and conversions."
+        },
+        "example": {
+          "description": "An online store sent reminder emails about abandoned carts offering a 10% discount.",
+          "results": {
+            "completedPurchases": "20% of customers completed their purchases."
+          }
+        }
+      },
+      "seoPpc": {
+        "seo": {
+          "title": "SEO (Search Engine Optimization)",
+          "steps": {
+            "technicalOptimization": "Technical optimization: Speed up websites and fix errors.",
+            "createSeoContent": "Create SEO content: Write articles and pages optimized with keywords.",
+            "buildLinks": "Build links: Place external links to boost website authority."
+          }
+        },
+        "ppc": {
+          "title": "PPC (Pay-Per-Click)",
+          "steps": {
+            "createAdCampaigns": "Create ad campaigns: Set up ads targeting key queries.",
+            "optimizeBudgets": "Optimize budgets: Monitor bids and improve ROI.",
+            "analyzeResults": "Analyze results: Evaluate conversions and campaign performance."
+          },
+          "example": {
+            "description": "An electronics store launched a PPC ad campaign targeting queries like 'laptops on sale.'",
+            "results": {
+              "clicks": "2,000 clicks and 150 sales in one month."
+            }
+          }
+        }
+      }
+    }
   },
   "projects": {
     "upcoming": {
@@ -111,5 +245,11 @@
       "custom": "Other (please specify)"
     },
     "submit": "Submit"
+  },
+  "errors": {
+    "notFound": {
+      "description": "Page not found",
+      "button": "Home"
+    }
   }
 }

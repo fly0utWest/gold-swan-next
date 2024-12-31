@@ -1,0 +1,37 @@
+import React from "react";
+import Heading from "@/shared/ui/heading";
+
+interface DepartmentOverviewProps {
+  heading: string;
+  definition: string;
+  benefits: string[];
+}
+
+const DepartmentOverview: React.FC<DepartmentOverviewProps> = ({
+  heading,
+  definition,
+  benefits,
+}) => {
+  return (
+    <div className="max-w-screen-2xl p-6 md:mx-auto w-full space-y-6">
+      <div className="flex flex-col gap-4 text-xl">
+        <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
+          {heading}
+        </Heading>
+        <p>{definition}</p>
+      </div>
+
+      <section>
+        <u className="list-disc list-inside space-y-2 no-underline">
+          {benefits.map((benefit, index) => (
+            <li key={index} className="marker:text-primary-500 text-lg">
+              {benefit}
+            </li>
+          ))}
+        </u>
+      </section>
+    </div>
+  );
+};
+
+export default DepartmentOverview;

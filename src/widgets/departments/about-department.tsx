@@ -1,0 +1,23 @@
+import React from "react";
+import Heading from "@/shared/ui/heading";
+
+interface AboutDepartmentProps {
+  heading: string;
+  description: string;
+}
+
+const AboutDepartment: React.FC<AboutDepartmentProps> = ({
+  heading,
+  description,
+}) => {
+  return (
+      <div className="p-6 flex flex-col gap-4 text-xl max-w-screen-2xl md:mx-auto w-full">
+        <Heading as="h1" className="text-5xl text-primary-500 font-semibold">
+          {heading}
+        </Heading>
+        <p>{description}</p>
+      </div>
+  );
+};
+
+export default AboutDepartment;
