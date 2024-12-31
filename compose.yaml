@@ -1,0 +1,33 @@
+services:
+  nextjs:
+    build: .
+    environment:
+      - NODE_ENV=production
+    ports:
+      - '3000:3000'
+    networks:
+      - webnet
+
+  caddy:
+    image: ghcr.io/iarekylew00t/caddy-cloudflare:latest
+    environment:
+      - CF_API_TOKEN=${CF_API_TOKEN}
+      - CADDY_RP_DOMAIN=${CADDY_RP_DOMAIN}
+    ports:
+      - '80:80'
+      - '443:443'
+      - '5555:5555'
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - webnet
+
+networks:
+  webnet:
+
+volumes:
+  caddy_data:
+  caddy_config:
+  postgres_data:
