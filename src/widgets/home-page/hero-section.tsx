@@ -3,9 +3,11 @@ import BrandLogo from "@/shared/ui/brand-logo";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
 import Marquee from "@/shared/ui/marquee";
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
-  
+  const t = useTranslations("misc");
+
   return (
     <section className="p-6 flex flex-col items-center  gap-16 overflow-y-hidden bg-neutral-100 relative dark:bg-black min-h-[100dvh] overflow-x-hidden">
       <div className=" space-y-4">
@@ -18,17 +20,14 @@ const HeroSection = () => {
         </h1>
         <div className="flex flex-col items-center text-center">
           <BrandLogo className="animate-opacityIn" size={250} />
-          <p className="text-2xl">
-            We are a digital agency that specializes in web development and
-            marketing.
-          </p>
+          <p className="text-2xl">{t("slogan")}</p>
         </div>
       </div>
-            <Link href="/#download" className="block">
-              <Button className="overflow-hidden w-48 word-spacing-6 px-[0!important]">
-                <Marquee repeatCount={2}>CONTACT</Marquee>
-              </Button>
-            </Link>
+      <Link href="/#download" className="block">
+        <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
+          <Marquee repeatCount={2}>{t("contactUs")}</Marquee>
+        </Button>
+      </Link>
     </section>
   );
 };

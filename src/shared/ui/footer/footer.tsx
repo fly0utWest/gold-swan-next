@@ -18,14 +18,14 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
-          <FooterLink href="/#download">{t("home")}</FooterLink>
-          <FooterLink href="/legal/privacy">{t("contact")}</FooterLink>
+          <FooterLink href="/">{t("home")}</FooterLink>
+          <FooterLink href="/contact">{t("contact")}</FooterLink>
         </div>
         <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
-          <FooterLink href="https://github.com/exteraSquad">
+          <FooterLink href="/#departments">
             {t("services")}
           </FooterLink>
-          <FooterLink href="https://t.me/exteraChat">{t("projects")}</FooterLink>
+          <FooterLink href="/#upcoming-projects">{t("projects")}</FooterLink>
         </div>
         <Link
           href="#top"

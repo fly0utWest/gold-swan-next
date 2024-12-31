@@ -17,7 +17,7 @@ const StrategySteps: React.FC<StrategyStepsProps> = ({
 }) => {
   return (
     <div className="px-6">
-      <div className="max-w-screen-2xl p-6 md:mx-auto w-full space-y-6 dark:bg-black rounded-3xl border-neutral-800 border-2">
+      <div className="max-w-screen-2xl p-6 md:mx-auto w-full space-y-6 bg-neutral-50 dark:bg-black rounded-3xl border-neutral-800 border-2">
         {Icon ? <Icon size={32} color="var(--primary-500)" /> : null}
         <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
           {heading}

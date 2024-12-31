@@ -6,9 +6,7 @@ import Link from "../link";
 import HeaderLink from "./header-link";
 import { useTranslations, useLocale } from "next-intl";
 import LocaleSwitcher from "@/shared/ui/locale-switcher";
-import Marquee from "../marquee";
 import HeaderMenu from "./header-menu";
-import Button from "../button";
 import ThemeSwitcher from "../theme-switcher";
 
 const Header: React.FC = () => {
@@ -16,8 +14,8 @@ const Header: React.FC = () => {
   const t = useTranslations("nav");
 
   const headerLinks = [
-    { href: "/#services", label: t("services") },
-    { href: "/#contact", label: t("contact") },
+    { href: "/#departments", label: t("services") },
+    { href: "/contact", label: t("contact") },
     { href: "/#upcoming-projects", label: t("projects") },
   ];
 
@@ -30,13 +28,12 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-6">
           <HeaderMenu>
             {headerLinks.map((link, index) => (
-              <HeaderLink key={index} href={link.href}>
+              <HeaderLink key={index} href={link.href} >
                 {link.label}
               </HeaderLink>
             ))}
             <LocaleSwitcher currentLocale={locale} />
             <ThemeSwitcher />
-
           </HeaderMenu>
         </div>
       </div>

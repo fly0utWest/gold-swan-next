@@ -18,7 +18,7 @@ const ProjectsSection: React.FC = async () => {
       >
         {t("heading")}
       </Heading>
-      <section className="w-full">
+      <section className="w-full" id="upcoming-projects">
         <div className="flex flex-col gap-8 lg:items-center">
           {upcomingProjects.map((project) => (
             <ProjectCard
