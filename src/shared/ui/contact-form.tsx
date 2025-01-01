@@ -73,7 +73,6 @@ const businessOperationDurationOptions = [
 const ContactForm = () => {
   const t = useTranslations("contact-form");
 
-  // Refactor schema to be static
   const ContactFormSchema = z
     .object({
       name: z.string().nonempty(t("nameRequired")),

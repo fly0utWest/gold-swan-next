@@ -11,8 +11,8 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <MarqeeSection />
-      <ProjectsSection />
       <DepartmentSection />
+      <ProjectsSection />
     </>
   );
 }

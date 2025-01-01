@@ -74,7 +74,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <p className="text-neutral-800 text-lg font-light w-full text-center lg:text-left">&copy; Gold Swan Agency, 2024</p>
+      <p className="text-neutral-800 text-lg font-light w-full text-center lg:text-left">&copy; Gold Swan Agency, 2025</p>
     </footer>
   );
 }

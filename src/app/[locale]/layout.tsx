@@ -36,7 +36,7 @@ export default async function RootLayout(
   return (
     <html
       lang={locale}
-      className="scroll-smooth *:selection:bg-primary-500 *:selection:text-foreground"
+      className="scroll-smooth overscroll-none *:selection:bg-primary-500 *:selection:text-foreground"
       suppressHydrationWarning
     >
       <body className={`${oswaldSans.className} antialiased`}>
