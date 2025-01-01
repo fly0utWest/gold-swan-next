@@ -13,8 +13,10 @@ export default function Footer() {
         <div className="flex flex-col gap-4 items-center lg:items-start mb-12 md:mb-0">
           <BrandLogo />
           <h3 className="font-display font-bold text-4xl md:text-5xl cursor-help w-full max-w-xs text-center lg:text-left"></h3>
-          <p className="text-xl text-neutral-800 w-full max-w-sm text-center lg:text-left">
+          <p className="text-xl text-foreground w-full max-w-sm text-center lg:text-left">
+            <span className="text-primary-500">&#x275D;</span>
             {t("description")}
+            <span className="text-primary-500">&#x275E;</span>
           </p>
         </div>
         <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
@@ -22,9 +24,7 @@ export default function Footer() {
           <FooterLink href="/contact">{t("contact")}</FooterLink>
         </div>
         <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
-          <FooterLink href="/#departments">
-            {t("services")}
-          </FooterLink>
+          <FooterLink href="/#departments">{t("services")}</FooterLink>
           <FooterLink href="/#upcoming-projects">{t("projects")}</FooterLink>
         </div>
         <Link

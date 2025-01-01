@@ -4,7 +4,8 @@
     "lightTheme": "Light Theme",
     "loading": "Loading...",
     "slogan": "We are digital agency that will make your dreams come true!",
-    "contactUs": "Contact"
+    "contactUs": "Contact",
+    "knowMore": "Know more"
   },
   "nav": {
     "home": "Home",
@@ -435,7 +436,6 @@
         }
       }
     },
-
     "photoVideoShooting": {
       "title": "Photo and Video Shooting Services",
       "description": "Creating impactful visual content is essential for brands aiming to connect with their audience effectively. Photo and Video Shooting Services focus on delivering professional-grade visuals tailored to diverse business needs, ranging from commercial campaigns to personal events. With advanced techniques and innovative approaches, this department ensures each project resonates with its intended audience.",
@@ -665,6 +665,16 @@
     }
   },
   "contact-form": {
+    "general": {
+      "title": "Contact Us",
+      "subTitle": "General",
+      "description": "We are here to help you with any questions you may have. Reach out to us and we will respond as soon as possible.",
+      "phone": "Phone",
+      "people": {
+        "devLead": "Manager of the Development Department and Head of Upcoming Products",
+        "clientRelations": "Client Relations Manager"
+      }
+    },
     "nameRequired": "Please enter your name",
     "invalidEmail": "Please enter a valid email",
     "phoneRequired": "Please enter a phone number",
@@ -724,6 +734,9 @@
       "moreThanFiveYears": "More than five years",
       "custom": "Other (please specify)"
     },
+    "additionalCommentsInterest": "Any additional info?",
+    "additionalCommentsPlaceholder": "Additional comment",
+
     "submit": "Submit"
   },
   "errors": {

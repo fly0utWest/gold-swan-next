@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       previousExperience,
       howDidYouHear,
       businessOperationDuration,
-      aditionalComment,
+      additionalComment,
     } = body;
     const servicesString = services.join("\n");
 
@@ -39,7 +39,7 @@ ${customService ? `*Custom Service*: ${customService}\n` : ""}
 
 *Business Operation Duration*: ${businessOperationDuration}
 
-${aditionalComment ? `*Additional Comments*: ${aditionalComment}` : ""}
+${additionalComment ? `*Additional Comments*: ${additionalComment}` : ""}
 `;
 
     await fetch(TG_API, {

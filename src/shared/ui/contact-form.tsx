@@ -87,7 +87,7 @@ const ContactForm = () => {
       businessOperationDuration: z
         .string()
         .nonempty(t("businessOperationDurationRequired")),
-      aditionalComment: z.string().optional(),
+      additionalComment: z.string().optional(),
     })
     .refine((data) => data.services.length > 0 || data.customService, {
       message: t("selectServiceOrCustom"),
@@ -447,14 +447,13 @@ const ContactForm = () => {
 
       <div className="flex flex-col gap-4">
         <Heading as="h3" className="text-lg font-medium">
-          {t("businessOperationInterest")}
+          {t("additionalCommentsInterest")}
         </Heading>
         <Textarea
-          placeholder="Aditional comment"
-          {...register("aditionalComment")}
+          placeholder={t("additionalCommentsPlaceholder")}
+          {...register("additionalComment")}
         />
       </div>
-      {/* Submit Button */}
       <button
         type="submit"
         className={`flex items-center gap-2 justify-center rounded-3xl text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase ${

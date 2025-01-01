@@ -5,9 +5,8 @@ import { Observer } from "tailwindcss-intersect";
 
 export default function ClientObserver() {
   useEffect(() => {
-    // Start the Observer when the component is mounted
     Observer.start();
   }, []);
 
-  return null; // No UI needed for this component
+  return null; 
 }

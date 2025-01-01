@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Oswald} from "next/font/google";
+import { Oswald } from "next/font/google";
 import "../_styles/globals.css";
 import Header from "@/shared/ui/header/header";
 import { NextIntlClientProvider } from "next-intl";
@@ -42,8 +42,9 @@ export default async function RootLayout(
         <ClientObserver />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider defaultTheme="dark" attribute="class">
+            <div className="absolute top-0" id="top"></div>
             <Header />
-            <main className="my-24 min-h-[90dvh]">{children}</main>
+              <main className="py-24 min-h-[90dvh]">{children}</main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>

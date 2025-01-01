@@ -7,20 +7,23 @@ import {
 } from "solar-icon-set";
 import ContactItem from "./contact-item";
 import Heading from "./heading";
+import { useTranslations } from "next-intl";
 
 const StaticContacts = () => {
+  const t = useTranslations("contact-form.general");
+
   return (
     <section className="p-5 dark:bg-black bg-neutral-100 rounded-3xl w-full hover:shadow-sm hover:shadow-primary-500 transition-shadow">
       <Heading as="h2" className="text-center text-3xl">
-        Contacts
+        {t("title")}
       </Heading>
       <Heading as="h3" className="text-center text-2xl text-bold mt-5">
-        General
+        {t("subTitle")}
       </Heading>
       <div>
         <ContactItem
           icon={<PhoneCallingRounded size={32} color="var(--primary-500)" />}
-          title="Phone"
+          title={t("phone")}
           link="tel:+354 788 8066"
           content="+354 788 8066"
         />
@@ -38,13 +41,13 @@ const StaticContacts = () => {
       <div>
         <ContactItem
           icon={<Plain size={32} color="var(--primary-500)" />}
-          title="Manager of the Development Department and Head of Upcoming Products"
+          title={t("people.devLead")}
           link="https://t.me/dark_aura"
           content="@dark_aura"
         />
         <ContactItem
           icon={<Plain size={32} color="var(--primary-500)" />}
-          title="Client Relations Manager"
+          title={t("people.clientRelations")}
           link="https://t.me/gold_swanis"
           content="@gold_swanis"
         />

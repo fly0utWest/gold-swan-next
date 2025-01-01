@@ -15,10 +15,11 @@ const ProjectsSection: React.FC = async () => {
       <Heading
         as="h2"
         className="text-center text-outline-primary-500 text-background shadow-primary-400 text-5xl lg:text-7xl font-bold"
+        id="upcoming-projects"
       >
         {t("heading")}
       </Heading>
-      <section className="w-full" id="upcoming-projects">
+      <section className="w-full">
         <div className="flex flex-col gap-8 lg:items-center">
           {upcomingProjects.map((project) => (
             <ProjectCard

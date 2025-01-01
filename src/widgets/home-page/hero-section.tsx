@@ -4,30 +4,40 @@ import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
 import Marquee from "@/shared/ui/marquee";
 import { useTranslations } from "next-intl";
+import { ArrowDown } from "solar-icon-set";
+import Heading from "@/shared/ui/heading";
 
 const HeroSection = () => {
   const t = useTranslations("misc");
 
   return (
-    <section className="p-6 flex flex-col items-center  gap-16 overflow-y-hidden bg-neutral-100 relative dark:bg-black min-h-[100dvh] overflow-x-hidden">
+    <section className="p-6 flex flex-col items-center gap-16 md:gap-8 overflow-y-hidden bg-neutral-100 relative dark:bg-black min-h-[100dvh] overflow-x-hidden">
       <div className=" space-y-4">
-        <h1 className="text-6xl *:block text-center md:text-8xl">
+        <Heading as="h1" className="text-6xl *:block text-center md:text-8xl">
           <span className="text-primary-400 animate-slideInFromRight">
             Gold
           </span>
           <span className="animate-slideInFromLeft">Swan</span>
           <span className="animate-slideInFromRight">Agency</span>
-        </h1>
+        </Heading>
         <div className="flex flex-col items-center text-center">
           <BrandLogo className="animate-opacityIn" size={250} />
-          <p className="text-2xl">{t("slogan")}</p>
+          <p className="text-2xl">
+            <span className="text-primary-500">&#x275D;</span>
+            {t("slogan")}
+            <span className="text-primary-500">&#x275E;</span>
+          </p>
         </div>
       </div>
-      <Link href="/#download" className="block">
+      <Link href="/contact" className="block">
         <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
           <Marquee repeatCount={2}>{t("contactUs")}</Marquee>
         </Button>
       </Link>
+      <div className="flex flex-col items-center gap-4">
+        <span className="text-bold text-xl uppercase">{t("knowMore")}</span>
+        <ArrowDown className="animate-bounce" size={32} />
+      </div>
     </section>
   );
 };

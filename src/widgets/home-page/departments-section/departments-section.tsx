@@ -7,6 +7,7 @@ import { Safe2 } from "solar-icon-set";
 import { Star2 } from "solar-icon-set";
 import { PieChart2 } from "solar-icon-set";
 import { useTranslations } from "next-intl";
+import Heading from "@/shared/ui/heading";
 
 const DepartmentSection = () => {
   const t = useTranslations("departments.section");
@@ -44,10 +45,14 @@ const DepartmentSection = () => {
     },
   ];
   return (
-    <section className="w-full flex justify-center items-center flex-col px-5 md:px-8 gap-8 md:gap-16" id="departments">
-      <h2 className="font-bold text-5xl lg:text-7xl text-center">
+    <section className="w-full flex justify-center items-center flex-col px-5 md:px-8 gap-8 md:gap-16">
+      <Heading
+        as="h2"
+        className="font-bold text-5xl lg:text-7xl text-center"
+        id="departments"
+      >
         {t("heading")}
-      </h2>
+      </Heading>
       <div className="flex flex-row flex-wrap gap-8 justify-center w-full">
         {departments.map((department, index) => (
           <DepartmentButton

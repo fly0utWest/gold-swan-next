@@ -1,44 +1,714 @@
 {
+  "misc": {
+    "darkTheme": "Dökkt þema",
+    "lightTheme": "Ljóst þema",
+    "loading": "Hleð...",
+    "slogan": "Við erum stafræn stofnun sem mun láta drauma þína rætast!",
+    "contactUs": "Hafa samband",
+    "knowMore": "Vita meira"
+  },
   "nav": {
+    "home": "Heim",
+    "departments": "Deildir",
     "services": "Þjónusta",
-    "contact": "Hafðu samband",
-    "projects": "Verkefni"
+    "contact": "Hafa samband",
+    "projects": "Verkefni",
+    "description": "Við erum stafræn stofnun sem mun láta drauma þína rætast!"
+  },
+  "about": {
+    "heading": "Um Okkur",
+    "description": "Við erum alþjóðleg stofnun sem sérhæfir sig í stafrænum markaðssetningum, vörumerkjastjórnun, almannatengslum og orðsporastjórnun. Markmið okkar er að búa til nýstárlegar áætlanir sem stuðla að vexti, byggja upp traust og tryggja langtímaárangur fyrir viðskiptavini okkar.",
+    "idea": {
+      "translated": "Hugmynd",
+      "explained": "Í umræðuferlinu með viðskiptavinum getur stofnun okkar aðstoðað við að móta og bæta hugmyndir þeirra með því að nýta umfangsmikla reynslu okkar og víðtæka sjónarhorn. Við bjóðum ferskt og faglegt sjónarmið sem hjálpar til við að breyta upphaflegum hugmyndum í áhrifaríkar og vel skipulagðar áætlanir."
+    },
+    "strategy": {
+      "translated": "Áætlun",
+      "explained": "Í heimi viðskipta er áætlun undirstaða árangurs. Það snýst ekki aðeins um að hafa hugmyndir heldur einnig um að hafa skýra, framkvæmanlega áætlun til að sigla í gegnum samkeppnislandslagið. Fyrirtæki með vel hugsaða áætlun eru betur í stakk búin til að bregðast við áskorunum, nýta tækifæri og halda stöðugri stefnu í átt að markmiðum sínum. Þeir sem reika án áætlunar lenda oft í vandræðum, bregðast við aðstæðum frekar en að móta þær. Þeir sem vinna í hvaða sviði sem er eru þeir sem taka sér tíma til að búa til sterka áætlun, því áætlun leiðbeinir ekki aðeins – hún skapar stefnu, tilgang og seiglu, sem að lokum ákvarðar leiðina til sigurs."
+    },
+    "implementation": {
+      "translated": "Framkvæmd",
+      "explained": "Framkvæmd er eins og púsluspil sem kemur saman úr hugmynd og ýmsum stigum. Lokaniðurstaðan fer eftir framkvæmdinni, því án hennar er besta hugmyndin aðeins hugtak. Sérhvert stig skiptir máli og aðeins með réttum framkvæmdum þeirra er hægt að ná árangri."
+    }
+  },
+
+  "departments": {
+    "section": {
+      "heading": "Deildir",
+      "marketing": "Stafræn Markaðssetning",
+      "brandDevelopment": "Vörumerkjaþróun og Almannatengsl",
+      "reputationAndDataProtection": "Orðspor og Gögnavernd",
+      "analyticsAndStrategy": "Greining og Stefnumótun",
+      "photoVideoShooting": "Mynda- og Myndbandsupptökur",
+      "webdev": "Vefsíðugerð og Vefumsóknarþróun"
+    },
+    "marketing": {
+      "title": "Stafræn Markaðssetning",
+      "description": "Heildstæðar áætlanir og verkfæri til að kynna vörumerki, vörur og þjónustu á stafrænum vettvangi.",
+      "overview": {
+        "title": "Yfirlit",
+        "definition": "Stafræn markaðssetning er safn áætlana og verkfæra til að kynna vörumerki, vörur og þjónustu á stafrænum vettvangi. Þetta gerir fyrirtækjum kleift að beina sér nákvæmlega að markhópum, mæla árangur í rauntíma og hámarka herferðir á skilvirkan hátt.",
+        "benefits": {
+          "title": "Algengir Kostir",
+          "preciseAudienceTargeting": "Nákvæm markhópagreining í gegnum gagnaskiptingu",
+          "realTimeResults": "Mæling á niðurstöðum í rauntíma",
+          "costEfficientCampaigns": "Kostnaðarhagkvæm hagræðing á herferðum"
+        }
+      },
+      "tools": {
+        "title": "Helstu Verkfæri",
+        "seo": {
+          "title": "SEO (Leitarvélabestun)",
+          "description": "Bestun vefsíðna til að bæta sýnileika í leitarvélum eins og Google og Yandex."
+        },
+        "ppc": {
+          "title": "PPC (Borga-fyrir-smell)",
+          "description": "Greiddar auglýsingar þar sem auglýsendur greiða fyrir hvern smell."
+        },
+        "smm": {
+          "title": "SMM (Markaðssetning á Samfélagsmiðlum)",
+          "description": "Kynning á vörumerkjum í gegnum samfélagsmiðla."
+        },
+        "emailMarketing": {
+          "title": "Póstlistamarkaðssetning",
+          "description": "Notkun fréttabréfa til að tengjast markhópnum."
+        },
+        "contentMarketing": {
+          "title": "Efnisstjórnun",
+          "description": "Búa til og dreifa verðmætu efni til að laða að viðskiptavini."
+        }
+      },
+      "strategies": {
+        "contentStrategy": {
+          "title": "Efnisáætlun",
+          "steps": {
+            "analyze": "Rannsaka áhugamál og þarfir markhóps.",
+            "plan": "Búa til efnisáætlun byggða á straumum.",
+            "optimize": "Nota lykilorð fyrir SEO.",
+            "execute": "Innihalda texta, myndbönd og upplýsingatöflur.",
+            "review": "Birta og fylgjast með þátttöku."
+          },
+          "example": "Stíllgreinar. Safn dóma. Upplýsingatöflur um umönnun."
+        },
+        "socialMediaManagement": {
+          "title": "Stjórnun á Samfélagsmiðlum",
+          "steps": {
+            "analyze": "Fylgjast með þátttöku og vexti.",
+            "plan": "Búa til innlegg, sögur og myndbönd.",
+            "optimize": "Hefja markvissar auglýsingar.",
+            "execute": "Bregðast við fylgjendum.",
+            "review": "Meta árangursmælikvarða."
+          },
+          "example": "Snyrtivörumerki með bloggaraumsögnum. 35% vöxtur í fylgjendum. 60% aukning í útbreiðslu."
+        },
+        "adCampaigns": {
+          "title": "Auglýsingar á Samfélagsmiðlum",
+          "steps": {
+            "analyze": "Meta árangur auglýsinga.",
+            "plan": "Setja viðmið (aldur, staðsetning, áhugamál).",
+            "optimize": "Fylgjast með og laga eyðslu.",
+            "execute": "Framkvæma A/B prófanir.",
+            "review": "Meta niðurstöður herferða."
+          },
+          "example": "Afslættir á veitingahúsum. 120 nýjar pantanir á viku."
+        },
+        "emailMarketing": {
+          "title": "Póstlistamarkaðssetning",
+          "steps": {
+            "analyze": "Fylgjast með umbreytingum og smellihlutfalli (CTR).",
+            "plan": "Hópa áskrifendur eftir hegðun.",
+            "optimize": "A/B prófanir fyrir opnunarhlutfall.",
+            "execute": "Senda móttöku- og kynningarbréf.",
+            "review": "Meta árangur herferða."
+          },
+          "example": "Endurheimtarpóstar með afslætti. 20% lokun á körfu."
+        },
+        "seoPpc": {
+          "seo": {
+            "title": "SEO",
+            "steps": {
+              "analyze": "Laga villur og bæta hraða.",
+              "plan": "Skrifa greinar með lykilorðum.",
+              "optimize": "Auka trúverðugleika með bakslóðum.",
+              "execute": "Innleiða efni og tæknilega lagfæringar.",
+              "review": "Fylgjast með röðun og umferð."
+            },
+            "example": "Bestun bloggfærslu um 'hvernig á að baka köku'. 30% aukning í lífrænni umferð. 15% hærri röðun í leitarvélum fyrir markmiðalykilorð."
+          },
+          "ppc": {
+            "title": "PPC",
+            "steps": {
+              "analyze": "Meta smelli og sölu.",
+              "plan": "Ræsa auglýsingar fyrir markvissar fyrirspurnir.",
+              "optimize": "Aðlaga arðsemi fjárfestingar (ROI).",
+              "execute": "Hefja auglýsingaherferðir.",
+              "review": "Meta árangur auglýsinga."
+            },
+            "example": "Rafmagnsvörurauglýsingar fyrir 'tölvur á útsölu.' 2.000 smellir. 150 sölur á mánuði."
+          }
+        }
+      }
+    },
+    "brandDevelopment": {
+      "title": "Vörumerkjaþróun og almannatengsl",
+      "description": "Markaðssetning er burðarás hvers konar viðskiptaáætlunar sem einbeitir sér að því að skapa gildi fyrir viðskiptavini og viðhalda sterkum viðskiptasamböndum. Hún nær yfir fjölda aðgerða eins og vörumerkjaþróun, auglýsingar, almannatengsl og markaðsrannsóknir sem miða að því að ná til markhópa og hafa áhrif á kaupákvarðanir þeirra.",
+      "overview": {
+        "title": "Yfirlit",
+        "definition": "Vörumerkjaþróun og almannatengsl eru lykiltól til að byggja upp sterk og þekkjanleg vörumerki og viðhalda jákvæðum tengslum við almenning. Þessar aðferðir tryggja að vörumerki dafni á samkeppnismörkuðum og standist áskoranir.",
+        "benefits": {
+          "strongBrandIdentity": "Mótun á einstöku og sterku vörumerki",
+          "enhancedPublicImage": "Bygging jákvæðrar ímyndar hjá almenningi",
+          "longTermSuccess": "Trygging á langtíma velgengni fyrirtækja"
+        }
+      },
+      "tools": {
+        "title": "Helstu tól",
+        "brandBook": {
+          "title": "Gerð vörumerkjahandbókar",
+          "description": "Vörumerkjahandbók er yfirgripsmikil leiðarvísir sem skilgreinir sjónræna og samskiptalega sjálfsmynd fyrirtækis. Hún tryggir samræmi yfir alla miðla og snertifleti."
+        },
+        "brandPositioning": {
+          "title": "Staðsetning vörumerkis",
+          "description": "Staðsetning vörumerkis skilgreinir fyrirtækið á markaðnum með því að draga fram einstakt virðisloforð og móta skýra sjálfsmynd."
+        },
+        "uspDevelopment": {
+          "title": "Þróun sérstöðu (USP)",
+          "description": "Sterkt sérkenni skilgreinir hvers vegna viðskiptavinir ættu að velja ákveðna vöru eða þjónustu fram yfir samkeppni."
+        },
+        "creativeAdvertising": {
+          "title": "Skapandi auglýsingaherferðir",
+          "description": "Skapandi auglýsingar ná til áhorfenda með nýstárlegum hugmyndum, sjónrænum útfærslum og skilaboðum sem skera sig úr."
+        },
+        "prAndMediaRelations": {
+          "title": "Almannatengsl og fjölmiðlasamskipti",
+          "description": "Almannatengsl einblína á að stýra samskiptum milli fyrirtækis og áhorfenda til að auka trúverðugleika og traust."
+        },
+        "influencerMarketing": {
+          "title": "Áhrifavalda markaðssetning",
+          "description": "Áhrifavalda markaðssetning nýtir traust áhrifavalda innan ákveðinna sviða til að kynna vörur eða þjónustu."
+        },
+        "eventOrganization": {
+          "title": "Skipulag viðburða",
+          "description": "Viðburðahald eykur sýnileika vörumerkis, styrkir tengsl við viðskiptavini og skapar jákvæða umfjöllun."
+        },
+        "crisisPRManagement": {
+          "title": "Almannatengsl í kreppu",
+          "description": "Almannatengsl í kreppu einblína á að verja ímynd vörumerkis í neikvæðum aðstæðum eða ógn við orðspor."
+        }
+      },
+      "strategies": {
+        "contentStrategy": {
+          "title": "Vörumerkjastefna",
+          "steps": {
+            "research": "Greindu hlutverk, gildi og væntingar viðskiptavina vörumerkisins.",
+            "design": "Þróaðu lógó, litapallettur og leturgerðir.",
+            "documentation": "Taktu öll atriði saman í vörumerkjahandbók með notkunarleiðbeiningum.",
+            "audienceResearch": "Greindu þarfir og óskir viðskiptavina.",
+            "valueMapping": "Sýndu einstaka eiginleika og kosti sem höfða til viðskiptavina.",
+            "strategyImplementation": "Samræmdu skilaboð og markaðsherferðir við stefnu vörumerkisins."
+          },
+          "example": "Tæknifyrirtæki þróaði vörumerkjahandbók með fáguðu lógói, nútímalegum leturgerðum og minimalískum litapallettum sem tryggðu samræmi í hönnun á vefsíðu, samfélagsmiðlum og markaðsefni."
+        },
+        "positioning": {
+          "title": "Staðsetningarstefna vörumerkis",
+          "steps": {
+            "defineUVP": "Skilgreindu hvað greinir vörumerkið frá samkeppni.",
+            "keyMessaging": "Mótuðu stutt og áhrifarík skilaboð fyrir markhópa.",
+            "competitorAnalysis": "Metið styrkleika og veikleika samkeppnisaðila til að staðsetja vörumerkið á áhrifaríkan hátt."
+          },
+          "example": "Kaffihús staðsetti sig sem 'vistvænt og handverksmiðað val' með því að leggja áherslu á sjálfbæra innkaup og handverksgæði og laðaði þannig að sér umhverfisvæna viðskiptavini."
+        },
+        "usp": {
+          "title": "Þróun sérstöðu (USP)",
+          "steps": {
+            "featureAnalysis": "Greindu styrkleika og kosti vörunnar.",
+            "targetedMessaging": "Skapaðu skýr og stutt skilaboð sem höfða til markhóps.",
+            "proofPoints": "Sýndu USP með raunverulegum dæmum eða gögnum."
+          },
+          "example": "Heimsendingarþjónusta lagði áherslu á sérstöðu sína sem 'Afhent innan 30 mínútna eða frítt,' sem skapaði samkeppnisforskot og tryggð viðskiptavina."
+        },
+        "advertisingCampaigns": {
+          "title": "Skapandi auglýsingaherferðir",
+          "steps": {
+            "ideaGeneration": "Hugmyndavinna með áherslu á að höfða til markhóps.",
+            "contentProduction": "Þróaðu sjónrænt efni, texta og margmiðlunarefni.",
+            "crossPlatformDistribution": "Hóf herferðir á netinu og í hefðbundnum miðlum.",
+            "performanceAnalysis": "Fylgstu með árangri og fínstilltu aðferðir til að hámarka áhrif."
+          },
+          "example": "Fatamerki birti stuttmyndbönd á TikTok með fjölbreyttum stílum sem fengu milljónir áhorfa."
+        },
+        "prRelations": {
+          "title": "Almannatengsl og fjölmiðlatengsl",
+          "steps": {
+            "messageCrafting": "Mótaðu lykilboð fyrir almannatengsl.",
+            "distribution": "Sendu fréttatilkynningar til fjölmiðla.",
+            "followUp": "Hafðu samband við fjölmiðla til að tryggja umfjöllun."
+          },
+          "example": "Tæknifyrirtæki kynnti nýtt afurð með fjölmiðlaviðtölum og fréttatilkynningum sem tryggðu breiða umfjöllun."
+        },
+        "influencerCampaigns": {
+          "title": "Áhrifavalda markaðsherferðir",
+          "steps": {
+            "research": "Finndu áhrifavalda sem höfða til markhópsins.",
+            "collaboration": "Skipuleggðu samstarf sem samræmist markmiðum vörumerkisins.",
+            "analysis": "Mældu árangur eftir snertingu, smelli og viðskiptum."
+          },
+          "example": "Fegrunarmerki gerði samstarf við áhrifavalda til að kynna ný húðvörur, sem jók sölu og sýnileika vörumerkisins."
+        },
+        "eventPlanning": {
+          "title": "Viðburðaskipulagning",
+          "steps": {
+            "conceptCreation": "Skilgreindu tilgang og fyrirkomulag viðburðarins.",
+            "execution": "Skipuleggðu alla þætti frá boðum til dagskrár.",
+            "followUp": "Deildu hápunktum viðburðarins til að auka sýnileika."
+          },
+          "example": "Tískumerki hélt tískusýningu sem laðaði að sér fjölmiðla og áhrifavalda."
+        },
+        "crisisManagement": {
+          "title": "Stjórnun í kreppu",
+          "steps": {
+            "situationAnalysis": "Greindu ástand og áhrif á orðspor vörumerkisins.",
+            "responseStrategy": "Sendu skýr og lausnamiðuð skilaboð til hagaðila.",
+            "monitoring": "Fylgstu með almenningsáliti og aðlagaðu samskipti."
+          },
+          "example": "Fyrirtæki baðst afsökunar og birti viðgerðaráætlun eftir innköllun á vöru og endurheimti traust viðskiptavina."
+        }
+      }
+    },
+    "reputationAndDataProtection": {
+      "title": "Orðspor og gagnavernd",
+      "description": "Orðspor er mikilvæg eign fyrir hvert vörumerki, og að tryggja það á stafrænum tímum krefst skipulags og forvirkra aðgerða. Þessi hluti fjallar um þjónustu sem miðar að því að fylgjast með, bæta og vernda orðspor á netinu ásamt því að tryggja traustar gagnaverndarráðstafanir.",
+      "overview": {
+        "title": "Yfirlit",
+        "definition": "Tryggðu orðspor vörumerkis þíns og gagnavernd með skipulögðum, áhrifaríkum aðferðum.",
+        "benefits": {
+          "proactiveReputationManagement": "Forvirk stjórnun á orðspori til að tryggja vörumerkið þitt.",
+          "enhancedCustomerTrust": "Eflt traust viðskiptavina með sterkri gagnavernd.",
+          "crisisPreparedness": "Undirbúningur fyrir kreppur með skýrum aðgerðaráætlunum."
+        }
+      },
+      "tools": {
+        "title": "Tól",
+        "brandMonitoring": {
+          "title": "Eftirlit með vörumerki",
+          "description": "Rauntímagreining á umtali vörumerkis og almenningsáliti yfir vettvangi."
+        },
+        "sentimentAnalysis": {
+          "title": "Greining almenningsálits",
+          "description": "AI-knúin tól til að mæla almenningsálit og laga stefnu eftir því."
+        },
+        "dataProtection": {
+          "title": "Gagnavernd",
+          "description": "Tryggðu viðkvæm gögn með dulkóðun, aðgangsstýringum og úttektum."
+        },
+        "crisisManagement": {
+          "title": "Stjórnun í kreppu",
+          "description": "Þróaðu og framkvæmdu stefnu fyrir samskipti í kreppu á áhrifaríkan hátt."
+        },
+        "negativeContentMitigation": {
+          "title": "Mildun á neikvæðu efni",
+          "description": "Fjarlægðu eða bældu niður skaðlegt efni á netinu til að vernda ímynd vörumerkisins."
+        }
+      },
+      "strategies": {
+        "onlineReputationManagement": {
+          "title": "Stjórnun á orðspori á netinu",
+          "steps": {
+            "audit": "Metið núverandi almenningsálit á netinu og skilgreinið þætti sem þarfnast úrbóta.",
+            "strategyDevelopment": "Búðu til sérsniðna aðgerðaáætlun til að bæta orðspor á netinu.",
+            "execution": "Birta hágæðainnihald, stjórna umsögnum og bregðast við neikvæðum ummælum á áhrifaríkan hátt."
+          },
+          "example": "Veitingastaður bætti Google einkunn sína með því að taka á kvörtunum, birta jákvæðar sögur og eiga samskipti við umsagnaraðila."
+        },
+        "negativeContentRemoval": {
+          "title": "Fjarlæging og mildun á neikvæðu efni",
+          "steps": {
+            "contentIdentification": "Fylgjast með vettvöngum eftir skaðlegu umtali.",
+            "removalAssessment": "Metið bestu fjarlægingaraðferðir (lögfræðilegar, vettvangsmiðaðar eða SEO).",
+            "execution": "Grípa til lögfræðilegra úrræða eða bæla sýnileika með SEO aðferðum."
+          },
+          "example": "Lítið fyrirtæki dró úr áhrifum ærumeiðandi bloggfærslna með lögfræðilegum úrræðum og SEO úrbótum."
+        },
+        "crisisManagement": {
+          "title": "Stjórnun í kreppu",
+          "steps": {
+            "assessTheCrisis": "Skilja umfang og eðli málsins.",
+            "rapidResponse": "Senda frá sér opinberar yfirlýsingar og stýra samskiptum við almenning.",
+            "continuousMonitoring": "Fylgjast með almenningsáliti og aðlaga aðferðir eftir þörfum."
+          },
+          "example": "Fyrirtæki tók á gagnrýni á samfélagsmiðlum með gegnsæi og endurheimti traust almennings með áhrifaríkum samskiptum."
+        },
+        "sentimentAnalysis": {
+          "title": "Greining almenningsálits",
+          "steps": {
+            "dataMining": "Safna samskiptum og umtali yfir vettvanga.",
+            "categorization": "Flokka gögn í jákvæð, hlutlaus og neikvæð almenningsálit.",
+            "insightGeneration": "Deila sérsniðnum tillögum til að bæta ímynd vörumerkis."
+          },
+          "example": "Nettverslun nýtti greiningu á almenningsáliti til að taka á kvörtunum um seinkaða afhendingu, sem jók ánægju viðskiptavina."
+        },
+        "continuousMonitoring": {
+          "title": "Samfelld vöktun á vörumerki",
+          "steps": {
+            "toolSetup": "Nota vettvang eins og Google Alerts og sérsniðin mælaborð.",
+            "monitorMetrics": "Fylgjast með skor almenningsálits og útbreiðslu áhorfenda.",
+            "rapidResponse": "Bregðast hratt við hugsanlegum áhyggjum til að lágmarka áhrif."
+          },
+          "example": "Tæknifyrirtæki leysti kvörtun viðskiptavinar á Twitter áður en hún jókst, sem varðveitti orðspor sitt."
+        },
+        "dataProtection": {
+          "title": "Þjónusta í gagnavernd",
+          "steps": {
+            "systemAssessment": "Gerðu úttekt á núverandi öryggisráðstöfunum.",
+            "implementation": "Settu upp dulkóðun, eldveggi og aðgangsstýringar.",
+            "training": "Fræddu starfsfólk um bestu starfsvenjur til að koma í veg fyrir brot."
+          },
+          "example": "Fjármálastofnun setti upp tveggja þátta auðkenningu og háþróaða dulkóðun, sem dró úr hættu á gagnabrotum."
+        }
+      }
+    },
+    "analyticsAndStrategy": {
+      "title": "Greiningar og stefnumótun",
+      "description": "Greiningar og stefnumótun eru grunnurinn að velgengni viðskiptarákvarðana og vaxtar. Þessi deild einbeitir sér að því að veita fyrirtækjum aðgerðanlegar innsýn, nákvæma markaðsgreiningu, stefnumótun og ferla sem byggjast á gögnum.",
+      "overview": {
+        "title": "Yfirlit",
+        "definition": "Styrkja fyrirtæki með ákvarðanatöku byggða á gögnum, innsýn og stefnumótun til að tryggja langtímavöxt.",
+        "benefits": {
+          "actionableInsights": "Aðgerðanlegar innsýn til að keyra framgang viðskipta.",
+          "dataDrivenDecisionMaking": "Ákvarðanataka byggð á gögnum fyrir sjálfbæran vöxt.",
+          "competitiveAdvantage": "Öflun samkeppnisforskots með stefnumótandi greiningu."
+        }
+      },
+      "tools": {
+        "title": "Tól",
+        "businessAnalytics": {
+          "title": "Viðskiptagreining",
+          "description": "Aðferðafræði við að skoða gögn ítrekað til að taka ákvarðanir og bæta niðurstöður."
+        },
+        "marketResearch": {
+          "title": "Markaðsrannsóknir",
+          "description": "Kerfisbundin söfnun og greining gagna um viðskiptavini, keppinauta og markaðsaðstæður."
+        },
+        "strategicPlanning": {
+          "title": "Stefnumótun",
+          "description": "Ferli til að setja langtímamarkmið, úthluta auðlindum og stýra áhættu."
+        },
+        "predictiveAnalytics": {
+          "title": "Forspárgreining",
+          "description": "Nota AI og vélrænt nám til að spá fyrir um þróun og leiðbeina stefnumótandi ákvörðunum."
+        }
+      },
+      "strategies": {
+        "businessAnalytics": {
+          "title": "Viðskiptagreining",
+          "steps": {
+            "dataCollection": "Safna viðeigandi gögnum frá mörgum aðilum.",
+            "dataAnalysis": "Greina gögnin til að finna mynstur og innsýn.",
+            "reporting": "Skila aðgerðanlegum innsýn með skýrslum."
+          },
+          "example": "Smásölufyrirtæki nýtti greiningar til að hámarka birgðastjórnun og minnka kostnað um 15%."
+        },
+        "marketResearch": {
+          "title": "Markaðsrannsóknir",
+          "steps": {
+            "dataCollection": "Söfnun eigindlegra og megindlegra gagna úr könnunum og viðtölum.",
+            "trendAnalysis": "Greining markaðsþróunar og hegðunar neytenda.",
+            "strategicRecommendations": "Veita aðgerðanlegar tillögur til að fínstilla viðskiptastefnu."
+          },
+          "example": "Tæknifyrirtæki jók notendafjölgun um 30% með markaðsrannsóknum og endurbótum."
+        },
+        "strategicPlanning": {
+          "title": "Stefnumótun",
+          "steps": {
+            "goalSetting": "Skilgreina langtímamarkmið og skammtímamílusteina.",
+            "riskAssessment": "Greina og draga úr hugsanlegum áskorunum.",
+            "execution": "Framkvæma stefnumótunina með stöðugu eftirliti."
+          },
+          "example": "Framleiðslufyrirtæki náði 25% vexti með því að fara inn á nýja markaði með stefnumótun."
+        },
+        "dataDrivenDecisionMaking": {
+          "title": "Ákvarðanataka byggð á gögnum",
+          "steps": {
+            "dataConsolidation": "Samþætta gögn frá öllum deildum til yfirgripsmikillar greiningar.",
+            "analysis": "Nota spálíkön til að sjá fyrir þróun og útkomur.",
+            "implementation": "Nota innsýn til að móta stefnu og ákvarðanir."
+          },
+          "example": "Flutningafyrirtæki dró úr flutningskostnaði um 20% með forspárgreiningu til að hámarka afhendingarleiðir."
+        }
+      }
+    },
+    "photoVideoShooting": {
+      "title": "Ljósmynda- og myndbandsþjónusta",
+      "description": "Sköpun áhrifamikils myndefnis er nauðsynleg fyrir vörumerki sem vilja tengjast áhorfendum sínum á áhrifaríkan hátt. Ljósmynda- og myndbandsþjónusta leggur áherslu á að skila faglegu myndefni sem er sérsniðið að fjölbreyttum viðskiptaþörfum, allt frá auglýsingaherferðum til persónulegra viðburða. Með háþróaðri tækni og nýstárlegum nálgunum tryggir þessi deild að hvert verkefni höfði til markhópsins.",
+      "overview": {
+        "title": "Yfirlit",
+        "definition": "Ljósmynda- og myndbandsþjónusta veitir hágæða myndefni sem bætir samskipti vörumerkja í gegnum auglýsingaljósmyndun, viðburðaljósmyndun, myndbandsframleiðslu, drónaljósmyndun og eftirvinnslu. Þessar þjónustur eru hannaðar til að mæta fjölbreyttum þörfum fyrirtækja og einstaklinga.",
+        "benefits": {
+          "professionalVisualContent": "Faglegt myndefni sem passar við ímynd vörumerkisins.",
+          "enhancedBrandEngagement": "Betri tenging vörumerkis við áhorfendur með hágæða myndum og myndböndum.",
+          "highImpactMarketing": "Áhrifamikil markaðssetning með sannfærandi myndasögum."
+        }
+      },
+      "tools": {
+        "title": "Þjónusta okkar",
+        "commercialPhotography": {
+          "title": "Auglýsingaljósmyndun",
+          "description": "Auglýsingaljósmyndun lyftir ímynd vörumerkja með því að framleiða sjónrænt heillandi efni sem laðar að viðskiptavini og bætir vörumerkjaupplifun."
+        },
+        "eventPhotography": {
+          "title": "Viðburðaljósmyndun",
+          "description": "Viðburðaljósmyndun fangar kjarnann í lifandi upplifunum og varðveitir augnablik sem skapa varanleg áhrif."
+        },
+        "videoProduction": {
+          "title": "Myndbandsframleiðsla",
+          "description": "Myndbandsframleiðsla umbreytir hugmyndum í heillandi frásagnir sem hjálpa vörumerkjum að miðla skilaboðum sínum með skýrleika og áhrifum."
+        },
+        "dronePhotography": {
+          "title": "Drónaljósmyndun",
+          "description": "Drónaljósmyndun býður upp á fuglaskoðun sem veitir dramatískt sjónarhorn og eykur söguskilning og sjónrænan áhrifamátt."
+        },
+        "editingPostProduction": {
+          "title": "Eftirvinnsla og klipping",
+          "description": "Eftirvinnsla og klipping fullkomnar hrátt myndefni og breytir því í heillandi efni sem passar við ímynd vörumerkisins."
+        }
+      },
+      "strategies": {
+        "commercialPhotography": {
+          "title": "Auglýsingaljósmyndun",
+          "steps": {
+            "productPhotography": "Sýna vörur með hágæða myndum fyrir netverslanir, vörulista og auglýsingar.",
+            "corporatePortraits": "Faglegt myndefni fyrir hópmyndir, stjórnendamyndir og fyrirtækjamarkaðssetningu.",
+            "advertisingShoots": "Skapandi ljósmyndun fyrir markaðsherferðir, auglýsingaskilti og samfélagsmiðlaauglýsingar."
+          },
+          "example": "Smásölufatamerki jók umbreytingar á netinu um 25% eftir að hafa uppfært vefsíðuna sína með fagmannlega stíluðum og teknar vörumyndum."
+        },
+        "eventPhotography": {
+          "title": "Viðburðaljósmyndun",
+          "steps": {
+            "corporateEvents": "Skjalfesta ráðstefnur, vöruútgáfur og tímamót fyrirtækja.",
+            "privateCelebrations": "Fanga sérstök tækifæri eins og brúðkaup, afmæli og fjölskyldusamkomur.",
+            "promotionalEvents": "Sýna vörumerkjakynningar og upplifunarauglýsingar."
+          },
+          "example": "Tæknifyrirtæki nýtti sér fagmannlega teknar myndir úr vöruútgáfu sinni til að búa til áhrifaríka samfélagsmiðlaherferð sem jók þátttöku áhorfenda um 40%."
+        },
+        "videoProduction": {
+          "title": "Myndbandsframleiðsla",
+          "steps": {
+            "conceptDevelopment": "Vinna með viðskiptavinum til að móta einstaka frásögn.",
+            "filming": "Nota hágæða búnað og tækni til nákvæmrar framkvæmdar.",
+            "editing": "Bæta við hreyfimyndum, hljóðrásum og áhrifum til að skila fullkomnum myndböndum."
+          },
+          "example": "Fjármálaþjónustufyrirtæki fékk 50% fleiri leiðir með því að kynna útskýrandi myndband sem einfaldaði flóknar þjónustur þeirra fyrir væntanlega viðskiptavini."
+        },
+        "dronePhotography": {
+          "title": "Drónaljósmyndun",
+          "steps": {
+            "aerialEventCoverage": "Fanga stórviðburði með stórkostlegum yfirsýnum.",
+            "propertyShowcases": "Bæta fasteignaskrár með hágæða loftmyndum.",
+            "scenicPhotography": "Skjalfesta landslag og byggingarlist frá einstökum sjónarhornum."
+          },
+          "example": "Fasteignafélag jók fasteignasölu um 30% eftir að hafa tekið drónamyndir inn í markaðsefni sitt."
+        },
+        "editingPostProduction": {
+          "title": "Eftirvinnsla og klipping",
+          "steps": {
+            "photoEditing": "Stilla lýsingu, liti og samsetningu fyrir hámarksáhrif.",
+            "videoEnhancements": "Bæta við umbreytingum, áhrifum og tónlist fyrir fagmannleg myndbönd.",
+            "advancedTechniques": "Nota hreyfimyndir, hreyfigrafík og litaleiðréttingar."
+          },
+          "example": "Lúxusveitingastaður bætti netviðveru sína með því að sýna fagmannlega breyttar myndir af mat, sem jók bókanir um 20%."
+        }
+      }
+    },
+    "webdev": {
+      "title": "Vefsíðu- og vefumsóknarþróun",
+      "description": "Í dag er öflug nærvera á netinu undirstaða velgengni fyrirtækja. Deildin um vefsíðu- og vefumsóknarþróun sérhæfir sig í að byggja upp nýstárlegar, notendavænar og tæknilega fullkomnar lausnir sem eru sniðnar að fjölbreyttum viðskiptum. Frá sérsniðnum vefsíðum til háþróaðra umsókna tryggir þessi deild að fyrirtæki dafni á samkeppnishæfu stafrænu sviði.",
+      "sections": {
+        "websiteDevelopment": {
+          "title": "Þróun vefsíðna",
+          "description": "Vel hönnuð vefsíða er meira en stafrænt andlit - hún er andlit vörumerkisins þíns og lykilatriði fyrir þátttöku og viðskipti.",
+          "features": {
+            "customWebsiteDesign": "Sérsniðin hönnun sem endurspeglar ímynd vörumerkisins og óskir markhópsins.",
+            "responsiveDesign": "Hagrætt fyrir hnökralausa frammistöðu á öllum tækjum.",
+            "cms": "Nýting á kerfum eins og WordPress eða Joomla fyrir auðveldar uppfærslur á efni."
+          },
+          "howItWorks": {
+            "conceptDevelopment": "Samstarf við að skilgreina markmið og uppbyggingu vefsíðunnar.",
+            "designAndBuild": "Sameining sköpunarhönnunar og öflugs tæknilegs þróunar.",
+            "launchAndOptimization": "Víðtæk prófun áður en hún fer í loftið til að tryggja hnökralausa notendaupplifun."
+          },
+          "example": "Smásölufyrirtæki endurbætti vefsíðu sína með áherslu á hraða og notendavænni, sem leiddi til 35% aukningar á netviðskiptum."
+        },
+        "eCommerceSolutions": {
+          "title": "Rafrænar viðskiptalausnir",
+          "description": "Rafrænar verslanir umbreyta hvernig fyrirtæki selja, með alþjóðlegri nánd og hnökralausum viðskiptum.",
+          "features": {
+            "onlineStoreDevelopment": "Örugg greiðslukerfi og leiðandi flakk.",
+            "integrationServices": "Bæta við nauðsynlegum verkfærum eins og birgðafylgni og viðskiptavinadómum.",
+            "performanceOptimization": "Tryggja hraðar hleðslutíma og lágmarks niðritíma."
+          },
+          "howItWorks": {
+            "platformSelection": "Velja rétta rafræna viðskiptaramma fyrir þínar þarfir.",
+            "designAndIntegration": "Byggja eiginleika sem bæta notkun og skilvirkni.",
+            "maintenanceAndUpgrades": "Tryggja stöðugar frammistöðubætur."
+          },
+          "example": "Rafrænt verslunarstæði tvöfaldaði tekjur sínar innan sex mánaða eftir að hafa komið á markað með bjartsýna, notendamiðaða netvettvang."
+        },
+        "webApplicationDevelopment": {
+          "title": "Þróun vefumsókna",
+          "description": "Vefumsóknir veita gagnvirkar og kraftmiklar lausnir sem straumlínulaga starfsemi og auka notendaþátttöku.",
+          "features": {
+            "customApplications": "Sérsniðin verkfæri fyrir rekstur, greiningu eða notendavirkni.",
+            "apiIntegration": "Tengingar við ytri kerfi til að auka getu.",
+            "scalableSolutions": "Hannað til að vaxa með fyrirtækinu."
+          },
+          "howItWorks": {
+            "needsAnalysis": "Skilja áskoranir og markmið.",
+            "development": "Byggja öruggar og stigvaxandi umsóknir með nútímalegum ramma.",
+            "deployment": "Víðtæk prófun fyrir útgáfu til að tryggja virkni og öryggi."
+          },
+          "example": "Flutningafyrirtæki innleiddi sérsniðna umsókn til að fylgjast með í rauntíma og bætti skilvirkni um 40%."
+        },
+        "mobileWebDevelopment": {
+          "title": "Þróun fyrir farsíma",
+          "description": "Með vaxandi fjölda farsímanotenda tryggir hönnun fyrir farsíma árangursríkar og grípandi vefsíður á öllum tækjum.",
+          "features": {
+            "mobileOptimization": "Hannað fyrir hraða og notagildi á litlum skjám.",
+            "adaptiveInterfaces": "Dýnamísk skipulag fyrir hnökralausa upplifun.",
+            "seoBestPractices": "Bætt sýnileika á leitarvélum með farsímavænni hönnun."
+          },
+          "howItWorks": {
+            "mobileFirstStrategy": "Forgangsröðun farsíma við þróun.",
+            "crossDeviceTesting": "Tryggja samhæfni við mörg tæki og kerfi.",
+            "feedbackIntegration": "Endurbætur byggðar á raunverulegri notkun."
+          },
+          "example": "Fréttavefur jók farsímagagnvirkni um 60% með endurhönnun sem lagði áherslu á notkun fyrir farsíma."
+        },
+        "uxUiDesign": {
+          "title": "UX/UI hönnun",
+          "description": "Frábær UX/UI hönnun breytir kerfum í notendavæn og sjónrænt aðlaðandi verkfæri sem notendur njóta að nota.",
+          "features": {
+            "prototyping": "Þróun frumgerða til að prófa og betrumbæta hugmyndir.",
+            "userCenteredDesign": "Samræming við þarfir og hegðun notenda.",
+            "aestheticEnhancements": "Samfelldir litasamsetningar, leturgerðir og skipulag."
+          },
+          "howItWorks": {
+            "research": "Greina hegðun og væntingar notenda.",
+            "designProcess": "Búa til sjónrænt sláandi og notendavæn viðmót.",
+            "usabilityTesting": "Safna ábendingum til stöðugra endurbóta."
+          },
+          "example": "Fjártækniforrit dró úr brottfalli notenda um 25% eftir innleiðingu á leiðarbetra viðmóti."
+        },
+        "pwa": {
+          "title": "Framsæknar vefumsóknir (PWA)",
+          "description": "PWA sameina bestu eiginleika vefsíðna og farsímaforrita og bjóða upp á hraða, áreiðanleika og notkun án nettengingar.",
+          "features": {
+            "offlineFunctionality": "Tryggja notagildi án nettengingar.",
+            "appLikeExperience": "Ýta tilkynningum og fullskjáleiðsögn.",
+            "crossBrowserCompatibility": "Áreiðanleg frammistaða á ýmsum kerfum."
+          },
+          "howItWorks": {
+            "pwaDesign": "Kortleggja eiginleika miðað við þarfir notenda.",
+            "development": "Nýta ramma eins og Angular eða React.",
+            "launchAndMaintenance": "Stöðugar endurbætur fyrir bestu frammistöðu."
+          },
+          "example": "Menntavettvangur jók þátttöku um 50% með PWA sem bauð upp á kennslustundir án nettengingar."
+        }
+      }
+    }
+  },
+  "projects": {
+    "upcoming": {
+      "heading": "Komandi Verkefni",
+      "features-heading": "Lykileiginleikar",
+      "aiSupport": {
+        "title": "Stuðningur Knúinn AI",
+        "description": "Stuðningur okkar knúinn AI endurskilgreinir þjónustu við viðskiptavini með því að leysa algeng vandamál eins og háan kostnað, takmarkaða aðgengi og úreltar lausnir. Með 24/7 aðgengi, kostnaðarhagkvæmni sjálfvirkni og persónulegum samskiptum sameinast kerfið auðveldlega við samskiptarásir eins og spjallforrit og tölvupóst. Það lærir af fyrirspurnum viðskiptavina, stækkar til að takast á við margar beiðnir samtímis og veitir hagnýta greiningu til að bæta þjónustugæði. Þessi nýsköpun tryggir að fyrirtæki geti veitt framúrskarandi stuðning á meðan þau hámarka auðlindir sínar.",
+        "features": {
+          "availability": "24/7 aðgengi",
+          "automation": "Kostnaðarhagkvæm sjálfvirkni",
+          "interactions": "Persónuleg samskipti",
+          "integration": "Auðveld samþætting við samskiptarásir",
+          "learning": "Stöðugt nám af fyrirspurnum viðskiptavina",
+          "scalability": "Skalanlegt til að takast á við margar beiðnir",
+          "analytics": "Hagnýt greining til að bæta þjónustu"
+        }
+      },
+      "nfcReviews": {
+        "title": "Sjálfvirk Úttektarsöfnun Knúin NFC",
+        "description": "Sjálfvirk Úttektarsöfnun Knúin NFC umbreytir því hvernig fyrirtæki safna viðbrögðum frá viðskiptavinum. Með því að sjálfvirknivæða ferlið með NFC-merkjun og gervigreind safnast umsagnir hratt og auðveldlega, sem minnkar handvirkan vinnu og kostnað. Viðskiptavinir njóta straumlínulagaðrar upplifunar, meðan fyrirtæki njóta aukinnar þátttöku, nákvæmra viðbragða og betri einkunna. Lausnin er skalanleg og býður upp á ítarlega greiningu, sem hjálpar greinum eins og gestrisni, smásölu og matargerð að bæta orðspor sitt á skilvirkan hátt.",
+        "features": {
+          "automation": "Sjálfvirk úttektarsöfnun",
+          "nfcIntegration": "Auðveld samþætting NFC-merkja",
+          "aiProcessing": "Gervigreindarúrvinnsla á viðbrögðum",
+          "customerExperience": "Straumlínulöguð upplifun viðskiptavina",
+          "analytics": "Ítarleg frammistöðugreining",
+          "scalability": "Skalanlegt yfir mörg svæði",
+          "efficiency": "Minnkuð handvirk vinna og kostnaður",
+          "engagement": "Aukin þátttaka viðskiptavina"
+        }
+      },
+      "cryptoMarketing": {
+        "title": "Markaðspakki fyrir Gagnlegar Dulritunarverkefni",
+        "description": "Markaðspakki okkar er sérsniðinn sérstaklega fyrir gagnleg dulritunarverkefni og styður þau á öllum stigum þróunar. Pakkinn inniheldur stefnu vörumerkja, efnisgerð, samfélagsþátttöku og áhrifavalda. Frá bjartsýni vefsíðum til markvissra auglýsinga- og PR-herferða tryggir nálgun okkar aukna sýnileika, traust og upptöku. Hönnuð með skalanleika og mælanlegum niðurstöðum í huga, stuðlar þessi þjónusta að vexti á meðan hún mætir einstökum kröfum dulritunarheimsins.",
+        "features": {
+          "strategy": "Heildræn stefna vörumerkja",
+          "content": "Fagleg efnisgerð",
+          "community": "Virk samfélagsþátttaka",
+          "influencers": "Markviss áhrifavalda þátttaka",
+          "optimization": "Bjartsýni vefsíður og SEO",
+          "advertising": "Markvissar auglýsingaherferðir",
+          "pr": "PR-herferðir miðaðar að dulritunarheimi",
+          "analytics": "Eftirfylgni og frammistöðugreining"
+        }
+      }
+    }
   },
   "contact-form": {
-    "nameRequired": "Vinsamlegast sláðu inn nafn þitt",
+    "general": {
+      "title": "Hafðu samband",
+      "subTitle": "Almennt",
+      "description": "Við erum hér til að aðstoða þig með hvaða spurningar sem þú getur haft. Hafðu samband við okkur og við svörum eins fljótt og auðið er.",
+      "phone": "Sími",
+      "people": {
+        "devLead": "Stjórnarfulltrúi þróunardeildar og yfirmaður væntanlegra vara",
+        "clientRelations": "Stjórnarfulltrúi viðskiptatengsla"
+      }
+    },
+    "nameRequired": "Vinsamlegast sláðu inn nafnið þitt",
     "invalidEmail": "Vinsamlegast sláðu inn gilt netfang",
     "phoneRequired": "Vinsamlegast sláðu inn símanúmer",
     "industryRequired": "Vinsamlegast veldu iðnað",
-    "previousExperienceRequired": "Vinsamlegast veldu þá valkost sem passar við fyrri reynslu þína",
-    "howDidYouHearRequired": "Vinsamlegast veldu hvernig þú heyrðir um okkur",
+    "previousExperienceRequired": "Vinsamlegast veldu þá valmöguleika sem henta fyrri reynslu þinni",
+    "howDidYouHearRequired": "Vinsamlegast veldu hvernig þú heyrðir af okkur",
     "businessOperationDurationRequired": "Vinsamlegast veldu hversu lengi fyrirtækið þitt hefur verið í rekstri",
-    "selectServiceOrCustom": "Vinsamlegast veldu að minnsta kosti eina þjónustu eða tilgreindu sérstaka þjónustu",
+    "selectServiceOrCustom": "Vinsamlegast veldu að minnsta kosti eina þjónustu eða tilgreindu sérsniðna þjónustu",
     "name": "Nafn þitt",
     "email": "Netfang þitt",
     "phone": "Símanúmer þitt (WhatsApp eða Telegram)",
-    "servicesInterest": "Hvaða þjónustu hefur þú áhuga á?",
+    "servicesInterest": "Hverjar af okkar þjónustum hefur þú áhuga á?",
     "services": {
-      "digitalMarketing": "Stafrænn markaðssetning",
-      "brandDevelopmentPR": "Vörumerkjaþróun og almannatengsl",
-      "reputationDataProtection": "Orðspor og gagnavernd",
-      "analyticsStrategy": "Greiningar og stefnumótun",
-      "photoVideoShooting": "Ljósmyndun og myndbandsupptökur",
-      "webDevelopment": "Vefsíðu- og vefumsóknarþróun",
+      "digitalMarketing": "Digital Marketing",
+      "brandDevelopmentPR": "Vöruþróun og PR",
+      "reputationDataProtection": "Ímynd og gagnaöryggi",
+      "analyticsStrategy": "Greining og stefnumótun",
+      "photoVideoShooting": "Myndatökur og vídeótökur",
+      "webDevelopment": "Vefhönnun og forritun",
       "custom": "Sérsniðin þjónusta"
     },
-    "industriesInterest": "Í hvaða iðnaði eða geira starfar fyrirtækið þitt?",
+    "industriesInterest": "Í hvaða atvinnugrein eða geira er fyrirtæki þitt starfandi?",
     "industries": {
       "retailEcommerce": "Smásala og netverslun",
       "technologySoftware": "Tækni og hugbúnaður",
       "healthcarePharmaceuticals": "Heilbrigðisþjónusta og lyfjaframleiðsla",
       "financeInsurance": "Fjármál og tryggingar",
       "educationTraining": "Menntun og þjálfun",
-      "hospitalityTourism": "Ferðaþjónusta og gestrisni",
-      "manufacturingProduction": "Framleiðsla og framleiðsla",
+      "hospitalityTourism": "Hótel- og ferðaþjónusta",
+      "manufacturingProduction": "Framleiðsla og framleiðsluferlar",
       "realEstateConstruction": "Fasteignir og byggingariðnaður",
-      "artsEntertainmentMedia": "Listir, skemmtun og fjölmiðlar",
+      "artsEntertainmentMedia": "Listir, afþreying og fjölmiðlar",
       "transportationLogistics": "Samgöngur og flutningar",
-      "nonprofitCommunityServices": "Góðgerðarsamtök og samfélagsþjónusta",
+      "nonprofitCommunityServices": "Óhagnýtar og samfélagsþjónustur",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
     "experienceInterest": "Hefur þú áður unnið með svipaða þjónustu eða veitanda?",
@@ -47,23 +717,31 @@
       "negative": "Nei",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
-    "howDidYouHearInterest": "Hvernig heyrðir þú um okkur?",
+    "howDidYouHearInterest": "Hvernig heyrðir þú af okkur?",
     "howDidYouHear": {
-      "friends": "Ráðleggingar frá vinum",
-      "family": "Ráðleggingar frá fjölskyldumeðlimum",
-      "dentist": "Ráðleggingar frá öðrum tannlækni",
+      "friends": "Ráð frá vinum",
+      "family": "Ráð frá fjölskyldumeðlimum",
+      "dentist": "Ráð frá öðrum tannlækni",
       "advertising": "Auglýsingar",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
     "businessOperationInterest": "Hversu lengi hefur fyrirtækið þitt verið í rekstri?",
     "businessOperationDuration": {
-      "lessThanOneYear": "Minna en eitt ár",
+      "lessThanOneYear": "Minna en ár",
       "oneYear": "Eitt ár",
-      "twoYears": "Tveir ár",
+      "twoYears": "Tvö ár",
       "moreThanThreeYears": "Meira en þrjú ár",
       "moreThanFiveYears": "Meira en fimm ár",
       "custom": "Annað (vinsamlegast tilgreindu)"
     },
+    "additionalCommentsInterest": "Einhverjar aukaupplýsingar?",
+    "additionalCommentsPlaceholder": "Aukakomment",
     "submit": "Senda"
+  },
+  "errors": {
+    "notFound": {
+      "description": "Síða finnst ekki",
+      "button": "Heim"
+    }
   }
 }
