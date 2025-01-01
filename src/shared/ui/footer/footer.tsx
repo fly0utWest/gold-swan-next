@@ -3,6 +3,9 @@ import { SquareArrowUp } from "solar-icon-set";
 import { useTranslations } from "next-intl";
 import BrandLogo from "../brand-logo";
 import FooterLink from "./footer-link";
+import Instagram from "@/shared/assets/icons/instagram";
+import TwitterX from "@/shared/assets/icons/twitterx";
+import Facebook from "@/shared/assets/icons/facebook";
 
 export default function Footer() {
   const t = useTranslations("nav");
@@ -42,6 +45,36 @@ export default function Footer() {
           </div>
         </Link>
       </div>
+      <div className="flex w-full justify-center items-center gap-8 text-foregroumd">
+        <div className="hover:font-semibold transition-all flex gap-1">
+          <Link
+            href="https://www.facebook.com/people/Gold-swan/61569983624186/?mibextid=wwXIfr&rdid=99mFpxXQUgxUCEAm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FgD4Um2u3gxKvtLNW%2F%3Fmibextid%3DwwXIfr"
+            className="text-primary-500 flex gap-2 items-center"
+          >
+            <span className="hidden uppercase lg:inline">Facebook</span>
+            <Facebook />
+          </Link>
+        </div>
+        <div className="hover:font-semibold transition-all flex gap-1">
+          <Link
+            href="https://x.com/goldswaniceland"
+            className="text-primary-500 flex gap-2 items-center"
+          >
+            <span className="hidden uppercase lg:inline">Twitter/X</span>
+            <TwitterX />
+          </Link>
+        </div>
+        <div className="hover:font-semibold transition-all flex gap-1">
+          <Link
+            href="https://www.instagram.com/goldswan.is/profilecard"
+            className="text-primary-500 flex gap-2 items-center"
+          >
+            <span className="hidden uppercase lg:inline">Instagram</span>
+            <Instagram />
+          </Link>
+        </div>
+      </div>
+      <p className="text-neutral-800 text-lg font-light w-full text-center lg:text-left">&copy; Gold Swan Agency, 2024</p>
     </footer>
   );
 }

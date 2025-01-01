@@ -15,7 +15,8 @@ const oswaldSans = Oswald({
 
 export const metadata: Metadata = {
   title: "Gold Swan Agency",
-  description: "",
+  description:
+    "Global agency specializing in digital marketing, branding, PR, and reputation management. Our goal is to create innovative strategies that drive growth, build trust, and ensure long-term success for our clients",
 };
 
 export default async function RootLayout(
@@ -44,7 +45,7 @@ export default async function RootLayout(
           <ThemeProvider defaultTheme="dark" attribute="class">
             <div className="absolute top-0" id="top"></div>
             <Header />
-              <main className="py-24 min-h-[90dvh]">{children}</main>
+            <main className="py-24 min-h-[90dvh]">{children}</main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
