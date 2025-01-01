@@ -26,7 +26,7 @@ const DepartmentSection = () => {
     {
       title: t("reputationAndDataProtection"),
       icon: Safe2,
-      href: "/departments/ReputationAndDataProtection",
+      href: "/departments/reputationAndDataProtection",
     },
     {
       title: t("analyticsAndStrategy"),
@@ -36,7 +36,7 @@ const DepartmentSection = () => {
     {
       title: t("photoVideoShooting"),
       icon: Camera,
-      href: "/video",
+      href: "/departments/videoPhoto",
     },
     {
       title: t("webdev"),
