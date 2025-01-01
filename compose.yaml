@@ -10,13 +10,9 @@ services:
 
   caddy:
     image: ghcr.io/iarekylew00t/caddy-cloudflare:latest
-    environment:
-      - CF_API_TOKEN=${CF_API_TOKEN}
-      - CADDY_RP_DOMAIN=${CADDY_RP_DOMAIN}
     ports:
       - '80:80'
       - '443:443'
-      - '5555:5555'
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
@@ -30,4 +26,3 @@ networks:
 volumes:
   caddy_data:
   caddy_config:
-  postgres_data:
