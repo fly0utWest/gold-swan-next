@@ -22,13 +22,13 @@ const StaticContacts = () => {
       </Heading>
       <div>
         <ContactItem
-          icon={<PhoneCallingRounded size={32} color="var(--primary-500)" />}
+          Icon={PhoneCallingRounded}
           title={t("phone")}
           link="tel:+354 788 8066"
           content="+354 788 8066"
         />
         <ContactItem
-          icon={<CallMedicine size={32} color="var(--primary-500)" />}
+          Icon={CallMedicine}
           title="Whatsapp"
           link="https://wa.me/3547888066"
           content="+354 788 8066"
@@ -40,13 +40,13 @@ const StaticContacts = () => {
       </Heading>
       <div>
         <ContactItem
-          icon={<Plain size={32} color="var(--primary-500)" />}
+          Icon={Plain}
           title={t("people.devLead")}
           link="https://t.me/dark_aura"
           content="@dark_aura"
         />
         <ContactItem
-          icon={<Plain size={32} color="var(--primary-500)" />}
+          Icon={Plain}
           title={t("people.clientRelations")}
           link="https://t.me/gold_swanis"
           content="@gold_swanis"
@@ -55,7 +55,7 @@ const StaticContacts = () => {
       <hr className="w-full border-t border-foreground my-2" />
       <ContactItem
         title="Email"
-        icon={<LetterOpened size={32} />}
+        Icon={LetterOpened}
         link="mailto:goldswaniceland@gmail.com"
         content="goldswaniceland@gmail.com"
       />

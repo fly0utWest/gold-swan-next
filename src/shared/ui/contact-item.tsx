@@ -1,21 +1,20 @@
-import { ReactNode } from "react";
 import Link from "./link";
 
 type InfoItemProps = {
-  icon: ReactNode;
+  Icon: (_: any) => JSX.Element;
   title: string;
   content: string;
   link?: string;
 };
 
 const ContactItem: React.FC<InfoItemProps> = ({
-  icon,
+  Icon,
   title,
   content,
   link,
 }) => (
   <div className="flex flex-row w-full p-4 items-center gap-4">
-    {icon}
+    <Icon className="shrink-0"/>
     <div>
       <p className="text-xl">{title}</p>
       {link ? (
