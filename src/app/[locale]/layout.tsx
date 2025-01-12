@@ -39,6 +39,9 @@ export default async function RootLayout(
       className="scroll-smooth overscroll-none *:selection:bg-primary-500 *:selection:text-foreground"
       suppressHydrationWarning
     >
+      <head>
+        <script src="https://inchatai.5dgo.dev/inchat-widget.iife.js"></script>
+      </head>
       <body className={`${oswaldSans.className} antialiased`}>
         <ClientObserver />
         <NextIntlClientProvider messages={messages}>

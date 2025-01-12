@@ -14,7 +14,7 @@ const ContactItem: React.FC<InfoItemProps> = ({
   link,
 }) => (
   <div className="flex flex-row w-full p-4 items-center gap-4">
-    <Icon className="shrink-0"/>
+    <Icon size={32} color="var(--primary-500)" className="shrink-0"/>
     <div>
       <p className="text-xl">{title}</p>
       {link ? (
