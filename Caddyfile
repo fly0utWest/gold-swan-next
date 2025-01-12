@@ -1,3 +1,0 @@
-gold-swan.is {
-    reverse_proxy nextjs:3000
-}

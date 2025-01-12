@@ -1,28 +1,7 @@
 services:
-  nextjs:
+  gold-swan-web:
     build: .
     environment:
       - NODE_ENV=production
     ports:
-      - '3000:3000'
-    networks:
-      - webnet
-
-  caddy:
-    image: ghcr.io/iarekylew00t/caddy-cloudflare:latest
-    ports:
-      - '80:80'
-      - '443:443'
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
-      - caddy_data:/data
-      - caddy_config:/config
-    networks:
-      - webnet
-
-networks:
-  webnet:
-
-volumes:
-  caddy_data:
-  caddy_config:
+      - "9999:9999"

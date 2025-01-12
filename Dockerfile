@@ -1,21 +1,20 @@
-FROM node:18 AS builder
+FROM node:22 AS builder
 
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci --only=production
 
 COPY . .
 RUN npm run build
 
-FROM node:18-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
 COPY --from=builder /app ./
+COPY --from=builder /app/node_modules ./node_modules
 
-RUN npm install --production
+EXPOSE 9999
 
-EXPOSE 3000
-
-CMD ["npx", "next", "start"]
+CMD ["node", ".next/standalone"]
