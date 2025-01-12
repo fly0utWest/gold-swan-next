@@ -17,4 +17,4 @@ COPY --from=builder /app/node_modules ./node_modules
 
 EXPOSE 9999
 
-CMD ["node", ".next/standalone"]
+CMD ["npx", "next", "start", "-p", "9999"]
