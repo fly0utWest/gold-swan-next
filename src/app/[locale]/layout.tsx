@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import ClientObserver from "@/shared/utils/client-observer";
 import Footer from "@/shared/ui/footer/footer";
 import Script from "next/script";
+import Inchat from "@/shared/ui/inchat";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
@@ -42,15 +43,12 @@ export default async function RootLayout(
     >
       <head>
         <Script
-          src="https://staticai.5dgo.dev/inchat-widget.iife.js"
+          src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js"
           strategy="lazyOnload"
-          onLoad={() => {
-            // @ts-ignore
-            window.mountInchatWidget();
-          }}
         />
       </head>
       <body className={`${oswaldSans.className} antialiased`}>
+        <Inchat />
         <ClientObserver />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider defaultTheme="dark" attribute="class">
