@@ -42,7 +42,7 @@ export default async function RootLayout(
     >
       <head>
         <Script
-          src="https://inchatai.5dgo.dev/inchat-widget.iife.js"
+          src="https://staticai.5dgo.dev/inchat-widget.iife.js"
           strategy="beforeInteractive"
         />
       </head>
