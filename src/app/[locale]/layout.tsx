@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import ClientObserver from "@/shared/utils/client-observer";
 import Footer from "@/shared/ui/footer/footer";
+import Script from "next/script";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
@@ -40,7 +41,10 @@ export default async function RootLayout(
       suppressHydrationWarning
     >
       <head>
-        <script src="https://inchatai.5dgo.dev/inchat-widget.iife.js"></script>
+        <Script
+          src="https://inchatai.5dgo.dev/inchat-widget.iife.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body className={`${oswaldSans.className} antialiased`}>
         <ClientObserver />
