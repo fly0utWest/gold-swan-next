@@ -43,7 +43,11 @@ export default async function RootLayout(
       <head>
         <Script
           src="https://staticai.5dgo.dev/inchat-widget.iife.js"
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
+          onLoad={() => {
+            // @ts-ignore
+            window.mountInchatWidget();
+          }}
         />
       </head>
       <body className={`${oswaldSans.className} antialiased`}>
