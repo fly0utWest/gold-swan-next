@@ -17,6 +17,14 @@ export default function HeaderMenu({ children }: { children: ReactNode }) {
     setMount(true);
   }, []);
 
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+    }
+  }, [open])
+
   if (!mounted) return null;
 
   return (
