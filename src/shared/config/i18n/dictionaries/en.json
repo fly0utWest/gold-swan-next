@@ -522,96 +522,35 @@
     "webdev": {
       "title": "Website and Web Application Development",
       "description": "In today's digital landscape, a strong online presence is the foundation of business success. The Website and Web Application Development department specializes in building innovative, user-friendly, and technically sound platforms tailored to meet diverse business needs. From custom websites to advanced applications, this department ensures businesses thrive in the competitive digital space.",
-      "sections": {
-        "websiteDevelopment": {
-          "title": "Website Development",
-          "description": "A well-designed website is more than a digital storefront—it’s the face of your brand and a key driver of engagement and conversions.",
-          "features": {
-            "customWebsiteDesign": "Tailored designs reflecting the brand's identity and audience preferences.",
-            "responsiveDesign": "Optimized for seamless performance across all devices.",
-            "cms": "Utilizing platforms like WordPress or Joomla for easy content updates."
+      "fullStackDev": {
+        "title": "End to end web development",
+        "stages": "Idea => Design => Implementation => Testing & Launch",
+        "features": {
+          "landing": {
+            "title": "Fantastic landing pages",
+            "description": "Beautiful landing pages with nice UX and web-analytics support"
           },
-          "howItWorks": {
-            "conceptDevelopment": "Collaborating to define the website's goals and structure.",
-            "designAndBuild": "Combining creative design with robust technical development.",
-            "launchAndOptimization": "Testing extensively before going live to ensure a smooth user experience."
+          "contentDrivenSite": {
+            "title": "Complex content-driven web-solutions",
+            "description": "Complex content-driven web-solutions (e-commerce with billing system and database support)"
           },
-          "example": "A retail brand revamped its website, focusing on speed and user-friendliness, leading to a 35% increase in online sales."
-        },
-        "eCommerceSolutions": {
-          "title": "E-commerce Solutions",
-          "description": "E-commerce platforms transform how businesses sell, enabling global reach and frictionless transactions.",
-          "features": {
-            "onlineStoreDevelopment": "Secure payment systems and intuitive navigation.",
-            "integrationServices": "Adding essential tools like inventory tracking and customer reviews.",
-            "performanceOptimization": "Ensuring fast loading times and minimal downtime."
+          "PWA": {
+            "title": "Highly interactive web-apps",
+            "description": "Highly interactive web-apps with PWA* functionality"
+          }
+        }
+      },
+      "LLMIntegrations": {
+        "title": "LLM integrations in business processes",
+        "features": {
+          "CRMAutomation": {
+            "title": "CRM automation",
+            "description": "CRM automation in Telegram/WhatsApp or chat-widget on your website"
           },
-          "howItWorks": {
-            "platformSelection": "Identifying the right e-commerce framework for your needs.",
-            "designAndIntegration": "Building features that enhance usability and efficiency.",
-            "maintenanceAndUpgrades": "Ensuring continuous performance improvements."
-          },
-          "example": "An e-commerce store doubled its revenue within six months of launching an optimized, user-centric online platform."
-        },
-        "webApplicationDevelopment": {
-          "title": "Web Application Development",
-          "description": "Web applications deliver interactive and dynamic solutions, streamlining operations and enhancing user engagement.",
-          "features": {
-            "customApplications": "Tailored tools for operations, analysis, or user interaction.",
-            "apiIntegration": "Connecting with external systems to expand capabilities.",
-            "scalableSolutions": "Designed to grow with the business."
-          },
-          "howItWorks": {
-            "needsAnalysis": "Understanding the challenges and goals.",
-            "development": "Building secure and scalable applications using modern frameworks.",
-            "deployment": "Rigorous testing before launch to ensure functionality and security."
-          },
-          "example": "A logistics company implemented a custom app for real-time tracking, improving efficiency by 40%."
-        },
-        "mobileWebDevelopment": {
-          "title": "Mobile Web Development",
-          "description": "With the rise of mobile users, mobile-first design ensures websites are effective and engaging across all devices.",
-          "features": {
-            "mobileOptimization": "Designing for speed and usability on small screens.",
-            "adaptiveInterfaces": "Dynamic layouts for a seamless experience.",
-            "seoBestPractices": "Improving visibility on search engines with mobile-friendly design."
-          },
-          "howItWorks": {
-            "mobileFirstStrategy": "Prioritizing mobile design during development.",
-            "crossDeviceTesting": "Ensuring compatibility with multiple devices and platforms.",
-            "feedbackIntegration": "Iterative improvements based on real-world usage."
-          },
-          "example": "A news portal increased mobile traffic by 60% with a redesign focused on mobile usability."
-        },
-        "uxUiDesign": {
-          "title": "UX/UI Design",
-          "description": "Exceptional UX/UI design turns platforms into intuitive, visually appealing tools that users enjoy interacting with.",
-          "features": {
-            "prototyping": "Developing blueprints to test and refine ideas.",
-            "userCenteredDesign": "Aligning with user needs and behaviors.",
-            "aestheticEnhancements": "Cohesive color schemes, typography, and layout."
-          },
-          "howItWorks": {
-            "research": "Analyzing user behaviors and expectations.",
-            "designProcess": "Creating visually stunning and user-friendly interfaces.",
-            "usabilityTesting": "Collecting feedback for continuous refinement."
-          },
-          "example": "A fintech app reduced user churn by 25% after implementing a more intuitive interface."
-        },
-        "pwa": {
-          "title": "Progressive Web Applications (PWA)",
-          "description": "PWAs merge the best features of websites and mobile apps, offering speed, reliability, and offline access.",
-          "features": {
-            "offlineFunctionality": "Ensuring usability without an internet connection.",
-            "appLikeExperience": "Push notifications and full-screen navigation.",
-            "crossBrowserCompatibility": "Reliable performance on various platforms."
-          },
-          "howItWorks": {
-            "pwaDesign": "Mapping features to user needs.",
-            "development": "Leveraging frameworks like Angular or React.",
-            "launchAndMaintenance": "Continuous improvements for optimal performance."
-          },
-          "example": "An educational platform boosted engagement by 50% with a PWA offering offline lessons."
+          "customIntegrations": {
+            "title": "Custom integration",
+            "description": "Custom integration in your business processes"
+          }
         }
       }
     }

@@ -1,139 +1,75 @@
 import { useTranslations } from "next-intl";
-import AboutDepartment from "@/widgets/departments/about-department";
-import DepartmentOverview from "@/widgets/departments/department-overview";
-import DepartmentTools from "@/widgets/departments/department-tools";
-import SectionDelimeter from "@/shared/ui/section-delimeter";
-import Button from "@/shared/ui/button";
+import WebdevHeroSection from "@/widgets/departments/webdev/webdev-hero-section.";
+import { StarRainbow, Cart3, MagicStick3, Database, Crown } from "solar-icon-set";
+import WebdevServices from "@/widgets/departments/webdev/webdev-services";
+import ServicesCard from "@/widgets/departments/service-card";
 import Link from "@/shared/ui/link";
-import WebdevHeroSection from "@/widgets/webdev/webdev-hero-section.";
-import { Programming } from "solar-icon-set";
+import Button from "@/shared/ui/button";
+import Marquee from "@/shared/ui/marquee";
 
 export default function WebsiteAndWebAppDevelopmentPage() {
   const t = useTranslations("departments.webdev");
+  const miscT = useTranslations("misc");
+  const fullStackServices = [
+    {
+      Icon: StarRainbow,
+      title: t("fullStackDev.features.landing.title"),
+      description: t("fullStackDev.features.landing.description"),
+    },
+    {
+      Icon: Cart3,
+      title: t("fullStackDev.features.contentDrivenSite.title"),
+      description: t("fullStackDev.features.contentDrivenSite.description"),
+    },
+    {
+      Icon: MagicStick3,
+      title: t("fullStackDev.features.PWA.title"),
+      description: t("fullStackDev.features.PWA.description"),
+    },
+  ];
 
-  const sections = [
+  const llmServices = [
     {
-      key: "websiteDevelopment",
-      title: t("sections.websiteDevelopment.title"),
-      description: t("sections.websiteDevelopment.description"),
-      features: [
-        t("sections.websiteDevelopment.features.customWebsiteDesign"),
-        t("sections.websiteDevelopment.features.responsiveDesign"),
-        t("sections.websiteDevelopment.features.cms"),
-      ],
-      howItWorks: [
-        t("sections.websiteDevelopment.howItWorks.conceptDevelopment"),
-        t("sections.websiteDevelopment.howItWorks.designAndBuild"),
-        t("sections.websiteDevelopment.howItWorks.launchAndOptimization"),
-      ],
-      example: t("sections.websiteDevelopment.example"),
+      Icon: Database,
+      title: t("LLMIntegrations.features.CRMAutomation.title"),
+      description: t("LLMIntegrations.features.CRMAutomation.description"),
     },
     {
-      key: "eCommerceSolutions",
-      title: t("sections.eCommerceSolutions.title"),
-      description: t("sections.eCommerceSolutions.description"),
-      features: [
-        t("sections.eCommerceSolutions.features.onlineStoreDevelopment"),
-        t("sections.eCommerceSolutions.features.integrationServices"),
-        t("sections.eCommerceSolutions.features.performanceOptimization"),
-      ],
-      howItWorks: [
-        t("sections.eCommerceSolutions.howItWorks.platformSelection"),
-        t("sections.eCommerceSolutions.howItWorks.designAndIntegration"),
-        t("sections.eCommerceSolutions.howItWorks.maintenanceAndUpgrades"),
-      ],
-      example: t("sections.eCommerceSolutions.example"),
-    },
-    {
-      key: "webApplicationDevelopment",
-      title: t("sections.webApplicationDevelopment.title"),
-      description: t("sections.webApplicationDevelopment.description"),
-      features: [
-        t("sections.webApplicationDevelopment.features.customApplications"),
-        t("sections.webApplicationDevelopment.features.apiIntegration"),
-        t("sections.webApplicationDevelopment.features.scalableSolutions"),
-      ],
-      howItWorks: [
-        t("sections.webApplicationDevelopment.howItWorks.needsAnalysis"),
-        t("sections.webApplicationDevelopment.howItWorks.development"),
-        t("sections.webApplicationDevelopment.howItWorks.deployment"),
-      ],
-      example: t("sections.webApplicationDevelopment.example"),
-    },
-    {
-      key: "mobileWebDevelopment",
-      title: t("sections.mobileWebDevelopment.title"),
-      description: t("sections.mobileWebDevelopment.description"),
-      features: [
-        t("sections.mobileWebDevelopment.features.mobileOptimization"),
-        t("sections.mobileWebDevelopment.features.adaptiveInterfaces"),
-        t("sections.mobileWebDevelopment.features.seoBestPractices"),
-      ],
-      howItWorks: [
-        t("sections.mobileWebDevelopment.howItWorks.mobileFirstStrategy"),
-        t("sections.mobileWebDevelopment.howItWorks.crossDeviceTesting"),
-        t("sections.mobileWebDevelopment.howItWorks.feedbackIntegration"),
-      ],
-      example: t("sections.mobileWebDevelopment.example"),
-    },
-    {
-      key: "uxUiDesign",
-      title: t("sections.uxUiDesign.title"),
-      description: t("sections.uxUiDesign.description"),
-      features: [
-        t("sections.uxUiDesign.features.prototyping"),
-        t("sections.uxUiDesign.features.userCenteredDesign"),
-        t("sections.uxUiDesign.features.aestheticEnhancements"),
-      ],
-      howItWorks: [
-        t("sections.uxUiDesign.howItWorks.research"),
-        t("sections.uxUiDesign.howItWorks.designProcess"),
-        t("sections.uxUiDesign.howItWorks.usabilityTesting"),
-      ],
-      example: t("sections.uxUiDesign.example"),
-    },
-    {
-      key: "pwa",
-      title: t("sections.pwa.title"),
-      description: t("sections.pwa.description"),
-      features: [
-        t("sections.pwa.features.offlineFunctionality"),
-        t("sections.pwa.features.appLikeExperience"),
-        t("sections.pwa.features.crossBrowserCompatibility"),
-      ],
-      howItWorks: [
-        t("sections.pwa.howItWorks.pwaDesign"),
-        t("sections.pwa.howItWorks.development"),
-        t("sections.pwa.howItWorks.launchAndMaintenance"),
-      ],
-      example: t("sections.pwa.example"),
+      Icon: Crown,
+      title: t("LLMIntegrations.features.customIntegrations.title"),
+      description: t("LLMIntegrations.features.customIntegrations.description"),
     },
   ];
 
   return (
     <>
       <WebdevHeroSection />
-      {/* {sections.map((section) => (
-        <div key={section.key}>
-          <DepartmentOverview
-            heading={section.title}
-            definition={section.description}
-            benefits={section.features}
+      <WebdevServices title={t("fullStackDev.title")}>
+        {fullStackServices.map((service, index) => (
+          <ServicesCard
+            key={index}
+            Icon={service.Icon}
+            title={service.title}
+            description={service.description}
           />
-          <SectionDelimeter />
-          <DepartmentTools
-            heading={section.title}
-            tools={section.howItWorks.map((tool) => ({
-              heading: { headingLevel: "h3", headingText: tool },
-              description: tool,
-            }))}
+        ))}
+      </WebdevServices>
+      <WebdevServices rounded title={t("LLMIntegrations.title")}>
+        {llmServices.map((service, index) => (
+          <ServicesCard
+            key={index}
+            Icon={service.Icon}
+            title={service.title}
+            description={service.description}
           />
-          <SectionDelimeter />
-        </div>
-      ))}
-      <Link href="/contact" className="block w-fit mx-auto mt-16">
-        <Button className="w-48 px-[0!important]">CONTACT US</Button>
-      </Link> */}
+        ))}
+      </WebdevServices>
+
+      <Link href="/contact" className="flex justify-center mt-10">
+        <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
+          <Marquee repeatCount={2}>{miscT("contactUs")}</Marquee>
+        </Button>
+      </Link>
     </>
   );
 }

@@ -8,13 +8,9 @@ interface WebdevHeroSectionProps {
 
 const WebdevHeroSection: React.FC = () => {
   return (
-    <section className="w-full flex  bg-neutral-100 dark:bg-black flex-col px-6 py-8 rounded-b-3xl">
+    <section className="w-full flex  bg-neutral-100 dark:bg-black flex-col px-6 py-8">
       <div className="flex flex-col self-center items-center gap-4">
-        <Programming
-          className=""
-          color="var(--primary-400)"
-          size={86}
-        />
+        <Programming className="" color="var(--primary-400)" size={86} />
         <div className="bg-primary-500 rounded-full h-3 w-3"></div>
       </div>
       <Heading
