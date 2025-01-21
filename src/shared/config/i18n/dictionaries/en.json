@@ -3,7 +3,7 @@
     "darkTheme": "Dark Theme",
     "lightTheme": "Light Theme",
     "loading": "Loading...",
-    "slogan": "We are digital agency that will make your dreams come true!",
+    "slogan": "We’re an All In agency that bets everything on solving your problems.",
     "contactUs": "Contact",
     "knowMore": "Know more"
   },
@@ -13,13 +13,13 @@
     "services": "Services",
     "contact": "Contact",
     "projects": "Projects",
-    "description": "We are digital agency that will make your dreams come true!"
+    "description": "We’re an All In agency that bets everything on solving your problems."
   },
   "about": {
     "heading": "About Us",
-    "description": "We are a global agency specializing in digital marketing, branding, PR, and reputation management. Our goal is to create innovative strategies that drive growth, build trust, and ensure long-term success for our clients.",
-    "idea": {
-      "translated": "Idea",
+    "description": "Why choose us over others?",
+    "flexibility": {
+      "translated": "Flexibility",
       "explained": "During the discussion process with the client, our agency can assist in refining and enhancing their idea, leveraging our extensive experience and broad perspective. We bring a fresh, professional viewpoint that helps turn initial concepts into impactful, well-structured strategies"
     },
     "strategy": {

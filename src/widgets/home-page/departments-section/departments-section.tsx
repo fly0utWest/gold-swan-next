@@ -44,8 +44,9 @@ const DepartmentSection = () => {
       href: "/departments/webdev",
     },
   ];
+
   return (
-    <section className="w-full flex justify-center items-center flex-col px-5 md:px-8 gap-8 md:gap-16">
+    <section className="w-full flex justify-center my-16 items-center flex-col px-5 md:px-8 gap-8 md:gap-16">
       <Heading
         as="h2"
         className="font-bold text-5xl lg:text-7xl text-center"

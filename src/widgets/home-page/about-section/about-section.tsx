@@ -9,8 +9,8 @@ const AboutSection = () => {
 
   const features = [
     {
-      title: t("idea.translated"),
-      content: t("idea.explained"),
+      title: t("flexibility.translated"),
+      content: t("flexibility.explained"),
       icon: Lightbulb,
     },
     {
@@ -26,7 +26,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="bg-neutral-100 dark:bg-black pb-10 px-6 rounded-b-3xl md:rounded-b-5xl" id="about-us">
+    <section className="bg-neutral-100 dark:bg-black py-20 px-6  border-neutral-800 border-2 rounded-3xl md:rounded-b-5xl" id="about-us">
       <div className="max-w-screen-xl mx-auto space-y-10">
         <div className="flex flex-col text-center md:text-left gap-6 md:flex-row md:justify-between items-center">
           <Heading
@@ -35,7 +35,7 @@ const AboutSection = () => {
           >
             {t("heading")}
           </Heading>
-          <p className="md:max-w-[50%] text-3xl text-pretty">
+          <p className=" text-3xl text-pretty text-center">
             {t("description")}
           </p>
         </div>

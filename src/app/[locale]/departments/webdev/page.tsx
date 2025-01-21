@@ -5,6 +5,8 @@ import DepartmentTools from "@/widgets/departments/department-tools";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
+import WebdevHeroSection from "@/widgets/webdev/webdev-hero-section.";
+import { Programming } from "solar-icon-set";
 
 export default function WebsiteAndWebAppDevelopmentPage() {
   const t = useTranslations("departments.webdev");
@@ -110,9 +112,8 @@ export default function WebsiteAndWebAppDevelopmentPage() {
 
   return (
     <>
-      <AboutDepartment heading={t("title")} description={t("description")} />
-      <SectionDelimeter />
-      {sections.map((section) => (
+      <WebdevHeroSection />
+      {/* {sections.map((section) => (
         <div key={section.key}>
           <DepartmentOverview
             heading={section.title}
@@ -132,7 +133,7 @@ export default function WebsiteAndWebAppDevelopmentPage() {
       ))}
       <Link href="/contact" className="block w-fit mx-auto mt-16">
         <Button className="w-48 px-[0!important]">CONTACT US</Button>
-      </Link>
+      </Link> */}
     </>
   );
 }

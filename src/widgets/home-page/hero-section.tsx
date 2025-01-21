@@ -11,7 +11,7 @@ const HeroSection = () => {
   const t = useTranslations("misc");
 
   return (
-    <section className="p-6 flex flex-col justify-center items-center gap-16 md:gap-8 overflow-y-hidden bg-neutral-100 relative dark:bg-black min-h-[100dvh] overflow-x-hidden">
+    <section className="p-6 flex flex-col justify-center items-center gap-16 md:gap-8 rounded-b-3xl overflow-y-hidden bg-neutral-100 relative dark:bg-black min-h-[100dvh] overflow-x-hidden">
       <div className=" space-y-4">
         <Heading as="h1" className="text-6xl *:block text-center space-y-2 md:text-8xl">
           <span className="text-primary-400 animate-slideInFromLeft">

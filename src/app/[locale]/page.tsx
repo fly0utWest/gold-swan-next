@@ -9,9 +9,9 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <DepartmentSection />
       <AboutSection />
       <MarqeeSection />
-      <DepartmentSection />
       <ProjectsSection />
     </>
   );
