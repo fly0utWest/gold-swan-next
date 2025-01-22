@@ -11,7 +11,7 @@ const WebdevServices: React.FC<WebdevServicesProps> = ({ children, title, rounde
   return (
     <div
       className={`flex justify-center items-center flex-col gap-16 border-b-2 py-12 px-4 md:px-12 lg:p-20
-                    border-neutral-100 bg-white dark:bg-black dark:border-neutral-800 ${rounded ? "rounded-b-3xl" : ""}`}
+                    border-neutral-100 bg-white dark:bg-black dark:border-neutral-800 ${rounded ? "rounded-b-3xl md:rounded-b-6xl" : ""}`}
     >
       <Heading
         as="h2"

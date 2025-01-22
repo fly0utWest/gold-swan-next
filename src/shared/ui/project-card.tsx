@@ -7,6 +7,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   features: string[];
+  attention?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -14,11 +15,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   features,
+  attention,
 }) => {
   const t = useTranslations("projects");
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-neutral-800 max-w-screen-xl">
+    <div className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-neutral-800 max-w-screen-xl relative">
+      {attention && (
+        <div className="absolute top-0 right-0 bg-primary-200 text-2xl font-bold border-primary-500 border-4 text-primary-500 p-2 rounded-bl-3xl uppercase rounded-tr-3xl">
+          Coming Soon!
+        </div>
+      )}
       <div className="lg:w-1/2">
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>
@@ -30,7 +37,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {title}
           </Heading>
         </div>
-        <p className="text-xl text-center lg:text-left mt-4">{description}</p>
+        <p className="text-xl text-center lg:text-left mt-4">
+          {description}
+          {attention && (
+            <span className="text-primary-500 block mt-8 bg-neutral-800 p-6 rounded-3xl border-black border-4 text-xl font-semibold md:text-left text-center">
+              {attention}
+            </span>
+          )}
+        </p>
       </div>
       <div className="lg:w-1/2 mt-4 lg:mt-0">
         <Heading as="h4" className="text-2xl font-semibold mb-4">

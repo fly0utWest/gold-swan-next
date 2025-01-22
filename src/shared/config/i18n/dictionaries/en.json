@@ -20,15 +20,31 @@
     "description": "Why choose us over others?",
     "flexibility": {
       "translated": "Flexibility",
-      "explained": "During the discussion process with the client, our agency can assist in refining and enhancing their idea, leveraging our extensive experience and broad perspective. We bring a fresh, professional viewpoint that helps turn initial concepts into impactful, well-structured strategies"
+      "explained": "Unlike the bureaucratic structure of large agencies, our team acts quickly and flexibly. We create solutions that truly align with your goals and objectives, rather than imposing pre-made templates. Our mission is to work under your requests, delivering results that exceed expectations."
     },
-    "strategy": {
-      "translated": "Strategy",
-      "explained": "In the world of business, strategy is the foundation of success. It’s not just about having ideas but about having a clear, actionable plan to navigate the competitive landscape. Companies with a well-thought-out strategy are equipped to anticipate challenges, seize opportunities, and maintain a consistent course toward their goals. Those who drift without a plan are often caught off guard, reacting to circumstances rather than shaping them. The winners in any field are those who take the time to craft a strong strategy, because a plan doesn’t just guide—it creates direction, purpose, and resilience, ultimately determining the path to victory"
+    "speed": {
+      "translated": "Speed",
+      "explained": "In modern business, speed is everything. We are proud to offer the fastest service on the market. We know that time is money and ensure you do not lose either. Thanks to our efficiency, many clients have been able to launch to the market first and secure key positions in their niches."
     },
-    "implementation": {
-      "translated": "implementation",
-      "explained": "Implementation is like a puzzle that comes together from an idea and various stages. The final result depends on the implementation, as without it, even the best idea remains just a concept. Every stage is important, and only through their proper execution can success be achieved"
+    "confidentiality": {
+      "translated": "Confidentiality",
+      "explained": "We strictly adhere to our confidentiality policy and never disclose the details of our clients' projects. Each project is unique, and instead of replicating someone else's success, we focus on achieving your individual results."
+    },
+    "pricing": {
+      "translated": "Pricing",
+      "explained": "We offer premium services at affordable costs. Why? We optimize every detail of our processes. For example, the absence of a physical office allows us to minimize expenses and invest in the quality of our services rather than overhead. Our approach is honest: no hidden fees, only real results."
+    },
+    "ethicsAndResponsibility": {
+      "translated": "Ethics and Responsibility",
+      "explained": "We take pride not only in the quality of our services but also in our responsible approach to client collaboration. We care about not just your results but also the long-term sustainability of each of our clients."
+    },
+    "responsibilityToClients": {
+      "translated": "Responsibility to Clients",
+      "explained": "We adhere to strict professional standards and care about maintaining market balance. If your request might create a conflict of interest with existing clients, we carefully analyze the situation. For instance, our Analytics and Strategy department studies the market to determine if there is sufficient audience capacity for several of our clients in the same niche. If the market is limited, we may decline cooperation to protect the success of other clients."
+    },
+    "individualApproach": {
+      "translated": "Individual Approach",
+      "explained": "We don't just execute tasks but approach each client individually, creating strategies that ensure long-term success. Our goal is to help you achieve unique results while maintaining market balance and respect."
     }
   },
   "departments": {
@@ -536,7 +552,7 @@
           },
           "PWA": {
             "title": "Highly interactive web-apps",
-            "description": "Highly interactive web-apps with PWA* functionality"
+            "description": "Highly interactive web-apps with Progress Web Application functionality"
           }
         }
       },
@@ -571,7 +587,8 @@
           "learning": "Continuous learning from customer queries",
           "scalability": "Scalable to handle simultaneous requests",
           "analytics": "Actionable analytics for service improvement"
-        }
+        },
+        "attention": "Product is already in testing. You can try it right now by clicking on the chat button in the right bottom corner."
       },
       "nfcReviews": {
         "title": "NFC-Driven Automated Review Generation",

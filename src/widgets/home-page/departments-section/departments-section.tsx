@@ -46,7 +46,7 @@ const DepartmentSection = () => {
   ];
 
   return (
-    <section className="w-full flex justify-center my-16 items-center flex-col px-5 md:px-8 gap-8 md:gap-16">
+    <div className="my-16 space-y-16">
       <Heading
         as="h2"
         className="font-bold text-5xl lg:text-7xl text-center"
@@ -54,17 +54,19 @@ const DepartmentSection = () => {
       >
         {t("heading")}
       </Heading>
-      <div className="flex flex-row flex-wrap gap-8 justify-center w-full">
-        {departments.map((department, index) => (
-          <DepartmentButton
-            key={index}
-            Icon={department.icon}
-            href={department.href}
-            name={department.title!}
-          />
-        ))}
-      </div>
-    </section>
+      <section className="max-w-screen-2xl flex justify-center items-center flex-col px-5 md:px-8 md:mx-auto gap-8 md:gap-16">
+        <div className="flex flex-row flex-wrap gap-8 justify-center w-full">
+          {departments.map((department, index) => (
+            <DepartmentButton
+              key={index}
+              Icon={department.icon}
+              href={department.href}
+              name={department.title!}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

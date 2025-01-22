@@ -1,4 +1,4 @@
-import { Lightbulb, CupStar, ChecklistMinimalistic } from "solar-icon-set";
+import { Lightbulb, CupStar, ChecklistMinimalistic, HandShake, Scale, ShieldCheck, Wallet, ClockCircle } from "solar-icon-set";
 import React from "react";
 import FeatureCard from "./feature-card";
 import { useTranslations } from "next-intl";
@@ -7,23 +7,35 @@ import Heading from "@/shared/ui/heading";
 const AboutSection = () => {
   const t = useTranslations("about");
 
-  const features = [
-    {
-      title: t("flexibility.translated"),
-      content: t("flexibility.explained"),
-      icon: Lightbulb,
-    },
-    {
-      title: t("strategy.translated"),
-      content: t("strategy.explained"),
-      icon: CupStar,
-    },
-    {
-      title: t("implementation.translated"),
-      content: t("implementation.explained"),
-      icon: ChecklistMinimalistic,
-    },
-  ];
+const features = [
+  {
+    title: t("flexibility.translated"),
+    content: t("flexibility.explained"),
+    icon: Lightbulb, // Flexibility: Focused on quick and customized solutions
+  },
+  {
+    title: t("speed.translated"),
+    content: t("speed.explained"),
+    icon: ClockCircle, // Speed: Market entry and fast execution
+  },
+  {
+    title: t("confidentiality.translated"),
+    content: t("confidentiality.explained"),
+    icon: ShieldCheck, // Confidentiality: Protects all sensitive information
+  },
+  {
+    title: t("pricing.translated"),
+    content: t("pricing.explained"),
+    icon: Wallet, // Pricing: Balanced cost efficiency
+  },
+  {
+    title: t("ethicsAndResponsibility.translated"),
+    content: t("ethicsAndResponsibility.explained"),
+    icon: Scale, // Global strategies not conflicting private economies.
+  },
+];
+
+
 
   return (
     <section className="bg-neutral-100 dark:bg-black py-20 px-6  border-neutral-800 border-2 rounded-3xl md:rounded-b-5xl" id="about-us">
@@ -35,7 +47,7 @@ const AboutSection = () => {
           >
             {t("heading")}
           </Heading>
-          <p className=" text-3xl text-pretty text-center">
+          <p className=" text-4xl text-pretty text-center text-primary-500">
             {t("description")}
           </p>
         </div>

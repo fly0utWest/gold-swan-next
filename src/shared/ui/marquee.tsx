@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 export type MarqueeProps = {
-  children: string;
+  children: React.ReactNode;
   baseVelocity?: number;
   rotation?: number;
   className?: string;

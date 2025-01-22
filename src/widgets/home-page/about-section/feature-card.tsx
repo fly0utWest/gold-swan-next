@@ -9,17 +9,15 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, content }) => {
   return (
-    <div className="flex flex-col text-center justify-center max-w-fit items-center md:flex-row md:justify-between scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 intersect-once transition-transform duration-500">
-      <div className="flex flex-col items-center w-max">
+    <div className="flex flex-col gap-4 text-center justify-center max-w-fit items-center md:flex-row md:justify-between scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 intersect-once transition-transform duration-500">
         <Icon size={128} />
         <Heading
           as="h3"
-          className="text-2xl text-primary-400 dark:text-primary-200"
+          className="text-3xl text-primary-400 dark:text-primary-200"
         >
           {title}
         </Heading>
-      </div>
-      <p className="text-lg md:max-w-[50%]">{content}</p>
+      <p className="text-2xl md:max-w-[50%]">{content}</p>
     </div>
   );
 };

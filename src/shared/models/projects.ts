@@ -15,6 +15,7 @@ export const upcomingProjects = [
       "aiSupport.features.automation",
       "aiSupport.features.interactions",
     ],
+    attention: "aiSupport.attention",
   },
   {
     Icon: Translation2,
