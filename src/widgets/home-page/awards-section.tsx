@@ -1,42 +1,44 @@
-import React from "react";
+import React, { use } from "react";
 import Heading from "@/shared/ui/heading";
 import Marquee from "@/shared/ui/marquee";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Image from "next/image";
 import AwardCard from "@/shared/ui/award-card";
+import { useTranslations } from "next-intl";
 
 const AwardsSetion = () => {
+  const t = useTranslations("awards");
+
   const awardCards = [
     {
-      title: "Best Data Solutions Platform",
-      description: "The Recap: Tech Innovation Awards 2023",
+      title: t("bestDataSolutionsPlatform.title"),
+      description: t("bestDataSolutionsPlatform.description"),
       image: "1.png",
     },
     {
-      title: "Top 5",
-      description: "Top 5 PR agencies AllAdvertising",
+      title: t("top5.title"),
+      description: t("top5.description"),
       image: "2.png",
     },
     {
-      title: "Reputation House",
-      description: "Top Reputation Management Firms 2020 Reputation House",
+      title: t("reputationHouse.title"),
+      description: t("reputationHouse.description"),
       image: "2.png",
     },
     {
-      title: "TOP 20",
-      description: "AllAdvertising Marketing Research",
+      title: t("top20.title"),
+      description: t("top20.description"),
       image: "4.svg",
     },
     {
-      title: "Reputation department of Gold Swan Agency",
-      description:
-        "The Best Use of Artificial Intelligence and Machine Learning.",
+      title: t("reputationDeptGoldSwanAI.title"),
+      description: t("reputationDeptGoldSwanAI.description"),
       image: "3.png",
       large: true,
     },
     {
-      title: "Reputation department of Gold Swan Agency",
-      description: "Business sector innovation of the year.",
+      title: t("reputationDeptGoldSwanInnovation.title"),
+      description: t("reputationDeptGoldSwanInnovation.description"),
       image: "3.png",
       large: true,
     },
@@ -49,7 +51,7 @@ const AwardsSetion = () => {
         className="font-bold text-5xl lg:text-7xl text-center"
         id="departments"
       >
-        Our regalia
+        {t("heading")}
       </Heading>
       <section className="w-full flex justify-center items-center flex-col px-5 md:px-8 gap-8 md:gap-16 md:max-w-screen-2xl md:mx-auto">
         <div className="flex flex-row flex-wrap gap-x-20 justify-center items-center w-full">

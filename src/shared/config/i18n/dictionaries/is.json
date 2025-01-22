@@ -15,23 +15,66 @@
     "projects": "Verkefni",
     "description": "Við erum stafræn stofnun sem mun láta drauma þína rætast!"
   },
+
   "about": {
     "heading": "Um Okkur",
-    "description": "Við erum alþjóðleg stofnun sem sérhæfir sig í stafrænum markaðssetningum, vörumerkjastjórnun, almannatengslum og orðsporastjórnun. Markmið okkar er að búa til nýstárlegar áætlanir sem stuðla að vexti, byggja upp traust og tryggja langtímaárangur fyrir viðskiptavini okkar.",
-    "idea": {
-      "translated": "Hugmynd",
-      "explained": "Í umræðuferlinu með viðskiptavinum getur stofnun okkar aðstoðað við að móta og bæta hugmyndir þeirra með því að nýta umfangsmikla reynslu okkar og víðtæka sjónarhorn. Við bjóðum ferskt og faglegt sjónarmið sem hjálpar til við að breyta upphaflegum hugmyndum í áhrifaríkar og vel skipulagðar áætlanir."
+    "description": "Af hverju að velja okkur fram yfir aðra?",
+    "flexibility": {
+      "translated": "Sveigjanleiki",
+      "explained": "Ólíkt skriffinsku kerfi stórra stofnana starfar liðið okkar hratt og sveigjanlega. Við búum til lausnir sem raunverulega passa við markmið þín og þarfir, í stað þess að þröngva upp á þig fyrirfram ákveðnum sniðmátum. Markmið okkar er að vinna eftir þínum óskum og skila niðurstöðum sem fara fram úr væntingum."
     },
-    "strategy": {
-      "translated": "Áætlun",
-      "explained": "Í heimi viðskipta er áætlun undirstaða árangurs. Það snýst ekki aðeins um að hafa hugmyndir heldur einnig um að hafa skýra, framkvæmanlega áætlun til að sigla í gegnum samkeppnislandslagið. Fyrirtæki með vel hugsaða áætlun eru betur í stakk búin til að bregðast við áskorunum, nýta tækifæri og halda stöðugri stefnu í átt að markmiðum sínum. Þeir sem reika án áætlunar lenda oft í vandræðum, bregðast við aðstæðum frekar en að móta þær. Þeir sem vinna í hvaða sviði sem er eru þeir sem taka sér tíma til að búa til sterka áætlun, því áætlun leiðbeinir ekki aðeins – hún skapar stefnu, tilgang og seiglu, sem að lokum ákvarðar leiðina til sigurs."
+    "speed": {
+      "translated": "Hraði",
+      "explained": "Í nútíma viðskiptum er hraði allt. Við erum stolt af því að bjóða upp á hraðasta þjónustuna á markaðnum. Við vitum að tími er peningar og tryggjum að þú tapir hvorugu. Þökk sé skilvirkni okkar hafa margir viðskiptavinir getað farið fyrst á markað og tryggt sér lykilstöður í sínum geirum."
     },
-    "implementation": {
-      "translated": "Framkvæmd",
-      "explained": "Framkvæmd er eins og púsluspil sem kemur saman úr hugmynd og ýmsum stigum. Lokaniðurstaðan fer eftir framkvæmdinni, því án hennar er besta hugmyndin aðeins hugtak. Sérhvert stig skiptir máli og aðeins með réttum framkvæmdum þeirra er hægt að ná árangri."
+    "confidentiality": {
+      "translated": "Trúnaður",
+      "explained": "Við fylgjum strangri trúnaðarstefnu okkar og upplýsum aldrei smáatriði verkefna viðskiptavina okkar. Hvert verkefni er einstakt og í stað þess að endurtaka árangur annarra einbeitum við okkur að því að ná einstökum niðurstöðum fyrir þig."
+    },
+    "pricing": {
+      "translated": "Verðlagning",
+      "explained": "Við bjóðum upp á þjónustu í fremstu röð á viðráðanlegu verði. Hvernig? Við hámörkum hverja einustu smáatriði í ferlum okkar. Til dæmis gerir skortur á líkamlegu skrifstofuhúsnæði okkur kleift að lágmarka kostnað og fjárfesta í gæðum þjónustunnar frekar en í yfirbyggingu. Við nálgumst verkefnin með heiðarleika: engir faldir kostnaður, aðeins raunverulegar niðurstöður."
+    },
+    "ethicsAndResponsibility": {
+      "translated": "Siðferði og Ábyrgð",
+      "explained": "Við erum ekki aðeins stolt af gæðum þjónustu okkar heldur einnig af ábyrgðarfullri nálgun okkar í samstarfi við viðskiptavini. Við leggjum áherslu á langtíma sjálfbærni allra viðskiptavina okkar ásamt því að skila árangri."
+    },
+    "responsibilityToClients": {
+      "translated": "Ábyrgð gagnvart viðskiptavinum",
+      "explained": "Við fylgjum ströngum faglegum stöðlum og hugum að jafnvægi á markaði. Ef beiðni þín getur skapað hagsmunaárekstra við núverandi viðskiptavini okkar, skoðum við málið gaumgæfilega. Til dæmis rannsakar greiningar- og stefnumótunardeild okkar markaðinn til að tryggja að nægilegt rými sé fyrir nokkra viðskiptavini okkar í sama geira. Ef markaðurinn er takmarkaður getum við neitað samstarfi til að vernda árangur annarra viðskiptavina."
+    },
+    "individualApproach": {
+      "translated": "Sérsniðin nálgun",
+      "explained": "Við framkvæmum ekki aðeins verkefni heldur nálgumst hvern viðskiptavin á einstaklingsbundinn hátt og sköpum áætlanir sem tryggja langtíma árangur. Markmið okkar er að hjálpa þér að ná einstökum niðurstöðum á sama tíma og við varðveitum jafnvægi og virðingu á markaði."
     }
   },
-
+  "awards": {
+    "heading": "Viðurkenningar okkar",
+    "bestDataSolutionsPlatform": {
+      "title": "Besta gagnalausnaveitan",
+      "description": "Yfirlit: Tækninýsköpunarverðlaunin 2023"
+    },
+    "top5": {
+      "title": "Topp 5",
+      "description": "Topp 5 almannatengslastofnanir AllAdvertising"
+    },
+    "reputationHouse": {
+      "title": "Orðsporshúsið",
+      "description": "Bestu fyrirtæki í stjórnun orðspors 2020 Orðsporshúsið"
+    },
+    "top20": {
+      "title": "TOPP 20",
+      "description": "Markaðsrannsókn AllAdvertising"
+    },
+    "reputationDeptGoldSwanAI": {
+      "title": "Orðsporsdeild Gold Swan stofnunarinnar",
+      "description": "Besta notkun gervigreindar og vélanáms."
+    },
+    "reputationDeptGoldSwanInnovation": {
+      "title": "Orðsporsdeild Gold Swan stofnunarinnar",
+      "description": "Viðskiptageirans nýsköpun ársins."
+    }
+  },
   "departments": {
     "section": {
       "heading": "Deildir",
@@ -521,98 +564,37 @@
       }
     },
     "webdev": {
-      "title": "Vefsíðu- og vefumsóknarþróun",
-      "description": "Í dag er öflug nærvera á netinu undirstaða velgengni fyrirtækja. Deildin um vefsíðu- og vefumsóknarþróun sérhæfir sig í að byggja upp nýstárlegar, notendavænar og tæknilega fullkomnar lausnir sem eru sniðnar að fjölbreyttum viðskiptum. Frá sérsniðnum vefsíðum til háþróaðra umsókna tryggir þessi deild að fyrirtæki dafni á samkeppnishæfu stafrænu sviði.",
-      "sections": {
-        "websiteDevelopment": {
-          "title": "Þróun vefsíðna",
-          "description": "Vel hönnuð vefsíða er meira en stafrænt andlit - hún er andlit vörumerkisins þíns og lykilatriði fyrir þátttöku og viðskipti.",
-          "features": {
-            "customWebsiteDesign": "Sérsniðin hönnun sem endurspeglar ímynd vörumerkisins og óskir markhópsins.",
-            "responsiveDesign": "Hagrætt fyrir hnökralausa frammistöðu á öllum tækjum.",
-            "cms": "Nýting á kerfum eins og WordPress eða Joomla fyrir auðveldar uppfærslur á efni."
+      "title": "Vefsíðugerð og Vefforritun",
+      "description": "Í daglegu stafrænu landslagi er sterk netvernd undirstaða viðskiptavinaárangurs. Deildin fyrir vefsíðugerð og vefforritun sérhæfir sig í að byggja upp nýstárlegar, notendavænar og tæknilega öruggar lausnir sem eru sniðnar að fjölbreyttum viðskiptaþörfum. Frá sérsniðnum vefsíðum til þróaðra vefforrita tryggir þessi deild að fyrirtæki dafni í samkeppnishæfu stafrænu umhverfi.",
+      "fullStackDev": {
+        "title": "Heildarþróun vefsíðna",
+        "stages": "Hugmynd => Hönnun => Innleiðing => Prófun & Ræsing",
+        "features": {
+          "landing": {
+            "title": "Frábærar áfangasíður",
+            "description": "Fallegar áfangasíður með notendavænum hönnun og stuðningi við vefgreiningu"
           },
-          "howItWorks": {
-            "conceptDevelopment": "Samstarf við að skilgreina markmið og uppbyggingu vefsíðunnar.",
-            "designAndBuild": "Sameining sköpunarhönnunar og öflugs tæknilegs þróunar.",
-            "launchAndOptimization": "Víðtæk prófun áður en hún fer í loftið til að tryggja hnökralausa notendaupplifun."
+          "contentDrivenSite": {
+            "title": "Flóknar efnisdrifnar veflausnir",
+            "description": "Flóknar efnisdrifnar veflausnir (netverslanir með greiðslukerfi og gagnagrunnsstuðningi)"
           },
-          "example": "Smásölufyrirtæki endurbætti vefsíðu sína með áherslu á hraða og notendavænni, sem leiddi til 35% aukningar á netviðskiptum."
-        },
-        "eCommerceSolutions": {
-          "title": "Rafrænar viðskiptalausnir",
-          "description": "Rafrænar verslanir umbreyta hvernig fyrirtæki selja, með alþjóðlegri nánd og hnökralausum viðskiptum.",
-          "features": {
-            "onlineStoreDevelopment": "Örugg greiðslukerfi og leiðandi flakk.",
-            "integrationServices": "Bæta við nauðsynlegum verkfærum eins og birgðafylgni og viðskiptavinadómum.",
-            "performanceOptimization": "Tryggja hraðar hleðslutíma og lágmarks niðritíma."
+          "PWA": {
+            "title": "Mjög gagnvirk vefforrit",
+            "description": "Mjög gagnvirk vefforrit með virkni Progressive Web Application"
+          }
+        }
+      },
+      "LLMIntegrations": {
+        "title": "LLM samþættingar í viðskiptaferlum",
+        "features": {
+          "CRMAutomation": {
+            "title": "Sjálfvirknivæðing CRM",
+            "description": "Sjálfvirknivæðing CRM í Telegram/WhatsApp eða spjallforriti á vefsíðunni þinni"
           },
-          "howItWorks": {
-            "platformSelection": "Velja rétta rafræna viðskiptaramma fyrir þínar þarfir.",
-            "designAndIntegration": "Byggja eiginleika sem bæta notkun og skilvirkni.",
-            "maintenanceAndUpgrades": "Tryggja stöðugar frammistöðubætur."
-          },
-          "example": "Rafrænt verslunarstæði tvöfaldaði tekjur sínar innan sex mánaða eftir að hafa komið á markað með bjartsýna, notendamiðaða netvettvang."
-        },
-        "webApplicationDevelopment": {
-          "title": "Þróun vefumsókna",
-          "description": "Vefumsóknir veita gagnvirkar og kraftmiklar lausnir sem straumlínulaga starfsemi og auka notendaþátttöku.",
-          "features": {
-            "customApplications": "Sérsniðin verkfæri fyrir rekstur, greiningu eða notendavirkni.",
-            "apiIntegration": "Tengingar við ytri kerfi til að auka getu.",
-            "scalableSolutions": "Hannað til að vaxa með fyrirtækinu."
-          },
-          "howItWorks": {
-            "needsAnalysis": "Skilja áskoranir og markmið.",
-            "development": "Byggja öruggar og stigvaxandi umsóknir með nútímalegum ramma.",
-            "deployment": "Víðtæk prófun fyrir útgáfu til að tryggja virkni og öryggi."
-          },
-          "example": "Flutningafyrirtæki innleiddi sérsniðna umsókn til að fylgjast með í rauntíma og bætti skilvirkni um 40%."
-        },
-        "mobileWebDevelopment": {
-          "title": "Þróun fyrir farsíma",
-          "description": "Með vaxandi fjölda farsímanotenda tryggir hönnun fyrir farsíma árangursríkar og grípandi vefsíður á öllum tækjum.",
-          "features": {
-            "mobileOptimization": "Hannað fyrir hraða og notagildi á litlum skjám.",
-            "adaptiveInterfaces": "Dýnamísk skipulag fyrir hnökralausa upplifun.",
-            "seoBestPractices": "Bætt sýnileika á leitarvélum með farsímavænni hönnun."
-          },
-          "howItWorks": {
-            "mobileFirstStrategy": "Forgangsröðun farsíma við þróun.",
-            "crossDeviceTesting": "Tryggja samhæfni við mörg tæki og kerfi.",
-            "feedbackIntegration": "Endurbætur byggðar á raunverulegri notkun."
-          },
-          "example": "Fréttavefur jók farsímagagnvirkni um 60% með endurhönnun sem lagði áherslu á notkun fyrir farsíma."
-        },
-        "uxUiDesign": {
-          "title": "UX/UI hönnun",
-          "description": "Frábær UX/UI hönnun breytir kerfum í notendavæn og sjónrænt aðlaðandi verkfæri sem notendur njóta að nota.",
-          "features": {
-            "prototyping": "Þróun frumgerða til að prófa og betrumbæta hugmyndir.",
-            "userCenteredDesign": "Samræming við þarfir og hegðun notenda.",
-            "aestheticEnhancements": "Samfelldir litasamsetningar, leturgerðir og skipulag."
-          },
-          "howItWorks": {
-            "research": "Greina hegðun og væntingar notenda.",
-            "designProcess": "Búa til sjónrænt sláandi og notendavæn viðmót.",
-            "usabilityTesting": "Safna ábendingum til stöðugra endurbóta."
-          },
-          "example": "Fjártækniforrit dró úr brottfalli notenda um 25% eftir innleiðingu á leiðarbetra viðmóti."
-        },
-        "pwa": {
-          "title": "Framsæknar vefumsóknir (PWA)",
-          "description": "PWA sameina bestu eiginleika vefsíðna og farsímaforrita og bjóða upp á hraða, áreiðanleika og notkun án nettengingar.",
-          "features": {
-            "offlineFunctionality": "Tryggja notagildi án nettengingar.",
-            "appLikeExperience": "Ýta tilkynningum og fullskjáleiðsögn.",
-            "crossBrowserCompatibility": "Áreiðanleg frammistaða á ýmsum kerfum."
-          },
-          "howItWorks": {
-            "pwaDesign": "Kortleggja eiginleika miðað við þarfir notenda.",
-            "development": "Nýta ramma eins og Angular eða React.",
-            "launchAndMaintenance": "Stöðugar endurbætur fyrir bestu frammistöðu."
-          },
-          "example": "Menntavettvangur jók þátttöku um 50% með PWA sem bauð upp á kennslustundir án nettengingar."
+          "customIntegrations": {
+            "title": "Sérsniðnar samþættingar",
+            "description": "Sérsniðnar samþættingar í viðskiptaferlum þínum"
+          }
         }
       }
     }
@@ -632,7 +614,8 @@
           "learning": "Stöðugt nám af fyrirspurnum viðskiptavina",
           "scalability": "Skalanlegt til að takast á við margar beiðnir",
           "analytics": "Hagnýt greining til að bæta þjónustu"
-        }
+        },
+        "attention": "Varan er þegar í prófun. Þú getur prófað hana strax með því að smella á spjallhnappinn í hægra neðra horni."
       },
       "nfcReviews": {
         "title": "Sjálfvirk Úttektarsöfnun Knúin NFC",
@@ -661,6 +644,25 @@
           "pr": "PR-herferðir miðaðar að dulritunarheimi",
           "analytics": "Eftirfylgni og frammistöðugreining"
         }
+      },
+      "smmBot": {
+        "title": "SMM Botti",
+        "description": "SMM bottinn okkar er hannaður til að einfalda stjórnun samfélagsmiðla fyrir lítil og meðalstór fyrirtæki. Með því að sjálfvirknivæða efnissköpun og straumlínulaga ferla samfélagsmiðla gerir bottinn fyrirtækjum kleift að spara tíma og draga úr kostnaði við að ráða sérhæfðan sérfræðing í samfélagsmiðlum. Hvort sem þú vilt efla viðveru þína á netinu eða tengjast áhorfendum þínum á áhrifaríkari hátt, býður SMM bottinn okkar upp á öfluga og hagkvæma lausn.",
+        "features": {
+          "postStyleGeneration": "Búðu til sérsniðin færslustíl fyrir vörumerkið þitt",
+          "contentCreation": "Búðu til grípandi efni fyrir samfélagsmiðlaprófílana þína",
+          "contentPlanning": "Sjálfvirk sköpun á efnisáætlun til að halda færslum stöðugum og viðeigandi",
+          "postIdeaSuggestions": "Fáðu skapandi hugmyndir að færslum sem ná til áhorfenda þinna",
+          "textRewriting": "Endurskrifaðu texta auðveldlega til að bæta skýrleika eða aðlaga tón",
+          "textSpellingCheck": "Tryggðu villulausar færslur með sjálfvirkri stafsetningarskoðun",
+          "reelScripts": "Búðu til grípandi handrit fyrir Instagram reels",
+          "storyScripts": "Búðu til áhrifarík handrit fyrir Instagram sögur þínar",
+          "profileHeaderDesign": "Hannaðu áberandi haus fyrir samfélagsmiðlaprófíla þína",
+          "instagramVideoDownloader": "Sæktu Instagram myndbönd til að nota í efni þínu",
+          "imageGeneration": "Búðu til myndir fyrir færslur eða sögur",
+          "audioToText": "Umbreyttu hljóðefni í skrifaðan texta fyrir færslur eða blogg"
+        },
+        "note": "Með þessu tæki geta fyrirtæki eflt viðveru sína á samfélagsmiðlum á sama tíma og þau spara háan kostnað við sérfræðing í samfélagsmiðlum."
       }
     }
   },
