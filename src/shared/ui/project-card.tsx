@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>
           <Icon size={64} color="var(--primary-500)" iconStyle="Bold" />
           <Heading
-            as="h3"с
+            as="h3"
             className="text-3xl text-center font-bold lg:text-left"
           >
             {title}
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <p className="text-xl text-center lg:text-left mt-4">
           {description}
           {attention && (
-            <span className="text-primary-500 block mt-8 bg-neutral-800 p-6 rounded-3xl border-black border-4 text-xl font-semibold md:text-left text-center">
+            <span className="text-primary-500 block mt-8 bg-neutral-800 p-6 rounded-3xl border-black border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
               {attention}
             </span>
           )}
