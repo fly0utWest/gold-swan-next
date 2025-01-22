@@ -3,7 +3,7 @@ services:
     build: .
     environment:
       - NODE_ENV=production
-      - TG_API_URL=https://api.telegram.org/bot
+      - TG_API_URL=${TG_API_URL}
       - TG_TOKEN=${TG_TOKEN}
       - TG_CHAT_ID=${TG_CHAT_ID}
     ports:
