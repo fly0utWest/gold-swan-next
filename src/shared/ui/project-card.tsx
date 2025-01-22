@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-neutral-800 max-w-screen-xl relative">
       {attention && (
-        <div className="absolute top-0 right-0 bg-primary-200 text-2xl font-bold border-primary-500 border-4 text-primary-500 p-2 rounded-bl-3xl uppercase rounded-tr-3xl">
+        <div className="absolute top-0 right-0 bg-primary-200 text-2xl font-bold border-primary-500 border-b-4 border-l-4 text-primary-500 p-2 rounded-bl-3xl uppercase rounded-tr-3xl">
           Coming Soon!
         </div>
       )}
@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>
           <Icon size={64} color="var(--primary-500)" iconStyle="Bold" />
           <Heading
-            as="h3"
+            as="h3"с
             className="text-3xl text-center font-bold lg:text-left"
           >
             {title}

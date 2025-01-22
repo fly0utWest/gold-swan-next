@@ -1,6 +1,5 @@
-import React, { use } from "react";
+import React from "react";
 import Heading from "@/shared/ui/heading";
-import Marquee from "@/shared/ui/marquee";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Image from "next/image";
 import AwardCard from "@/shared/ui/award-card";
