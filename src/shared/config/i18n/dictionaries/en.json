@@ -617,6 +617,25 @@
           "pr": "Crypto-focused PR campaigns",
           "analytics": "Performance tracking and analytics"
         }
+      },
+      "smmBot": {
+        "title": "SMM Bot",
+        "description": "Our SMM Bot is designed to simplify social media management for small and medium businesses. By automating content creation and streamlining social media processes, the bot enables businesses to save time and reduce the cost of hiring a full-time social media specialist. Whether you're looking to enhance your online presence or engage with your audience more effectively, our SMM Bot offers a powerful, budget-friendly solution.",
+        "features": {
+          "postStyleGeneration": "Create tailored post styles for your brand",
+          "contentCreation": "Generate engaging content for your social media profiles",
+          "contentPlanning": "Automatically generate a content plan to keep your posts consistent and relevant",
+          "postIdeaSuggestions": "Get creative post ideas that resonate with your audience",
+          "textRewriting": "Easily rewrite text to improve clarity or adjust tone",
+          "textSpellingCheck": "Ensure error-free posts with automatic spelling checks",
+          "reelScripts": "Generate engaging scripts for Instagram reels",
+          "storyScripts": "Create compelling scripts for your Instagram stories",
+          "profileHeaderDesign": "Design eye-catching headers for your social media profiles",
+          "instagramVideoDownloader": "Download Instagram videos to use in your content",
+          "imageGeneration": "Generate images for posts or stories",
+          "audioToText": "Convert audio content into written text for posts or blogs"
+        },
+        "note": "With this tool, businesses can boost their social media presence while saving on the high costs of a dedicated SMM expert."
       }
     }
   },

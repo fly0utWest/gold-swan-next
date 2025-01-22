@@ -1,4 +1,4 @@
-import { Help, Translation2, HandMoney } from "solar-icon-set";
+import { Help, Translation2, HandMoney, ChatRound } from "solar-icon-set";
 
 export const upcomingProjects = [
   {
@@ -46,5 +46,25 @@ export const upcomingProjects = [
       "cryptoMarketing.features.pr",
       "cryptoMarketing.features.analytics",
     ],
+  },
+  {
+    Icon: ChatRound,
+    title: "smmBot.title",
+    description: "smmBot.description",
+    features: [
+      "smmBot.features.postStyleGeneration",
+      "smmBot.features.contentCreation",
+      "smmBot.features.contentPlanning",
+      "smmBot.features.postIdeaSuggestions",
+      "smmBot.features.textRewriting",
+      "smmBot.features.textSpellingCheck",
+      "smmBot.features.reelScripts",
+      "smmBot.features.storyScripts",
+      "smmBot.features.profileHeaderDesign",
+      "smmBot.features.instagramVideoDownloader",
+      "smmBot.features.imageGeneration",
+      "smmBot.features.audioToText",
+    ],
+    note: "smmBot.note",
   },
 ];
