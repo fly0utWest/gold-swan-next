@@ -15,19 +15,19 @@ const WebdevHeroSection: React.FC = () => {
       </div>
       <Heading
         as="h1"
-        className="flex flex-col items-center justify-center text-5xl *:w-max space-y-2 md:text-8xl w-full my-8"
+        className="flex flex-col items-center justify-center text-center text-3xl *:w-max space-y-2 md:text-8xl w-full my-8"
       >
         <div className=" animate-slideInFromLeft flex items-center">
           <span className="uppercase">Awesome landings</span>
-          <i className="h-1 w-12 inline-block mx-7 bg-primary-500"></i>
+          <i className="h-1 w-12 inline-block ml-7 bg-primary-500"></i>
         </div>
         <div className=" animate-slideInFromRight flex items-center">
-          <i className="h-1 w-12 inline-block mx-7 bg-primary-500"></i>
+          <i className="h-1 w-12 inline-block mr-7 bg-primary-500"></i>
           <span className="uppercase">UI/UX design</span>
         </div>
         <div className=" animate-slideInFromLeft flex items-center">
           <span className="uppercase">E2E web solutions</span>
-          <i className="h-1 w-12 inline-block mx-7 bg-transparent"></i>
+          <i className="h-1 w-12 inline-block ml-7 bg-transparent"></i>
         </div>
       </Heading>
     </section>
