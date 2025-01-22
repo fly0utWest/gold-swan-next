@@ -22,4 +22,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  @apply overflow-y-hidden
 }
