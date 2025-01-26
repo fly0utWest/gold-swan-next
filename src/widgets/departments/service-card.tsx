@@ -17,7 +17,10 @@ const ServicesCard: React.FC<ServicestCardProps> = ({
   const t = useTranslations("projects");
 
   return (
-    <Link href="/contact" className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-neutral-800 w-full flex-1 max-w-screen-xl hover:border-primary-500 transition-colors">
+    <Link
+      href="/contact"
+      className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-border w-full flex-1 max-w-screen-xl hover:border-primary-500 transition-colors"
+    >
       <div className="lg:w-1/2">
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>

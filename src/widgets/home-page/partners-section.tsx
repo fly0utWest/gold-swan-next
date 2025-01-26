@@ -12,7 +12,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ outerMargin }) => {
   const t = useTranslations("partners");
   return (
     <div
-      className={`flex flex-col gap-24 bg-backgroundSecondary p-16 ${
+      className={`flex flex-col gap-24 bg-backgroundSecondary border-border border-y-2 p-16 ${
         outerMargin ? `my-${outerMargin}` : ""
       }`}
     >
@@ -23,7 +23,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ outerMargin }) => {
       >
         {t("heading")}
       </Heading>
-      <div className="w-full">
+      <section className="w-full">
         <div className="w-full flex justify-center items-center flex-col flex-wrap md:flex-row gap-16  md:max-w-screen-2xl md:mx-auto">
           {partnerLogos.map((image, index) => (
             <Image
@@ -36,7 +36,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ outerMargin }) => {
             />
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

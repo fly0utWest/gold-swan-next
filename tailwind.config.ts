@@ -29,6 +29,7 @@ export default {
         card: "var(--card)",
         background: "var(--background)",
         backgroundSecondary: "var(--background-secondary)",
+        border: "var(--border)",
         foreground: "var(--foreground)",
         primary: {
           50: "#FBF8ED",

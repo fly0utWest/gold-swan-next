@@ -14,7 +14,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           ${
             disabled
               ? "bg-transparent hover:cursor-not-allowed"
-              : "hover:cursor-text dark:border-neutral-800 border-neutral-200 dark:bg-black bg-white"
+              : "hover:cursor-text dark:border-border border-neutral-200 dark:bg-black bg-white"
           }`}
       >
         <textarea

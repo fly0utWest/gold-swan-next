@@ -10,7 +10,7 @@ const ProjectsSection: React.FC = async () => {
   return (
     <div
       className="flex justify-center items-center flex-col gap-24 mt-16 border-2 py-12 px-4 md:px-12 lg:p-20
-                    border-neutral-100 rounded-4xl md:rounded-6xl bg-white dark:bg-black dark:border-neutral-800 md:o-16 o-4 mx-offset w-full-no-offset"
+                    border-border rounded-4xl md:rounded-6xl bg-backgroundSecondary dark:border-border"
     >
       <Heading
         as="h2"
