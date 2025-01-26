@@ -29,7 +29,7 @@ const HeroSection = () => {
         </div>
       </div>
       <Link href="/contact" className="block">
-        <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
+        <Button className="overflow-hidden uppercase word-spacing-6 w-48 px-[0!important]">
           <Marquee repeatCount={2}>{t("contactUs")}</Marquee>
         </Button>
       </Link>

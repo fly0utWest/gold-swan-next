@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+}
+
 :root {
   --background: #ffffff;
+  --background-secondary: #f5f5f5;
   --foreground: #171717;
   /* Primary colors */
   --primary-50: #fbf8ed;
@@ -12,15 +16,18 @@
   --primary-400: #d5c18a;
   --primary-500: #c0ac72;
   --error: rgb(239, 68, 68);
+  --card: #f5f5f5;
 }
 
 :root.dark {
   --background: #0a0a0a;
+  --background-secondary: #000;
   --foreground: #ededed;
+  --card: #262626;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  @apply overflow-x-hidden
+  @apply overflow-x-hidden;
 }

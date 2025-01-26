@@ -599,6 +599,10 @@
     }
   },
 
+  "partners": {
+    "heading": "Who has entrusted us with their reputation?"
+  },
+
   "projects": {
     "upcoming": {
       "heading": "Upcoming Projects",

@@ -75,6 +75,7 @@
       "description": "Viðskiptageirans nýsköpun ársins."
     }
   },
+  
   "departments": {
     "section": {
       "heading": "Deildir",
@@ -598,6 +599,9 @@
         }
       }
     }
+  },
+  "partners": {
+    "heading": "Hver hefur falið okkur orðspor sitt?"
   },
   "projects": {
     "upcoming": {

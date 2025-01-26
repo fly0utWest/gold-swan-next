@@ -14,7 +14,7 @@ const AwardCard: React.FC<AwardCardProps> = ({ title, description, image, large 
     <div className="flex-1 flex flex-col gap-4 bg-neutral-100 p-6 dark:bg-neutral-800 rounded-3xl border-2 border-primary-500 min-w-fit">
       <Image
         className="object-cover"
-        src={`/images/logos/${image}`}
+        src={image}
         width={large ? 275 : 125}
         height={125}
         alt={title}

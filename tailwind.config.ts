@@ -26,7 +26,9 @@ export default {
         opacityIn: "opacityIn 1s ease-out forwards",
       },
       colors: {
+        card: "var(--card)",
         background: "var(--background)",
+        backgroundSecondary: "var(--background-secondary)",
         foreground: "var(--foreground)",
         primary: {
           50: "#FBF8ED",
