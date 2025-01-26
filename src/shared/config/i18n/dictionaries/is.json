@@ -321,6 +321,7 @@
     },
     "reputationAndDataProtection": {
       "title": {
+        "full": "Orðspor og gagnavernd",
         "firstString": "Vernd orðspors",
         "secondString": "Gagnavernd",
         "thirdString": "Áfallastjórnun"
@@ -559,6 +560,7 @@
     },
     "webdev": {
       "title": {
+        "full": "Enda-til-enda þróun vefumsókna",
         "firstString": "Frábærar áfangasíður",
         "secondString": "UI/UX hönnun",
         "thirdString": "Enda-til-enda vefþróun"

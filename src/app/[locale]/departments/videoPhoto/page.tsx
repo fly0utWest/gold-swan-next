@@ -1,91 +1,125 @@
 import { useTranslations } from "next-intl";
 import AboutDepartment from "@/widgets/departments/about-department";
-import DepartmentOverview from "@/widgets/departments/department-overview";
-import DepartmentTools from "@/widgets/departments/department-tools";
-import { AlignLeft } from "solar-icon-set";
-import StrategySteps from "@/widgets/departments/strategy-steps";
-import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
 import { Camera } from "solar-icon-set";
+import DepartmentServices from "@/widgets/departments/department-services";
+import ServiceCard from "@/widgets/departments/service-card";
+import Marquee from "@/shared/ui/marquee";
+import {
+  photographyServices,
+  videoProductionServices,
+  designAndPrintingServices,
+  postProductionServices,
+  graphicDesignServices,
+  musicalAccompanimentServices,
+} from "@/shared/models/departments/photoVideo";
 
 export default function PhotoAndVideoShootingPage() {
-  const t = useTranslations("departments.photoVideoShooting");
-
-  const benefits = [
-    "professionalVisualContent",
-    "enhancedBrandEngagement",
-    "highImpactMarketing",
-  ];
-
-  const tools = [
-    "commercialPhotography",
-    "eventPhotography",
-    "videoProduction",
-    "dronePhotography",
-    "editingPostProduction",
-  ];
-
-  const strategies = [
-    {
-      key: "commercialPhotography",
-      steps: ["productPhotography", "corporatePortraits", "advertisingShoots"],
-    },
-    {
-      key: "eventPhotography",
-      steps: ["corporateEvents", "privateCelebrations", "promotionalEvents"],
-    },
-    {
-      key: "videoProduction",
-      steps: ["conceptDevelopment", "filming", "editing"],
-    },
-    {
-      key: "dronePhotography",
-      steps: ["aerialEventCoverage", "propertyShowcases", "scenicPhotography"],
-    },
-    {
-      key: "editingPostProduction",
-      steps: ["photoEditing", "videoEnhancements", "advancedTechniques"],
-    },
-  ];
+  const t = useTranslations("departments.photoAndVideoShooting");
+  const miscT = useTranslations("misc");
 
   return (
     <>
-      <AboutDepartment heading={t("title")} description={t("description")} />
-      <SectionDelimeter />
-      <DepartmentOverview
-        heading={t("overview.title")}
-        definition={t("overview.definition")}
-        benefits={benefits.map((benefit) => t(`overview.benefits.${benefit}`))}
+      <DepartmentHeroSection
+        Icon={Camera}
+        heading={[
+          t("title.firstString"),
+          t("title.secondString"),
+          t("title.thirdString"),
+        ]}
       />
-      <SectionDelimeter />
-      <DepartmentTools
-        heading={t("tools.title")}
-        tools={tools.map((tool) => ({
-          Icon: AlignLeft,
-          heading: {
-            headingLevel: "h3",
-            headingText: t(`tools.${tool}.title`),
-          },
-          description: t(`tools.${tool}.description`),
-        }))}
+      <AboutDepartment
+        verticalMargin={16}
+        heading={t("title.full")}
+        description={t("description")}
       />
-      <SectionDelimeter />
-      {strategies.map((strategy) => (
-        <div key={strategy.key}>
-          <StrategySteps
-            Icon={Camera}
-            heading={t(`strategies.${strategy.key}.title`)}
-            steps={strategy.steps.map((step) =>
-              t(`strategies.${strategy.key}.steps.${step}`)
-            )}
-            example={t(`strategies.${strategy.key}.example`)}
+      <DepartmentServices
+        title={t("photographyServices.title")}
+      >
+        {photographyServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
           />
-          <SectionDelimeter />
-        </div>
-      ))}
-      <Link href="/contact" className="block w-fit mx-auto mt-16">
-        <Button className="w-48 px-[0!important]">CONTACT US</Button>
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices
+        rounded
+        title={t("videoProduction.title")}
+      >
+        {videoProductionServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices
+        title={t("designAndPostProduction.title")}
+      >
+        {designAndPrintingServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices
+        rounded
+        title={t("designAndPostProduction.title")}
+      >
+        {postProductionServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices
+        title={t("graphicDesign.title")}
+      >
+        {graphicDesignServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices
+        rounded
+        title={t("musicalAccompaniment.title")}
+      >
+        {musicalAccompanimentServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <Link href="/contact" className="flex justify-center mt-10">
+        <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
+          <Marquee repeatCount={2}>{miscT("contactUs")}</Marquee>
+        </Button>
       </Link>
     </>
   );

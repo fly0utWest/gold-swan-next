@@ -1,11 +1,7 @@
 import { useTranslations } from "next-intl";
 import AboutDepartment from "@/widgets/departments/about-department";
-import DepartmentOverview from "@/widgets/departments/department-overview";
-import DepartmentTools from "@/widgets/departments/department-tools";
-import { AlignLeft, Camera, Programming, Safe2 } from "solar-icon-set";
-import StrategySteps from "@/widgets/departments/strategy-steps";
-import SectionDelimeter from "@/shared/ui/section-delimeter";
-import Button from "@/shared/ui/button";
+import { Safe2 } from "solar-icon-set";
+ "@/shared/ui/button";
 import Link from "@/shared/ui/link";
 import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
 import DepartmentServices from "@/widgets/departments/department-services";
@@ -26,7 +22,7 @@ export default function ReputationAndDataProtectionPage() {
       />
       <AboutDepartment
         verticalMargin={16}
-        heading={t("title.firstString")}
+        heading={t("title.full")}
         description={t("description")}
       />
       <DepartmentServices title={t("reputationLifecycle.title")}>
