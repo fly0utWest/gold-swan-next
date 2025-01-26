@@ -1,70 +1,56 @@
 import { useTranslations } from "next-intl";
-import WebdevHeroSection from "@/widgets/departments/webdev/webdev-hero-section.";
-import { StarRainbow, Cart3, MagicStick3, Database, Crown } from "solar-icon-set";
-import WebdevServices from "@/widgets/departments/webdev/webdev-services";
-import ServicesCard from "@/widgets/departments/service-card";
+import { Programming } from "solar-icon-set";
+import ServiceCard from "@/widgets/departments/service-card";
 import Link from "@/shared/ui/link";
 import Button from "@/shared/ui/button";
 import Marquee from "@/shared/ui/marquee";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentServices from "@/widgets/departments/department-services";
+import {
+  fullStackServices,
+  llmServices,
+} from "@/shared/models/departments/webdev";
+import AboutDepartment from "@/widgets/departments/about-department";
 
 export default function WebsiteAndWebAppDevelopmentPage() {
   const t = useTranslations("departments.webdev");
   const miscT = useTranslations("misc");
-  const fullStackServices = [
-    {
-      Icon: StarRainbow,
-      title: t("fullStackDev.features.landing.title"),
-      description: t("fullStackDev.features.landing.description"),
-    },
-    {
-      Icon: Cart3,
-      title: t("fullStackDev.features.contentDrivenSite.title"),
-      description: t("fullStackDev.features.contentDrivenSite.description"),
-    },
-    {
-      Icon: MagicStick3,
-      title: t("fullStackDev.features.PWA.title"),
-      description: t("fullStackDev.features.PWA.description"),
-    },
-  ];
-
-  const llmServices = [
-    {
-      Icon: Database,
-      title: t("LLMIntegrations.features.CRMAutomation.title"),
-      description: t("LLMIntegrations.features.CRMAutomation.description"),
-    },
-    {
-      Icon: Crown,
-      title: t("LLMIntegrations.features.customIntegrations.title"),
-      description: t("LLMIntegrations.features.customIntegrations.description"),
-    },
-  ];
 
   return (
     <>
-      <WebdevHeroSection />
-      <WebdevServices title={t("fullStackDev.title")}>
+      <DepartmentHeroSection
+        Icon={Programming}
+        heading={[
+          t("title.firstString"),
+          t("title.secondString"),
+          t("title.thirdString"),
+        ]}
+      />
+       <AboutDepartment
+        verticalMargin={16}
+        heading={t("title.firstString")}
+        description={t("description")}
+      />
+      <DepartmentServices title={t("fullStackDev.title")}>
         {fullStackServices.map((service, index) => (
-          <ServicesCard
+          <ServiceCard
             key={index}
             Icon={service.Icon}
-            title={service.title}
-            description={service.description}
+            title={t(service.title)}
+            description={t(service.description)}
           />
         ))}
-      </WebdevServices>
-      <WebdevServices rounded title={t("LLMIntegrations.title")}>
+      </DepartmentServices>
+      <DepartmentServices rounded title={t("LLMIntegrations.title")}>
         {llmServices.map((service, index) => (
-          <ServicesCard
+          <ServiceCard
             key={index}
             Icon={service.Icon}
-            title={service.title}
-            description={service.description}
+            title={t(service.title)}
+            description={t(service.description)}
           />
         ))}
-      </WebdevServices>
-
+      </DepartmentServices>
       <Link href="/contact" className="flex justify-center mt-10">
         <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
           <Marquee repeatCount={2}>{miscT("contactUs")}</Marquee>

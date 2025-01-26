@@ -26,7 +26,7 @@ const DepartmentSection = () => {
     {
       title: t("reputationAndDataProtection"),
       icon: Safe2,
-      href: "/departments/reputationAndDataProtection",
+      href: "/departments/reputation",
     },
     {
       title: t("analyticsAndStrategy"),
