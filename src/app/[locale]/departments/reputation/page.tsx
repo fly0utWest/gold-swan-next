@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import AboutDepartment from "@/widgets/departments/about-department";
 import { Safe2 } from "solar-icon-set";
-import Button from "@/shared/ui/button";
+ "@/shared/ui/button";
 import Link from "@/shared/ui/link";
 import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
 import DepartmentServices from "@/widgets/departments/department-services";
