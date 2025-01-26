@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
 import { useTranslations } from "next-intl";
+import { DangerCircle } from "solar-icon-set";
 
 interface ProjectCardProps {
   Icon: (allProps: any) => JSX.Element;
@@ -37,14 +38,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {title}
           </Heading>
         </div>
-        <p className="text-xl text-center lg:text-left mt-4">
-          {description}
+        <div className="text-xl text-center lg:text-left mt-4">
+          <p>{description}</p>
           {attention && (
-            <span className="text-primary-500 block mt-8 bg-card p-6 rounded-3xl border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
-              {attention}
-            </span>
+            <div className="text-primary-500 mt-8 bg-card flex flex-col lg:flex-row gap-4 p-6 rounded-3xl items-center justify-center border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
+              <DangerCircle className="animate-pulse" size={32} iconStyle="Bold" />
+              <span>{attention}</span>
+            </div>
           )}
-        </p>
+        </div>
       </div>
       <div className="lg:w-1/2 mt-4 lg:mt-0">
         <Heading as="h4" className="text-2xl font-semibold mb-4">
