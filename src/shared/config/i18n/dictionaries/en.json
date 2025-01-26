@@ -473,86 +473,106 @@
         }
       }
     },
-    "photoVideoShooting": {
-      "title": "Photo and Video Shooting Services",
-      "description": "Creating impactful visual content is essential for brands aiming to connect with their audience effectively. Photo and Video Shooting Services focus on delivering professional-grade visuals tailored to diverse business needs, ranging from commercial campaigns to personal events. With advanced techniques and innovative approaches, this department ensures each project resonates with its intended audience.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Photo and Video Shooting Services provide high-quality visuals that enhance brand communication through commercial photography, event photography, video production, drone photography, and editing. These services are designed to meet the diverse needs of businesses and individuals.",
-        "benefits": {
-          "professionalVisualContent": "Professional visual content that aligns with brand identity.",
-          "enhancedBrandEngagement": "Enhanced brand engagement through high-quality imagery and videos.",
-          "highImpactMarketing": "High-impact marketing through compelling visual storytelling."
+    "photoAndVideoShooting": {
+      "title": {
+        "full": "Photo and Video Shooting",
+        "firstString": "Professional Photography",
+        "secondString": "Creative Videography",
+        "thirdString": "3D Design & Post-Production"
+      },
+      "description": "Our Photo and Video Shooting Department is a creative powerhouse that covers all aspects of photography, videography, and design. We offer a comprehensive range of services for individuals, businesses, and projects of any scale.",
+      "photographyServices": {
+        "title": "Photography Services",
+        "features": {
+          "droneShooting": {
+            "title": "Drone Shooting",
+            "description": "Capture stunning aerial shots for events, real estate, and promotional materials."
+          },
+          "professionalPhotoshoots": {
+            "title": "Professional Photoshoots",
+            "description": "Weddings, family events, portraits, and more."
+          },
+          "productPhotography": {
+            "title": "Product Photography",
+            "description": "High-quality images for digital marketing, e-commerce, and menus (perfect for restaurants or catalogs)."
+          }
         }
       },
-      "tools": {
-        "title": "Our Services",
-        "commercialPhotography": {
-          "title": "Commercial Photography",
-          "description": "Commercial photography elevates brand image by producing visually stunning content that attracts customers and enhances brand perception."
-        },
-        "eventPhotography": {
-          "title": "Event Photography",
-          "description": "Event photography captures the essence of live experiences, preserving moments that create lasting impressions."
-        },
-        "videoProduction": {
-          "title": "Video Production",
-          "description": "Video production transforms ideas into engaging narratives, helping brands communicate their messages with clarity and impact."
-        },
-        "dronePhotography": {
-          "title": "Drone Photography",
-          "description": "Drone photography offers a bird’s-eye view, providing dramatic perspectives that elevate storytelling and visual impact."
-        },
-        "editingPostProduction": {
-          "title": "Editing and Post-Production",
-          "description": "Editing and post-production refine raw visuals, transforming them into captivating content that aligns with a brand’s identity."
+      "videoProduction": {
+        "title": "Video Production",
+        "features": {
+          "promotionalVideos": {
+            "title": "Promotional Videos",
+            "description": "Creation of professional promotional videos, commercials, and social media content."
+          },
+          "videoBanners": {
+            "title": "Custom Video Banners",
+            "description": "Development of custom video banners for online advertising."
+          }
         }
       },
-      "strategies": {
-        "commercialPhotography": {
-          "title": "Commercial Photography",
-          "steps": {
-            "productPhotography": "Showcasing products with high-quality images for e-commerce, catalogs, and advertisements.",
-            "corporatePortraits": "Professional visuals for team profiles, executive headshots, and corporate branding.",
-            "advertisingShoots": "Creative photography for marketing campaigns, billboards, and social media ads."
+      "designAndPostProduction": {
+        "title": "3D Design and Post-Production",
+        "features": {
+          "3dModeling": {
+            "title": "3D Modeling",
+            "description": "Architectural visuals, master plans, urban design, and more."
           },
-          "example": "A retail clothing brand increased its online conversions by 25% after updating its website with professionally styled and shot product photos."
-        },
-        "eventPhotography": {
-          "title": "Event Photography",
-          "steps": {
-            "corporateEvents": "Documenting conferences, product launches, and company milestones.",
-            "privateCelebrations": "Capturing special occasions like weddings, anniversaries, and family gatherings.",
-            "promotionalEvents": "Showcasing brand activations and experiential marketing campaigns."
+          "3dPrototyping": {
+            "title": "3D Prototyping",
+            "description": "Mockups for 3D printing and laser engraving (e.g., in glass)."
           },
-          "example": "A tech startup used professionally shot images from their product launch to create a compelling social media campaign, boosting their audience engagement by 40%."
-        },
-        "videoProduction": {
-          "title": "Video Production",
-          "steps": {
-            "conceptDevelopment": "Collaborating with clients to craft a unique storyline.",
-            "filming": "Using high-quality equipment and techniques for precise execution.",
-            "editing": "Adding animations, soundtracks, and effects to deliver polished final videos."
+          "photoRetouching": {
+            "title": "Photo Retouching",
+            "description": "Removing unwanted objects from photos. Fixing facial imperfections (e.g., blemishes, stray hair, etc.)."
           },
-          "example": "A financial services firm gained 50% more leads by introducing an explainer video that simplified their complex offerings for potential clients."
-        },
-        "dronePhotography": {
-          "title": "Drone Photography",
-          "steps": {
-            "aerialEventCoverage": "Capturing large-scale events with stunning overhead views.",
-            "propertyShowcases": "Enhancing real estate listings with high-quality aerial visuals.",
-            "scenicPhotography": "Documenting landscapes and architectural marvels from unique angles."
+          "advancedColorCorrection": {
+            "title": "Advanced Color Correction",
+            "description": "Balancing brightness, contrast, and white balance. Adjusting color tones for a natural and professional look."
           },
-          "example": "A real estate agency increased property sales by 30% after incorporating drone footage into their marketing materials."
-        },
-        "editingPostProduction": {
-          "title": "Editing and Post-Production",
-          "steps": {
-            "photoEditing": "Adjusting lighting, colors, and composition for maximum appeal.",
-            "videoEnhancements": "Adding transitions, effects, and music for professional-grade videos.",
-            "advancedTechniques": "Applying motion graphics, animations, and color grading."
+          "targetedEdits": {
+            "title": "Targeted Edits",
+            "description": "Precise adjustments to specific areas or objects in an image."
           },
-          "example": "A luxury restaurant improved its online presence by featuring expertly edited food photography, increasing reservations by 20%."
+          "expertTools": {
+            "title": "Expert Use of Tools",
+            "description": "Mastery of correction layers, masks, and filters for stunning results."
+          }
+        }
+      },
+      "graphicDesign": {
+        "title": "Graphic Design",
+        "features": {
+          "logoCreation": {
+            "title": "Custom Logo Creation",
+            "description": "Development of unique logos and branding styles."
+          },
+          "fontBranding": {
+            "title": "Fonts and Branding",
+            "description": "Development of unique fonts and branding styles."
+          },
+          "designForPlatforms": {
+            "title": "Design for Print and Digital",
+            "description": "Professional graphic design for print and digital platforms."
+          }
+        }
+      },
+      "musicalAccompaniment": {
+        "title": "Musical Accompaniment",
+        "description": "Our team also includes specialists in musical accompaniment to fully immerse the audience in the atmosphere of each project.",
+        "team": {
+          "composer": {
+            "title": "Composer",
+            "description": "Plays piano and saxophone."
+          },
+          "beatmaker": {
+            "title": "Beatmaker",
+            "description": "Specialist in creating beats for music and video projects."
+          },
+          "soundDesigner": {
+            "title": "Sound Designer",
+            "description": "Expert in sound design to enhance the auditory experience."
+          }
         }
       }
     },
