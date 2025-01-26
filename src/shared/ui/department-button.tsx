@@ -16,7 +16,7 @@ export function DepartmentButton({
   return (
     <Link
       href={href || "#"}
-      className={`rounded-3xl border-2 dark:border-neutral-800 border-neutral-200 ${
+      className={`rounded-3xl border-2 dark:border-border border-neutral-200 ${
         disabled
           ? "pointer-events-none dark:text-neutral-200"
           : "text-neutral-800 dark:text-neutral-300"
