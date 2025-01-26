@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const t = useTranslations("projects");
 
   return (
-    <div className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-neutral-800 max-w-screen-xl relative">
+    <div className="flex flex-col lg:flex-row gap-4 bg-background  p-6 rounded-3xl border-2 border-border max-w-screen-xl relative">
       {attention && (
         <div className="absolute top-0 right-0 bg-primary-200 text-lg lg:text-xl font-semibold border-primary-500 border-b-2 border-l-4 text-primary-500 p-2 rounded-bl-3xl uppercase rounded-tr-3xl">
           Coming Soon!
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <p className="text-xl text-center lg:text-left mt-4">
           {description}
           {attention && (
-            <span className="text-primary-500 block mt-8 bg-neutral-800 p-6 rounded-3xl border-black border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
+            <span className="text-primary-500 block mt-8 bg-card p-6 rounded-3xl border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
               {attention}
             </span>
           )}
