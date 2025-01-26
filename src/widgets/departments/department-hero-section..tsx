@@ -1,6 +1,5 @@
 import Heading from "@/shared/ui/heading";
 import React from "react";
-import { Programming } from "solar-icon-set";
 
 interface DepartmentHeroSectionProps {
   heading: string[];
@@ -16,19 +15,19 @@ const DepartmentHeroSection: React.FC<DepartmentHeroSectionProps> = ({heading, I
       </div>
       <Heading
         as="h1"
-        className="flex flex-col items-center justify-center text-center text-3xl *:w-max space-y-2 md:text-8xl w-full my-8"
+        className="flex flex-col items-center justify-center text-center text-xl md:text-4xl *:w-max space-y-2 lg:text-6xl w-full my-8"
       >
         <div className=" animate-slideInFromLeft flex items-center">
           <span className="uppercase">{heading[0]}</span>
-          <i className="h-1 w-12 min-w-fit inline-block ml-7 bg-primary-500"></i>
+          <i className="h-1 w-7 min-w-fit inline-block ml-7 bg-primary-500"></i>
         </div>
         <div className=" animate-slideInFromRight flex items-center">
-          <i className="h-1 w-12  min-w-min inline-block mr-7 bg-primary-500"></i>
+          <i className="h-1 w-7  min-w-min inline-block mr-7 bg-primary-500"></i>
           <span className="uppercase">{heading[1]}</span>
         </div>
         <div className=" animate-slideInFromLeft flex items-center">
           <span className="uppercase">{heading[2]}</span>
-          <i className="h-1 w-12 min-w-min inline-block ml-7 bg-transparent"></i>
+          <i className="h-1 w-7 min-w-min inline-block ml-7 bg-transparent"></i>
         </div>
       </Heading>
     </section>
