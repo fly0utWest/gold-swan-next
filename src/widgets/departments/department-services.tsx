@@ -1,13 +1,13 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
 
-interface WebdevServicesProps {
+interface DepartmentServicesProps {
   title: string;
   children: React.ReactNode;
   rounded?: boolean;
 }
 
-const WebdevServices: React.FC<WebdevServicesProps> = ({
+const DepartmentServices: React.FC<DepartmentServicesProps> = ({
   children,
   title,
   rounded = false,
@@ -26,11 +26,11 @@ const WebdevServices: React.FC<WebdevServicesProps> = ({
       >
         {title}
       </Heading>
-      <section className="flex px-6 flex-col gap-6 md:flex-row md:flex-wrap md:justify-center">
+      <section className="grid px-6 gap-6 justify-items-center md:grid-cols-2 lg:grid-cols-4 lg:gap-8 place-content-center">
         {children}
       </section>
     </div>
   );
 };
 
-export default WebdevServices;
+export default DepartmentServices;

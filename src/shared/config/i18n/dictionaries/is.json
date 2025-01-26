@@ -75,7 +75,7 @@
       "description": "Viðskiptageirans nýsköpun ársins."
     }
   },
-  
+
   "departments": {
     "section": {
       "heading": "Deildir",
@@ -320,94 +320,87 @@
       }
     },
     "reputationAndDataProtection": {
-      "title": "Orðspor og gagnavernd",
-      "description": "Orðspor er mikilvæg eign fyrir hvert vörumerki, og að tryggja það á stafrænum tímum krefst skipulags og forvirkra aðgerða. Þessi hluti fjallar um þjónustu sem miðar að því að fylgjast með, bæta og vernda orðspor á netinu ásamt því að tryggja traustar gagnaverndarráðstafanir.",
+      "title": {
+        "firstString": "Vernd orðspors",
+        "secondString": "Gagnavernd",
+        "thirdString": "Áfallastjórnun"
+      },
+      "description": "Viðskiptavinir okkar eru meðal annars fyrirtæki, stjórnmálamenn, leiðtogar í viðskiptum, opinberar persónur og jafnvel ríkisstofnanir. Við veitum sérhæfða þjónustu í orðsporastjórnun og gagnavernd, sniðna að þörfum áhrifamikilla einstaklinga og stofnana sem þurfa sérfræðiaðstoð við að vernda og bæta ímynd sína.",
       "overview": {
         "title": "Yfirlit",
-        "definition": "Tryggðu orðspor vörumerkis þíns og gagnavernd með skipulögðum, áhrifaríkum aðferðum.",
+        "definition": "Tryggðu orðspor og gagnavernd vörumerkisins þíns með skipulögðum, skilvirkum aðferðum.",
         "benefits": {
-          "proactiveReputationManagement": "Forvirk stjórnun á orðspori til að tryggja vörumerkið þitt.",
-          "enhancedCustomerTrust": "Eflt traust viðskiptavina með sterkri gagnavernd.",
-          "crisisPreparedness": "Undirbúningur fyrir kreppur með skýrum aðgerðaráætlunum."
+          "proactiveReputationManagement": "Framsýn orðsporastjórnun til að vernda vörumerkið þitt.",
+          "enhancedCustomerTrust": "Aukin traust viðskiptavina með öflugri gagnavernd.",
+          "crisisPreparedness": "Undirbúningur fyrir áföll með skýrum aðgerðaáætlunum."
         }
       },
-      "tools": {
-        "title": "Tól",
-        "brandMonitoring": {
-          "title": "Eftirlit með vörumerki",
-          "description": "Rauntímagreining á umtali vörumerkis og almenningsáliti yfir vettvangi."
-        },
-        "sentimentAnalysis": {
-          "title": "Greining almenningsálits",
-          "description": "AI-knúin tól til að mæla almenningsálit og laga stefnu eftir því."
-        },
-        "dataProtection": {
-          "title": "Gagnavernd",
-          "description": "Tryggðu viðkvæm gögn með dulkóðun, aðgangsstýringum og úttektum."
-        },
-        "crisisManagement": {
-          "title": "Stjórnun í kreppu",
-          "description": "Þróaðu og framkvæmdu stefnu fyrir samskipti í kreppu á áhrifaríkan hátt."
-        },
-        "negativeContentMitigation": {
-          "title": "Mildun á neikvæðu efni",
-          "description": "Fjarlægðu eða bældu niður skaðlegt efni á netinu til að vernda ímynd vörumerkisins."
-        }
-      },
-      "strategies": {
-        "onlineReputationManagement": {
-          "title": "Stjórnun á orðspori á netinu",
-          "steps": {
-            "audit": "Metið núverandi almenningsálit á netinu og skilgreinið þætti sem þarfnast úrbóta.",
-            "strategyDevelopment": "Búðu til sérsniðna aðgerðaáætlun til að bæta orðspor á netinu.",
-            "execution": "Birta hágæðainnihald, stjórna umsögnum og bregðast við neikvæðum ummælum á áhrifaríkan hátt."
+      "reputationLifecycle": {
+        "title": "Alhliða stjórnun á orðspori",
+        "features": {
+          "undesirableInformation": {
+            "title": "Fjarlæging óæskilegra upplýsinga",
+            "features": {
+              "negativeContentRemoval": {
+                "title": "Fjarlæging neikvæðs efnis",
+                "description": "Við aðstoðum við að fjarlægja neikvætt efni eins og ásakanir um spillingu og náin myndbönd sem ganga um netið."
+              }
+            }
           },
-          "example": "Veitingastaður bætti Google einkunn sína með því að taka á kvörtunum, birta jákvæðar sögur og eiga samskipti við umsagnaraðila."
-        },
-        "negativeContentRemoval": {
-          "title": "Fjarlæging og mildun á neikvæðu efni",
-          "steps": {
-            "contentIdentification": "Fylgjast með vettvöngum eftir skaðlegu umtali.",
-            "removalAssessment": "Metið bestu fjarlægingaraðferðir (lögfræðilegar, vettvangsmiðaðar eða SEO).",
-            "execution": "Grípa til lögfræðilegra úrræða eða bæla sýnileika með SEO aðferðum."
+          "reputationImageCreation": {
+            "title": "Sköpun jákvæðrar ímyndar",
+            "features": {
+              "careerGoals": {
+                "title": "Endurreisn orðspors fyrir starfsmarkmið",
+                "description": "Við aðstoðum við að endurreisa orðspor fyrir starfsmarkmið eða fyrir þá sem eiga í erfiðleikum með að opna bankareikninga eða standast úttektir erlendis vegna neikvæðra upplýsinga."
+              }
+            }
           },
-          "example": "Lítið fyrirtæki dró úr áhrifum ærumeiðandi bloggfærslna með lögfræðilegum úrræðum og SEO úrbótum."
-        },
-        "crisisManagement": {
-          "title": "Stjórnun í kreppu",
-          "steps": {
-            "assessTheCrisis": "Skilja umfang og eðli málsins.",
-            "rapidResponse": "Senda frá sér opinberar yfirlýsingar og stýra samskiptum við almenning.",
-            "continuousMonitoring": "Fylgjast með almenningsáliti og aðlaga aðferðir eftir þörfum."
+          "businessExpansion": {
+            "title": "Útvíkkun viðskipta til annarra landa",
+            "features": {
+              "positiveInformationCreation": {
+                "title": "Aukin traust á nýjum svæðum",
+                "description": "Fyrir fyrirtæki sem eru að stækka viðskipti sín sköpum við umfangsmiklar jákvæðar upplýsingar um þig sem auka traust og viðurkenningu á nýjum svæðum."
+              }
+            }
           },
-          "example": "Fyrirtæki tók á gagnrýni á samfélagsmiðlum með gegnsæi og endurheimti traust almennings með áhrifaríkum samskiptum."
-        },
-        "sentimentAnalysis": {
-          "title": "Greining almenningsálits",
-          "steps": {
-            "dataMining": "Safna samskiptum og umtali yfir vettvanga.",
-            "categorization": "Flokka gögn í jákvæð, hlutlaus og neikvæð almenningsálit.",
-            "insightGeneration": "Deila sérsniðnum tillögum til að bæta ímynd vörumerkis."
+          "informationProtection": {
+            "title": "Vernd gegn upplýsingárásum",
+            "features": {
+              "legalRemoval": {
+                "title": "Lögmæt fjarlæging óæskilegra upplýsinga",
+                "description": "Lögmæt fjarlæging óæskilegra upplýsinga, vernd gegn endurteknum árásum og sköpun jákvæðrar ímyndar sem raðast hærra í leitarvélum og dregur úr neikvæðum áhrifum."
+              }
+            }
           },
-          "example": "Nettverslun nýtti greiningu á almenningsáliti til að taka á kvörtunum um seinkaða afhendingu, sem jók ánægju viðskiptavina."
-        },
-        "continuousMonitoring": {
-          "title": "Samfelld vöktun á vörumerki",
-          "steps": {
-            "toolSetup": "Nota vettvang eins og Google Alerts og sérsniðin mælaborð.",
-            "monitorMetrics": "Fylgjast með skor almenningsálits og útbreiðslu áhorfenda.",
-            "rapidResponse": "Bregðast hratt við hugsanlegum áhyggjum til að lágmarka áhrif."
+          "keyPersonalities": {
+            "title": "Samvinna við lykilpersónur",
+            "features": {
+              "employeeReputation": {
+                "title": "Orðspor lykilstarfsmanna",
+                "description": "Þegar orðspor lykilstarfsmanns hefur áhrif á fyrirtækið leysum við vandamálið."
+              }
+            }
           },
-          "example": "Tæknifyrirtæki leysti kvörtun viðskiptavinar á Twitter áður en hún jókst, sem varðveitti orðspor sitt."
-        },
-        "dataProtection": {
-          "title": "Þjónusta í gagnavernd",
-          "steps": {
-            "systemAssessment": "Gerðu úttekt á núverandi öryggisráðstöfunum.",
-            "implementation": "Settu upp dulkóðun, eldveggi og aðgangsstýringar.",
-            "training": "Fræddu starfsfólk um bestu starfsvenjur til að koma í veg fyrir brot."
+          "reputationMonitoring": {
+            "title": "Eftirlit og greining á orðspori",
+            "features": {
+              "negativePrevention": {
+                "title": "Fyrirbygging og eftirlit með neikvæðum upplýsingum",
+                "description": "Tímabær greining og fyrirbygging nýrra neikvæðra upplýsinga, auk sköpunar og viðhalds jákvæðrar ímyndar."
+              }
+            }
           },
-          "example": "Fjármálastofnun setti upp tveggja þátta auðkenningu og háþróaða dulkóðun, sem dró úr hættu á gagnabrotum."
+          "personalReputationManagement": {
+            "title": "Stjórnun á persónulegu orðspori",
+            "features": {
+              "publicFigures": {
+                "title": "Stjórnun orðspors fyrir opinberar persónur",
+                "description": "Við vinnum með stjórnmálamönnum, stjórnendum og opinberum persónum til að endurreisa eða styrkja ímynd þeirra."
+              }
+            }
+          }
         }
       }
     },
@@ -565,7 +558,11 @@
       }
     },
     "webdev": {
-      "title": "Vefsíðugerð og Vefforritun",
+      "title": {
+        "firstString": "Frábærar áfangasíður",
+        "secondString": "UI/UX hönnun",
+        "thirdString": "Enda-til-enda vefþróun"
+      },
       "description": "Í daglegu stafrænu landslagi er sterk netvernd undirstaða viðskiptavinaárangurs. Deildin fyrir vefsíðugerð og vefforritun sérhæfir sig í að byggja upp nýstárlegar, notendavænar og tæknilega öruggar lausnir sem eru sniðnar að fjölbreyttum viðskiptaþörfum. Frá sérsniðnum vefsíðum til þróaðra vefforrita tryggir þessi deild að fyrirtæki dafni í samkeppnishæfu stafrænu umhverfi.",
       "fullStackDev": {
         "title": "Heildarþróun vefsíðna",

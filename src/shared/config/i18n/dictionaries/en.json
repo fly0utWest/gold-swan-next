@@ -318,8 +318,12 @@
       }
     },
     "reputationAndDataProtection": {
-      "title": "Reputation and Data Protection",
-      "description": "Reputation is a critical asset for any brand, and safeguarding it in the digital age requires a structured and proactive approach. This section highlights services designed to monitor, enhance, and protect online reputations while ensuring robust data security measures are in place.",
+      "title": {
+        "firstString": "Reputation Protection",
+        "secondString": "Data Security",
+        "thirdString": "Crisis management"
+      },
+      "description": "Our clientele includes companies, politicians, business leaders, public figures, and even government institutions. We provide specialized reputation management and data protection services tailored to the needs of high-profile individuals and organizations that require expert assistance in safeguarding and enhancing their image",
       "overview": {
         "title": "Overview",
         "definition": "Safeguard your brand’s reputation and data security through structured, effective strategies.",
@@ -329,83 +333,72 @@
           "crisisPreparedness": "Preparedness for crises with clear action plans."
         }
       },
-      "tools": {
-        "title": "Tools",
-        "brandMonitoring": {
-          "title": "Brand Monitoring",
-          "description": "Real-time tracking of brand mentions and sentiment across platforms."
-        },
-        "sentimentAnalysis": {
-          "title": "Sentiment Analysis",
-          "description": "AI-driven tools to gauge public sentiment and adapt strategies accordingly."
-        },
-        "dataProtection": {
-          "title": "Data Protection",
-          "description": "Secure sensitive data through encryption, access controls, and audits."
-        },
-        "crisisManagement": {
-          "title": "Crisis Management",
-          "description": "Develop and execute crisis communication strategies effectively."
-        },
-        "negativeContentMitigation": {
-          "title": "Negative Content Mitigation",
-          "description": "Remove or suppress harmful online content to protect brand image."
-        }
-      },
-      "strategies": {
-        "onlineReputationManagement": {
-          "title": "Online Reputation Management",
-          "steps": {
-            "audit": "Assess current online sentiment and identify areas needing improvement.",
-            "strategyDevelopment": "Create a personalized action plan to enhance online reputation.",
-            "execution": "Publish high-quality content, manage reviews, and address negative mentions effectively."
+      "reputationLifecycle": {
+        "title": "Comprehensive Reputation Management",
+        "features": {
+          "undesirableInformation": {
+            "title": "Removal of Undesirable Information",
+            "features": {
+              "negativeContentRemoval": {
+                "title": "Removal of Negative Content",
+                "description": "We help remove negative content such as corruption accusations and intimate photos circulating on the internet."
+              }
+            }
           },
-          "example": "A restaurant improved its Google rating by addressing complaints, publishing positive stories, and engaging with reviewers."
-        },
-        "negativeContentRemoval": {
-          "title": "Negative Content Removal and Mitigation",
-          "steps": {
-            "contentIdentification": "Monitor platforms for harmful mentions.",
-            "removalAssessment": "Evaluate the most effective removal strategies (legal, platform-based, or SEO).",
-            "execution": "Take legal action or suppress visibility through SEO tactics."
+          "reputationImageCreation": {
+            "title": "Reputation Image Creation",
+            "features": {
+              "careerGoals": {
+                "title": "Reputation Restoration for Career Goals",
+                "description": "We help restore reputations for career goals or for those facing difficulties opening bank accounts or passing audits abroad due to negative information."
+              }
+            }
           },
-          "example": "A small business reduced the impact of defamatory blog posts using legal tools and SEO improvements."
-        },
-        "crisisManagement": {
-          "title": "Crisis Management",
-          "steps": {
-            "assessTheCrisis": "Understand the scale and nature of the issue.",
-            "rapidResponse": "Release official statements and manage public communications.",
-            "continuousMonitoring": "Track sentiment and adjust strategies as needed."
+          "businessExpansion": {
+            "title": "Business Expansion to Other Countries",
+            "features": {
+              "positiveInformationCreation": {
+                "title": "Boosting Trust in New Regions",
+                "description": "For companies expanding their business, we create extensive positive information about you, boosting trust and recognition in the new region."
+              }
+            }
           },
-          "example": "A company addressed social media backlash transparently and regained public trust through effective crisis communication."
-        },
-        "sentimentAnalysis": {
-          "title": "Sentiment Analysis",
-          "steps": {
-            "dataMining": "Collect interactions and mentions across platforms.",
-            "categorization": "Segment data into positive, neutral, and negative sentiment.",
-            "insightGeneration": "Share tailored recommendations to enhance brand perception."
+          "informationProtection": {
+            "title": "Protection from Information Attacks",
+            "features": {
+              "legalRemoval": {
+                "title": "Legal Removal of Unwanted Information",
+                "description": "Legal removal of unwanted information, protection from repeated attacks, and the creation of a positive image that will rank higher in search engines, pushing down negativity."
+              }
+            }
           },
-          "example": "An e-commerce brand used sentiment analysis to address complaints about delivery delays, increasing customer satisfaction."
-        },
-        "continuousMonitoring": {
-          "title": "Continuous Brand Monitoring",
-          "steps": {
-            "toolSetup": "Use platforms like Google Alerts and custom dashboards.",
-            "monitorMetrics": "Track sentiment scores and audience reach.",
-            "rapidResponse": "Address potential concerns promptly to minimize impact."
+          "keyPersonalities": {
+            "title": "Work with Key Personalities",
+            "features": {
+              "employeeReputation": {
+                "title": "Key Employee Reputation Management",
+                "description": "When the reputation of a key employee affects the company, we solve this issue."
+              }
+            }
           },
-          "example": "A tech company resolved a customer complaint on Twitter before it escalated, preserving its reputation."
-        },
-        "dataProtection": {
-          "title": "Data Protection Services",
-          "steps": {
-            "systemAssessment": "Conduct a full audit of current security measures.",
-            "implementation": "Apply encryption, firewalls, and access controls.",
-            "training": "Educate staff on best practices to prevent breaches."
+          "reputationMonitoring": {
+            "title": "Reputation Monitoring and Analytics",
+            "features": {
+              "negativePrevention": {
+                "title": "Prevention and Monitoring of Negative Information",
+                "description": "Timely analysis and prevention of new negative information, as well as the creation and maintenance of a positive image."
+              }
+            }
           },
-          "example": "A financial institution implemented two-factor authentication and advanced encryption, reducing the risk of data breaches."
+          "personalReputationManagement": {
+            "title": "Personal Reputation Management",
+            "features": {
+              "publicFigures": {
+                "title": "Reputation Management for Public Figures",
+                "description": "We work with politicians, executives, and public figures to restore or strengthen their image."
+              }
+            }
+          }
         }
       }
     },
@@ -563,7 +556,11 @@
       }
     },
     "webdev": {
-      "title": "Website and Web Application Development",
+      "title": {
+        "firstString": "Awesome landings",
+        "secondString": "UI/UX design",
+        "thirdString": "E2E web development"
+      },
       "description": "In today's digital landscape, a strong online presence is the foundation of business success. The Website and Web Application Development department specializes in building innovative, user-friendly, and technically sound platforms tailored to meet diverse business needs. From custom websites to advanced applications, this department ensures businesses thrive in the competitive digital space.",
       "fullStackDev": {
         "title": "End to end web development",
