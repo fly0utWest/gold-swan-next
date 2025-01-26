@@ -475,86 +475,106 @@
         }
       }
     },
-    "photoVideoShooting": {
-      "title": "Ljósmynda- og myndbandsþjónusta",
-      "description": "Sköpun áhrifamikils myndefnis er nauðsynleg fyrir vörumerki sem vilja tengjast áhorfendum sínum á áhrifaríkan hátt. Ljósmynda- og myndbandsþjónusta leggur áherslu á að skila faglegu myndefni sem er sérsniðið að fjölbreyttum viðskiptaþörfum, allt frá auglýsingaherferðum til persónulegra viðburða. Með háþróaðri tækni og nýstárlegum nálgunum tryggir þessi deild að hvert verkefni höfði til markhópsins.",
-      "overview": {
-        "title": "Yfirlit",
-        "definition": "Ljósmynda- og myndbandsþjónusta veitir hágæða myndefni sem bætir samskipti vörumerkja í gegnum auglýsingaljósmyndun, viðburðaljósmyndun, myndbandsframleiðslu, drónaljósmyndun og eftirvinnslu. Þessar þjónustur eru hannaðar til að mæta fjölbreyttum þörfum fyrirtækja og einstaklinga.",
-        "benefits": {
-          "professionalVisualContent": "Faglegt myndefni sem passar við ímynd vörumerkisins.",
-          "enhancedBrandEngagement": "Betri tenging vörumerkis við áhorfendur með hágæða myndum og myndböndum.",
-          "highImpactMarketing": "Áhrifamikil markaðssetning með sannfærandi myndasögum."
+    "photoAndVideoShooting": {
+      "title": {
+        "full": "Ljósmyndun og Myndbandsupptökur",
+        "firstString": "Fagleg ljósmyndun",
+        "secondString": "Skapandi myndbandsgerð",
+        "thirdString": "3D hönnun og eftirvinnsla"
+      },
+      "description": "Ljósmyndunar- og myndbandsdeild okkar er skapandi afl sem nær yfir alla þætti ljósmyndunar, myndbandsgerðar og hönnunar. Við bjóðum upp á alhliða þjónustu fyrir einstaklinga, fyrirtæki og verkefni af hvaða umfangi sem er.",
+      "photographyServices": {
+        "title": "Ljósmyndunarþjónusta",
+        "features": {
+          "droneShooting": {
+            "title": "Drónaupptökur",
+            "description": "Fáðu töfrandi loftmyndir fyrir viðburði, fasteignir og kynningarefni."
+          },
+          "professionalPhotoshoots": {
+            "title": "Faglegar ljósmyndatökur",
+            "description": "Brúðkaup, fjölskylduviðburðir, portrett og fleira."
+          },
+          "productPhotography": {
+            "title": "Vöru ljósmyndun",
+            "description": "Hágæða myndir fyrir stafræna markaðssetningu, netverslanir og matseðla (fullkomið fyrir veitingastaði eða vörulista)."
+          }
         }
       },
-      "tools": {
-        "title": "Þjónusta okkar",
-        "commercialPhotography": {
-          "title": "Auglýsingaljósmyndun",
-          "description": "Auglýsingaljósmyndun lyftir ímynd vörumerkja með því að framleiða sjónrænt heillandi efni sem laðar að viðskiptavini og bætir vörumerkjaupplifun."
-        },
-        "eventPhotography": {
-          "title": "Viðburðaljósmyndun",
-          "description": "Viðburðaljósmyndun fangar kjarnann í lifandi upplifunum og varðveitir augnablik sem skapa varanleg áhrif."
-        },
-        "videoProduction": {
-          "title": "Myndbandsframleiðsla",
-          "description": "Myndbandsframleiðsla umbreytir hugmyndum í heillandi frásagnir sem hjálpa vörumerkjum að miðla skilaboðum sínum með skýrleika og áhrifum."
-        },
-        "dronePhotography": {
-          "title": "Drónaljósmyndun",
-          "description": "Drónaljósmyndun býður upp á fuglaskoðun sem veitir dramatískt sjónarhorn og eykur söguskilning og sjónrænan áhrifamátt."
-        },
-        "editingPostProduction": {
-          "title": "Eftirvinnsla og klipping",
-          "description": "Eftirvinnsla og klipping fullkomnar hrátt myndefni og breytir því í heillandi efni sem passar við ímynd vörumerkisins."
+      "videoProduction": {
+        "title": "Myndbandsframleiðsla",
+        "features": {
+          "promotionalVideos": {
+            "title": "Kynningarmyndbönd",
+            "description": "Framleiðsla á faglegum kynningarmyndböndum, auglýsingum og efni fyrir samfélagsmiðla."
+          },
+          "videoBanners": {
+            "title": "Sérsniðnar myndbandsauglýsingar",
+            "description": "Hönnun á sérsniðnum myndbandsborðum fyrir netauglýsingar."
+          }
         }
       },
-      "strategies": {
-        "commercialPhotography": {
-          "title": "Auglýsingaljósmyndun",
-          "steps": {
-            "productPhotography": "Sýna vörur með hágæða myndum fyrir netverslanir, vörulista og auglýsingar.",
-            "corporatePortraits": "Faglegt myndefni fyrir hópmyndir, stjórnendamyndir og fyrirtækjamarkaðssetningu.",
-            "advertisingShoots": "Skapandi ljósmyndun fyrir markaðsherferðir, auglýsingaskilti og samfélagsmiðlaauglýsingar."
+      "designAndPostProduction": {
+        "title": "3D hönnun og eftirvinnsla",
+        "features": {
+          "3dModeling": {
+            "title": "3D líkanagerð",
+            "description": "Arkitektúr sjónrænt efni, meistaraplön, borgarhönnun og fleira."
           },
-          "example": "Smásölufatamerki jók umbreytingar á netinu um 25% eftir að hafa uppfært vefsíðuna sína með fagmannlega stíluðum og teknar vörumyndum."
-        },
-        "eventPhotography": {
-          "title": "Viðburðaljósmyndun",
-          "steps": {
-            "corporateEvents": "Skjalfesta ráðstefnur, vöruútgáfur og tímamót fyrirtækja.",
-            "privateCelebrations": "Fanga sérstök tækifæri eins og brúðkaup, afmæli og fjölskyldusamkomur.",
-            "promotionalEvents": "Sýna vörumerkjakynningar og upplifunarauglýsingar."
+          "3dPrototyping": {
+            "title": "3D frumgerð",
+            "description": "Forsnið fyrir 3D prentun og leysigröft (t.d. í gleri)."
           },
-          "example": "Tæknifyrirtæki nýtti sér fagmannlega teknar myndir úr vöruútgáfu sinni til að búa til áhrifaríka samfélagsmiðlaherferð sem jók þátttöku áhorfenda um 40%."
-        },
-        "videoProduction": {
-          "title": "Myndbandsframleiðsla",
-          "steps": {
-            "conceptDevelopment": "Vinna með viðskiptavinum til að móta einstaka frásögn.",
-            "filming": "Nota hágæða búnað og tækni til nákvæmrar framkvæmdar.",
-            "editing": "Bæta við hreyfimyndum, hljóðrásum og áhrifum til að skila fullkomnum myndböndum."
+          "photoRetouching": {
+            "title": "Myndaleiðréttingar",
+            "description": "Fjarlæging óæskilegra hluta af myndum. Lagfæring á andlitsgöllum (t.d. bólur, lausar hárstrípur o.fl.)."
           },
-          "example": "Fjármálaþjónustufyrirtæki fékk 50% fleiri leiðir með því að kynna útskýrandi myndband sem einfaldaði flóknar þjónustur þeirra fyrir væntanlega viðskiptavini."
-        },
-        "dronePhotography": {
-          "title": "Drónaljósmyndun",
-          "steps": {
-            "aerialEventCoverage": "Fanga stórviðburði með stórkostlegum yfirsýnum.",
-            "propertyShowcases": "Bæta fasteignaskrár með hágæða loftmyndum.",
-            "scenicPhotography": "Skjalfesta landslag og byggingarlist frá einstökum sjónarhornum."
+          "advancedColorCorrection": {
+            "title": "Ítarleg litaleiðrétting",
+            "description": "Jöfnun birtu, kontrasts og hvítjafnvægis. Stilling litablæbrigða fyrir náttúrulega og faglega ásýnd."
           },
-          "example": "Fasteignafélag jók fasteignasölu um 30% eftir að hafa tekið drónamyndir inn í markaðsefni sitt."
-        },
-        "editingPostProduction": {
-          "title": "Eftirvinnsla og klipping",
-          "steps": {
-            "photoEditing": "Stilla lýsingu, liti og samsetningu fyrir hámarksáhrif.",
-            "videoEnhancements": "Bæta við umbreytingum, áhrifum og tónlist fyrir fagmannleg myndbönd.",
-            "advancedTechniques": "Nota hreyfimyndir, hreyfigrafík og litaleiðréttingar."
+          "targetedEdits": {
+            "title": "Markvissar breytingar",
+            "description": "Nákvæmar stillingar á tilteknum svæðum eða hlutum í mynd."
           },
-          "example": "Lúxusveitingastaður bætti netviðveru sína með því að sýna fagmannlega breyttar myndir af mat, sem jók bókanir um 20%."
+          "expertTools": {
+            "title": "Sérfræðinotkun tóla",
+            "description": "Sérfræðileg meðhöndlun leiðréttingarlaga, grímna og síua fyrir stórkostlegar niðurstöður."
+          }
+        }
+      },
+      "graphicDesign": {
+        "title": "Grafísk hönnun",
+        "features": {
+          "logoCreation": {
+            "title": "Hönnun sérsniðinna lógóa",
+            "description": "Hönnun á einstökum lógóum og vörumerkisstílum."
+          },
+          "fontBranding": {
+            "title": "Letur og vörumerki",
+            "description": "Þróun á einstökum leturgerðum og vörumerkjastílum."
+          },
+          "designForPlatforms": {
+            "title": "Hönnun fyrir prent og stafræna miðla",
+            "description": "Fagleg grafísk hönnun fyrir prent og stafræna miðla."
+          }
+        }
+      },
+      "musicalAccompaniment": {
+        "title": "Tónlistarleg fylgd",
+        "description": "Liðið okkar inniheldur einnig sérfræðinga í tónlistarlegri fylgd til að skapa fullkomið andrúmsloft fyrir hvert verkefni.",
+        "team": {
+          "composer": {
+            "title": "Tónskáld",
+            "description": "Leikur á píanó og saxófón."
+          },
+          "beatmaker": {
+            "title": "Taktsmiður",
+            "description": "Sérfræðingur í taktsköpun fyrir tónlist og myndbandsverkefni."
+          },
+          "soundDesigner": {
+            "title": "Hljóðhönnuður",
+            "description": "Sérfræðingur í hljóðhönnun til að bæta við hljóðupplifun."
+          }
         }
       }
     },
