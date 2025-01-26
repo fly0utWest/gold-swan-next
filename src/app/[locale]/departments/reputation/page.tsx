@@ -26,7 +26,7 @@ export default function ReputationAndDataProtectionPage() {
       />
       <AboutDepartment
         verticalMargin={16}
-        heading={t("title.firstString")}
+        heading={t("title.full")}
         description={t("description")}
       />
       <DepartmentServices title={t("reputationLifecycle.title")}>

@@ -319,6 +319,7 @@
     },
     "reputationAndDataProtection": {
       "title": {
+        "full": "Reputation and Data Protection",
         "firstString": "Reputation Protection",
         "secondString": "Data Security",
         "thirdString": "Crisis management"
@@ -557,6 +558,7 @@
     },
     "webdev": {
       "title": {
+        "full": "End to End Web Application Development",
         "firstString": "Awesome landings",
         "secondString": "UI/UX design",
         "thirdString": "E2E web development"
