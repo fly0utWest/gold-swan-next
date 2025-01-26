@@ -11,26 +11,32 @@ const AwardsSetion = () => {
   const t = useTranslations("awards");
 
   return (
-    <div className="my-16 space-y-16">
-      <Heading
-        as="h2"
-        className="font-bold text-5xl lg:text-7xl text-center px-5 md:px-8"
-        id="departments"
-      >
-        {t("heading")}
-      </Heading>
+    <div className="space-y-16 w-full">
       <section className="w-full flex justify-center items-center flex-col gap-8 md:gap-16 md:mx-auto">
-        <div className="flex flex-row flex-wrap gap-20 justify-center items-center w-full px-5 md:px-8 md:max-w-screen-2xl">
-          {awardChevrons.map((image, index) => (
-            <Image
-              key={index}
-              className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-              src={image}
-              alt="Award image"
-              width={175}
-              height={175}
-            />
-          ))}
+        <div
+          className={`flex w-full flex-col gap-24 bg-backgroundSecondary border-border border-b-2 p-16`}
+        >
+          <Heading
+            as="h2"
+            className="text-center text-outline-primary-500 text-background shadow-primary-400 text-5xl lg:text-7xl font-bold"
+            id="partners"
+          >
+            {t("heading")}
+          </Heading>
+          <section className="w-full">
+            <div className="w-full flex justify-center items-center flex-col flex-wrap md:flex-row gap-16  md:max-w-screen-2xl md:mx-auto">
+              {awardChevrons.map((image, index) => (
+                <Image
+                  key={index}
+                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  src={image}
+                  alt="Partner logo"
+                  width={200}
+                  height={200}
+                />
+              ))}
+            </div>
+          </section>
         </div>
         <SectionDelimeter />
         <div className="flex flex-col flex-wrap gap-8 w-full md:flex-row px-5 md:px-8 md:max-w-screen-2xl">
