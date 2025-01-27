@@ -53,3 +53,15 @@ export const partnerLogos = [
   "/images/logos/mediamarkt.png",
   "/images/logos/enplus.png",
 ];
+
+export const partnerMarquee = [
+  "/images/logos/zawya.png",
+  "/images/logos/yahoo.png",
+  "/images/logos/benzinga.png",
+  "/images/logos/khaleej.png",
+  "/images/logos/gulfNews.png",
+  "/images/logos/digitalJournal.png",
+  "/images/logos/bloomberg.png",
+  "/images/logos/arabiya.png",
+  "/images/logos/ap.png",
+];

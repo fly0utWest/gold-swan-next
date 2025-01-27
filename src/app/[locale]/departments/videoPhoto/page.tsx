@@ -49,7 +49,6 @@ export default function PhotoAndVideoShootingPage() {
       </DepartmentServices>
 
       <DepartmentServices
-        rounded
         title={t("videoProduction.title")}
       >
         {videoProductionServices.map((service, index) => (
@@ -76,7 +75,6 @@ export default function PhotoAndVideoShootingPage() {
       </DepartmentServices>
 
       <DepartmentServices
-        rounded
         title={t("designAndPostProduction.title")}
       >
         {postProductionServices.map((service, index) => (

@@ -46,7 +46,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className="bg-neutral-100 dark:bg-black py-20 px-6  border-border border-2 rounded-3xl md:rounded-b-5xl"
+      className="bg-backgroundSecondary py-20 px-6  border-border border-b-2 rounded-b-3xl md:rounded-b-5xl"
       id="about-us"
     >
       <div className="max-w-screen-xl mx-auto space-y-10">
