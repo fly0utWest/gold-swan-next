@@ -1,8 +1,9 @@
 import React, { use } from "react";
 import Image from "next/image";
-import { partnerLogos } from "@/shared/models/awards";
+import { partnerLogos, partnerMarquee } from "@/shared/models/awards";
 import Heading from "@/shared/ui/heading";
 import { useTranslations } from "next-intl";
+import StaticMarquee from "@/shared/ui/static-marquee";
 
 interface PartnersSectionProps {
   outerMargin?: number | string;
