@@ -47,7 +47,7 @@ export default async function RootLayout(
           strategy="lazyOnload"
         />
       </head>
-      <body className={`${oswaldSans.className} relative antialiased`}>
+      <body className={`${oswaldSans.className}`}>
         <Inchat />
         <ClientObserver />
         <NextIntlClientProvider messages={messages}>
