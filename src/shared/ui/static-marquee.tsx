@@ -67,16 +67,15 @@ export default function StaticMarquee({
 
   return (
     <div
-      className={`inline-flex ${className}`}
+      className={`inline-flex justify-center items-center ${className}`}
       ref={marquee}
     >
       <div ref={reference} className="inline-flex shrink-0">
         {children}
       </div>
-
-      <div aria-hidden="true" className="inline-flex shrink-0">
+      <div aria-hidden="true" className="inline-flex justify-center items-center shrink-0">
         {Array.from({ length: repeatCount }).map((_, idx) => (
-          <div key={idx} className="inline-flex">
+          <div key={idx} className="inline-flex justify-center items-center shrink-0">
             {children}
           </div>
         ))}
