@@ -13,7 +13,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ outerMargin }) => {
   const t = useTranslations("partners");
   return (
     <div
-      className={`flex flex-col gap-24 bg-backgroundSecondary border-border border-y-2 p-16 ${
+      className={`flex flex-col gap-24 bg-backgroundSecondary border-border border-t-2 p-16 ${
         outerMargin ? `my-${outerMargin}` : ""
       }`}
     >

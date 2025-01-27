@@ -16,10 +16,10 @@ export function DepartmentButton({
   return (
     <Link
       href={href || "#"}
-      className={`rounded-3xl border-2 dark:border-border border-neutral-200 ${
+      className={`rounded-3xl border-2 border-border ${
         disabled
-          ? "pointer-events-none dark:text-neutral-200"
-          : "text-neutral-800 dark:text-neutral-300"
+          ? "pointer-events-none opacity-50"
+          : "text-foreground"
       } flex flex-row px-8 py-5 hover:text-primary-500 dark:hover:text-primary-500 dark:hover:border-primary-500 transition-colors items-center gap-8 w-full max-w-md lg:max-w-xs bg-neutral-100 dark:bg-black hover:border-primary-500 duration-300 ease-in-out`}
     >
       <Icon size={64} />
