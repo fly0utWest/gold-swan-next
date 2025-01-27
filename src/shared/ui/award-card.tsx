@@ -11,7 +11,7 @@ interface AwardCardProps {
 
 const AwardCard: React.FC<AwardCardProps> = ({ title, description, image, large = false }) => {
   return (
-    <div className="flex-1 flex flex-col gap-4 bg-neutral-100 p-6 dark:bg-neutral-800 rounded-3xl border-2 border-primary-500 min-w-fit">
+    <div className="flex-1 flex flex-col gap-4 bg-card p-6 rounded-3xl border-2 border-primary-500 min-w-fit">
       <Image
         className="object-cover"
         src={image}
