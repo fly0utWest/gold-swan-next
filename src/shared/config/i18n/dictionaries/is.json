@@ -620,7 +620,8 @@
     }
   },
   "partners": {
-    "heading": "Hver hefur falið okkur verkefni sín?"
+    "heading": "Hver hefur falið okkur verkefni sín?",
+    "marqueeHeading": "Fjölmiðlar um okkur"
   },
   "projects": {
     "upcoming": {
