@@ -58,7 +58,6 @@ const previousExperience = [
 const howDidYouHearOptions = [
   { label: "friends", value: "Advice from friends" },
   { label: "family", value: "Advice from family members" },
-  { label: "dentist", value: "Advice from another dentist" },
   { label: "advertising", value: "Advertising" },
 ];
 
