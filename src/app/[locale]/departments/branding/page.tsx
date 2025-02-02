@@ -7,7 +7,7 @@ import { Star2 } from "solar-icon-set";
 import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
 import ServiceCard from "@/widgets/departments/service-card";
 import DepartmentServices from "@/widgets/departments/department-services";
-import * as brandServices from "@/shared/models/departments/brandDev";
+import * as brandServices from "@/shared/models/departments/branding";
 
 
 export default function BrandDevelopmentPage() {

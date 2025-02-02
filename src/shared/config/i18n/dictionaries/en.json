@@ -84,109 +84,123 @@
       "photoVideoShooting": "Photo and Video Shooting",
       "webdev": "Website and Web Application Development"
     },
-    "marketing": {
-      "title": "Digital Marketing",
-      "description": "Comprehensive strategies and tools for promoting brands, products, and services in the digital space.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Digital marketing is a set of strategies and tools for promoting brands, products, and services in the digital space. It allows companies to precisely target audiences, measure results in real-time, and optimize campaigns efficiently.",
-        "benefits": {
-          "title": "Common Benefits",
-          "preciseAudienceTargeting": "Precise audience targeting through data segmentation",
-          "realTimeResults": "Real-time results measurement",
-          "costEfficientCampaigns": "Cost-efficient campaign optimization"
+    "digitalMarketing": {
+      "title": {
+        "full": "Digital Marketing Department",
+        "firstString": "Brand Awareness",
+        "secondString": "Impactful Advertising Campaigns",
+        "thirdString": "Digital Growth"
+      },
+      "description": "Our Digital Marketing Department is dedicated to elevating brands in the digital space through innovative strategies and precise execution. From boosting website visibility to creating impactful social media campaigns, we provide a full suite of services tailored to meet the needs of businesses of all sizes.",
+      "seo": {
+        "title": "Search Engine Optimization (SEO)",
+        "features": {
+          "visibility": {
+            "title": "Improved Search Engine Visibility",
+            "description": "Enhancing website visibility in search engines like Google and Yandex."
+          },
+          "keywordOptimization": {
+            "title": "Technical Audit and Keyword Optimization",
+            "description": "Conducting technical audits and optimizing keywords for better ranking."
+          },
+          "backlinks": {
+            "title": "Backlink Building",
+            "description": "Building high-quality backlinks to improve search rankings."
+          }
         }
       },
-      "tools": {
-        "title": "Key Tools",
-        "seo": {
-          "title": "SEO (Search Engine Optimization)",
-          "description": "Optimizing websites to improve visibility in search engines like Google and Yandex."
-        },
-        "ppc": {
-          "title": "PPC (Pay-Per-Click)",
-          "description": "Paid advertising where advertisers pay for each click."
-        },
-        "smm": {
-          "title": "SMM (Social Media Marketing)",
-          "description": "Promoting brands through social media channels."
-        },
-        "emailMarketing": {
-          "title": "Email Marketing",
-          "description": "Using newsletters to engage with the audience."
-        },
-        "contentMarketing": {
-          "title": "Content Marketing",
-          "description": "Creating and distributing valuable content to attract customers."
+      "contentMarketing": {
+        "title": "Content Marketing",
+        "features": {
+          "valuableContent": {
+            "title": "Content Creation and Strategy",
+            "description": "Creating valuable and engaging content to attract and retain customers."
+          },
+          "distribution": {
+            "title": "Content Distribution",
+            "description": "Distributing articles, videos, and infographics on relevant platforms."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Content Strategy",
-          "steps": {
-            "analyze": "Study audience interests and needs.",
-            "plan": "Create a trend-based content plan.",
-            "optimize": "Integrate keywords for SEO.",
-            "execute": "Include text, video, and infographics.",
-            "review": "Publish and track engagement."
+      "smm": {
+        "title": "Social Media Marketing (SMM)",
+        "features": {
+          "profileManagement": {
+            "title": "Social Media Account Management",
+            "description": "Managing social media accounts for brands."
           },
-          "example": "Styling articles. Collection reviews. Infographics on care."
-        },
-        "socialMediaManagement": {
-          "title": "Social Media Management",
-          "steps": {
-            "analyze": "Track engagement and growth.",
-            "plan": "Develop posts, stories, and videos.",
-            "optimize": "Launch targeted ads.",
-            "execute": "Respond to followers.",
-            "review": "Evaluate performance metrics."
+          "contentPlanning": {
+            "title": "Content Planning and Publishing",
+            "description": "Planning and publishing content, including text, graphics, and videos."
           },
-          "example": "Cosmetics brand with blogger reviews. 35% growth in followers. 60% increase in reach."
-        },
-        "adCampaigns": {
-          "title": "Social Media Ads",
-          "steps": {
-            "analyze": "Evaluate ad performance.",
-            "plan": "Set criteria (age, location, interests).",
-            "optimize": "Monitor and adjust spending.",
-            "execute": "Run A/B tests.",
-            "review": "Assess campaign results."
+          "engagementAnalysis": {
+            "title": "Audience Engagement Analysis",
+            "description": "Tracking engagement, reach, and audience growth."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Influencer Marketing",
+        "features": {
+          "collaborations": {
+            "title": "Collaborations with Influencers",
+            "description": "Finding and partnering with influencers that match the brand."
           },
-          "example": "Restaurant delivery discounts. 120 new orders in a week."
-        },
-        "emailMarketing": {
-          "title": "Email Marketing",
-          "steps": {
-            "analyze": "Monitor conversions and CTR.",
-            "plan": "Group subscribers by behavior.",
-            "optimize": "A/B test for open rates.",
-            "execute": "Send welcome and promo emails.",
-            "review": "Track campaign success."
+          "campaignTracking": {
+            "title": "Campaign Performance Tracking",
+            "description": "Monitoring and analyzing the effectiveness of influencer campaigns."
+          }
+        }
+      },
+      "targetedAdvertising": {
+        "title": "Targeted Advertising",
+        "features": {
+          "campaignSetup": {
+            "title": "Paid Advertising Campaigns",
+            "description": "Setting up tailored paid campaigns based on audience demographics and interests."
           },
-          "example": "Cart recovery emails with discounts. 20% cart completion."
-        },
-        "seoPpc": {
-          "seo": {
-            "title": "SEO",
-            "steps": {
-              "analyze": "Fix errors and improve speed.",
-              "plan": "Write keyword-optimized articles.",
-              "optimize": "Boost authority with backlinks.",
-              "execute": "Implement content and technical fixes.",
-              "review": "Track rankings and traffic."
-            },
-            "example": "Blog post optimization for 'how to bake a cake'. 30% increase in organic traffic. 15% higher search engine rankings for target keywords."
+          "adOptimization": {
+            "title": "Ad Campaign Optimization",
+            "description": "Optimizing campaigns to reduce costs and improve conversions."
+          }
+        }
+      },
+      "ppc": {
+        "title": "Pay-Per-Click Advertising (PPC)",
+        "features": {
+          "payPerClick": {
+            "title": "Paid Search Advertising",
+            "description": "Running PPC campaigns where advertisers pay per click on platforms like Google Ads and Facebook Ads."
           },
-          "ppc": {
-            "title": "PPC",
-            "steps": {
-              "analyze": "Evaluate clicks and sales.",
-              "plan": "Run ads for target queries.",
-              "optimize": "Adjust ROI.",
-              "execute": "Launch ad campaigns.",
-              "review": "Assess ad performance."
-            },
-            "example": "Electronics ads for 'laptops on sale.' 2,000 clicks. 150 sales in a month."
+          "campaignMonitoring": {
+            "title": "Campaign Monitoring and Optimization",
+            "description": "Tracking performance and refining PPC strategies for better ROI."
+          }
+        }
+      },
+      "emailMarketing": {
+        "title": "Email Marketing",
+        "features": {
+          "audienceEngagement": {
+            "title": "Audience Engagement with Newsletters",
+            "description": "Personalizing email content to improve open and click rates."
+          },
+          "automation": {
+            "title": "Email Automation",
+            "description": "Automating email workflows for increased efficiency and engagement."
+          }
+        }
+      },
+      "analyticsAndAudits": {
+        "title": "Analytics and Social Media Audits",
+        "features": {
+          "performanceEvaluation": {
+            "title": "Performance Evaluation",
+            "description": "Evaluating the effectiveness of social media accounts."
+          },
+          "competitiveBenchmarking": {
+            "title": "Competitive Benchmarking",
+            "description": "Comparing brand performance with competitors to identify improvement opportunities."
           }
         }
       }
@@ -304,7 +318,6 @@
         }
       }
     },
-
     "reputationAndDataProtection": {
       "title": {
         "full": "Reputation and Data Protection",
@@ -635,7 +648,6 @@
       }
     }
   },
-
   "partners": {
     "heading": "Who has entrusted us with their projects?",
     "marqueeHeading": "Press about Us"
