@@ -38,6 +38,17 @@ export default function MarketingPage() {
         description={t("description")}
       />
 
+      <DepartmentServices title={t("smm.title")}>
+        {smmServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
       <DepartmentServices title={t("seo.title")}>
         {seoServices.map((service, index) => (
           <ServiceCard
@@ -51,17 +62,6 @@ export default function MarketingPage() {
 
       <DepartmentServices rounded title={t("contentMarketing.title")}>
         {contentMarketingServices.map((service, index) => (
-          <ServiceCard
-            key={index}
-            Icon={service.Icon}
-            title={t(service.title)}
-            description={t(service.description)}
-          />
-        ))}
-      </DepartmentServices>
-
-      <DepartmentServices title={t("smm.title")}>
-        {smmServices.map((service, index) => (
           <ServiceCard
             key={index}
             Icon={service.Icon}
