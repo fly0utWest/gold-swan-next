@@ -193,129 +193,116 @@
         }
       }
     },
-    "brandDevelopment": {
-      "title": "Vörumerkjaþróun og almannatengsl",
-      "description": "Markaðssetning er burðarás hvers konar viðskiptaáætlunar sem einbeitir sér að því að skapa gildi fyrir viðskiptavini og viðhalda sterkum viðskiptasamböndum. Hún nær yfir fjölda aðgerða eins og vörumerkjaþróun, auglýsingar, almannatengsl og markaðsrannsóknir sem miða að því að ná til markhópa og hafa áhrif á kaupákvarðanir þeirra.",
-      "overview": {
-        "title": "Yfirlit",
-        "definition": "Vörumerkjaþróun og almannatengsl eru lykiltól til að byggja upp sterk og þekkjanleg vörumerki og viðhalda jákvæðum tengslum við almenning. Þessar aðferðir tryggja að vörumerki dafni á samkeppnismörkuðum og standist áskoranir.",
-        "benefits": {
-          "strongBrandIdentity": "Mótun á einstöku og sterku vörumerki",
-          "enhancedPublicImage": "Bygging jákvæðrar ímyndar hjá almenningi",
-          "longTermSuccess": "Trygging á langtíma velgengni fyrirtækja"
+    "brandDevelopmentAndPR": {
+      "title": {
+        "full": "Vörumerkjaþróun og almannatengsladeild",
+        "firstString": "Vörumerkjavitund",
+        "secondString": "Markaðsstefnumótun",
+        "thirdString": "Almannatengsl"
+      },
+      "description": "Vörumerkjaþróun og almannatengsladeild okkar einbeitir sér að því að skapa einstök vörumerki og stjórna almenningsáliti. Við bjóðum upp á alhliða þjónustu sem hjálpar fyrirtækjum að skera sig úr á markaðnum og byggja upp traust við áhorfendur sína.",
+      "brandBookCreation": {
+        "title": "Vörumerkjabók",
+        "features": {
+          "identityGuide": {
+            "title": "Leiðarvísir um sjónræna og samskiptalega ímynd",
+            "description": "Alhliða leiðarvísir sem skilgreinir sjónræna og samskiptalega ímynd fyrirtækis."
+          },
+          "platformConsistency": {
+            "title": "Samræmi yfir allar miðlanir",
+            "description": "Tryggir samræmi yfir allar miðlanir og snertifleti."
+          }
         }
       },
-      "tools": {
-        "title": "Helstu tól",
-        "brandBook": {
-          "title": "Gerð vörumerkjahandbókar",
-          "description": "Vörumerkjahandbók er yfirgripsmikil leiðarvísir sem skilgreinir sjónræna og samskiptalega sjálfsmynd fyrirtækis. Hún tryggir samræmi yfir alla miðla og snertifleti."
-        },
-        "brandPositioning": {
-          "title": "Staðsetning vörumerkis",
-          "description": "Staðsetning vörumerkis skilgreinir fyrirtækið á markaðnum með því að draga fram einstakt virðisloforð og móta skýra sjálfsmynd."
-        },
-        "uspDevelopment": {
-          "title": "Þróun sérstöðu (USP)",
-          "description": "Sterkt sérkenni skilgreinir hvers vegna viðskiptavinir ættu að velja ákveðna vöru eða þjónustu fram yfir samkeppni."
-        },
-        "creativeAdvertising": {
-          "title": "Skapandi auglýsingaherferðir",
-          "description": "Skapandi auglýsingar ná til áhorfenda með nýstárlegum hugmyndum, sjónrænum útfærslum og skilaboðum sem skera sig úr."
-        },
-        "prAndMediaRelations": {
-          "title": "Almannatengsl og fjölmiðlasamskipti",
-          "description": "Almannatengsl einblína á að stýra samskiptum milli fyrirtækis og áhorfenda til að auka trúverðugleika og traust."
-        },
-        "influencerMarketing": {
-          "title": "Áhrifavalda markaðssetning",
-          "description": "Áhrifavalda markaðssetning nýtir traust áhrifavalda innan ákveðinna sviða til að kynna vörur eða þjónustu."
-        },
-        "eventOrganization": {
-          "title": "Skipulag viðburða",
-          "description": "Viðburðahald eykur sýnileika vörumerkis, styrkir tengsl við viðskiptavini og skapar jákvæða umfjöllun."
-        },
-        "crisisPRManagement": {
-          "title": "Almannatengsl í kreppu",
-          "description": "Almannatengsl í kreppu einblína á að verja ímynd vörumerkis í neikvæðum aðstæðum eða ógn við orðspor."
+      "brandPositioning": {
+        "title": "Vörumerkjastaðsetning",
+        "features": {
+          "uvpHighlight": {
+            "title": "Sérstaða og virðisauki",
+            "description": "Leggur áherslu á sérstöðu og virðisauka fyrirtækis."
+          },
+          "marketDifferentiation": {
+            "title": "Aðgreining á markaði",
+            "description": "Skapar skýra og aðgreinda ímynd á markaðnum."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Vörumerkjastefna",
-          "steps": {
-            "research": "Greindu hlutverk, gildi og væntingar viðskiptavina vörumerkisins.",
-            "design": "Þróaðu lógó, litapallettur og leturgerðir.",
-            "documentation": "Taktu öll atriði saman í vörumerkjahandbók með notkunarleiðbeiningum.",
-            "audienceResearch": "Greindu þarfir og óskir viðskiptavina.",
-            "valueMapping": "Sýndu einstaka eiginleika og kosti sem höfða til viðskiptavina.",
-            "strategyImplementation": "Samræmdu skilaboð og markaðsherferðir við stefnu vörumerkisins."
+      "uspDevelopment": {
+        "title": "Þróun sölupunkta (USP)",
+        "features": {
+          "customerChoice": {
+            "title": "Af hverju ættu viðskiptavinir að velja þig?",
+            "description": "Skilgreinir hvers vegna viðskiptavinir ættu að velja vörur þínar eða þjónustu fram yfir samkeppnisaðila."
           },
-          "example": "Tæknifyrirtæki þróaði vörumerkjahandbók með fáguðu lógói, nútímalegum leturgerðum og minimalískum litapallettum sem tryggðu samræmi í hönnun á vefsíðu, samfélagsmiðlum og markaðsefni."
-        },
-        "positioning": {
-          "title": "Staðsetningarstefna vörumerkis",
-          "steps": {
-            "defineUVP": "Skilgreindu hvað greinir vörumerkið frá samkeppni.",
-            "keyMessaging": "Mótuðu stutt og áhrifarík skilaboð fyrir markhópa.",
-            "competitorAnalysis": "Metið styrkleika og veikleika samkeppnisaðila til að staðsetja vörumerkið á áhrifaríkan hátt."
+          "coreBenefits": {
+            "title": "Að miðla kjarnagildum vörumerkisins",
+            "description": "Tjáir kjarnaávinning vörumerkisins á áhrifaríkan hátt."
+          }
+        }
+      },
+      "creativeAdvertising": {
+        "title": "Skapandi auglýsingaherferðir",
+        "features": {
+          "audienceEngagement": {
+            "title": "Áhugaverð og skapandi hugmyndavinna",
+            "description": "Skapar þátttöku áhorfenda með nýstárlegum hugmyndum, myndrænum útfærslum og skilaboðum."
           },
-          "example": "Kaffihús staðsetti sig sem 'vistvænt og handverksmiðað val' með því að leggja áherslu á sjálfbæra innkaup og handverksgæði og laðaði þannig að sér umhverfisvæna viðskiptavini."
-        },
-        "usp": {
-          "title": "Þróun sérstöðu (USP)",
-          "steps": {
-            "featureAnalysis": "Greindu styrkleika og kosti vörunnar.",
-            "targetedMessaging": "Skapaðu skýr og stutt skilaboð sem höfða til markhóps.",
-            "proofPoints": "Sýndu USP með raunverulegum dæmum eða gögnum."
+          "marketImpact": {
+            "title": "Aðgreining í fjölmennum markaði",
+            "description": "Einbeitir sér að því að skera sig úr á samkeppnismarkaði."
+          }
+        }
+      },
+      "prAndMediaRelations": {
+        "title": "Almannatengsl og fjölmiðlaskipulag",
+        "features": {
+          "communicationManagement": {
+            "title": "Stjórnun samskipta",
+            "description": "Stýrir samskiptum milli fyrirtækja og áhorfenda þeirra."
           },
-          "example": "Heimsendingarþjónusta lagði áherslu á sérstöðu sína sem 'Afhent innan 30 mínútna eða frítt,' sem skapaði samkeppnisforskot og tryggð viðskiptavina."
-        },
-        "advertisingCampaigns": {
-          "title": "Skapandi auglýsingaherferðir",
-          "steps": {
-            "ideaGeneration": "Hugmyndavinna með áherslu á að höfða til markhóps.",
-            "contentProduction": "Þróaðu sjónrænt efni, texta og margmiðlunarefni.",
-            "crossPlatformDistribution": "Hóf herferðir á netinu og í hefðbundnum miðlum.",
-            "performanceAnalysis": "Fylgstu með árangri og fínstilltu aðferðir til að hámarka áhrif."
+          "credibilityBuilding": {
+            "title": "Aukið traust og trúverðugleiki",
+            "description": "Eflir trúverðugleika og byggir upp traust með stefnumótandi samskiptum."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Áhrifavaldamarkaðssetning",
+        "features": {
+          "trustedVoices": {
+            "title": "Samstarf við áreiðanlega áhrifavalda",
+            "description": "Nýtir áhrifavalda til að kynna vörur eða þjónustu vörumerkisins."
           },
-          "example": "Fatamerki birti stuttmyndbönd á TikTok með fjölbreyttum stílum sem fengu milljónir áhorfa."
-        },
-        "prRelations": {
-          "title": "Almannatengsl og fjölmiðlatengsl",
-          "steps": {
-            "messageCrafting": "Mótaðu lykilboð fyrir almannatengsl.",
-            "distribution": "Sendu fréttatilkynningar til fjölmiðla.",
-            "followUp": "Hafðu samband við fjölmiðla til að tryggja umfjöllun."
+          "audienceReach": {
+            "title": "Aukin útbreiðsla og þátttaka",
+            "description": "Eykur umfang og þátttöku með samstarfi við áhrifavalda."
+          }
+        }
+      },
+      "eventOrganization": {
+        "title": "Viðburðastjórnun",
+        "features": {
+          "brandVisibility": {
+            "title": "Aukið sýnileika vörumerkis",
+            "description": "Eykur sýnileika vörumerkis með vel skipulögðum viðburðum."
           },
-          "example": "Tæknifyrirtæki kynnti nýtt afurð með fjölmiðlaviðtölum og fréttatilkynningum sem tryggðu breiða umfjöllun."
-        },
-        "influencerCampaigns": {
-          "title": "Áhrifavalda markaðsherferðir",
-          "steps": {
-            "research": "Finndu áhrifavalda sem höfða til markhópsins.",
-            "collaboration": "Skipuleggðu samstarf sem samræmist markmiðum vörumerkisins.",
-            "analysis": "Mældu árangur eftir snertingu, smelli og viðskiptum."
+          "customerRelationships": {
+            "title": "Efling tengsla við viðskiptavini",
+            "description": "Styrkir tengsl við viðskiptavini og skapar jákvæða umfjöllun."
+          }
+        }
+      },
+      "crisisPrManagement": {
+        "title": "Stjórnun almannatengsla í krísum",
+        "features": {
+          "brandProtection": {
+            "title": "Vernd vörumerkis í erfiðum aðstæðum",
+            "description": "Verndar ímynd vörumerkis í neikvæðum aðstæðum eða orðsporaskaða."
           },
-          "example": "Fegrunarmerki gerði samstarf við áhrifavalda til að kynna ný húðvörur, sem jók sölu og sýnileika vörumerkisins."
-        },
-        "eventPlanning": {
-          "title": "Viðburðaskipulagning",
-          "steps": {
-            "conceptCreation": "Skilgreindu tilgang og fyrirkomulag viðburðarins.",
-            "execution": "Skipuleggðu alla þætti frá boðum til dagskrár.",
-            "followUp": "Deildu hápunktum viðburðarins til að auka sýnileika."
-          },
-          "example": "Tískumerki hélt tískusýningu sem laðaði að sér fjölmiðla og áhrifavalda."
-        },
-        "crisisManagement": {
-          "title": "Stjórnun í kreppu",
-          "steps": {
-            "situationAnalysis": "Greindu ástand og áhrif á orðspor vörumerkisins.",
-            "responseStrategy": "Sendu skýr og lausnamiðuð skilaboð til hagaðila.",
-            "monitoring": "Fylgstu með almenningsáliti og aðlagaðu samskipti."
-          },
-          "example": "Fyrirtæki baðst afsökunar og birti viðgerðaráætlun eftir innköllun á vöru og endurheimti traust viðskiptavina."
+          "strategicCrisisPlan": {
+            "title": "Stefnumótandi samskiptaáætlanir",
+            "description": "Veitir stefnumótandi samskiptaáætlanir til að lágmarka neikvæð áhrif kreppa."
+          }
         }
       }
     },

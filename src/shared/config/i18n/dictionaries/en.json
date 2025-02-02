@@ -191,132 +191,120 @@
         }
       }
     },
-    "brandDevelopment": {
-      "title": "Brand Development and PR",
-      "description": "Marketing is the backbone of any business strategy, focusing on creating value for customers and maintaining strong customer relationships. It includes a range of activities like brand development, advertising, public relations, and market research, which aim to reach target audiences and influence their purchasing decisions.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Brand development and public relations are essential tools for building strong, recognizable brands and maintaining positive relationships with the public. These strategies ensure brands thrive in competitive markets and remain resilient to challenges.",
-        "benefits": {
-          "strongBrandIdentity": "Developing a unique and strong brand identity",
-          "enhancedPublicImage": "Establishing a positive public image",
-          "longTermSuccess": "Ensuring long-term business success"
+    "brandDevelopmentAndPR": {
+      "title": {
+        "full": "Brand Development and PR Department",
+        "firstString": "Brand Identity",
+        "secondString": "Market Positioning",
+        "thirdString": "Public Relations"
+      },
+      "description": "Our Brand Development and PR Department focuses on crafting unique brand identities and managing public perception. We offer a comprehensive range of services that help businesses stand out in the market and build trust with their audience.",
+      "brandBookCreation": {
+        "title": "Brand Book Creation",
+        "features": {
+          "identityGuide": {
+            "title": "Visual and Communicative Identity Guide",
+            "description": "A comprehensive guide defining the visual and communicative identity of a business."
+          },
+          "platformConsistency": {
+            "title": "Consistency Across All Platforms",
+            "description": "Ensures consistency across all platforms and touchpoints."
+          }
         }
       },
-      "tools": {
-        "title": "Key Tools",
-        "brandBook": {
-          "title": "Brand Book Creation",
-          "description": "A brand book serves as a comprehensive guide that defines the visual and communicative identity of a business. It ensures consistency across all platforms and touchpoints."
-        },
-        "brandPositioning": {
-          "title": "Brand Positioning",
-          "description": "Brand positioning differentiates a company in the market by highlighting its unique value proposition (UVP) and establishing a clear identity."
-        },
-        "uspDevelopment": {
-          "title": "Unique Selling Proposition (USP) Development",
-          "description": "A strong USP defines why customers should choose a particular product or service over competitors."
-        },
-        "creativeAdvertising": {
-          "title": "Creative Advertising Campaigns",
-          "description": "Creative advertising engages audiences through innovative concepts, visuals, and messaging that stand out."
-        },
-        "prAndMediaRelations": {
-          "title": "PR and Media Relations",
-          "description": "Public relations (PR) focuses on managing communications between a company and its audience to enhance credibility and trust."
-        },
-        "influencerMarketing": {
-          "title": "Influencer Marketing",
-          "description": "Influencer marketing leverages trusted voices in a niche to promote a brand’s products or services."
-        },
-        "eventOrganization": {
-          "title": "Event Organization",
-          "description": "Hosting events boosts brand visibility, strengthens relationships with customers, and generates positive publicity."
-        },
-        "crisisPRManagement": {
-          "title": "Crisis PR Management",
-          "description": "Crisis PR focuses on protecting a brand’s image during negative situations or reputational threats."
+      "brandPositioning": {
+        "title": "Brand Positioning",
+        "features": {
+          "uvpHighlight": {
+            "title": "Unique Value Proposition",
+            "description": "Highlights a company's unique value proposition (UVP)."
+          },
+          "marketDifferentiation": {
+            "title": "Market Differentiation",
+            "description": "Establishes a clear and differentiated identity in the market."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Brand Strategy",
-          "steps": {
-            "research": "Analyze the brand’s mission, values, and audience expectations.",
-            "design": "Develop logo concepts, select color schemes, and refine typography.",
-            "documentation": "Compile all elements into a brand book with usage guidelines.",
-            "audienceResearch": "Identify customer needs and preferences.",
-            "valueMapping": "Highlight unique features and benefits that appeal to the audience.",
-            "strategyImplementation": "Align messaging and marketing campaigns with the positioning strategy."
+      "uspDevelopment": {
+        "title": "Unique Selling Proposition (USP) Development",
+        "features": {
+          "customerChoice": {
+            "title": "Why Customers Choose Your Brand",
+            "description": "Defines why customers should choose a particular product or service over competitors."
           },
-          "example": "A tech startup developed a brand book that included a sleek logo, modern fonts, and a minimalistic color palette, ensuring consistent design across its website, social media, and marketing materials."
-        },
-        "positioning": {
-          "title": "Brand Positioning Strategy",
-          "steps": {
-            "defineUVP": "Identify what sets the brand apart from competitors.",
-            "keyMessaging": "Craft concise and impactful messages for target audiences.",
-            "competitorAnalysis": "Evaluate competitors’ strengths and weaknesses to position the brand effectively."
+          "coreBenefits": {
+            "title": "Communicating Core Benefits",
+            "description": "Communicates the core benefits of your brand effectively."
+          }
+        }
+      },
+      "creativeAdvertising": {
+        "title": "Creative Advertising Campaigns",
+        "features": {
+          "audienceEngagement": {
+            "title": "Engaging and Creative Concepts",
+            "description": "Engages audiences through innovative concepts, visuals, and messaging."
           },
-          "example": "A coffee shop positioned itself as the 'eco-friendly, artisanal choice' by emphasizing sustainable sourcing and craftsmanship, attracting environmentally conscious customers."
-        },
-        "usp": {
-          "title": "USP Development",
-          "steps": {
-            "featureAnalysis": "Identify product strengths and benefits.",
-            "targetedMessaging": "Create clear, concise statements that appeal to the target market.",
-            "proofPoints": "Demonstrate the USP through real examples or data."
+          "marketImpact": {
+            "title": "Standing Out in the Market",
+            "description": "Focuses on standing out in a crowded market."
+          }
+        }
+      },
+      "prAndMediaRelations": {
+        "title": "PR and Media Relations",
+        "features": {
+          "communicationManagement": {
+            "title": "Strategic Communication Management",
+            "description": "Manages communications between a company and its audience."
           },
-          "example": "A delivery service highlighted its USP as 'Guaranteed delivery within 30 minutes or it’s free,' gaining a competitive edge and customer loyalty."
-        },
-        "advertisingCampaigns": {
-          "title": "Creative Advertising Campaigns",
-          "steps": {
-            "ideaGeneration": "Brainstorm unique concepts that resonate with the audience.",
-            "contentProduction": "Develop visuals, copy, and multimedia materials.",
-            "crossPlatformDistribution": "Launch campaigns across online and offline channels.",
-            "performanceAnalysis": "Monitor results and adjust campaigns for maximum impact."
+          "credibilityBuilding": {
+            "title": "Enhancing Credibility and Trust",
+            "description": "Enhances credibility and builds trust through strategic messaging."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Influencer Marketing",
+        "features": {
+          "trustedVoices": {
+            "title": "Leveraging Trusted Voices",
+            "description": "Leverages trusted voices in a niche to promote a brand’s products or services."
           },
-          "example": "A clothing brand ran a viral ad campaign featuring short-form videos on TikTok, showcasing diverse fashion styles and achieving millions of views."
-        },
-        "prRelations": {
-          "title": "PR and Media Relations",
-          "steps": {
-            "messageCrafting": "Develop key talking points for PR communication.",
-            "distribution": "Send press releases to targeted media contacts.",
-            "followUp": "Engage with media to ensure coverage and address queries."
+          "audienceReach": {
+            "title": "Expanding Reach and Engagement",
+            "description": "Increases reach and engagement through collaborations with influencers."
+          }
+        }
+      },
+      "eventOrganization": {
+        "title": "Event Organization",
+        "features": {
+          "brandVisibility": {
+            "title": "Boosting Brand Visibility",
+            "description": "Boosts brand visibility through well-planned events."
           },
-          "example": "A tech company announced a new product launch via press releases and media interviews, gaining widespread coverage in industry publications."
-        },
-        "influencerCampaigns": {
-          "title": "Influencer Marketing Campaigns",
-          "steps": {
-            "research": "Identify relevant influencers based on audience size, engagement, and niche.",
-            "collaboration": "Develop campaigns that align with both the influencer’s style and the brand’s goals.",
-            "analysis": "Track performance metrics such as reach, clicks, and conversions."
+          "customerRelationships": {
+            "title": "Strengthening Customer Relationships",
+            "description": "Strengthens relationships with customers and generates positive publicity."
+          }
+        }
+      },
+      "crisisPrManagement": {
+        "title": "Crisis PR Management",
+        "features": {
+          "brandProtection": {
+            "title": "Protecting Brand Image",
+            "description": "Protects a brand’s image during negative situations or reputational threats."
           },
-          "example": "A beauty brand partnered with top beauty bloggers to showcase new skincare products, resulting in increased sales and brand awareness."
-        },
-        "eventPlanning": {
-          "title": "Event Organization",
-          "steps": {
-            "conceptCreation": "Define the purpose and format of the event.",
-            "execution": "Organize all logistics, from invitations to on-site activities.",
-            "followUp": "Share event highlights through content to maximize exposure."
-          },
-          "example": "A fashion brand hosted a runway show to present its latest collection, attracting media coverage and influencers to promote the event."
-        },
-        "crisisManagement": {
-          "title": "Crisis PR Management",
-          "steps": {
-            "situationAnalysis": "Assess the crisis and its impact on the brand.",
-            "responseStrategy": "Communicate clear, solution-focused messages to stakeholders.",
-            "monitoring": "Track public sentiment and adjust communication as needed."
-          },
-          "example": "A company issued a formal apology and outlined immediate corrective actions after a product recall, regaining customer trust and confidence."
+          "strategicCrisisPlan": {
+            "title": "Strategic Crisis Communication",
+            "description": "Provides strategic communication plans to mitigate crises."
+          }
         }
       }
     },
+
     "reputationAndDataProtection": {
       "title": {
         "full": "Reputation and Data Protection",
