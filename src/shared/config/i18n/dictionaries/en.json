@@ -84,236 +84,237 @@
       "photoVideoShooting": "Photo and Video Shooting",
       "webdev": "Website and Web Application Development"
     },
-    "marketing": {
-      "title": "Digital Marketing",
-      "description": "Comprehensive strategies and tools for promoting brands, products, and services in the digital space.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Digital marketing is a set of strategies and tools for promoting brands, products, and services in the digital space. It allows companies to precisely target audiences, measure results in real-time, and optimize campaigns efficiently.",
-        "benefits": {
-          "title": "Common Benefits",
-          "preciseAudienceTargeting": "Precise audience targeting through data segmentation",
-          "realTimeResults": "Real-time results measurement",
-          "costEfficientCampaigns": "Cost-efficient campaign optimization"
+    "digitalMarketing": {
+      "title": {
+        "full": "Digital Marketing Department",
+        "firstString": "Brand Awareness",
+        "secondString": "Impactful Advertising Campaigns",
+        "thirdString": "Digital Growth"
+      },
+      "description": "Our Digital Marketing Department is dedicated to elevating brands in the digital space through innovative strategies and precise execution. From boosting website visibility to creating impactful social media campaigns, we provide a full suite of services tailored to meet the needs of businesses of all sizes.",
+      "seo": {
+        "title": "Search Engine Optimization (SEO)",
+        "features": {
+          "visibility": {
+            "title": "Improved Search Engine Visibility",
+            "description": "Enhancing website visibility in search engines like Google and Yandex."
+          },
+          "keywordOptimization": {
+            "title": "Technical Audit and Keyword Optimization",
+            "description": "Conducting technical audits and optimizing keywords for better ranking."
+          },
+          "backlinks": {
+            "title": "Backlink Building",
+            "description": "Building high-quality backlinks to improve search rankings."
+          }
         }
       },
-      "tools": {
-        "title": "Key Tools",
-        "seo": {
-          "title": "SEO (Search Engine Optimization)",
-          "description": "Optimizing websites to improve visibility in search engines like Google and Yandex."
-        },
-        "ppc": {
-          "title": "PPC (Pay-Per-Click)",
-          "description": "Paid advertising where advertisers pay for each click."
-        },
-        "smm": {
-          "title": "SMM (Social Media Marketing)",
-          "description": "Promoting brands through social media channels."
-        },
-        "emailMarketing": {
-          "title": "Email Marketing",
-          "description": "Using newsletters to engage with the audience."
-        },
-        "contentMarketing": {
-          "title": "Content Marketing",
-          "description": "Creating and distributing valuable content to attract customers."
+      "contentMarketing": {
+        "title": "Content Marketing",
+        "features": {
+          "valuableContent": {
+            "title": "Content Creation and Strategy",
+            "description": "Creating valuable and engaging content to attract and retain customers."
+          },
+          "distribution": {
+            "title": "Content Distribution",
+            "description": "Distributing articles, videos, and infographics on relevant platforms."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Content Strategy",
-          "steps": {
-            "analyze": "Study audience interests and needs.",
-            "plan": "Create a trend-based content plan.",
-            "optimize": "Integrate keywords for SEO.",
-            "execute": "Include text, video, and infographics.",
-            "review": "Publish and track engagement."
+      "smm": {
+        "title": "Social Media Marketing (SMM)",
+        "features": {
+          "profileManagement": {
+            "title": "Social Media Account Management",
+            "description": "Managing social media accounts for brands."
           },
-          "example": "Styling articles. Collection reviews. Infographics on care."
-        },
-        "socialMediaManagement": {
-          "title": "Social Media Management",
-          "steps": {
-            "analyze": "Track engagement and growth.",
-            "plan": "Develop posts, stories, and videos.",
-            "optimize": "Launch targeted ads.",
-            "execute": "Respond to followers.",
-            "review": "Evaluate performance metrics."
+          "contentPlanning": {
+            "title": "Content Planning and Publishing",
+            "description": "Planning and publishing content, including text, graphics, and videos."
           },
-          "example": "Cosmetics brand with blogger reviews. 35% growth in followers. 60% increase in reach."
-        },
-        "adCampaigns": {
-          "title": "Social Media Ads",
-          "steps": {
-            "analyze": "Evaluate ad performance.",
-            "plan": "Set criteria (age, location, interests).",
-            "optimize": "Monitor and adjust spending.",
-            "execute": "Run A/B tests.",
-            "review": "Assess campaign results."
+          "engagementAnalysis": {
+            "title": "Audience Engagement Analysis",
+            "description": "Tracking engagement, reach, and audience growth."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Influencer Marketing",
+        "features": {
+          "collaborations": {
+            "title": "Collaborations with Influencers",
+            "description": "Finding and partnering with influencers that match the brand."
           },
-          "example": "Restaurant delivery discounts. 120 new orders in a week."
-        },
-        "emailMarketing": {
-          "title": "Email Marketing",
-          "steps": {
-            "analyze": "Monitor conversions and CTR.",
-            "plan": "Group subscribers by behavior.",
-            "optimize": "A/B test for open rates.",
-            "execute": "Send welcome and promo emails.",
-            "review": "Track campaign success."
+          "campaignTracking": {
+            "title": "Campaign Performance Tracking",
+            "description": "Monitoring and analyzing the effectiveness of influencer campaigns."
+          }
+        }
+      },
+      "targetedAdvertising": {
+        "title": "Targeted Advertising",
+        "features": {
+          "campaignSetup": {
+            "title": "Paid Advertising Campaigns",
+            "description": "Setting up tailored paid campaigns based on audience demographics and interests."
           },
-          "example": "Cart recovery emails with discounts. 20% cart completion."
-        },
-        "seoPpc": {
-          "seo": {
-            "title": "SEO",
-            "steps": {
-              "analyze": "Fix errors and improve speed.",
-              "plan": "Write keyword-optimized articles.",
-              "optimize": "Boost authority with backlinks.",
-              "execute": "Implement content and technical fixes.",
-              "review": "Track rankings and traffic."
-            },
-            "example": "Blog post optimization for 'how to bake a cake'. 30% increase in organic traffic. 15% higher search engine rankings for target keywords."
+          "adOptimization": {
+            "title": "Ad Campaign Optimization",
+            "description": "Optimizing campaigns to reduce costs and improve conversions."
+          }
+        }
+      },
+      "ppc": {
+        "title": "Pay-Per-Click Advertising (PPC)",
+        "features": {
+          "payPerClick": {
+            "title": "Paid Search Advertising",
+            "description": "Running PPC campaigns where advertisers pay per click on platforms like Google Ads and Facebook Ads."
           },
-          "ppc": {
-            "title": "PPC",
-            "steps": {
-              "analyze": "Evaluate clicks and sales.",
-              "plan": "Run ads for target queries.",
-              "optimize": "Adjust ROI.",
-              "execute": "Launch ad campaigns.",
-              "review": "Assess ad performance."
-            },
-            "example": "Electronics ads for 'laptops on sale.' 2,000 clicks. 150 sales in a month."
+          "campaignMonitoring": {
+            "title": "Campaign Monitoring and Optimization",
+            "description": "Tracking performance and refining PPC strategies for better ROI."
+          }
+        }
+      },
+      "emailMarketing": {
+        "title": "Email Marketing",
+        "features": {
+          "audienceEngagement": {
+            "title": "Audience Engagement with Newsletters",
+            "description": "Personalizing email content to improve open and click rates."
+          },
+          "automation": {
+            "title": "Email Automation",
+            "description": "Automating email workflows for increased efficiency and engagement."
+          }
+        }
+      },
+      "analyticsAndAudits": {
+        "title": "Analytics and Social Media Audits",
+        "features": {
+          "performanceEvaluation": {
+            "title": "Performance Evaluation",
+            "description": "Evaluating the effectiveness of social media accounts."
+          },
+          "competitiveBenchmarking": {
+            "title": "Competitive Benchmarking",
+            "description": "Comparing brand performance with competitors to identify improvement opportunities."
           }
         }
       }
     },
-    "brandDevelopment": {
-      "title": "Brand Development and PR",
-      "description": "Marketing is the backbone of any business strategy, focusing on creating value for customers and maintaining strong customer relationships. It includes a range of activities like brand development, advertising, public relations, and market research, which aim to reach target audiences and influence their purchasing decisions.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Brand development and public relations are essential tools for building strong, recognizable brands and maintaining positive relationships with the public. These strategies ensure brands thrive in competitive markets and remain resilient to challenges.",
-        "benefits": {
-          "strongBrandIdentity": "Developing a unique and strong brand identity",
-          "enhancedPublicImage": "Establishing a positive public image",
-          "longTermSuccess": "Ensuring long-term business success"
+    "brandDevelopmentAndPR": {
+      "title": {
+        "full": "Brand Development and PR Department",
+        "firstString": "Brand Identity",
+        "secondString": "Market Positioning",
+        "thirdString": "Public Relations"
+      },
+      "description": "Our Brand Development and PR Department focuses on crafting unique brand identities and managing public perception. We offer a comprehensive range of services that help businesses stand out in the market and build trust with their audience.",
+      "brandBookCreation": {
+        "title": "Brand Book Creation",
+        "features": {
+          "identityGuide": {
+            "title": "Visual and Communicative Identity Guide",
+            "description": "A comprehensive guide defining the visual and communicative identity of a business."
+          },
+          "platformConsistency": {
+            "title": "Consistency Across All Platforms",
+            "description": "Ensures consistency across all platforms and touchpoints."
+          }
         }
       },
-      "tools": {
-        "title": "Key Tools",
-        "brandBook": {
-          "title": "Brand Book Creation",
-          "description": "A brand book serves as a comprehensive guide that defines the visual and communicative identity of a business. It ensures consistency across all platforms and touchpoints."
-        },
-        "brandPositioning": {
-          "title": "Brand Positioning",
-          "description": "Brand positioning differentiates a company in the market by highlighting its unique value proposition (UVP) and establishing a clear identity."
-        },
-        "uspDevelopment": {
-          "title": "Unique Selling Proposition (USP) Development",
-          "description": "A strong USP defines why customers should choose a particular product or service over competitors."
-        },
-        "creativeAdvertising": {
-          "title": "Creative Advertising Campaigns",
-          "description": "Creative advertising engages audiences through innovative concepts, visuals, and messaging that stand out."
-        },
-        "prAndMediaRelations": {
-          "title": "PR and Media Relations",
-          "description": "Public relations (PR) focuses on managing communications between a company and its audience to enhance credibility and trust."
-        },
-        "influencerMarketing": {
-          "title": "Influencer Marketing",
-          "description": "Influencer marketing leverages trusted voices in a niche to promote a brand’s products or services."
-        },
-        "eventOrganization": {
-          "title": "Event Organization",
-          "description": "Hosting events boosts brand visibility, strengthens relationships with customers, and generates positive publicity."
-        },
-        "crisisPRManagement": {
-          "title": "Crisis PR Management",
-          "description": "Crisis PR focuses on protecting a brand’s image during negative situations or reputational threats."
+      "brandPositioning": {
+        "title": "Brand Positioning",
+        "features": {
+          "uvpHighlight": {
+            "title": "Unique Value Proposition",
+            "description": "Highlights a company's unique value proposition (UVP)."
+          },
+          "marketDifferentiation": {
+            "title": "Market Differentiation",
+            "description": "Establishes a clear and differentiated identity in the market."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Brand Strategy",
-          "steps": {
-            "research": "Analyze the brand’s mission, values, and audience expectations.",
-            "design": "Develop logo concepts, select color schemes, and refine typography.",
-            "documentation": "Compile all elements into a brand book with usage guidelines.",
-            "audienceResearch": "Identify customer needs and preferences.",
-            "valueMapping": "Highlight unique features and benefits that appeal to the audience.",
-            "strategyImplementation": "Align messaging and marketing campaigns with the positioning strategy."
+      "uspDevelopment": {
+        "title": "Unique Selling Proposition (USP) Development",
+        "features": {
+          "customerChoice": {
+            "title": "Why Customers Choose Your Brand",
+            "description": "Defines why customers should choose a particular product or service over competitors."
           },
-          "example": "A tech startup developed a brand book that included a sleek logo, modern fonts, and a minimalistic color palette, ensuring consistent design across its website, social media, and marketing materials."
-        },
-        "positioning": {
-          "title": "Brand Positioning Strategy",
-          "steps": {
-            "defineUVP": "Identify what sets the brand apart from competitors.",
-            "keyMessaging": "Craft concise and impactful messages for target audiences.",
-            "competitorAnalysis": "Evaluate competitors’ strengths and weaknesses to position the brand effectively."
+          "coreBenefits": {
+            "title": "Communicating Core Benefits",
+            "description": "Communicates the core benefits of your brand effectively."
+          }
+        }
+      },
+      "creativeAdvertising": {
+        "title": "Creative Advertising Campaigns",
+        "features": {
+          "audienceEngagement": {
+            "title": "Engaging and Creative Concepts",
+            "description": "Engages audiences through innovative concepts, visuals, and messaging."
           },
-          "example": "A coffee shop positioned itself as the 'eco-friendly, artisanal choice' by emphasizing sustainable sourcing and craftsmanship, attracting environmentally conscious customers."
-        },
-        "usp": {
-          "title": "USP Development",
-          "steps": {
-            "featureAnalysis": "Identify product strengths and benefits.",
-            "targetedMessaging": "Create clear, concise statements that appeal to the target market.",
-            "proofPoints": "Demonstrate the USP through real examples or data."
+          "marketImpact": {
+            "title": "Standing Out in the Market",
+            "description": "Focuses on standing out in a crowded market."
+          }
+        }
+      },
+      "prAndMediaRelations": {
+        "title": "PR and Media Relations",
+        "features": {
+          "communicationManagement": {
+            "title": "Strategic Communication Management",
+            "description": "Manages communications between a company and its audience."
           },
-          "example": "A delivery service highlighted its USP as 'Guaranteed delivery within 30 minutes or it’s free,' gaining a competitive edge and customer loyalty."
-        },
-        "advertisingCampaigns": {
-          "title": "Creative Advertising Campaigns",
-          "steps": {
-            "ideaGeneration": "Brainstorm unique concepts that resonate with the audience.",
-            "contentProduction": "Develop visuals, copy, and multimedia materials.",
-            "crossPlatformDistribution": "Launch campaigns across online and offline channels.",
-            "performanceAnalysis": "Monitor results and adjust campaigns for maximum impact."
+          "credibilityBuilding": {
+            "title": "Enhancing Credibility and Trust",
+            "description": "Enhances credibility and builds trust through strategic messaging."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Influencer Marketing",
+        "features": {
+          "trustedVoices": {
+            "title": "Leveraging Trusted Voices",
+            "description": "Leverages trusted voices in a niche to promote a brand’s products or services."
           },
-          "example": "A clothing brand ran a viral ad campaign featuring short-form videos on TikTok, showcasing diverse fashion styles and achieving millions of views."
-        },
-        "prRelations": {
-          "title": "PR and Media Relations",
-          "steps": {
-            "messageCrafting": "Develop key talking points for PR communication.",
-            "distribution": "Send press releases to targeted media contacts.",
-            "followUp": "Engage with media to ensure coverage and address queries."
+          "audienceReach": {
+            "title": "Expanding Reach and Engagement",
+            "description": "Increases reach and engagement through collaborations with influencers."
+          }
+        }
+      },
+      "eventOrganization": {
+        "title": "Event Organization",
+        "features": {
+          "brandVisibility": {
+            "title": "Boosting Brand Visibility",
+            "description": "Boosts brand visibility through well-planned events."
           },
-          "example": "A tech company announced a new product launch via press releases and media interviews, gaining widespread coverage in industry publications."
-        },
-        "influencerCampaigns": {
-          "title": "Influencer Marketing Campaigns",
-          "steps": {
-            "research": "Identify relevant influencers based on audience size, engagement, and niche.",
-            "collaboration": "Develop campaigns that align with both the influencer’s style and the brand’s goals.",
-            "analysis": "Track performance metrics such as reach, clicks, and conversions."
+          "customerRelationships": {
+            "title": "Strengthening Customer Relationships",
+            "description": "Strengthens relationships with customers and generates positive publicity."
+          }
+        }
+      },
+      "crisisPrManagement": {
+        "title": "Crisis PR Management",
+        "features": {
+          "brandProtection": {
+            "title": "Protecting Brand Image",
+            "description": "Protects a brand’s image during negative situations or reputational threats."
           },
-          "example": "A beauty brand partnered with top beauty bloggers to showcase new skincare products, resulting in increased sales and brand awareness."
-        },
-        "eventPlanning": {
-          "title": "Event Organization",
-          "steps": {
-            "conceptCreation": "Define the purpose and format of the event.",
-            "execution": "Organize all logistics, from invitations to on-site activities.",
-            "followUp": "Share event highlights through content to maximize exposure."
-          },
-          "example": "A fashion brand hosted a runway show to present its latest collection, attracting media coverage and influencers to promote the event."
-        },
-        "crisisManagement": {
-          "title": "Crisis PR Management",
-          "steps": {
-            "situationAnalysis": "Assess the crisis and its impact on the brand.",
-            "responseStrategy": "Communicate clear, solution-focused messages to stakeholders.",
-            "monitoring": "Track public sentiment and adjust communication as needed."
-          },
-          "example": "A company issued a formal apology and outlined immediate corrective actions after a product recall, regaining customer trust and confidence."
+          "strategicCrisisPlan": {
+            "title": "Strategic Crisis Communication",
+            "description": "Provides strategic communication plans to mitigate crises."
+          }
         }
       }
     },
@@ -404,72 +405,102 @@
       }
     },
     "analyticsAndStrategy": {
-      "title": "Analytics and Strategy",
-      "description": "Analytics and Strategy are the backbone of successful business decision-making and growth. This department focuses on empowering companies with actionable insights, detailed market analysis, strategic planning, and data-driven decision-making processes.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Empowering companies with data-driven decision-making, insights, and strategic planning to ensure long-term growth.",
-        "benefits": {
-          "actionableInsights": "Actionable insights to drive business growth.",
-          "dataDrivenDecisionMaking": "Data-driven decision-making for sustainable progress.",
-          "competitiveAdvantage": "Gaining a competitive advantage through strategic analysis."
+      "title": {
+        "full": "Analytics and Strategy Department",
+        "firstString": "Data-Driven Insights",
+        "secondString": "Strategic Planning",
+        "thirdString": "Business Growth"
+      },
+      "description": "Our Analytics and Strategy Department provides data-driven insights and strategic planning to help businesses achieve their goals and stay competitive. By combining advanced analytics with comprehensive research, we empower companies to make informed decisions and seize new opportunities.",
+      "businessAnalytics": {
+        "title": "Business Analytics",
+        "features": {
+          "dataExploration": {
+            "title": "Iterative Data Exploration",
+            "description": "Iterative exploration of data to drive decision-making and improve outcomes."
+          },
+          "trendIdentification": {
+            "title": "Trend and Insight Discovery",
+            "description": "Identifying trends and actionable insights from business operations."
+          }
         }
       },
-      "tools": {
-        "title": "Tools",
-        "businessAnalytics": {
-          "title": "Business Analytics",
-          "description": "The practice of iterative exploration of data to drive decision-making and improve outcomes."
-        },
-        "marketResearch": {
-          "title": "Market Research",
-          "description": "Systematic collection and analysis of data about customers, competitors, and market conditions."
-        },
-        "strategicPlanning": {
-          "title": "Strategic Planning",
-          "description": "A process for outlining long-term goals, resource allocation, and risk management."
-        },
-        "predictiveAnalytics": {
-          "title": "Predictive Analytics",
-          "description": "Using AI and machine learning to forecast trends and guide strategic decisions."
+      "marketResearch": {
+        "title": "Market Research",
+        "features": {
+          "customerAnalysis": {
+            "title": "Customer and Market Analysis",
+            "description": "Systematic collection and analysis of data about customers, competitors, and market conditions."
+          },
+          "opportunityIdentification": {
+            "title": "Market Opportunity Identification",
+            "description": "Delivering insights to identify opportunities and market gaps."
+          }
         }
       },
-      "strategies": {
-        "businessAnalytics": {
-          "title": "Business Analytics",
-          "steps": {
-            "dataCollection": "Gathering relevant data from multiple sources.",
-            "dataAnalysis": "Analyzing the data to uncover patterns and insights.",
-            "reporting": "Delivering actionable insights through reports."
+      "strategicPlanning": {
+        "title": "Strategic Planning",
+        "features": {
+          "longTermGoals": {
+            "title": "Long-Term Goal Setting",
+            "description": "Outlining long-term goals, resource allocation, and risk management."
           },
-          "example": "A retail company used analytics to optimize inventory management, cutting costs by 15%."
-        },
-        "marketResearch": {
-          "title": "Market Research",
-          "steps": {
-            "dataCollection": "Gathering qualitative and quantitative data from surveys and interviews.",
-            "trendAnalysis": "Analyzing market trends and consumer behavior.",
-            "strategicRecommendations": "Providing actionable insights to refine business strategies."
+          "businessRoadmap": {
+            "title": "Actionable Business Roadmaps",
+            "description": "Creating actionable roadmaps for achieving business objectives."
+          }
+        }
+      },
+      "predictiveAnalytics": {
+        "title": "Predictive Analytics",
+        "features": {
+          "aiForecasting": {
+            "title": "AI-Powered Forecasting",
+            "description": "Using AI and machine learning to forecast trends and guide strategic decisions."
           },
-          "example": "A tech startup increased user acquisition by 30% through market research and refinement."
-        },
-        "strategicPlanning": {
-          "title": "Strategic Planning",
-          "steps": {
-            "goalSetting": "Defining long-term objectives and short-term milestones.",
-            "riskAssessment": "Identifying and mitigating potential challenges.",
-            "execution": "Executing the strategic plan with constant monitoring."
+          "marketPrediction": {
+            "title": "Market and Customer Prediction",
+            "description": "Anticipating market shifts and customer behaviors for proactive planning."
+          }
+        }
+      },
+      "competitiveAnalysis": {
+        "title": "Competitive Analysis",
+        "features": {
+          "competitorEvaluation": {
+            "title": "Competitor Evaluation",
+            "description": "Evaluating competitors' strengths, weaknesses, and strategies."
           },
-          "example": "A manufacturing company achieved 25% growth by expanding into new markets through strategic planning."
-        },
-        "dataDrivenDecisionMaking": {
-          "title": "Data-Driven Decision Making",
-          "steps": {
-            "dataConsolidation": "Consolidating data from all departments for comprehensive analysis.",
-            "analysis": "Using predictive models to anticipate trends and outcomes.",
-            "implementation": "Applying insights to shape strategies and decisions."
+          "competitiveEdge": {
+            "title": "Strategic Competitive Edge",
+            "description": "Providing recommendations to gain a competitive edge in the market."
+          }
+        }
+      },
+      "kpiMonitoring": {
+        "title": "KPI Development and Monitoring",
+        "features": {
+          "performanceIndicators": {
+            "title": "Measurable Performance Indicators",
+            "description": "Designing measurable performance indicators aligned with business goals."
           },
-          "example": "A logistics company reduced transportation costs by 20% with predictive analytics to optimize delivery routes."
+          "progressTracking": {
+            "title": "Tracking and Reporting Progress",
+            "description": "Tracking and reporting progress to ensure continuous improvement."
+          }
+        }
+      },
+      "dataVisualization": {
+        "title": "Data Visualization and Reporting",
+        "features": {
+          "dashboardCreation": {
+            "title": "Intuitive Dashboard Design",
+            "description": "Creating intuitive dashboards and reports for clear communication of insights."
+          },
+          "dataStorytelling": {
+            "title": "Transforming Data into Visuals",
+            "description": "Transforming complex data into actionable visuals for stakeholders."
+          }
         }
       }
     },
@@ -617,7 +648,6 @@
       }
     }
   },
-
   "partners": {
     "heading": "Who has entrusted us with their projects?",
     "marqueeHeading": "Press about Us"

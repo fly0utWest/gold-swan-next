@@ -86,236 +86,237 @@
       "photoVideoShooting": "Mynda- og Myndbandsupptökur",
       "webdev": "Vefsíðugerð og Vefumsóknarþróun"
     },
-    "marketing": {
-      "title": "Stafræn Markaðssetning",
-      "description": "Heildstæðar áætlanir og verkfæri til að kynna vörumerki, vörur og þjónustu á stafrænum vettvangi.",
-      "overview": {
-        "title": "Yfirlit",
-        "definition": "Stafræn markaðssetning er safn áætlana og verkfæra til að kynna vörumerki, vörur og þjónustu á stafrænum vettvangi. Þetta gerir fyrirtækjum kleift að beina sér nákvæmlega að markhópum, mæla árangur í rauntíma og hámarka herferðir á skilvirkan hátt.",
-        "benefits": {
-          "title": "Algengir Kostir",
-          "preciseAudienceTargeting": "Nákvæm markhópagreining í gegnum gagnaskiptingu",
-          "realTimeResults": "Mæling á niðurstöðum í rauntíma",
-          "costEfficientCampaigns": "Kostnaðarhagkvæm hagræðing á herferðum"
+    "digitalMarketing": {
+      "title": {
+        "full": "Stafræn Markaðsdeild",
+        "firstString": "Vörumerkiseftirlit",
+        "secondString": "Áhrifarík auglýsingaherferðir",
+        "thirdString": "Stafræn vöxtur"
+      },
+      "description": "Stafræn markaðsdeild okkar er tileinkuð því að lyfta vörumerkjum á stafrænum vettvangi með nýstárlegum aðferðum og nákvæmri framkvæmd. Frá því að bæta sýnileika vefsíða til þess að skapa áhrifaríkar herferðir á samfélagsmiðlum, veitum við alhliða þjónustu sniðna að þörfum fyrirtækja af öllum stærðum.",
+      "seo": {
+        "title": "Leitarvélabestun (SEO)",
+        "features": {
+          "visibility": {
+            "title": "Bætt sýnileiki í leitarvélum",
+            "description": "Aukum sýnileika vefsíðna í leitarvélum eins og Google og Yandex."
+          },
+          "keywordOptimization": {
+            "title": "Tæknileg úttekt og lykilorðabestun",
+            "description": "Framkvæmum tæknilega úttekt og bætingu á lykilorðum."
+          },
+          "backlinks": {
+            "title": "Bakslag til að bæta röðun",
+            "description": "Byggjum upp sterkt bakslagakerfi til að bæta leitarniðurstöður."
+          }
         }
       },
-      "tools": {
-        "title": "Helstu Verkfæri",
-        "seo": {
-          "title": "SEO (Leitarvélabestun)",
-          "description": "Bestun vefsíðna til að bæta sýnileika í leitarvélum eins og Google og Yandex."
-        },
-        "ppc": {
-          "title": "PPC (Borga-fyrir-smell)",
-          "description": "Greiddar auglýsingar þar sem auglýsendur greiða fyrir hvern smell."
-        },
-        "smm": {
-          "title": "SMM (Markaðssetning á Samfélagsmiðlum)",
-          "description": "Kynning á vörumerkjum í gegnum samfélagsmiðla."
-        },
-        "emailMarketing": {
-          "title": "Póstlistamarkaðssetning",
-          "description": "Notkun fréttabréfa til að tengjast markhópnum."
-        },
-        "contentMarketing": {
-          "title": "Efnisstjórnun",
-          "description": "Búa til og dreifa verðmætu efni til að laða að viðskiptavini."
+      "contentMarketing": {
+        "title": "Efnis Markaðssetning",
+        "features": {
+          "valuableContent": {
+            "title": "Gagnaöflun og framleiðsla á efni",
+            "description": "Býr til verðmætt og áhugavert efni til að laða að og halda í viðskiptavini."
+          },
+          "distribution": {
+            "title": "Dreifing efnis á réttum miðlum",
+            "description": "Dreifum greinum, myndböndum og upplýsingatækni á viðeigandi vettvangi."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Efnisáætlun",
-          "steps": {
-            "analyze": "Rannsaka áhugamál og þarfir markhóps.",
-            "plan": "Búa til efnisáætlun byggða á straumum.",
-            "optimize": "Nota lykilorð fyrir SEO.",
-            "execute": "Innihalda texta, myndbönd og upplýsingatöflur.",
-            "review": "Birta og fylgjast með þátttöku."
+      "smm": {
+        "title": "Markaðssetning á Félagsmiðlum (SMM)",
+        "features": {
+          "profileManagement": {
+            "title": "Stjórnun félagsmiðlareikninga",
+            "description": "Sjáum um stjórnun félagsmiðlareikninga fyrir vörumerki."
           },
-          "example": "Stíllgreinar. Safn dóma. Upplýsingatöflur um umönnun."
-        },
-        "socialMediaManagement": {
-          "title": "Stjórnun á Samfélagsmiðlum",
-          "steps": {
-            "analyze": "Fylgjast með þátttöku og vexti.",
-            "plan": "Búa til innlegg, sögur og myndbönd.",
-            "optimize": "Hefja markvissar auglýsingar.",
-            "execute": "Bregðast við fylgjendum.",
-            "review": "Meta árangursmælikvarða."
+          "contentPlanning": {
+            "title": "Skipulagning og birting efnis",
+            "description": "Skipuleggjum og birtum texta, myndir og myndbönd."
           },
-          "example": "Snyrtivörumerki með bloggaraumsögnum. 35% vöxtur í fylgjendum. 60% aukning í útbreiðslu."
-        },
-        "adCampaigns": {
-          "title": "Auglýsingar á Samfélagsmiðlum",
-          "steps": {
-            "analyze": "Meta árangur auglýsinga.",
-            "plan": "Setja viðmið (aldur, staðsetning, áhugamál).",
-            "optimize": "Fylgjast með og laga eyðslu.",
-            "execute": "Framkvæma A/B prófanir.",
-            "review": "Meta niðurstöður herferða."
+          "engagementAnalysis": {
+            "title": "Greining á þátttöku og vexti áhorfenda",
+            "description": "Fylgjumst með viðbrögðum, umfang og vexti fylgjenda."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Áhrifavaldamarkaðssetning",
+        "features": {
+          "collaborations": {
+            "title": "Samstarf við áhrifavalda",
+            "description": "Finnum rétta áhrifavalda sem passa við vörumerkið."
           },
-          "example": "Afslættir á veitingahúsum. 120 nýjar pantanir á viku."
-        },
-        "emailMarketing": {
-          "title": "Póstlistamarkaðssetning",
-          "steps": {
-            "analyze": "Fylgjast með umbreytingum og smellihlutfalli (CTR).",
-            "plan": "Hópa áskrifendur eftir hegðun.",
-            "optimize": "A/B prófanir fyrir opnunarhlutfall.",
-            "execute": "Senda móttöku- og kynningarbréf.",
-            "review": "Meta árangur herferða."
+          "campaignTracking": {
+            "title": "Fylgjast með árangri herferða",
+            "description": "Greinum og metum árangur herferða með mælanlegum niðurstöðum."
+          }
+        }
+      },
+      "targetedAdvertising": {
+        "title": "Markhópagreind Auglýsing",
+        "features": {
+          "campaignSetup": {
+            "title": "Uppsetning greiddra herferða",
+            "description": "Setjum upp greiddar auglýsingaherferðir fyrir réttan markhóp."
           },
-          "example": "Endurheimtarpóstar með afslætti. 20% lokun á körfu."
-        },
-        "seoPpc": {
-          "seo": {
-            "title": "SEO",
-            "steps": {
-              "analyze": "Laga villur og bæta hraða.",
-              "plan": "Skrifa greinar með lykilorðum.",
-              "optimize": "Auka trúverðugleika með bakslóðum.",
-              "execute": "Innleiða efni og tæknilega lagfæringar.",
-              "review": "Fylgjast með röðun og umferð."
-            },
-            "example": "Bestun bloggfærslu um 'hvernig á að baka köku'. 30% aukning í lífrænni umferð. 15% hærri röðun í leitarvélum fyrir markmiðalykilorð."
+          "adOptimization": {
+            "title": "Bestun herferða",
+            "description": "Lækkum kostnað og aukum árangur með stöðugri bestun."
+          }
+        }
+      },
+      "ppc": {
+        "title": "Greiðsla-fyrir-smell Auglýsingar (PPC)",
+        "features": {
+          "payPerClick": {
+            "title": "Auglýsingar með greiðslu fyrir hvern smell",
+            "description": "Setjum upp herferðir á Google Ads og Facebook Ads þar sem greitt er fyrir smelli."
           },
-          "ppc": {
-            "title": "PPC",
-            "steps": {
-              "analyze": "Meta smelli og sölu.",
-              "plan": "Ræsa auglýsingar fyrir markvissar fyrirspurnir.",
-              "optimize": "Aðlaga arðsemi fjárfestingar (ROI).",
-              "execute": "Hefja auglýsingaherferðir.",
-              "review": "Meta árangur auglýsinga."
-            },
-            "example": "Rafmagnsvörurauglýsingar fyrir 'tölvur á útsölu.' 2.000 smellir. 150 sölur á mánuði."
+          "campaignMonitoring": {
+            "title": "Eftirlit og bestun herferða",
+            "description": "Fylgjumst með árangri og gerum stöðugar úrbætur fyrir betri arðsemi."
+          }
+        }
+      },
+      "emailMarketing": {
+        "title": "Tölvupóstmarkaðssetning",
+        "features": {
+          "audienceEngagement": {
+            "title": "Þátttaka áhorfenda með fréttabréfum",
+            "description": "Sérsníðum tölvupóstefni til að bæta opnunar- og smellihlutfall."
+          },
+          "automation": {
+            "title": "Sjálfvirknivæðing tölvupóstferla",
+            "description": "Virkjum sjálfvirkni í tölvupóstherferðum fyrir hámarks árangur."
+          }
+        }
+      },
+      "analyticsAndAudits": {
+        "title": "Greiningar og Félagsmiðlaúttektir",
+        "features": {
+          "performanceEvaluation": {
+            "title": "Mat á frammistöðu samfélagsmiðla",
+            "description": "Metum frammistöðu reikninga og skipulagningu efnis."
+          },
+          "competitiveBenchmarking": {
+            "title": "Samanburður við samkeppnisaðila",
+            "description": "Berum saman stefnu og frammistöðu við helstu keppinauta til að finna úrbótatækifæri."
           }
         }
       }
     },
-    "brandDevelopment": {
-      "title": "Vörumerkjaþróun og almannatengsl",
-      "description": "Markaðssetning er burðarás hvers konar viðskiptaáætlunar sem einbeitir sér að því að skapa gildi fyrir viðskiptavini og viðhalda sterkum viðskiptasamböndum. Hún nær yfir fjölda aðgerða eins og vörumerkjaþróun, auglýsingar, almannatengsl og markaðsrannsóknir sem miða að því að ná til markhópa og hafa áhrif á kaupákvarðanir þeirra.",
-      "overview": {
-        "title": "Yfirlit",
-        "definition": "Vörumerkjaþróun og almannatengsl eru lykiltól til að byggja upp sterk og þekkjanleg vörumerki og viðhalda jákvæðum tengslum við almenning. Þessar aðferðir tryggja að vörumerki dafni á samkeppnismörkuðum og standist áskoranir.",
-        "benefits": {
-          "strongBrandIdentity": "Mótun á einstöku og sterku vörumerki",
-          "enhancedPublicImage": "Bygging jákvæðrar ímyndar hjá almenningi",
-          "longTermSuccess": "Trygging á langtíma velgengni fyrirtækja"
+    "brandDevelopmentAndPR": {
+      "title": {
+        "full": "Vörumerkjaþróun og almannatengsladeild",
+        "firstString": "Vörumerkjavitund",
+        "secondString": "Markaðsstefnumótun",
+        "thirdString": "Almannatengsl"
+      },
+      "description": "Vörumerkjaþróun og almannatengsladeild okkar einbeitir sér að því að skapa einstök vörumerki og stjórna almenningsáliti. Við bjóðum upp á alhliða þjónustu sem hjálpar fyrirtækjum að skera sig úr á markaðnum og byggja upp traust við áhorfendur sína.",
+      "brandBookCreation": {
+        "title": "Vörumerkjabók",
+        "features": {
+          "identityGuide": {
+            "title": "Leiðarvísir um sjónræna og samskiptalega ímynd",
+            "description": "Alhliða leiðarvísir sem skilgreinir sjónræna og samskiptalega ímynd fyrirtækis."
+          },
+          "platformConsistency": {
+            "title": "Samræmi yfir allar miðlanir",
+            "description": "Tryggir samræmi yfir allar miðlanir og snertifleti."
+          }
         }
       },
-      "tools": {
-        "title": "Helstu tól",
-        "brandBook": {
-          "title": "Gerð vörumerkjahandbókar",
-          "description": "Vörumerkjahandbók er yfirgripsmikil leiðarvísir sem skilgreinir sjónræna og samskiptalega sjálfsmynd fyrirtækis. Hún tryggir samræmi yfir alla miðla og snertifleti."
-        },
-        "brandPositioning": {
-          "title": "Staðsetning vörumerkis",
-          "description": "Staðsetning vörumerkis skilgreinir fyrirtækið á markaðnum með því að draga fram einstakt virðisloforð og móta skýra sjálfsmynd."
-        },
-        "uspDevelopment": {
-          "title": "Þróun sérstöðu (USP)",
-          "description": "Sterkt sérkenni skilgreinir hvers vegna viðskiptavinir ættu að velja ákveðna vöru eða þjónustu fram yfir samkeppni."
-        },
-        "creativeAdvertising": {
-          "title": "Skapandi auglýsingaherferðir",
-          "description": "Skapandi auglýsingar ná til áhorfenda með nýstárlegum hugmyndum, sjónrænum útfærslum og skilaboðum sem skera sig úr."
-        },
-        "prAndMediaRelations": {
-          "title": "Almannatengsl og fjölmiðlasamskipti",
-          "description": "Almannatengsl einblína á að stýra samskiptum milli fyrirtækis og áhorfenda til að auka trúverðugleika og traust."
-        },
-        "influencerMarketing": {
-          "title": "Áhrifavalda markaðssetning",
-          "description": "Áhrifavalda markaðssetning nýtir traust áhrifavalda innan ákveðinna sviða til að kynna vörur eða þjónustu."
-        },
-        "eventOrganization": {
-          "title": "Skipulag viðburða",
-          "description": "Viðburðahald eykur sýnileika vörumerkis, styrkir tengsl við viðskiptavini og skapar jákvæða umfjöllun."
-        },
-        "crisisPRManagement": {
-          "title": "Almannatengsl í kreppu",
-          "description": "Almannatengsl í kreppu einblína á að verja ímynd vörumerkis í neikvæðum aðstæðum eða ógn við orðspor."
+      "brandPositioning": {
+        "title": "Vörumerkjastaðsetning",
+        "features": {
+          "uvpHighlight": {
+            "title": "Sérstaða og virðisauki",
+            "description": "Leggur áherslu á sérstöðu og virðisauka fyrirtækis."
+          },
+          "marketDifferentiation": {
+            "title": "Aðgreining á markaði",
+            "description": "Skapar skýra og aðgreinda ímynd á markaðnum."
+          }
         }
       },
-      "strategies": {
-        "contentStrategy": {
-          "title": "Vörumerkjastefna",
-          "steps": {
-            "research": "Greindu hlutverk, gildi og væntingar viðskiptavina vörumerkisins.",
-            "design": "Þróaðu lógó, litapallettur og leturgerðir.",
-            "documentation": "Taktu öll atriði saman í vörumerkjahandbók með notkunarleiðbeiningum.",
-            "audienceResearch": "Greindu þarfir og óskir viðskiptavina.",
-            "valueMapping": "Sýndu einstaka eiginleika og kosti sem höfða til viðskiptavina.",
-            "strategyImplementation": "Samræmdu skilaboð og markaðsherferðir við stefnu vörumerkisins."
+      "uspDevelopment": {
+        "title": "Þróun sölupunkta (USP)",
+        "features": {
+          "customerChoice": {
+            "title": "Af hverju ættu viðskiptavinir að velja þig?",
+            "description": "Skilgreinir hvers vegna viðskiptavinir ættu að velja vörur þínar eða þjónustu fram yfir samkeppnisaðila."
           },
-          "example": "Tæknifyrirtæki þróaði vörumerkjahandbók með fáguðu lógói, nútímalegum leturgerðum og minimalískum litapallettum sem tryggðu samræmi í hönnun á vefsíðu, samfélagsmiðlum og markaðsefni."
-        },
-        "positioning": {
-          "title": "Staðsetningarstefna vörumerkis",
-          "steps": {
-            "defineUVP": "Skilgreindu hvað greinir vörumerkið frá samkeppni.",
-            "keyMessaging": "Mótuðu stutt og áhrifarík skilaboð fyrir markhópa.",
-            "competitorAnalysis": "Metið styrkleika og veikleika samkeppnisaðila til að staðsetja vörumerkið á áhrifaríkan hátt."
+          "coreBenefits": {
+            "title": "Að miðla kjarnagildum vörumerkisins",
+            "description": "Tjáir kjarnaávinning vörumerkisins á áhrifaríkan hátt."
+          }
+        }
+      },
+      "creativeAdvertising": {
+        "title": "Skapandi auglýsingaherferðir",
+        "features": {
+          "audienceEngagement": {
+            "title": "Áhugaverð og skapandi hugmyndavinna",
+            "description": "Skapar þátttöku áhorfenda með nýstárlegum hugmyndum, myndrænum útfærslum og skilaboðum."
           },
-          "example": "Kaffihús staðsetti sig sem 'vistvænt og handverksmiðað val' með því að leggja áherslu á sjálfbæra innkaup og handverksgæði og laðaði þannig að sér umhverfisvæna viðskiptavini."
-        },
-        "usp": {
-          "title": "Þróun sérstöðu (USP)",
-          "steps": {
-            "featureAnalysis": "Greindu styrkleika og kosti vörunnar.",
-            "targetedMessaging": "Skapaðu skýr og stutt skilaboð sem höfða til markhóps.",
-            "proofPoints": "Sýndu USP með raunverulegum dæmum eða gögnum."
+          "marketImpact": {
+            "title": "Aðgreining í fjölmennum markaði",
+            "description": "Einbeitir sér að því að skera sig úr á samkeppnismarkaði."
+          }
+        }
+      },
+      "prAndMediaRelations": {
+        "title": "Almannatengsl og fjölmiðlaskipulag",
+        "features": {
+          "communicationManagement": {
+            "title": "Stjórnun samskipta",
+            "description": "Stýrir samskiptum milli fyrirtækja og áhorfenda þeirra."
           },
-          "example": "Heimsendingarþjónusta lagði áherslu á sérstöðu sína sem 'Afhent innan 30 mínútna eða frítt,' sem skapaði samkeppnisforskot og tryggð viðskiptavina."
-        },
-        "advertisingCampaigns": {
-          "title": "Skapandi auglýsingaherferðir",
-          "steps": {
-            "ideaGeneration": "Hugmyndavinna með áherslu á að höfða til markhóps.",
-            "contentProduction": "Þróaðu sjónrænt efni, texta og margmiðlunarefni.",
-            "crossPlatformDistribution": "Hóf herferðir á netinu og í hefðbundnum miðlum.",
-            "performanceAnalysis": "Fylgstu með árangri og fínstilltu aðferðir til að hámarka áhrif."
+          "credibilityBuilding": {
+            "title": "Aukið traust og trúverðugleiki",
+            "description": "Eflir trúverðugleika og byggir upp traust með stefnumótandi samskiptum."
+          }
+        }
+      },
+      "influencerMarketing": {
+        "title": "Áhrifavaldamarkaðssetning",
+        "features": {
+          "trustedVoices": {
+            "title": "Samstarf við áreiðanlega áhrifavalda",
+            "description": "Nýtir áhrifavalda til að kynna vörur eða þjónustu vörumerkisins."
           },
-          "example": "Fatamerki birti stuttmyndbönd á TikTok með fjölbreyttum stílum sem fengu milljónir áhorfa."
-        },
-        "prRelations": {
-          "title": "Almannatengsl og fjölmiðlatengsl",
-          "steps": {
-            "messageCrafting": "Mótaðu lykilboð fyrir almannatengsl.",
-            "distribution": "Sendu fréttatilkynningar til fjölmiðla.",
-            "followUp": "Hafðu samband við fjölmiðla til að tryggja umfjöllun."
+          "audienceReach": {
+            "title": "Aukin útbreiðsla og þátttaka",
+            "description": "Eykur umfang og þátttöku með samstarfi við áhrifavalda."
+          }
+        }
+      },
+      "eventOrganization": {
+        "title": "Viðburðastjórnun",
+        "features": {
+          "brandVisibility": {
+            "title": "Aukið sýnileika vörumerkis",
+            "description": "Eykur sýnileika vörumerkis með vel skipulögðum viðburðum."
           },
-          "example": "Tæknifyrirtæki kynnti nýtt afurð með fjölmiðlaviðtölum og fréttatilkynningum sem tryggðu breiða umfjöllun."
-        },
-        "influencerCampaigns": {
-          "title": "Áhrifavalda markaðsherferðir",
-          "steps": {
-            "research": "Finndu áhrifavalda sem höfða til markhópsins.",
-            "collaboration": "Skipuleggðu samstarf sem samræmist markmiðum vörumerkisins.",
-            "analysis": "Mældu árangur eftir snertingu, smelli og viðskiptum."
+          "customerRelationships": {
+            "title": "Efling tengsla við viðskiptavini",
+            "description": "Styrkir tengsl við viðskiptavini og skapar jákvæða umfjöllun."
+          }
+        }
+      },
+      "crisisPrManagement": {
+        "title": "Stjórnun almannatengsla í krísum",
+        "features": {
+          "brandProtection": {
+            "title": "Vernd vörumerkis í erfiðum aðstæðum",
+            "description": "Verndar ímynd vörumerkis í neikvæðum aðstæðum eða orðsporaskaða."
           },
-          "example": "Fegrunarmerki gerði samstarf við áhrifavalda til að kynna ný húðvörur, sem jók sölu og sýnileika vörumerkisins."
-        },
-        "eventPlanning": {
-          "title": "Viðburðaskipulagning",
-          "steps": {
-            "conceptCreation": "Skilgreindu tilgang og fyrirkomulag viðburðarins.",
-            "execution": "Skipuleggðu alla þætti frá boðum til dagskrár.",
-            "followUp": "Deildu hápunktum viðburðarins til að auka sýnileika."
-          },
-          "example": "Tískumerki hélt tískusýningu sem laðaði að sér fjölmiðla og áhrifavalda."
-        },
-        "crisisManagement": {
-          "title": "Stjórnun í kreppu",
-          "steps": {
-            "situationAnalysis": "Greindu ástand og áhrif á orðspor vörumerkisins.",
-            "responseStrategy": "Sendu skýr og lausnamiðuð skilaboð til hagaðila.",
-            "monitoring": "Fylgstu með almenningsáliti og aðlagaðu samskipti."
-          },
-          "example": "Fyrirtæki baðst afsökunar og birti viðgerðaráætlun eftir innköllun á vöru og endurheimti traust viðskiptavina."
+          "strategicCrisisPlan": {
+            "title": "Stefnumótandi samskiptaáætlanir",
+            "description": "Veitir stefnumótandi samskiptaáætlanir til að lágmarka neikvæð áhrif kreppa."
+          }
         }
       }
     },
@@ -406,72 +407,102 @@
       }
     },
     "analyticsAndStrategy": {
-      "title": "Greiningar og stefnumótun",
-      "description": "Greiningar og stefnumótun eru grunnurinn að velgengni viðskiptarákvarðana og vaxtar. Þessi deild einbeitir sér að því að veita fyrirtækjum aðgerðanlegar innsýn, nákvæma markaðsgreiningu, stefnumótun og ferla sem byggjast á gögnum.",
-      "overview": {
-        "title": "Yfirlit",
-        "definition": "Styrkja fyrirtæki með ákvarðanatöku byggða á gögnum, innsýn og stefnumótun til að tryggja langtímavöxt.",
-        "benefits": {
-          "actionableInsights": "Aðgerðanlegar innsýn til að keyra framgang viðskipta.",
-          "dataDrivenDecisionMaking": "Ákvarðanataka byggð á gögnum fyrir sjálfbæran vöxt.",
-          "competitiveAdvantage": "Öflun samkeppnisforskots með stefnumótandi greiningu."
+      "title": {
+        "full": "Greiningar- og stefnumótunardeild",
+        "firstString": "Gagnaöfluð innsýn",
+        "secondString": "Stefnumótun",
+        "thirdString": "Viðskiptavöxtur"
+      },
+      "description": "Greiningar- og stefnumótunardeildin okkar veitir gögnamiðaða innsýn og stefnumótandi áætlanir til að hjálpa fyrirtækjum að ná markmiðum sínum og viðhalda samkeppnisforskoti. Með því að sameina háþróaða greiningu og víðtæka rannsóknargetu veitum við fyrirtækjum möguleika á að taka upplýstar ákvarðanir og nýta ný tækifæri.",
+      "businessAnalytics": {
+        "title": "Viðskiptagreining",
+        "features": {
+          "dataExploration": {
+            "title": "Endurtekin gagnaúrvinnsla",
+            "description": "Endurtekin könnun gagna til að bæta ákvarðanatöku og árangur."
+          },
+          "trendIdentification": {
+            "title": "Greining þróunar og innsýn",
+            "description": "Að finna þróun og aðgerðanlega innsýn úr viðskiptaaðgerðum."
+          }
         }
       },
-      "tools": {
-        "title": "Tól",
-        "businessAnalytics": {
-          "title": "Viðskiptagreining",
-          "description": "Aðferðafræði við að skoða gögn ítrekað til að taka ákvarðanir og bæta niðurstöður."
-        },
-        "marketResearch": {
-          "title": "Markaðsrannsóknir",
-          "description": "Kerfisbundin söfnun og greining gagna um viðskiptavini, keppinauta og markaðsaðstæður."
-        },
-        "strategicPlanning": {
-          "title": "Stefnumótun",
-          "description": "Ferli til að setja langtímamarkmið, úthluta auðlindum og stýra áhættu."
-        },
-        "predictiveAnalytics": {
-          "title": "Forspárgreining",
-          "description": "Nota AI og vélrænt nám til að spá fyrir um þróun og leiðbeina stefnumótandi ákvörðunum."
+      "marketResearch": {
+        "title": "Markaðsrannsóknir",
+        "features": {
+          "customerAnalysis": {
+            "title": "Greining viðskiptavina og markaðar",
+            "description": "Kerfisbundin söfnun og greining gagna um viðskiptavini, samkeppnisaðila og markaðsaðstæður."
+          },
+          "opportunityIdentification": {
+            "title": "Auðkenning markaðstækifæra",
+            "description": "Veita innsýn í tækifæri og eyður á markaði."
+          }
         }
       },
-      "strategies": {
-        "businessAnalytics": {
-          "title": "Viðskiptagreining",
-          "steps": {
-            "dataCollection": "Safna viðeigandi gögnum frá mörgum aðilum.",
-            "dataAnalysis": "Greina gögnin til að finna mynstur og innsýn.",
-            "reporting": "Skila aðgerðanlegum innsýn með skýrslum."
+      "strategicPlanning": {
+        "title": "Stefnumótun",
+        "features": {
+          "longTermGoals": {
+            "title": "Langtíma markmiðasetning",
+            "description": "Skilgreining langtímamarkmiða, úthlutun fjármagns og áhættustjórnun."
           },
-          "example": "Smásölufyrirtæki nýtti greiningar til að hámarka birgðastjórnun og minnka kostnað um 15%."
-        },
-        "marketResearch": {
-          "title": "Markaðsrannsóknir",
-          "steps": {
-            "dataCollection": "Söfnun eigindlegra og megindlegra gagna úr könnunum og viðtölum.",
-            "trendAnalysis": "Greining markaðsþróunar og hegðunar neytenda.",
-            "strategicRecommendations": "Veita aðgerðanlegar tillögur til að fínstilla viðskiptastefnu."
+          "businessRoadmap": {
+            "title": "Aðgerðaráætlanir fyrir viðskipti",
+            "description": "Mótun aðgerðanlegra vegvísa til að ná viðskiptamarkmiðum."
+          }
+        }
+      },
+      "predictiveAnalytics": {
+        "title": "Forspárgreining",
+        "features": {
+          "aiForecasting": {
+            "title": "AI-knúin spá",
+            "description": "Notkun gervigreindar og vélanáms til að spá fyrir um þróun og styðja stefnumótandi ákvarðanir."
           },
-          "example": "Tæknifyrirtæki jók notendafjölgun um 30% með markaðsrannsóknum og endurbótum."
-        },
-        "strategicPlanning": {
-          "title": "Stefnumótun",
-          "steps": {
-            "goalSetting": "Skilgreina langtímamarkmið og skammtímamílusteina.",
-            "riskAssessment": "Greina og draga úr hugsanlegum áskorunum.",
-            "execution": "Framkvæma stefnumótunina með stöðugu eftirliti."
+          "marketPrediction": {
+            "title": "Markaðs- og viðskiptavinaspá",
+            "description": "Spá fyrir um breytingar á markaði og hegðun viðskiptavina fyrir fyrirbyggjandi skipulagningu."
+          }
+        }
+      },
+      "competitiveAnalysis": {
+        "title": "Samkeppnisgreining",
+        "features": {
+          "competitorEvaluation": {
+            "title": "Mat á samkeppnisaðilum",
+            "description": "Greining á styrkleikum, veikleikum og stefnumótun samkeppnisaðila."
           },
-          "example": "Framleiðslufyrirtæki náði 25% vexti með því að fara inn á nýja markaði með stefnumótun."
-        },
-        "dataDrivenDecisionMaking": {
-          "title": "Ákvarðanataka byggð á gögnum",
-          "steps": {
-            "dataConsolidation": "Samþætta gögn frá öllum deildum til yfirgripsmikillar greiningar.",
-            "analysis": "Nota spálíkön til að sjá fyrir þróun og útkomur.",
-            "implementation": "Nota innsýn til að móta stefnu og ákvarðanir."
+          "competitiveEdge": {
+            "title": "Samkeppnislegt forskot",
+            "description": "Veita ráðleggingar um hvernig hægt er að öðlast forskot á markaði."
+          }
+        }
+      },
+      "kpiMonitoring": {
+        "title": "Þróun og eftirfylgni KPI",
+        "features": {
+          "performanceIndicators": {
+            "title": "Mælanlegir árangursvísar",
+            "description": "Hönnun mælanlegra árangursvísa sem samræmast viðskiptamarkmiðum."
           },
-          "example": "Flutningafyrirtæki dró úr flutningskostnaði um 20% með forspárgreiningu til að hámarka afhendingarleiðir."
+          "progressTracking": {
+            "title": "Eftirfylgni og skýrslugjöf",
+            "description": "Eftirfylgni og skýrslugjöf til að tryggja stöðugar umbætur."
+          }
+        }
+      },
+      "dataVisualization": {
+        "title": "Gagnasjónræn framsetning og skýrslugerð",
+        "features": {
+          "dashboardCreation": {
+            "title": "Hönnun leiðandi mælaborða",
+            "description": "Gerð leiðandi mælaborða og skýrslna til skýrari miðlunar innsýnar."
+          },
+          "dataStorytelling": {
+            "title": "Breyta gögnum í sjónrænar upplýsingar",
+            "description": "Umbreyta flóknum gögnum í framkvæmanlegar sjónrænar upplýsingar fyrir hagsmunaaðila."
+          }
         }
       }
     },

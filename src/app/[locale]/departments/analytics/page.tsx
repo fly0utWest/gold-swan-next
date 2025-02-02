@@ -1,86 +1,117 @@
 import { useTranslations } from "next-intl";
 import AboutDepartment from "@/widgets/departments/about-department";
-import DepartmentOverview from "@/widgets/departments/department-overview";
-import DepartmentTools from "@/widgets/departments/department-tools";
-import { AlignLeft } from "solar-icon-set";
-import StrategySteps from "@/widgets/departments/strategy-steps";
-import SectionDelimeter from "@/shared/ui/section-delimeter";
+import DepartmentServices from "@/widgets/departments/department-services";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import ServiceCard from "@/widgets/departments/service-card";
+import Marquee from "@/shared/ui/marquee";
 import {PieChart3} from "solar-icon-set";
+import {
+  businessAnalyticsServices,
+  marketResearchServices,
+  strategicPlanningServices,
+  predictiveAnalyticsServices,
+  competitiveAnalysisServices,
+  kpiMonitoringServices,
+  dataVisualizationServices,
+} from "@/shared/models/departments/analytics";
+
 
 export default function AnalyticsAndStrategyPage() {
   const t = useTranslations("departments.analyticsAndStrategy");
+  const miscT = useTranslations("misc");
 
-  const benefits = [
-    "actionableInsights",
-    "dataDrivenDecisionMaking",
-    "competitiveAdvantage",
-  ];
-
-  const tools = [
-    "businessAnalytics",
-    "marketResearch",
-    "strategicPlanning",
-    "predictiveAnalytics",
-  ];
-
-  const strategies = [
-    {
-      key: "businessAnalytics",
-      steps: ["dataCollection", "dataAnalysis", "reporting"],
-    },
-    {
-      key: "marketResearch",
-      steps: ["dataCollection", "trendAnalysis", "strategicRecommendations"],
-    },
-    {
-      key: "strategicPlanning",
-      steps: ["goalSetting", "riskAssessment", "execution"],
-    },
-    {
-      key: "dataDrivenDecisionMaking",
-      steps: ["dataConsolidation", "analysis", "implementation"],
-    },
-  ];
 
   return (
     <>
-      <AboutDepartment heading={t("title")} description={t("description")} />
-      <SectionDelimeter />
-      <DepartmentOverview
-        heading={t("overview.title")}
-        definition={t("overview.definition")}
-        benefits={benefits.map((benefit) => t(`overview.benefits.${benefit}`))}
+      <DepartmentHeroSection
+        Icon={PieChart3}
+        heading={[
+          t("title.firstString"),
+          t("title.secondString"),
+          t("title.thirdString"),
+        ]}
       />
-      <SectionDelimeter />
-      <DepartmentTools
-        heading={t("tools.title")}
-        tools={tools.map((tool) => ({
-          Icon: AlignLeft,
-          heading: {
-            headingLevel: "h3",
-            headingText: t(`tools.${tool}.title`),
-          },
-          description: t(`tools.${tool}.description`),
-        }))}
+      <AboutDepartment
+        verticalMargin={16}
+        heading={t("title.full")}
+        description={t("description")}
       />
-      <SectionDelimeter />
-      {strategies.map((strategy) => (
-        <div key={strategy.key}>
-          <StrategySteps
-            Icon={PieChart3}
-            heading={t(`strategies.${strategy.key}.title`)}
-            steps={strategy.steps.map((step) =>
-              t(`strategies.${strategy.key}.steps.${step}`)
-            )}
-            example={t(`strategies.${strategy.key}.example`)}
+      <DepartmentServices title={t("businessAnalytics.title")}>
+        {businessAnalyticsServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
           />
-          <SectionDelimeter />
-        </div>
-      ))}
-      <Link href="/contact" className="block w-fit mx-auto mt-16">
-        <Button className="w-48 px-[0!important]">CONTACT US</Button>
+        ))}
+      </DepartmentServices>
+      <DepartmentServices rounded title={t("marketResearch.title")}>
+        {marketResearchServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+      <DepartmentServices title={t("strategicPlanning.title")}>
+        {strategicPlanningServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+      <DepartmentServices rounded title={t("predictiveAnalytics.title")}>
+        {predictiveAnalyticsServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+      <DepartmentServices title={t("competitiveAnalysis.title")}>
+        {competitiveAnalysisServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+      <DepartmentServices rounded title={t("kpiMonitoring.title")}>
+        {kpiMonitoringServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+      <DepartmentServices title={t("dataVisualization.title")}>
+        {dataVisualizationServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+      <Link href="/contact" className="flex justify-center mt-10">
+        <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
+          <Marquee repeatCount={2}>{miscT("contactUs")}</Marquee>
+        </Button>
       </Link>
     </>
   );

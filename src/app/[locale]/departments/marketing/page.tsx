@@ -1,89 +1,136 @@
 import { useTranslations } from "next-intl";
+import Marquee from "@/shared/ui/marquee";
 import AboutDepartment from "@/widgets/departments/about-department";
-import DepartmentOverview from "@/widgets/departments/department-overview";
-import DepartmentTools from "@/widgets/departments/department-tools";
-import { AlignLeft } from "solar-icon-set";
-import StrategySteps from "@/widgets/departments/strategy-steps";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import { GraphNewUp } from "solar-icon-set";
+import ServiceCard from "@/widgets/departments/service-card";
+import { MoneyBag } from "solar-icon-set";
+import DepartmentServices from "@/widgets/departments/department-services";
+import {
+  seoServices,
+  contentMarketingServices,
+  smmServices,
+  influencerMarketingServices,
+  targetedAdvertisingServices,
+  ppcServices,
+  emailMarketingServices,
+  analyticsAndAuditsServices,
+} from "@/shared/models/departments/digitalMarketing";
 
 export default function MarketingPage() {
-  const t = useTranslations("departments.marketing");
-
-  const benefits = [
-    "preciseAudienceTargeting",
-    "realTimeResults",
-    "costEfficientCampaigns",
-  ];
-
-  const tools = ["smm", "ppc", "seo", "emailMarketing", "contentMarketing"];
-  const strategies = [
-    {
-      key: "contentStrategy",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-    {
-      key: "socialMediaManagement",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-    {
-      key: "adCampaigns",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-    {
-      key: "emailMarketing",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-    {
-      key: "seoPpc.seo",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-    {
-      key: "seoPpc.ppc",
-      steps: ["analyze", "plan", "optimize", "execute", "review"],
-    },
-  ];
+  const t = useTranslations("departments.digitalMarketing");
+  const miscT = useTranslations("misc");
 
   return (
     <>
-      <AboutDepartment heading={t("title")} description={t("description")} />
-      <SectionDelimeter />
-      <DepartmentOverview
-        heading={t("overview.title")}
-        definition={t("overview.definition")}
-        benefits={benefits.map((benefit) => t(`overview.benefits.${benefit}`))}
+      <DepartmentHeroSection
+        Icon={MoneyBag}
+        heading={[
+          t("title.firstString"),
+          t("title.secondString"),
+          t("title.thirdString"),
+        ]}
       />
-      <SectionDelimeter />
-      <DepartmentTools
-        heading={t("tools.title")}
-        tools={tools.map((tool) => ({
-          Icon: AlignLeft,
-          heading: {
-            headingLevel: "h3",
-            headingText: t(`tools.${tool}.title`),
-          },
-          description: t(`tools.${tool}.description`),
-        }))}
+      <AboutDepartment
+        heading={t("title.full")}
+        description={t("description")}
       />
-      <SectionDelimeter />
-      {strategies.map((strategy, index) => (
-        <>
-          <StrategySteps
-            key={strategy.key}
-            Icon={GraphNewUp}
-            heading={t(`strategies.${strategy.key}.title`)}
-            steps={strategy.steps.map((step) =>
-              t(`strategies.${strategy.key}.steps.${step}`)
-            )}
-            example={t(`strategies.${strategy.key}.example`)}
+
+      <DepartmentServices title={t("seo.title")}>
+        {seoServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
           />
-          <SectionDelimeter key={index} />
-        </>
-      ))}
-      <Link href="/contact" className="block w-fit mx-auto mt-16">
-        <Button className="w-48 px-[0!important]">CONTACT US</Button>
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices rounded title={t("contentMarketing.title")}>
+        {contentMarketingServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices title={t("smm.title")}>
+        {smmServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices rounded title={t("influencerMarketing.title")}>
+        {influencerMarketingServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices title={t("targetedAdvertising.title")}>
+        {targetedAdvertisingServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices rounded title={t("ppc.title")}>
+        {ppcServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices title={t("emailMarketing.title")}>
+        {emailMarketingServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <DepartmentServices rounded title={t("analyticsAndAudits.title")}>
+        {analyticsAndAuditsServices.map((service, index) => (
+          <ServiceCard
+            key={index}
+            Icon={service.Icon}
+            title={t(service.title)}
+            description={t(service.description)}
+          />
+        ))}
+      </DepartmentServices>
+
+      <SectionDelimeter />
+      <Link href="/contact" className="flex justify-center mt-10">
+        <Button className="overflow-hidden uppercase w-48 word-spacing-6 px-[0!important]">
+          <Marquee repeatCount={2}>{miscT("contactUs")}</Marquee>
+        </Button>
       </Link>
     </>
   );
