@@ -404,72 +404,102 @@
       }
     },
     "analyticsAndStrategy": {
-      "title": "Analytics and Strategy",
-      "description": "Analytics and Strategy are the backbone of successful business decision-making and growth. This department focuses on empowering companies with actionable insights, detailed market analysis, strategic planning, and data-driven decision-making processes.",
-      "overview": {
-        "title": "Overview",
-        "definition": "Empowering companies with data-driven decision-making, insights, and strategic planning to ensure long-term growth.",
-        "benefits": {
-          "actionableInsights": "Actionable insights to drive business growth.",
-          "dataDrivenDecisionMaking": "Data-driven decision-making for sustainable progress.",
-          "competitiveAdvantage": "Gaining a competitive advantage through strategic analysis."
+      "title": {
+        "full": "Analytics and Strategy Department",
+        "firstString": "Data-Driven Insights",
+        "secondString": "Strategic Planning",
+        "thirdString": "Business Growth"
+      },
+      "description": "Our Analytics and Strategy Department provides data-driven insights and strategic planning to help businesses achieve their goals and stay competitive. By combining advanced analytics with comprehensive research, we empower companies to make informed decisions and seize new opportunities.",
+      "businessAnalytics": {
+        "title": "Business Analytics",
+        "features": {
+          "dataExploration": {
+            "title": "Iterative Data Exploration",
+            "description": "Iterative exploration of data to drive decision-making and improve outcomes."
+          },
+          "trendIdentification": {
+            "title": "Trend and Insight Discovery",
+            "description": "Identifying trends and actionable insights from business operations."
+          }
         }
       },
-      "tools": {
-        "title": "Tools",
-        "businessAnalytics": {
-          "title": "Business Analytics",
-          "description": "The practice of iterative exploration of data to drive decision-making and improve outcomes."
-        },
-        "marketResearch": {
-          "title": "Market Research",
-          "description": "Systematic collection and analysis of data about customers, competitors, and market conditions."
-        },
-        "strategicPlanning": {
-          "title": "Strategic Planning",
-          "description": "A process for outlining long-term goals, resource allocation, and risk management."
-        },
-        "predictiveAnalytics": {
-          "title": "Predictive Analytics",
-          "description": "Using AI and machine learning to forecast trends and guide strategic decisions."
+      "marketResearch": {
+        "title": "Market Research",
+        "features": {
+          "customerAnalysis": {
+            "title": "Customer and Market Analysis",
+            "description": "Systematic collection and analysis of data about customers, competitors, and market conditions."
+          },
+          "opportunityIdentification": {
+            "title": "Market Opportunity Identification",
+            "description": "Delivering insights to identify opportunities and market gaps."
+          }
         }
       },
-      "strategies": {
-        "businessAnalytics": {
-          "title": "Business Analytics",
-          "steps": {
-            "dataCollection": "Gathering relevant data from multiple sources.",
-            "dataAnalysis": "Analyzing the data to uncover patterns and insights.",
-            "reporting": "Delivering actionable insights through reports."
+      "strategicPlanning": {
+        "title": "Strategic Planning",
+        "features": {
+          "longTermGoals": {
+            "title": "Long-Term Goal Setting",
+            "description": "Outlining long-term goals, resource allocation, and risk management."
           },
-          "example": "A retail company used analytics to optimize inventory management, cutting costs by 15%."
-        },
-        "marketResearch": {
-          "title": "Market Research",
-          "steps": {
-            "dataCollection": "Gathering qualitative and quantitative data from surveys and interviews.",
-            "trendAnalysis": "Analyzing market trends and consumer behavior.",
-            "strategicRecommendations": "Providing actionable insights to refine business strategies."
+          "businessRoadmap": {
+            "title": "Actionable Business Roadmaps",
+            "description": "Creating actionable roadmaps for achieving business objectives."
+          }
+        }
+      },
+      "predictiveAnalytics": {
+        "title": "Predictive Analytics",
+        "features": {
+          "aiForecasting": {
+            "title": "AI-Powered Forecasting",
+            "description": "Using AI and machine learning to forecast trends and guide strategic decisions."
           },
-          "example": "A tech startup increased user acquisition by 30% through market research and refinement."
-        },
-        "strategicPlanning": {
-          "title": "Strategic Planning",
-          "steps": {
-            "goalSetting": "Defining long-term objectives and short-term milestones.",
-            "riskAssessment": "Identifying and mitigating potential challenges.",
-            "execution": "Executing the strategic plan with constant monitoring."
+          "marketPrediction": {
+            "title": "Market and Customer Prediction",
+            "description": "Anticipating market shifts and customer behaviors for proactive planning."
+          }
+        }
+      },
+      "competitiveAnalysis": {
+        "title": "Competitive Analysis",
+        "features": {
+          "competitorEvaluation": {
+            "title": "Competitor Evaluation",
+            "description": "Evaluating competitors' strengths, weaknesses, and strategies."
           },
-          "example": "A manufacturing company achieved 25% growth by expanding into new markets through strategic planning."
-        },
-        "dataDrivenDecisionMaking": {
-          "title": "Data-Driven Decision Making",
-          "steps": {
-            "dataConsolidation": "Consolidating data from all departments for comprehensive analysis.",
-            "analysis": "Using predictive models to anticipate trends and outcomes.",
-            "implementation": "Applying insights to shape strategies and decisions."
+          "competitiveEdge": {
+            "title": "Strategic Competitive Edge",
+            "description": "Providing recommendations to gain a competitive edge in the market."
+          }
+        }
+      },
+      "kpiMonitoring": {
+        "title": "KPI Development and Monitoring",
+        "features": {
+          "performanceIndicators": {
+            "title": "Measurable Performance Indicators",
+            "description": "Designing measurable performance indicators aligned with business goals."
           },
-          "example": "A logistics company reduced transportation costs by 20% with predictive analytics to optimize delivery routes."
+          "progressTracking": {
+            "title": "Tracking and Reporting Progress",
+            "description": "Tracking and reporting progress to ensure continuous improvement."
+          }
+        }
+      },
+      "dataVisualization": {
+        "title": "Data Visualization and Reporting",
+        "features": {
+          "dashboardCreation": {
+            "title": "Intuitive Dashboard Design",
+            "description": "Creating intuitive dashboards and reports for clear communication of insights."
+          },
+          "dataStorytelling": {
+            "title": "Transforming Data into Visuals",
+            "description": "Transforming complex data into actionable visuals for stakeholders."
+          }
         }
       }
     },

@@ -1,6 +1,5 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
-import { useTranslations } from "next-intl";
 import Link from "@/shared/ui/link";
 
 interface ServiceCardProps {
@@ -18,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <Link
       href="/contact"
-      className="flex flex-col lg:flex-row gap-4 bg-neutral-100 dark:bg-background  p-6 rounded-3xl border-2 border-border w-full flex-1 max-w-screen-xl hover:border-primary-500 transition-colors"
+      className="flex flex-col lg:flex-row gap-4 bg-background  p-6 rounded-3xl border-2 border-border w-full flex-1 max-w-screen-xl hover:border-primary-500 transition-colors"
     >
       <div>
         <div className="flex flex-col gap-4 items-center lg:items-start">

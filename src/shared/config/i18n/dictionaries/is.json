@@ -406,72 +406,102 @@
       }
     },
     "analyticsAndStrategy": {
-      "title": "Greiningar og stefnumótun",
-      "description": "Greiningar og stefnumótun eru grunnurinn að velgengni viðskiptarákvarðana og vaxtar. Þessi deild einbeitir sér að því að veita fyrirtækjum aðgerðanlegar innsýn, nákvæma markaðsgreiningu, stefnumótun og ferla sem byggjast á gögnum.",
-      "overview": {
-        "title": "Yfirlit",
-        "definition": "Styrkja fyrirtæki með ákvarðanatöku byggða á gögnum, innsýn og stefnumótun til að tryggja langtímavöxt.",
-        "benefits": {
-          "actionableInsights": "Aðgerðanlegar innsýn til að keyra framgang viðskipta.",
-          "dataDrivenDecisionMaking": "Ákvarðanataka byggð á gögnum fyrir sjálfbæran vöxt.",
-          "competitiveAdvantage": "Öflun samkeppnisforskots með stefnumótandi greiningu."
+      "title": {
+        "full": "Greiningar- og stefnumótunardeild",
+        "firstString": "Gagnaöfluð innsýn",
+        "secondString": "Stefnumótun",
+        "thirdString": "Viðskiptavöxtur"
+      },
+      "description": "Greiningar- og stefnumótunardeildin okkar veitir gögnamiðaða innsýn og stefnumótandi áætlanir til að hjálpa fyrirtækjum að ná markmiðum sínum og viðhalda samkeppnisforskoti. Með því að sameina háþróaða greiningu og víðtæka rannsóknargetu veitum við fyrirtækjum möguleika á að taka upplýstar ákvarðanir og nýta ný tækifæri.",
+      "businessAnalytics": {
+        "title": "Viðskiptagreining",
+        "features": {
+          "dataExploration": {
+            "title": "Endurtekin gagnaúrvinnsla",
+            "description": "Endurtekin könnun gagna til að bæta ákvarðanatöku og árangur."
+          },
+          "trendIdentification": {
+            "title": "Greining þróunar og innsýn",
+            "description": "Að finna þróun og aðgerðanlega innsýn úr viðskiptaaðgerðum."
+          }
         }
       },
-      "tools": {
-        "title": "Tól",
-        "businessAnalytics": {
-          "title": "Viðskiptagreining",
-          "description": "Aðferðafræði við að skoða gögn ítrekað til að taka ákvarðanir og bæta niðurstöður."
-        },
-        "marketResearch": {
-          "title": "Markaðsrannsóknir",
-          "description": "Kerfisbundin söfnun og greining gagna um viðskiptavini, keppinauta og markaðsaðstæður."
-        },
-        "strategicPlanning": {
-          "title": "Stefnumótun",
-          "description": "Ferli til að setja langtímamarkmið, úthluta auðlindum og stýra áhættu."
-        },
-        "predictiveAnalytics": {
-          "title": "Forspárgreining",
-          "description": "Nota AI og vélrænt nám til að spá fyrir um þróun og leiðbeina stefnumótandi ákvörðunum."
+      "marketResearch": {
+        "title": "Markaðsrannsóknir",
+        "features": {
+          "customerAnalysis": {
+            "title": "Greining viðskiptavina og markaðar",
+            "description": "Kerfisbundin söfnun og greining gagna um viðskiptavini, samkeppnisaðila og markaðsaðstæður."
+          },
+          "opportunityIdentification": {
+            "title": "Auðkenning markaðstækifæra",
+            "description": "Veita innsýn í tækifæri og eyður á markaði."
+          }
         }
       },
-      "strategies": {
-        "businessAnalytics": {
-          "title": "Viðskiptagreining",
-          "steps": {
-            "dataCollection": "Safna viðeigandi gögnum frá mörgum aðilum.",
-            "dataAnalysis": "Greina gögnin til að finna mynstur og innsýn.",
-            "reporting": "Skila aðgerðanlegum innsýn með skýrslum."
+      "strategicPlanning": {
+        "title": "Stefnumótun",
+        "features": {
+          "longTermGoals": {
+            "title": "Langtíma markmiðasetning",
+            "description": "Skilgreining langtímamarkmiða, úthlutun fjármagns og áhættustjórnun."
           },
-          "example": "Smásölufyrirtæki nýtti greiningar til að hámarka birgðastjórnun og minnka kostnað um 15%."
-        },
-        "marketResearch": {
-          "title": "Markaðsrannsóknir",
-          "steps": {
-            "dataCollection": "Söfnun eigindlegra og megindlegra gagna úr könnunum og viðtölum.",
-            "trendAnalysis": "Greining markaðsþróunar og hegðunar neytenda.",
-            "strategicRecommendations": "Veita aðgerðanlegar tillögur til að fínstilla viðskiptastefnu."
+          "businessRoadmap": {
+            "title": "Aðgerðaráætlanir fyrir viðskipti",
+            "description": "Mótun aðgerðanlegra vegvísa til að ná viðskiptamarkmiðum."
+          }
+        }
+      },
+      "predictiveAnalytics": {
+        "title": "Forspárgreining",
+        "features": {
+          "aiForecasting": {
+            "title": "AI-knúin spá",
+            "description": "Notkun gervigreindar og vélanáms til að spá fyrir um þróun og styðja stefnumótandi ákvarðanir."
           },
-          "example": "Tæknifyrirtæki jók notendafjölgun um 30% með markaðsrannsóknum og endurbótum."
-        },
-        "strategicPlanning": {
-          "title": "Stefnumótun",
-          "steps": {
-            "goalSetting": "Skilgreina langtímamarkmið og skammtímamílusteina.",
-            "riskAssessment": "Greina og draga úr hugsanlegum áskorunum.",
-            "execution": "Framkvæma stefnumótunina með stöðugu eftirliti."
+          "marketPrediction": {
+            "title": "Markaðs- og viðskiptavinaspá",
+            "description": "Spá fyrir um breytingar á markaði og hegðun viðskiptavina fyrir fyrirbyggjandi skipulagningu."
+          }
+        }
+      },
+      "competitiveAnalysis": {
+        "title": "Samkeppnisgreining",
+        "features": {
+          "competitorEvaluation": {
+            "title": "Mat á samkeppnisaðilum",
+            "description": "Greining á styrkleikum, veikleikum og stefnumótun samkeppnisaðila."
           },
-          "example": "Framleiðslufyrirtæki náði 25% vexti með því að fara inn á nýja markaði með stefnumótun."
-        },
-        "dataDrivenDecisionMaking": {
-          "title": "Ákvarðanataka byggð á gögnum",
-          "steps": {
-            "dataConsolidation": "Samþætta gögn frá öllum deildum til yfirgripsmikillar greiningar.",
-            "analysis": "Nota spálíkön til að sjá fyrir þróun og útkomur.",
-            "implementation": "Nota innsýn til að móta stefnu og ákvarðanir."
+          "competitiveEdge": {
+            "title": "Samkeppnislegt forskot",
+            "description": "Veita ráðleggingar um hvernig hægt er að öðlast forskot á markaði."
+          }
+        }
+      },
+      "kpiMonitoring": {
+        "title": "Þróun og eftirfylgni KPI",
+        "features": {
+          "performanceIndicators": {
+            "title": "Mælanlegir árangursvísar",
+            "description": "Hönnun mælanlegra árangursvísa sem samræmast viðskiptamarkmiðum."
           },
-          "example": "Flutningafyrirtæki dró úr flutningskostnaði um 20% með forspárgreiningu til að hámarka afhendingarleiðir."
+          "progressTracking": {
+            "title": "Eftirfylgni og skýrslugjöf",
+            "description": "Eftirfylgni og skýrslugjöf til að tryggja stöðugar umbætur."
+          }
+        }
+      },
+      "dataVisualization": {
+        "title": "Gagnasjónræn framsetning og skýrslugerð",
+        "features": {
+          "dashboardCreation": {
+            "title": "Hönnun leiðandi mælaborða",
+            "description": "Gerð leiðandi mælaborða og skýrslna til skýrari miðlunar innsýnar."
+          },
+          "dataStorytelling": {
+            "title": "Breyta gögnum í sjónrænar upplýsingar",
+            "description": "Umbreyta flóknum gögnum í framkvæmanlegar sjónrænar upplýsingar fyrir hagsmunaaðila."
+          }
         }
       }
     },
