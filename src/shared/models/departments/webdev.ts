@@ -1,7 +1,7 @@
 import { Programming } from "solar-icon-set";
 import { fullStackServices, llmServices } from "./features/webdev";
 
-export default {
+const webdev = {
   slug: "webdev",
   icon: Programming,
   title: {
@@ -22,3 +22,5 @@ export default {
     },
   },
 };
+
+export default webdev;

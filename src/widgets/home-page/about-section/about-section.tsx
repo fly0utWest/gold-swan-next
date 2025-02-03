@@ -1,8 +1,5 @@
 import {
   Lightbulb,
-  CupStar,
-  ChecklistMinimalistic,
-  HandShake,
   Scale,
   ShieldCheck,
   Wallet,
@@ -20,27 +17,27 @@ const AboutSection = () => {
     {
       title: t("flexibility.translated"),
       content: t("flexibility.explained"),
-      icon: Lightbulb, // Flexibility: Focused on quick and customized solutions
+      icon: Lightbulb, 
     },
     {
       title: t("speed.translated"),
       content: t("speed.explained"),
-      icon: ClockCircle, // Speed: Market entry and fast execution
+      icon: ClockCircle, 
     },
     {
       title: t("confidentiality.translated"),
       content: t("confidentiality.explained"),
-      icon: ShieldCheck, // Confidentiality: Protects all sensitive information
+      icon: ShieldCheck,
     },
     {
       title: t("pricing.translated"),
       content: t("pricing.explained"),
-      icon: Wallet, // Pricing: Balanced cost efficiency
+      icon: Wallet,
     },
     {
       title: t("ethicsAndResponsibility.translated"),
       content: t("ethicsAndResponsibility.explained"),
-      icon: Scale, // Global strategies not conflicting private economies.
+      icon: Scale,
     },
   ];
 

@@ -8,7 +8,7 @@ import {
   musicalAccompanimentServices,
 } from "./features/photoAndVideoShooting";
 
-export default {
+const photoAndVideoShooting = {
   slug: "photoAndVideoShooting",
   icon: Camera,
   title: {
@@ -27,13 +27,9 @@ export default {
       title: "videoProduction.title",
       features: videoProductionServices,
     },
-    designAndPrinting: {
-      title: "designAndPrinting.title",
-      features: designAndPrintingServices,
-    },
-    postProduction: {
-      title: "postProduction.title",
-      features: postProductionServices,
+    designAndPostProduction: {
+      title: "designAndPostProduction.title",
+      features: [...designAndPrintingServices, ...postProductionServices],
     },
     graphicDesign: {
       title: "graphicDesign.title",
@@ -45,3 +41,5 @@ export default {
     },
   },
 };
+
+export default photoAndVideoShooting;

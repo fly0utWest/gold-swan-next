@@ -10,7 +10,7 @@ import {
   crisisPrManagementServices,
 } from "./features/brandDevelopmentAndPR";
 
-export default {
+const brandDevelopmentAndPR = {
   slug: "brandDevelopmentAndPR",
   icon: StarRainbow,
   title: {
@@ -55,3 +55,5 @@ export default {
     },
   },
 };
+
+export default brandDevelopmentAndPR;

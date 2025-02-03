@@ -10,7 +10,7 @@ import {
   analyticsAndAuditsServices,
 } from "./features/digitalMarketing";
 
-export default {
+const digitalMarketing = {  
   slug: "digitalMarketing",
   icon: MoneyBag,
   title: {
@@ -55,3 +55,5 @@ export default {
     },
   },
 };
+
+export default digitalMarketing;

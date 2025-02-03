@@ -9,7 +9,7 @@ import {
   dataVisualizationServices,
 } from "./features/analyticsAndStrategy";
 
-export default {
+const analyticsAndStrategy = {
   slug: "analyticsAndStrategy",
   icon: Chart,
   title: {
@@ -50,3 +50,5 @@ export default {
     },
   },
 };
+
+export default analyticsAndStrategy;

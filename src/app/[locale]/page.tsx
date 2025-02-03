@@ -1,4 +1,3 @@
-import SectionDelimeter from "@/shared/ui/section-delimeter";
 import AboutSection from "@/widgets/home-page/about-section/about-section";
 import AwardsSetion from "@/widgets/home-page/awards-section";
 import DepartmentSection from "@/widgets/home-page/departments-section/departments-section";
@@ -15,7 +14,7 @@ export default function HomePage() {
       <AwardsSetion />
       <DepartmentSection/>
       <PartnersSection />
-      <PartnersMarquee/>
+      <PartnersMarquee />
       <AboutSection />
       <MarqeeSection />
       <ProjectsSection />

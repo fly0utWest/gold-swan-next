@@ -1,7 +1,7 @@
 import { Shield } from "solar-icon-set";
 import { reputationLifecycle } from "./features/reputationAndDataProtection";
 
-export default {
+const reputationAndDataProtection = {
   slug: "reputationAndDataProtection",
   icon: Shield,
   title: {
@@ -18,3 +18,5 @@ export default {
     },
   },
 };
+
+export default reputationAndDataProtection;
