@@ -1,5 +1,6 @@
 "use client";
 
+import z from "zod";
 import { useTranslations } from "next-intl";
 import Input from "./input";
 import React from "react";
@@ -16,58 +17,17 @@ import {
 } from "solar-icon-set";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+
 import Checkbox from "./checkbox";
 import Textarea from "./textarea";
 import Heading from "./heading";
-
-const services = [
-  { label: "digitalMarketing", value: "Digital Marketing" },
-  { label: "brandDevelopmentPR", value: "Brand Development and PR" },
-  {
-    label: "reputationDataProtection",
-    value: "Reputation and Data Protection",
-  },
-  { label: "analyticsStrategy", value: "Analytics and Strategy" },
-  { label: "photoVideoShooting", value: "Photo and Video Shooting" },
-  { label: "webDevelopment", value: "Web Application Development" },
-];
-
-const industries = [
-  { label: "retailEcommerce", value: "Retail & E-commerce" },
-  { label: "technologySoftware", value: "Technology & Software" },
-  { label: "healthcarePharmaceuticals", value: "Healthcare & Pharmaceuticals" },
-  { label: "financeInsurance", value: "Finance & Insurance" },
-  { label: "educationTraining", value: "Education & Training" },
-  { label: "hospitalityTourism", value: "Hospitality & Tourism" },
-  { label: "manufacturingProduction", value: "Manufacturing & Production" },
-  { label: "realEstateConstruction", value: "Real Estate & Construction" },
-  { label: "artsEntertainmentMedia", value: "Arts, Entertainment & Media" },
-  { label: "transportationLogistics", value: "Transportation & Logistics" },
-  {
-    label: "nonprofitCommunityServices",
-    value: "Nonprofit & Community Services",
-  },
-];
-
-const previousExperience = [
-  { label: "positive", value: "Yes" },
-  { label: "negative", value: "No" },
-];
-
-const howDidYouHearOptions = [
-  { label: "friends", value: "Advice from friends" },
-  { label: "family", value: "Advice from family members" },
-  { label: "advertising", value: "Advertising" },
-];
-
-const businessOperationDurationOptions = [
-  { label: "lessThanOneYear", value: "Less than a year" },
-  { label: "oneYear", value: "One year" },
-  { label: "twoYears", value: "Two years" },
-  { label: "moreThanThreeYears", value: "More than three years" },
-  { label: "moreThanFiveYears", value: "More than five years" },
-];
+import {
+  services,
+  industries,
+  previousExperience,
+  howDidYouHearOptions,
+  businessOperationDurationOptions,
+} from "@/shared/models/contact-form";
 
 const ContactForm = () => {
   const t = useTranslations("contact-form");
@@ -454,10 +414,10 @@ const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className={`flex items-center gap-2 justify-center rounded-3xl text-white px-5 py-4 hover:bg-primary-400 transition-colors uppercase ${
+        className={`flex items-center gap-2 justify-center rounded-3xl text-foreground px-5 py-4 transition-colors uppercase ${
           isSubmitSuccessful
             ? "bg-green-400 hover:bg-green-600"
-            : "bg-primary-500"
+            : "bg-primary-500 hover:bg-primary-400"
         }`}
       >
         {isSubmitting ? (
