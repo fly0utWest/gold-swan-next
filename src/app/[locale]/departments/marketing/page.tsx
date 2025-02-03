@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Marquee from "@/shared/ui/marquee";
 import AboutDepartment from "@/widgets/departments/about-department";
-import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section";
 import SectionDelimeter from "@/shared/ui/section-delimeter";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
@@ -17,7 +17,7 @@ import {
   ppcServices,
   emailMarketingServices,
   analyticsAndAuditsServices,
-} from "@/shared/models/departments/digitalMarketing";
+} from "@/shared/models/departments/features/digitalMarketing";
 
 export default function MarketingPage() {
   const t = useTranslations("departments.digitalMarketing");

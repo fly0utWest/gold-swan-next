@@ -4,11 +4,10 @@ import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
 import Marquee from "@/shared/ui/marquee";
 import { Star2 } from "solar-icon-set";
-import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section";
 import ServiceCard from "@/widgets/departments/service-card";
 import DepartmentServices from "@/widgets/departments/department-services";
-import * as brandServices from "@/shared/models/departments/branding";
-
+import * as brandServices from "@/shared/models/departments/features/brandDevelopmentAndPR";
 
 export default function BrandDevelopmentPage() {
   const t = useTranslations("departments.brandDevelopmentAndPR");

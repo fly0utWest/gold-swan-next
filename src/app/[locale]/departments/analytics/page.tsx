@@ -3,10 +3,10 @@ import AboutDepartment from "@/widgets/departments/about-department";
 import DepartmentServices from "@/widgets/departments/department-services";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section";
 import ServiceCard from "@/widgets/departments/service-card";
 import Marquee from "@/shared/ui/marquee";
-import {PieChart3} from "solar-icon-set";
+import { PieChart3 } from "solar-icon-set";
 import {
   businessAnalyticsServices,
   marketResearchServices,
@@ -15,13 +15,11 @@ import {
   competitiveAnalysisServices,
   kpiMonitoringServices,
   dataVisualizationServices,
-} from "@/shared/models/departments/analytics";
-
+} from "@/shared/models/departments/features/analyticsAndStrategy";
 
 export default function AnalyticsAndStrategyPage() {
   const t = useTranslations("departments.analyticsAndStrategy");
   const miscT = useTranslations("misc");
-
 
   return (
     <>

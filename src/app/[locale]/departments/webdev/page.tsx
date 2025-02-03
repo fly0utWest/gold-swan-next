@@ -4,12 +4,12 @@ import ServiceCard from "@/widgets/departments/service-card";
 import Link from "@/shared/ui/link";
 import Button from "@/shared/ui/button";
 import Marquee from "@/shared/ui/marquee";
-import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section";
 import DepartmentServices from "@/widgets/departments/department-services";
 import {
   fullStackServices,
   llmServices,
-} from "@/shared/models/departments/webdev";
+} from "@/shared/models/departments/features/webdev";
 import AboutDepartment from "@/widgets/departments/about-department";
 
 export default function WebsiteAndWebAppDevelopmentPage() {
@@ -26,7 +26,7 @@ export default function WebsiteAndWebAppDevelopmentPage() {
           t("title.thirdString"),
         ]}
       />
-       <AboutDepartment
+      <AboutDepartment
         verticalMargin={16}
         heading={t("title.full")}
         description={t("description")}

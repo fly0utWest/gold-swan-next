@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import AboutDepartment from "@/widgets/departments/about-department";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section";
 import { Camera } from "solar-icon-set";
 import DepartmentServices from "@/widgets/departments/department-services";
 import ServiceCard from "@/widgets/departments/service-card";
@@ -14,7 +14,7 @@ import {
   postProductionServices,
   graphicDesignServices,
   musicalAccompanimentServices,
-} from "@/shared/models/departments/photoVideo";
+} from "@/shared/models/departments/features/photoAndVideoShooting";
 
 export default function PhotoAndVideoShootingPage() {
   const t = useTranslations("departments.photoAndVideoShooting");
@@ -35,9 +35,7 @@ export default function PhotoAndVideoShootingPage() {
         heading={t("title.full")}
         description={t("description")}
       />
-      <DepartmentServices
-        title={t("photographyServices.title")}
-      >
+      <DepartmentServices title={t("photographyServices.title")}>
         {photographyServices.map((service, index) => (
           <ServiceCard
             key={index}
@@ -48,9 +46,7 @@ export default function PhotoAndVideoShootingPage() {
         ))}
       </DepartmentServices>
 
-      <DepartmentServices
-        title={t("videoProduction.title")}
-      >
+      <DepartmentServices title={t("videoProduction.title")}>
         {videoProductionServices.map((service, index) => (
           <ServiceCard
             key={index}
@@ -61,9 +57,7 @@ export default function PhotoAndVideoShootingPage() {
         ))}
       </DepartmentServices>
 
-      <DepartmentServices
-        title={t("designAndPostProduction.title")}
-      >
+      <DepartmentServices title={t("designAndPostProduction.title")}>
         {designAndPrintingServices.map((service, index) => (
           <ServiceCard
             key={index}
@@ -74,9 +68,7 @@ export default function PhotoAndVideoShootingPage() {
         ))}
       </DepartmentServices>
 
-      <DepartmentServices
-        title={t("designAndPostProduction.title")}
-      >
+      <DepartmentServices title={t("designAndPostProduction.title")}>
         {postProductionServices.map((service, index) => (
           <ServiceCard
             key={index}
@@ -87,9 +79,7 @@ export default function PhotoAndVideoShootingPage() {
         ))}
       </DepartmentServices>
 
-      <DepartmentServices
-        title={t("graphicDesign.title")}
-      >
+      <DepartmentServices title={t("graphicDesign.title")}>
         {graphicDesignServices.map((service, index) => (
           <ServiceCard
             key={index}
@@ -100,10 +90,7 @@ export default function PhotoAndVideoShootingPage() {
         ))}
       </DepartmentServices>
 
-      <DepartmentServices
-        rounded
-        title={t("musicalAccompaniment.title")}
-      >
+      <DepartmentServices rounded title={t("musicalAccompaniment.title")}>
         {musicalAccompanimentServices.map((service, index) => (
           <ServiceCard
             key={index}

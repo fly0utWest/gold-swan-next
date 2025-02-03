@@ -3,9 +3,9 @@ import AboutDepartment from "@/widgets/departments/about-department";
 import { Safe2 } from "solar-icon-set";
 import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
-import DepartmentHeroSection from "@/widgets/departments/department-hero-section.";
+import DepartmentHeroSection from "@/widgets/departments/department-hero-section";
 import DepartmentServices from "@/widgets/departments/department-services";
-import { reputationLifecycle } from "@/shared/models/departments/reputation";
+import { reputationLifecycle } from "@/shared/models/departments/features/reputationAndDataProtection";
 import ServiceCard from "@/widgets/departments/service-card";
 
 export default function ReputationAndDataProtectionPage() {
