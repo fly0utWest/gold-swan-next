@@ -6,9 +6,12 @@ interface DepartmentHeroSectionProps {
   Icon: (allProps: any) => JSX.Element;
 }
 
-const DepartmentHeroSection: React.FC<DepartmentHeroSectionProps> = ({heading, Icon}) => {
+const DepartmentHeroSection: React.FC<DepartmentHeroSectionProps> = ({
+  heading,
+  Icon,
+}) => {
   return (
-    <section className="w-full flex bg-backgroundSecondary flex-col px-6 py-8 border-b-2 border-border">
+    <section className="w-full flex bg-background-secondary flex-col px-6 py-8 border-b-2 border-border">
       <div className="flex flex-col self-center items-center gap-4">
         <Icon color="var(--primary-400)" size={86} />
         <div className="bg-primary-500 rounded-full h-3 w-3"></div>

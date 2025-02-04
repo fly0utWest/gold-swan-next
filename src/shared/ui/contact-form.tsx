@@ -5,9 +5,6 @@ import { useTranslations } from "next-intl";
 import Input from "./input";
 import React from "react";
 import {
-  User,
-  Mailbox,
-  Phone,
   Plain,
   CheckSquare,
   CloseSquare,
@@ -27,6 +24,7 @@ import {
   previousExperience,
   howDidYouHearOptions,
   businessOperationDurationOptions,
+  mainInputs,
 } from "@/shared/models/contact-form";
 
 const ContactForm = () => {
@@ -101,25 +99,15 @@ const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-8 py-6 w-full max-w-lg"
     >
-      <Input
-        icon={<User size={32} color={errors.name ? "var(--error)" : ""} />}
-        placeholder={t("name")}
-        error={errors.name}
-        {...register("name")}
-      />
-      <Input
-        icon={<Mailbox size={32} color={errors.email ? "var(--error)" : ""} />}
-        placeholder={t("email")}
-        error={errors.email}
-        {...register("email")}
-      />
-      <Input
-        icon={<Phone size={32} color={errors.phone ? "var(--error)" : ""} />}
-        placeholder={t("phone")}
-        error={errors.phone}
-        {...register("phone")}
-      />
-
+      {mainInputs.map(({ icon: Icon, placeholderKey, name }) => (
+        <Input
+          key={name}
+          Icon={Icon}
+          placeholder={t(placeholderKey)}
+          error={errors[name]}
+          {...register(name)}
+        />
+      ))}
       <div className="flex flex-col gap-4">
         <Heading as="h3" className="text-lg font-medium">
           {t("servicesInterest")}
@@ -127,8 +115,8 @@ const ContactForm = () => {
         {services.map((service) => (
           <Checkbox
             type="checkbox"
-            icon={<CloseSquare size={24} />}
-            checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
+            Icon={CloseSquare}
+            CheckedIcon={CheckSquare}
             key={service.label}
             label={t(`services.${service.label}`)}
             {...register("services")}
@@ -148,8 +136,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="checkbox"
-          icon={<CloseSquare size={24} />}
-          checkedIcon={<CheckSquare size={24} color="var(--primary-500)" />}
+          Icon={CloseSquare}
+          CheckedIcon={CheckSquare}
           label={t(`services.custom`)}
           onChange={(e) => {
             const isChecked = e.target.checked;
@@ -169,7 +157,7 @@ const ContactForm = () => {
         )}
 
         {errors.services && (
-          <span className="text-red-500">{errors.services.message}</span>
+          <span className="text-error">{errors.services.message}</span>
         )}
       </div>
 
@@ -182,10 +170,8 @@ const ContactForm = () => {
           <Checkbox
             key={industry.label}
             type="radio"
-            icon={<Traffic size={24} />}
-            checkedIcon={
-              <TrafficEconomy size={24} color="var(--primary-500)" />
-            }
+            Icon={Traffic}
+            CheckedIcon={TrafficEconomy}
             label={t(`industries.${industry.label}`)}
             value={industry.value}
             {...register("industry")}
@@ -199,8 +185,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          icon={<Traffic size={24} />}
-          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          Icon={Traffic}
+          CheckedIcon={TrafficEconomy}
           label={t("industries.custom")}
           checked={!industries.some((ind) => ind.value === selectedIndustry)}
           onClick={() => {
@@ -222,7 +208,7 @@ const ContactForm = () => {
         )}
 
         {errors.industry && (
-          <span className="text-red-500">{errors.industry.message}</span>
+          <span className="text-error">{errors.industry.message}</span>
         )}
       </div>
 
@@ -235,10 +221,8 @@ const ContactForm = () => {
           <Checkbox
             key={experience.label}
             type="radio"
-            icon={<Traffic size={24} />}
-            checkedIcon={
-              <TrafficEconomy size={24} color="var(--primary-500)" />
-            }
+            Icon={Traffic}
+            CheckedIcon={TrafficEconomy}
             label={t(`previousExperience.${experience.label}`)}
             value={experience.value}
             {...register("industry")}
@@ -252,8 +236,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          icon={<Traffic size={24} />}
-          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          Icon={Traffic}
+          CheckedIcon={TrafficEconomy}
           label={t("previousExperience.custom")}
           checked={
             !previousExperience.some((exp) => exp.value === selectedExperience)
@@ -279,7 +263,7 @@ const ContactForm = () => {
         )}
 
         {errors.previousExperience && (
-          <span className="text-red-500">
+          <span className="text-error">
             {errors.previousExperience.message}
           </span>
         )}
@@ -293,10 +277,8 @@ const ContactForm = () => {
           <Checkbox
             key={option.label}
             type="radio"
-            icon={<Traffic size={24} />}
-            checkedIcon={
-              <TrafficEconomy size={24} color="var(--primary-500)" />
-            }
+            Icon={Traffic}
+            CheckedIcon={TrafficEconomy}
             label={t(`howDidYouHear.${option.label}`)}
             value={option.value}
             {...register("howDidYouHear")}
@@ -310,8 +292,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          icon={<Traffic size={24} />}
-          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          Icon={Traffic}
+          CheckedIcon={TrafficEconomy}
           label={t("howDidYouHear.custom")}
           checked={
             !howDidYouHearOptions.some(
@@ -339,7 +321,7 @@ const ContactForm = () => {
         )}
 
         {errors.howDidYouHear && (
-          <span className="text-red-500">{errors.howDidYouHear.message}</span>
+          <span className="text-error">{errors.howDidYouHear.message}</span>
         )}
       </div>
 
@@ -351,10 +333,8 @@ const ContactForm = () => {
           <Checkbox
             key={option.label}
             type="radio"
-            icon={<Traffic size={24} />}
-            checkedIcon={
-              <TrafficEconomy size={24} color="var(--primary-500)" />
-            }
+            Icon={Traffic}
+            CheckedIcon={TrafficEconomy}
             label={t(`businessOperationDuration.${option.label}`)}
             value={option.value}
             {...register("businessOperationDuration")}
@@ -368,8 +348,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          icon={<Traffic size={24} />}
-          checkedIcon={<TrafficEconomy size={24} color="var(--primary-500)" />}
+          Icon={Traffic}
+          CheckedIcon={TrafficEconomy}
           label={t("businessOperationDuration.custom")}
           checked={
             !businessOperationDurationOptions.some(
@@ -397,7 +377,7 @@ const ContactForm = () => {
         )}
 
         {errors.businessOperationDuration && (
-          <span className="text-red-500">
+          <span className="text-error">
             {errors.businessOperationDuration.message}
           </span>
         )}
@@ -416,7 +396,7 @@ const ContactForm = () => {
         type="submit"
         className={`flex items-center gap-2 justify-center rounded-3xl text-foreground px-5 py-4 transition-colors uppercase ${
           isSubmitSuccessful
-            ? "bg-green-400 hover:bg-green-600"
+            ? "bg-success hover:bg-success-secondary"
             : "bg-primary-500 hover:bg-primary-400"
         }`}
       >

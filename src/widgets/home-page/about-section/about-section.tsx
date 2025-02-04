@@ -17,12 +17,12 @@ const AboutSection = () => {
     {
       title: t("flexibility.translated"),
       content: t("flexibility.explained"),
-      icon: Lightbulb, 
+      icon: Lightbulb,
     },
     {
       title: t("speed.translated"),
       content: t("speed.explained"),
-      icon: ClockCircle, 
+      icon: ClockCircle,
     },
     {
       title: t("confidentiality.translated"),
@@ -43,7 +43,7 @@ const AboutSection = () => {
 
   return (
     <section
-      className="bg-backgroundSecondary py-20 px-6  border-border border-b-2 rounded-b-3xl md:rounded-b-5xl"
+      className="bg-background-secondary py-20 px-6  border-border border-b-2 rounded-b-3xl md:rounded-b-5xl"
       id="about-us"
     >
       <div className="max-w-screen-xl mx-auto space-y-10">

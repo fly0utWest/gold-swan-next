@@ -90,7 +90,7 @@
       "title": {
         "full": "Stafræn Markaðsdeild",
         "firstString": "Vörumerkiseftirlit",
-        "secondString": "Áhrifarík auglýsingaherferðir",
+        "secondString": "Auglýsingaherferðir",
         "thirdString": "Stafræn vöxtur"
       },
       "description": "Stafræn markaðsdeild okkar er tileinkuð því að lyfta vörumerkjum á stafrænum vettvangi með nýstárlegum aðferðum og nákvæmri framkvæmd. Frá því að bæta sýnileika vefsíða til þess að skapa áhrifaríkar herferðir á samfélagsmiðlum, veitum við alhliða þjónustu sniðna að þörfum fyrirtækja af öllum stærðum.",
@@ -799,6 +799,55 @@
     "notFound": {
       "description": "Síða finnst ekki",
       "button": "Heim"
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "Gold Swan - Alþjóðleg All-In markaðsstofa",
+      "description": "Fagleg markaðsþjónusta í Evrópu, þar á meðal stafrænt markaðssetning, almannatengsl, samfélagsmiðlamarkaðssetning, vefsíðugerð, SEO þjónusta, vörumerkjastjórnun og auglýsingar.",
+      "keywords": "markaðsstofa Ísland, Gold Swan, Gold Swan stofan, stafrænt markaðssetning Ísland, almannatengsl stofan Ísland, samfélagsmiðlamarkaðssetning Ísland, vefsíðugerð Ísland, SEO þjónusta Ísland, vörumerkjastjórnun Ísland, auglýsingastofa Ísland"
+    },
+    "contact": {
+      "title": "Hafðu samband við Gold Swan - Alþjóðleg All-In markaðsstofa",
+      "description": "Hafðu samband við Gold Swan Agency fyrir faglega markaðsþjónustu um alla Evrópu, þar á meðal stafræna markaðssetningu, almannatengsl, samfélagsmiðlamarkaðssetningu, vefsíðugerð, SEO þjónustu, vörumerkjastjórnun og auglýsingar.",
+      "keywords": "hafðu samband við Gold Swan, markaðsstofa Evrópa samband, stafrænt markaðssetning stofu samband, almannatengsl stofu samband, samfélagsmiðlamarkaðssetning samband, vefsíðugerð samband, SEO þjónusta samband, vörumerkjastjórnun stofu samband, auglýsingastofa samband"
+    },
+    "error": {
+      "title": "Síða fannst ekki - Gold Swan",
+      "description": "Úps! Síða sem þú ert að leita að er ekki til. Farðu aftur á heimasíðu eða hafðu samband við okkur fyrir aðstoð.",
+      "keywords": "404 villa, síða fannst ekki, Gold Swan villa, brotin hlekkur, vefsíðuvilla, vantar síðu, fara aftur á heimasíðu"
+    },
+    "departments": {
+      "digitalMarketing": {
+        "title": "Stafræn markaðssetning - Gold Swan",
+        "description": "Auktu sýnileika þíns vörumerkis með stafrænni markaðssetningu. Við bjóðum upp á SEO, innihaldsmarkaðssetningu, samfélagsmiðlamarkaðssetningu, áhrifavalda markaðssetningu og markvissar auglýsingaherferðir.",
+        "keywords": "stafræn markaðssetning, SEO, innihaldsmarkaðssetning, samfélagsmiðlamarkaðssetning, PPC auglýsingar, áhrifavalda markaðssetning, tölvupóstmarkaðssetning, vörumerkjaþekking, markviss auglýsingar, herferðarhagræðing"
+      },
+      "brandDevelopmentAndPR": {
+        "title": "Vörumerkjaþróun og almannatengsl - Gold Swan",
+        "description": "Byggðu upp sterka ímynd með faglegri vörumerkjastefnu og almannatengslum. Við sérhæfum okkur í markaðsstefnu, fjölmiðlatengslum, áhrifavalda markaðssetningu og stjórnun kreppuviðbragða.",
+        "keywords": "vörumerkjaþróun, PR, vörumerkjaauglýsingar, almannatengsl, vörumerkjavitund, skapandi auglýsingar, markaðsstefna, fjölmiðlatengsl, áhrifavalda markaðssetning, viðburðaskipulagning, kreppuviðbragðsstjórnun"
+      },
+      "reputationAndDataProtection": {
+        "title": "Orðspor og gagnavernd - Gold Swan",
+        "description": "Verndaðu orðspor þitt og tryggðu gagnaöryggi með sérfræðiráðgjöf í orðsporsstjórnun, kreppustjórnun og upplýsingatryggingu fyrir fyrirtæki, stjórnendur og opinbera aðila.",
+        "keywords": "orðsporsstjórnun, gagnavernd, kreppustjórnun, netorðspor, vörumerkjavernd, lögleg eyðing upplýsinga, almannatengsl, upplýsingatrygging, orðsporvöktun, persónuleg orðsporsstjórnun"
+      },
+      "analyticsAndStrategy": {
+        "title": "Greiningar og stefnumótun - Gold Swan",
+        "description": "Fáðu innsýn byggða á gögnum og stefnumótandi áætlanagerð til að knýja fram vöxt fyrirtækisins. Við sérhæfum okkur í markaðsrannsóknum, spálíkönum, KPI vöktun og samkeppnisgreiningu.",
+        "keywords": "viðskiptagreining, gagnadrifnar niðurstöður, stefnumótandi áætlanagerð, markaðsrannsóknir, spálíkanagreining, KPI vöktun, samkeppnisgreining, gagnavæðing, viðskiptagreind, ákvarðanatökustyrking"
+      },
+      "photoAndVideoShooting": {
+        "title": "Ljósmyndun og myndbandsupptökur - Gold Swan",
+        "description": "Fáðu hágæða ljósmyndun, kvikmyndagerð og 3D hönnun fyrir fyrirtæki og einstaklinga. Við sérhæfum okkur í vöruljósmyndun, myndbandsframleiðslu, eftirvinnslu og grafískri hönnun.",
+        "keywords": "ljósmyndunarþjónusta, fagleg ljósmyndun, kvikmyndagerð, myndbandsframleiðsla, dróna upptökur, 3D hönnun, eftirvinnsla, grafísk hönnun, vöruljósmyndun, myndvinnsla, auglýsingamyndbönd, hljóðhönnun"
+      },
+      "webdev": {
+        "title": "Vefþróunarþjónusta - Gold Swan",
+        "description": "Byggðu nýstárlegar, notendavænar og sveigjanlegar vefsíður og vefforrit með Gold Swan. Við sérhæfum okkur í UI/UX hönnun, full-stack þróun, áfangasíðum, PWA og LLM samþættingum fyrir fyrirtæki af öllum stærðum.",
+        "keywords": "vefþróun, UI/UX hönnun, áfangasíður, full-stack þróun, PWA, CRM sjálfvirknivæðing, sérsniðnar samþættingar, netverslun, vefforrit, vefsíðuhönnun"
+      }
     }
   }
 }

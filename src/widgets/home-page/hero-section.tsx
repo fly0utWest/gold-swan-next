@@ -11,13 +11,18 @@ const HeroSection = () => {
   const t = useTranslations("misc");
 
   return (
-    <section className="p-6 flex flex-col justify-center items-center gap-16 md:gap-8 overflow-y-hidden relative bg-backgroundSecondary min-h-[100dvh] overflow-x-hidden">
+    <section className="p-6 flex flex-col justify-center items-center gap-16 md:gap-8 overflow-y-hidden relative bg-background-secondary min-h-[100dvh] overflow-x-hidden">
       <div className=" space-y-4">
-        <Heading as="h1" className="text-6xl *:block text-center space-y-2 md:text-8xl">
+        <Heading
+          as="h1"
+          className="text-6xl *:block text-center space-y-2 md:text-8xl"
+        >
           <span className="text-primary-400 animate-slideInFromLeft">
             Gold Swan
           </span>
-          <span className="animate-slideInFromRight text-5xl md:7xl uppercase">All-In Agency</span>
+          <span className="animate-slideInFromRight text-5xl md:7xl uppercase">
+            All-In Agency
+          </span>
         </Heading>
         <div className="flex flex-col items-center text-center">
           <BrandLogo className="animate-opacityIn" size={250} />

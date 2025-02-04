@@ -88,7 +88,7 @@
       "title": {
         "full": "Digital Marketing Department",
         "firstString": "Brand Awareness",
-        "secondString": "Impactful Advertising Campaigns",
+        "secondString": "Advertising Campaigns",
         "thirdString": "Digital Growth"
       },
       "description": "Our Digital Marketing Department is dedicated to elevating brands in the digital space through innovative strategies and precise execution. From boosting website visibility to creating impactful social media campaigns, we provide a full suite of services tailored to meet the needs of businesses of all sizes.",
@@ -799,6 +799,55 @@
     "notFound": {
       "description": "Page not found",
       "button": "Home"
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "Gold Swan - International All-In Agency",
+      "description": "Professional marketing services in Europe, including digital marketing, PR, social media marketing, website development, SEO services, branding, and advertising.",
+      "keywords": "marketing agency Iceland, gold swan, gold swan agency, digital marketing Iceland, PR agency Iceland, social media marketing Iceland, website development Iceland, SEO services Iceland, branding Iceland, advertising agency Iceland"
+    },
+    "contact": {
+      "title": "Contact Gold Swan - International All-In Agency",
+      "description": "Get in touch with Gold Swan Agency for professional marketing services across Europe, including digital marketing, PR, social media marketing, website development, SEO services, branding, and advertising.",
+      "keywords": "contact Gold Swan, marketing agency Europe contact, digital marketing agency contact, PR agency contact, social media marketing contact, website development contact, SEO services contact, branding agency contact, advertising agency contact"
+    },
+    "error": {
+      "title": "Page Not Found - Gold Swan",
+      "description": "Oops! The page you are looking for does not exist. Return to the homepage or contact us for assistance.",
+      "keywords": "404 error, page not found, Gold Swan error, broken link, website error, missing page, return to homepage"
+    },
+    "departments": {
+      "digitalMarketing": {
+        "title": "Digital Marketing Services - Gold Swan",
+        "description": "Boost your brand with expert digital marketing services, including SEO, content marketing, social media marketing, influencer marketing, and targeted advertising. Maximize online presence with our tailored strategies.",
+        "keywords": "digital marketing, SEO, content marketing, social media marketing, PPC advertising, influencer marketing, email marketing, brand awareness, targeted advertising, campaign optimization"
+      },
+      "brandDevelopmentAndPR": {
+        "title": "Brand Development & PR Services - Gold Swan",
+        "description": "Enhance your brand identity and reputation with expert branding, PR, and marketing strategies. We specialize in brand positioning, media relations, influencer marketing, and crisis PR management.",
+        "keywords": "brand development, PR, branding agency, public relations, brand identity, creative advertising, market positioning, media relations, influencer marketing, event organization, crisis PR management"
+      },
+      "reputationAndDataProtection": {
+        "title": "Reputation & Data Protection Services - Gold Swan",
+        "description": "Protect your reputation and secure your data with expert reputation management, crisis response, and information security solutions tailored for businesses, executives, and public figures.",
+        "keywords": "reputation management, data protection, crisis management, online reputation, brand protection, legal information removal, public relations, information security, reputation monitoring, personal reputation management"
+      },
+      "analyticsAndStrategy": {
+        "title": "Analytics & Strategy Services - Gold Swan",
+        "description": "Gain data-driven insights and strategic planning expertise to drive business growth. We specialize in market research, predictive analytics, KPI monitoring, and competitive analysis.",
+        "keywords": "business analytics, data-driven insights, strategic planning, market research, predictive analytics, KPI monitoring, competitive analysis, data visualization, business intelligence, decision-making support"
+      },
+      "photoAndVideoShooting": {
+        "title": "Photo & Video Shooting Services - Gold Swan",
+        "description": "Capture stunning visuals with our professional photography, videography, and 3D design services. We specialize in product photography, video production, post-production, and graphic design for businesses and individuals.",
+        "keywords": "photography services, professional photography, videography, video production, drone shooting, 3D design, post-production, graphic design, product photography, photo retouching, promotional videos, sound design"
+      },
+      "webdev": {
+        "title": "Web Development Services - Gold Swan",
+        "description": "Build innovative, user-friendly, and scalable web applications with Gold Swan. We specialize in UI/UX design, full-stack development, landing pages, PWA, and LLM integrations for businesses of all sizes.",
+        "keywords": "web development, UI/UX design, landing pages, full-stack development, PWA, CRM automation, custom integrations, e-commerce solutions, web applications, website design"
+      }
     }
   }
 }
