@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "@/shared/ui/link";
 import Button from "@/shared/ui/button";
-import { Metadata } from "next";
 
 export default function ErrorNotFound() {
   const t = useTranslations("errors.notFound");
@@ -22,7 +21,3 @@ export default function ErrorNotFound() {
     </>
   );
 }
-
-export const metadata: Metadata = {
-  title: "404",
-};

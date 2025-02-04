@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "../_styles/globals.css";
 import Header from "@/shared/ui/header/header";
@@ -14,12 +13,6 @@ const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "Gold Swan Agency",
-  description:
-    "Global agency specializing in digital marketing, branding, PR, and reputation management. Our goal is to create innovative strategies that drive growth, build trust, and ensure long-term success for our clients",
-};
 
 export default async function RootLayout(
   props: Readonly<{

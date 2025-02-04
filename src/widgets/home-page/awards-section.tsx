@@ -14,7 +14,7 @@ const AwardsSetion = () => {
     <div className="space-y-16 w-full">
       <section className="w-full flex justify-center items-center flex-col gap-8 md:gap-16 md:mx-auto">
         <div
-          className={`flex w-full flex-col gap-24 bg-backgroundSecondary border-border border-b-2 p-16`}
+          className={`flex w-full flex-col gap-24 bg-background-secondary border-border border-b-2 p-16`}
         >
           <Heading
             as="h2"

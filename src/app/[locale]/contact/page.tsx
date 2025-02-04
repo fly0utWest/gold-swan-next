@@ -2,6 +2,18 @@ import ContactForm from "@/shared/ui/contact-form";
 import StaticContacts from "@/shared/ui/static-contacts";
 import Heading from "@/shared/ui/heading";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("metadata.contact");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
+  };
+}
 
 export default function ContactPage() {
   const t = useTranslations("contact-form.general")

@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --background-secondary: #f5f5f5;
+  --input: #f5f5f5;
   --foreground: #171717;
   --border: #262626;
   --primary-50: #fbf8ed;
@@ -13,12 +14,17 @@
   --primary-400: #d5c18a;
   --primary-500: #c0ac72;
   --error: #ef4444;
+  --error-secondary: #f87171;
+  --error-bg: #fca5a5;
+  --success: #4ade80;
+  --success-secondary: #16a34a;
   --card: #f5f5f5;
 }
 
 :root.dark {
   --background: #0a0a0a;
   --background-secondary: #000;
+  --input: #000;
   --border: #262626;
   --foreground: #ededed;
   --border: #262626;
@@ -28,6 +34,10 @@
   --primary-400: #d5c18a;
   --primary-500: #c0ac72;
   --error: #ef4444;
+  --error-secondary: #f87171;
+  --error-bg: #fca5a5;
+  --success: #4ade80;
+  --success-secondary: #16a34a;
   --card: #262626;
 }
 

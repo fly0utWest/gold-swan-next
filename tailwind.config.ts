@@ -27,9 +27,21 @@ export default {
       },
       colors: {
         card: "var(--card)",
-        background: "var(--background)",
-        backgroundSecondary: "var(--background-secondary)",
+        background: {
+          DEFAULT: "var(--background)",
+          secondary: "var(--background-secondary)",
+        },
+        input: "var(--input)",
         border: "var(--border)",
+        error: {
+          DEFAULT: "var(--error)",
+          secondary: "var(--error-secondary)",
+          bg: "var(--error-bg)",
+        },
+        success: {
+          DEFAULT: "var(--success)",
+          secondary: "var(--success-secondary)",
+        },
         foreground: "var(--foreground)",
         primary: {
           50: "#FBF8ED",

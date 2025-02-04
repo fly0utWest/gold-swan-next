@@ -1,38 +1,26 @@
-import {
-  StarRainbow,
-  Cart3,
-  MagicStick3,
-  Database,
-  Crown,
-} from "solar-icon-set";
+import { Programming } from "solar-icon-set";
+import { fullStackServices, llmServices } from "./features/webdev";
 
-export const fullStackServices = [
-  {
-    Icon: StarRainbow,
-    title: "fullStackDev.features.landing.title",
-    description: "fullStackDev.features.landing.description",
+const webdev = {
+  slug: "webdev",
+  icon: Programming,
+  title: {
+    full: "title.full",
+    firstString: "title.firstString",
+    secondString: "title.secondString",
+    thirdString: "title.thirdString",
   },
-  {
-    Icon: Cart3,
-    title: "fullStackDev.features.contentDrivenSite.title",
-    description: "fullStackDev.features.contentDrivenSite.description",
+  description: "description",
+  categories: {
+    fullStackDev: {
+      title: "fullStackDev.title",
+      features: fullStackServices,
+    },
+    LLMIntegrations: {
+      title: "LLMIntegrations.title",
+      features: llmServices,
+    },
   },
-  {
-    Icon: MagicStick3,
-    title: "fullStackDev.features.PWA.title",
-    description: "fullStackDev.features.PWA.description",
-  },
-];
+};
 
-export const llmServices = [
-  {
-    Icon: Database,
-    title: "LLMIntegrations.features.CRMAutomation.title",
-    description: "LLMIntegrations.features.CRMAutomation.description",
-  },
-  {
-    Icon: Crown,
-    title: "LLMIntegrations.features.customIntegrations.title",
-    description: "LLMIntegrations.features.customIntegrations.description",
-  },
-];
+export default webdev;
