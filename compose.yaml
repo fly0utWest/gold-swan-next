@@ -3,6 +3,7 @@ services:
     build: .
     environment:
       - NODE_ENV=production
+      - GOOGLE_ANALYTICS_ID=${GOOGLE_ANALYTICS_ID}
       - TG_API_URL=${TG_API_URL}
       - GOOGLE_ANALYTICS_ID=${GOOGLE_ANALYTICS_ID}
       - TG_TOKEN=${TG_TOKEN}
