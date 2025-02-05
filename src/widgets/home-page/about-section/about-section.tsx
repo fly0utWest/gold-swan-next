@@ -1,45 +1,11 @@
-import {
-  Lightbulb,
-  Scale,
-  ShieldCheck,
-  Wallet,
-  ClockCircle,
-} from "solar-icon-set";
 import React from "react";
 import FeatureCard from "./feature-card";
 import { useTranslations } from "next-intl";
 import Heading from "@/shared/ui/heading";
+import { aboutCards } from "@/shared/models/about";
 
 const AboutSection = () => {
   const t = useTranslations("about");
-
-  const features = [
-    {
-      title: t("flexibility.translated"),
-      content: t("flexibility.explained"),
-      icon: Lightbulb,
-    },
-    {
-      title: t("speed.translated"),
-      content: t("speed.explained"),
-      icon: ClockCircle,
-    },
-    {
-      title: t("confidentiality.translated"),
-      content: t("confidentiality.explained"),
-      icon: ShieldCheck,
-    },
-    {
-      title: t("pricing.translated"),
-      content: t("pricing.explained"),
-      icon: Wallet,
-    },
-    {
-      title: t("ethicsAndResponsibility.translated"),
-      content: t("ethicsAndResponsibility.explained"),
-      icon: Scale,
-    },
-  ];
 
   return (
     <section
@@ -59,11 +25,11 @@ const AboutSection = () => {
           </p>
         </div>
         <div className="space-y-10">
-          {features.map((feature, index) => (
+          {aboutCards.map((feature, index) => (
             <FeatureCard
               key={index}
-              title={feature.title}
-              content={feature.content}
+              title={t(feature.title)}
+              content={t(feature.content)}
               Icon={feature.icon}
             />
           ))}
