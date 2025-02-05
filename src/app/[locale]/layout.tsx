@@ -22,7 +22,7 @@ export default async function RootLayout(
 ) {
   const params = await props.params;
 
-  const { locale } = await  params;
+  const { locale } = await params;
 
   const { children } = props;
 
@@ -37,8 +37,30 @@ export default async function RootLayout(
       <head>
         <Script
           src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js"
-          strategy="lazyOnload"
+          strategy="beforeInteractive"
         />
+        {process.env.GOOGLE_ANALYTICS_ID && (
+          <>
+            <Script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
+            />
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className={`${oswaldSans.className}`}>
         <Inchat />
