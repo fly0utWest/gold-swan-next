@@ -38,16 +38,10 @@ export default async function RootLayout(
       <head>
         <Script
           src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js"
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
         />
       </head>
       <body className={`${oswaldSans.className}`}>
-        {process.env.GOOGLE_ANALYTICS_ID && (
-          <GoogleAnalytics
-            gaId={process.env.GOOGLE_ANALYTICS_ID}
-            debugMode={process.env.NODE_ENV === "development"}
-          />
-        )}
         <Inchat />
         <ClientObserver />
         <NextIntlClientProvider messages={messages}>
@@ -59,6 +53,12 @@ export default async function RootLayout(
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
+      {process.env.GOOGLE_ANALYTICS_ID && (
+        <GoogleAnalytics
+          gaId={process.env.GOOGLE_ANALYTICS_ID}
+          debugMode={process.env.NODE_ENV === "development"}
+        />
+      )}
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import { Chart } from "solar-icon-set";
+import { Chart, PieChart2 } from "solar-icon-set";
 import {
   businessAnalyticsServices,
   marketResearchServices,
@@ -11,7 +11,7 @@ import {
 
 const analyticsAndStrategy = {
   slug: "analyticsAndStrategy",
-  icon: Chart,
+  icon: PieChart2,
   title: {
     full: "title.full",
     firstString: "title.firstString",
