@@ -9,11 +9,16 @@ import Footer from "@/shared/ui/footer/footer";
 import Script from "next/script";
 import Inchat from "@/shared/ui/inchat";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Metadata } from "next";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://gold-swan.is/"),
+}
 
 export default async function RootLayout(
   props: Readonly<{
