@@ -59,6 +59,12 @@ export default async function RootLayout(
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
+      {process.env.GOOGLE_ANALYTICS_ID && (
+        <GoogleAnalytics
+          gaId={process.env.GOOGLE_ANALYTICS_ID}
+          debugMode={process.env.NODE_ENV === "development"}
+        />
+      )}
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import { StarRainbow } from "solar-icon-set";
+import { Star2 } from "solar-icon-set";
 import {
   brandBookServices,
   brandPositioningServices,
@@ -12,7 +12,7 @@ import {
 
 const brandDevelopmentAndPR = {
   slug: "brandDevelopmentAndPR",
-  icon: StarRainbow,
+  icon: Star2,
   title: {
     full: "title.full",
     firstString: "title.firstString",

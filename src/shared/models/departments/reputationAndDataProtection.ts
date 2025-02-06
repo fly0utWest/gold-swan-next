@@ -1,9 +1,9 @@
-import { Shield } from "solar-icon-set";
+import { Safe2 } from "solar-icon-set";
 import { reputationLifecycle } from "./features/reputationAndDataProtection";
 
 const reputationAndDataProtection = {
   slug: "reputationAndDataProtection",
-  icon: Shield,
+  icon: Safe2,
   title: {
     full: "title.full",
     firstString: "title.firstString",
