@@ -1,0 +1,70 @@
+export const privacySections = [
+  {
+    sectionKey: "dataCollection",
+    title: "title",
+    description: "description",
+    items: [
+      "contactInfo",
+      "websiteUsage",
+      "businessInfo",
+      "marketingPreferences",
+      "cookiesTracking",
+    ],
+  },
+  {
+    sectionKey: "dataUsage",
+    title: "title",
+    description: "description",
+    items: [
+      "serviceImprovement",
+      "processInquiries",
+      "marketingAnalysis",
+      "legalCompliance",
+      "advertisingOptimization",
+    ],
+  },
+  {
+    sectionKey: "dataSharing",
+    title: "title",
+    description: "description",
+    items: ["analyticsTools", "legalRequirement", "userConsent"],
+  },
+  {
+    sectionKey: "dataProtection",
+    title: "title",
+    description: "description",
+    items: ["compliance"],
+  },
+  {
+    sectionKey: "cookies",
+    title: "title",
+    description: "description",
+    items: [
+      "usagePreferences",
+      "usageUserExperience",
+      "usageAdvertisingOptimization",
+      "typeEssential",
+      "typeAnalytical",
+      "typeMarketing",
+      "management",
+    ],
+  },
+  {
+    sectionKey: "userRights",
+    title: "title",
+    description: "description",
+    items: ["access", "modify", "optOut", "disableCookies", "contact"],
+  },
+  {
+    sectionKey: "policyUpdates",
+    title: "title",
+    description: "description",
+    items: [],
+  },
+  {
+    sectionKey: "contactInfo",
+    title: "title",
+    description: "description",
+    items: ["companyName", "registeredAddress", "email"],
+  },
+];

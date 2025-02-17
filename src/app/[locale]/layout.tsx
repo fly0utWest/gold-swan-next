@@ -28,7 +28,7 @@ export default async function RootLayout(
 ) {
   const params = await props.params;
 
-  const { locale } = await params;
+  const { locale } =  params;
 
   const { children } = props;
 
@@ -43,7 +43,6 @@ export default async function RootLayout(
       <head>
         <Script
           src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js"
-          strategy="beforeInteractive"
         />
       </head>
       <body className={`${oswaldSans.className}`}>

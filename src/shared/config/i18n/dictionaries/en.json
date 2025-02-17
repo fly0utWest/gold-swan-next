@@ -13,6 +13,7 @@
     "services": "Services",
     "contact": "Contact",
     "projects": "Projects",
+    "privacy": "Privacy Policy",
     "description": "We’re an All In agency that bets everything on solving your problems."
   },
   "about": {
@@ -648,6 +649,89 @@
       }
     }
   },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "lastUpdated": "Updated on: 16th February, 2025",
+    "description": "Gold Swan respects your privacy and is committed to protecting your personal data.",
+    "sections": {
+      "dataCollection": {
+        "title": "What Data We Collect",
+        "description": "We collect the following types of personal data:",
+        "items": {
+          "contactInfo": "Name, email address, phone number.",
+          "websiteUsage": "IP address, location, device type, browser.",
+          "businessInfo": "Company name, website, industry (if you fill out a consultation form).",
+          "marketingPreferences": "Your preferences regarding advertising and communication.",
+          "cookiesTracking": "More details in the Cookies and Tracking Technologies section."
+        }
+      },
+      "dataUsage": {
+        "title": "How We Use Your Data",
+        "description": "We use collected data for the following purposes:",
+        "items": {
+          "serviceImprovement": "To improve our services and personalize content.",
+          "processInquiries": "To process inquiries and provide consultations.",
+          "marketingAnalysis": "To analyze the effectiveness of marketing campaigns (Google Ads, Facebook Ads, Instagram Ads, LinkedIn Ads).",
+          "legalCompliance": "To comply with legal requirements and protect our rights.",
+          "advertisingOptimization": "To optimize advertising campaigns through Facebook Pixel, Google Ads, and LinkedIn Ads."
+        }
+      },
+      "dataSharing": {
+        "title": "Data Sharing with Third Parties",
+        "description": "We do not share your personal data with third parties except in the following cases:",
+        "items": {
+          "analyticsTools": "Use of analytics tools (Google Analytics, Facebook Pixel, Meta Ads, TikTok Pixel, LinkedIn Ads, Hotjar).",
+          "legalRequirement": "When required by law or court order.",
+          "userConsent": "If you have provided consent for data sharing."
+        }
+      },
+      "dataProtection": {
+        "title": "Data Storage and Protection",
+        "description": "We apply modern data protection methods and store data in secure systems. Only authorized personnel have access to personal data.",
+        "items": {
+          "compliance": "We comply with data protection standards, including GDPR (General Data Protection Regulation) in the EU."
+        }
+      },
+      "cookies": {
+        "title": "Cookies and Tracking Technologies",
+        "description": "Our website uses cookies to enhance your experience.",
+        "items": {
+          "usagePreferences": "Remember your preferences.",
+          "usageUserExperience": "Improve user experience.",
+          "usageAdvertisingOptimization": "Optimize advertising campaigns and personalized ads.",
+          "typeEssential": "Essential Cookies – Necessary for the proper functioning of the website.",
+          "typeAnalytical": "Analytical Cookies – Help us analyze visits and improve performance.",
+          "typeMarketing": "Marketing Cookies – Used for personalized advertising and remarketing.",
+          "management": "You can manage cookie settings through your browser or on our website."
+        }
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "description": "You have the right to:",
+        "items": {
+          "access": "Request access to your data.",
+          "modify": "Correct or delete your data.",
+          "optOut": "Opt-out of marketing communications.",
+          "disableCookies": "Disable cookies and manage personalized advertising.",
+          "contact": "Requests can be sent to: goldswaniceland@gmail.com"
+        }
+      },
+      "policyUpdates": {
+        "title": "Changes to the Privacy Policy",
+        "description": "We may update this policy from time to time. Changes will be announced on this page.",
+        "items": {}
+      },
+      "contactInfo": {
+        "title": "Contact Information",
+        "description": "How to reach us:",
+        "items": {
+          "companyName": "Gold Swan",
+          "registeredAddress": "The company's registered address will be published upon completion of registration.",
+          "email": "goldswaniceland@gmail.com"
+        }
+      }
+    }
+  },
   "partners": {
     "heading": "Who has entrusted us with their projects?",
     "marqueeHeading": "Press about Us"
@@ -848,6 +932,11 @@
         "description": "Build innovative, user-friendly, and scalable web applications with Gold Swan. We specialize in UI/UX design, full-stack development, landing pages, PWA, and LLM integrations for businesses of all sizes.",
         "keywords": "web development, UI/UX design, landing pages, full-stack development, PWA, CRM automation, custom integrations, e-commerce solutions, web applications, website design"
       }
+    },
+    "privacy": {
+      "title": "Privacy Policy - Gold Swan",
+      "description": "Gold Swan values your privacy. This policy explains how we collect, use, and protect your personal data when using our services.",
+      "keywords": "privacy policy, data protection, GDPR compliance, Gold Swan privacy, personal data security, data usage, online privacy"
     }
   }
 }

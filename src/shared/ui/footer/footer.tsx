@@ -29,6 +29,7 @@ export default function Footer() {
         <div className="flex flex-col gap-8 lg:gap-4 items-center lg:items-start w-full max-w-xs">
           <FooterLink href="/#departments">{t("services")}</FooterLink>
           <FooterLink href="/#upcoming-projects">{t("projects")}</FooterLink>
+          <FooterLink href="/privacy">{t("privacy")}</FooterLink>
         </div>
         <Link
           href="#top"
@@ -74,7 +75,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <p className="text-neutral-800 text-lg font-light w-full text-center lg:text-left">&copy; Gold Swan Agency, 2025</p>
+      <p className="text-border text-lg font-light w-full text-center lg:text-left">&copy; Gold Swan Agency, 2025</p>
     </footer>
   );
 }
