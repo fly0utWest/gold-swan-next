@@ -5,7 +5,10 @@
     "loading": "Loading...",
     "slogan": "We’re an All In agency that bets everything on solving your problems.",
     "contactUs": "Contact",
-    "knowMore": "Know more"
+    "knowMore": "Know more",
+    "cookiesUsage": "The site uses cookies",
+    "cookiesAgreement": "Nice",
+    "privacy": "Privacy Policy"
   },
   "nav": {
     "home": "Home",
