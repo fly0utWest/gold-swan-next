@@ -13,6 +13,7 @@
     "services": "Services",
     "contact": "Contact",
     "projects": "Projects",
+    "privacy": "Privacy Policy",
     "description": "We’re an All In agency that bets everything on solving your problems."
   },
   "about": {
@@ -687,43 +688,47 @@
       "dataProtection": {
         "title": "Data Storage and Protection",
         "description": "We apply modern data protection methods and store data in secure systems. Only authorized personnel have access to personal data.",
-        "compliance": "We comply with data protection standards, including GDPR (General Data Protection Regulation) in the EU."
+        "items": {
+          "compliance": "We comply with data protection standards, including GDPR (General Data Protection Regulation) in the EU."
+        }
       },
       "cookies": {
         "title": "Cookies and Tracking Technologies",
         "description": "Our website uses cookies to enhance your experience.",
-        "usage": {
-          "preferences": "Remember your preferences.",
-          "userExperience": "Improve user experience.",
-          "advertisingOptimization": "Optimize advertising campaigns and personalized ads."
-        },
-        "types": {
-          "essential": "Essential Cookies – Necessary for the proper functioning of the website.",
-          "analytical": "Analytical Cookies – Help us analyze visits and improve performance.",
-          "marketing": "Marketing Cookies – Used for personalized advertising and remarketing."
-        },
-        "management": "You can manage cookie settings through your browser or on our website."
+        "items": {
+          "usagePreferences": "Remember your preferences.",
+          "usageUserExperience": "Improve user experience.",
+          "usageAdvertisingOptimization": "Optimize advertising campaigns and personalized ads.",
+          "typeEssential": "Essential Cookies – Necessary for the proper functioning of the website.",
+          "typeAnalytical": "Analytical Cookies – Help us analyze visits and improve performance.",
+          "typeMarketing": "Marketing Cookies – Used for personalized advertising and remarketing.",
+          "management": "You can manage cookie settings through your browser or on our website."
+        }
       },
       "userRights": {
         "title": "Your Rights",
         "description": "You have the right to:",
-        "rights": {
+        "items": {
           "access": "Request access to your data.",
           "modify": "Correct or delete your data.",
           "optOut": "Opt-out of marketing communications.",
-          "disableCookies": "Disable cookies and manage personalized advertising."
-        },
-        "contact": "Requests can be sent to: goldswaniceland@gmail.com"
+          "disableCookies": "Disable cookies and manage personalized advertising.",
+          "contact": "Requests can be sent to: goldswaniceland@gmail.com"
+        }
       },
       "policyUpdates": {
         "title": "Changes to the Privacy Policy",
-        "description": "We may update this policy from time to time. Changes will be announced on this page."
+        "description": "We may update this policy from time to time. Changes will be announced on this page.",
+        "items": {}
       },
       "contactInfo": {
         "title": "Contact Information",
-        "companyName": "Gold Swan",
-        "registeredAddress": "The company's registered address will be published upon completion of registration.",
-        "email": "goldswaniceland@gmail.com"
+        "description": "How to reach us:",
+        "items": {
+          "companyName": "Gold Swan",
+          "registeredAddress": "The company's registered address will be published upon completion of registration.",
+          "email": "goldswaniceland@gmail.com"
+        }
       }
     }
   },

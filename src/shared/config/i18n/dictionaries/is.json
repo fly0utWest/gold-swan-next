@@ -13,6 +13,7 @@
     "services": "Þjónusta",
     "contact": "Hafa samband",
     "projects": "Verkefni",
+    "privacy": "Persónuverndarstefna",
     "description": "Við erum stafræn stofnun sem mun láta drauma þína rætast!"
   },
 
@@ -689,43 +690,47 @@
       "dataProtection": {
         "title": "Geymsla og vernd gagna",
         "description": "Við notum nútímalegar aðferðir til að vernda gögnin þín og geymum þau í öruggum kerfum. Aðeins viðurkenndir starfsmenn hafa aðgang að persónuupplýsingum.",
-        "compliance": "Við fylgjum persónuverndarreglum, þar á meðal GDPR (Almennu persónuverndarreglugerðinni) í ESB."
+        "items": {
+          "compliance": "Við fylgjum persónuverndarreglum, þar á meðal GDPR (Almennu persónuverndarreglugerðinni) í ESB."
+        }
       },
       "cookies": {
         "title": "Vafrakökur og rekjartækni",
         "description": "Vefsíða okkar notar vafrakökur til að bæta upplifun þína.",
-        "usage": {
-          "preferences": "Muna stillingar þínar.",
-          "userExperience": "Bæta notendaupplifun.",
-          "advertisingOptimization": "Hagræða auglýsingaherferðum og sérsníða auglýsingar."
-        },
-        "types": {
-          "essential": "Nauðsynlegar vafrakökur – Nauðsynlegar fyrir rétta virkni vefsíðunnar.",
-          "analytical": "Greiningarkökur – Hjálpa okkur að greina heimsóknir og bæta virkni.",
-          "marketing": "Markaðskökur – Notaðar til sérsniðinna auglýsinga og endurmarkaðssetningar."
-        },
-        "management": "Þú getur stjórnað vafrakökustillingum í vafranum þínum eða á vefsíðu okkar."
+        "items": {
+          "usagePreferences": "Muna stillingar þínar.",
+          "usageUserExperience": "Bæta notendaupplifun.",
+          "usageAdvertisingOptimization": "Hagræða auglýsingaherferðum og sérsníða auglýsingar.",
+          "typeEssential": "Nauðsynlegar vafrakökur – Nauðsynlegar fyrir rétta virkni vefsíðunnar.",
+          "typeAnalytical": "Greiningarkökur – Hjálpa okkur að greina heimsóknir og bæta virkni.",
+          "typeMarketing": "Markaðskökur – Notaðar til sérsniðinna auglýsinga og endurmarkaðssetningar.",
+          "management": "Þú getur stjórnað vafrakökustillingum í vafranum þínum eða á vefsíðu okkar."
+        }
       },
       "userRights": {
         "title": "Réttindi þín",
         "description": "Þú átt rétt á að:",
-        "rights": {
+        "items": {
           "access": "Fá aðgang að gögnunum þínum.",
           "modify": "Leiðrétta eða eyða gögnum þínum.",
           "optOut": "Afþakka markaðssamskipti.",
-          "disableCookies": "Slökkva á vafrakökum og stjórna persónusniðnum auglýsingum."
-        },
-        "contact": "Fyrirspurnir má senda á netfang: goldswaniceland@gmail.com"
+          "disableCookies": "Slökkva á vafrakökum og stjórna persónusniðnum auglýsingum.",
+          "contact": "Fyrirspurnir má senda á netfang: goldswaniceland@gmail.com"
+        }
       },
       "policyUpdates": {
         "title": "Breytingar á persónuverndarstefnu",
-        "description": "Við kunnum að uppfæra þessa stefnu af og til. Breytingar verða tilkynntar á þessari síðu."
+        "description": "Við kunnum að uppfæra þessa stefnu af og til. Breytingar verða tilkynntar á þessari síðu.",
+        "items": {}
       },
       "contactInfo": {
         "title": "Hafðu samband",
-        "companyName": "Gold Swan",
-        "registeredAddress": "Lögheimili fyrirtækisins verður birt eftir skráningu.",
-        "email": "goldswaniceland@gmail.com"
+        "description": "Hvernig á að hafa samband við okkur:",
+        "items": {
+          "companyName": "Gold Swan",
+          "registeredAddress": "Lögheimili fyrirtækisins verður birt eftir skráningu.",
+          "email": "goldswaniceland@gmail.com"
+        }
       }
     }
   },
