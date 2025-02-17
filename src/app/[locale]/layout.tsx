@@ -10,6 +10,7 @@ import Script from "next/script";
 import Inchat from "@/shared/ui/inchat";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Metadata } from "next";
+import CookiesAgreement from "@/shared/ui/cookies-agreement";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
@@ -18,7 +19,7 @@ const oswaldSans = Oswald({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gold-swan.is/"),
-}
+};
 
 export default async function RootLayout(
   props: Readonly<{
@@ -41,20 +42,15 @@ export default async function RootLayout(
       suppressHydrationWarning
     >
       <head>
-        <Script
-          src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js"
-        />
+        <Script src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js" />
       </head>
       <body className={`${oswaldSans.className}`}>
-        {process.env.GOOGLE_ANALYTICS_ID && (
-          <GoogleAnalytics
-            gaId={process.env.GOOGLE_ANALYTICS_ID}
-            debugMode={process.env.NODE_ENV === "development"}
-          />
-        )}
-        <Inchat />
-        <ClientObserver />
         <NextIntlClientProvider messages={messages}>
+          <div className="fixed z-[999] w-max h-max" id="portal-container">
+            <CookiesAgreement />
+          </div>
+          <Inchat />
+          <ClientObserver />
           <ThemeProvider defaultTheme="dark" attribute="class">
             <div className="absolute top-0" id="top"></div>
             <Header />
