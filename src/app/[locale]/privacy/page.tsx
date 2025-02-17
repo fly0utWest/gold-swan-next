@@ -20,10 +20,10 @@ export default async function PrivacyPage() {
   return (
     <div className="w-full h-full flex flex-col gap-8 items-center justify-center p-6 lg:mx-auto max-w-screen-xl">
       <div className="flex flex-col gap-4 text-center">
-        <Heading as="h1" className="font-bold text-5xl lg:text-7xl text-center">
+        <Heading as="h1" className="font-bold text-xl text-wrap lg:text-4xl text-center">
           {t("heading")}
         </Heading>
-        <p className="text-xl">{t("description")}</p>
+        <p className="text-lg">{t("description")}</p>
         <p className="text-md">{t("lastUpdated")}</p>
       </div>
       <div className="w-full">
