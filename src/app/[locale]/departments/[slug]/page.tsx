@@ -19,6 +19,7 @@ const departmentSlugs = [
   "brandDevelopmentAndPR",
   "photoAndVideoShooting",
   "reputationAndDataProtection",
+  "3DForgeStudio"
 ];
 
 export async function generateStaticParams() {
