@@ -79,7 +79,6 @@
       "description": "Viðskiptageirans nýsköpun ársins."
     }
   },
-
   "departments": {
     "section": {
       "heading": "Deildir",
@@ -88,7 +87,9 @@
       "reputationAndDataProtection": "Orðspor og Gögnavernd",
       "analyticsAndStrategy": "Greining og Stefnumótun",
       "photoVideoShooting": "Mynda- og Myndbandsupptökur",
-      "webdev": "Vefsíðugerð og Vefumsóknarþróun"
+      "webdev": "Vefsíðugerð og Vefumsóknarþróun",
+      "castingAndProduction": "Hlutverkaval og Framleiðsla",
+      "3DForgeStudio": "3D Smíðja Studio"
     },
     "digitalMarketing": {
       "title": {
@@ -652,6 +653,92 @@
           }
         }
       }
+    },
+    "3DForgeStudio": {
+      "title": {
+        "full": "3D Smíðja Studio",
+        "firstString": "Grípandi 3D-myndbönd",
+        "secondString": "VFX og sjónræn áhrif",
+        "thirdString": "Tölvugrafík og sýndarveruleiki"
+      },
+      "description": "Í nútíma stafrænum heimi skiptir hágæða myndræn framsetning sköpum fyrir ímynd vörumerkja. 3D Motion & CGI deildin okkar sérhæfir sig í gerð fyrsta flokks 3D-myndbanda, sjónrænna áhrifa og arkitektónískra sýndarmynda sem hjálpa fyrirtækjum að skera sig úr í samkeppni.",
+      "motionCGI": {
+        "title": "3D Motion & CGI",
+        "features": {
+          "brandPerception": {
+            "title": "Eflt vörumerkjaímynd",
+            "description": "Framleiðsla á fyrsta flokks 3D-myndböndum og sjónrænum áhrifum til að styrkja vörumerkjavitund."
+          },
+          "architecturalVisualization": {
+            "title": "Arkitektónískar sýndarmyndir",
+            "description": "Hönnun útlits, innréttinga, aðalskipulags og borgarhönnunar."
+          }
+        }
+      },
+      "designPostProduction": {
+        "title": "3D hönnun og eftirvinnsla",
+        "features": {
+          "photoRealisticCGI": {
+            "title": "Ljósmyndaraunhæf tölvugrafík",
+            "description": "Framleiðsla á tölvugerðri grafík fyrir auglýsingar og viðskiptanotkun."
+          },
+          "sceneModeling": {
+            "title": "3D-líkangerð hluta og sviðsmynda",
+            "description": "Þróun nákvæmra 3D-hluta fyrir ýmsar atvinnugreinar."
+          },
+          "photoRetouching": {
+            "title": "Myndvinnsla og litaleiðrétting",
+            "description": "Betrumbætur á myndum og endurgerðum til að ná fram faglegu útliti."
+          }
+        }
+      },
+      "fullCG": {
+        "title": "Full CG (Fullkomlega tölvugerð grafík)",
+        "features": {
+          "creativeFreedom": {
+            "title": "Ótakmarkað sköpunarfrelsi",
+            "description": "Gerð fullkomlega tölvugerðra 3D-myndbanda án notkunar á raunverulegri kvikmyndun."
+          },
+          "sceneAnimation": {
+            "title": "Hugmyndagerð, sviðsmyndir og hreyfimyndir",
+            "description": "Hönnun stafrænnar sviðsmyndar og hreyfimynda til að skapa dýpt."
+          },
+          "realisticRendering": {
+            "title": "Ljósmyndaraunhæf útlit og lýsing",
+            "description": "Notkun háþróaðra útlits- og lýsingartækni til að skapa raunhæfar myndir."
+          }
+        }
+      },
+      "VFX": {
+        "title": "VFX (Sjónræn áhrif)",
+        "features": {
+          "liveActionIntegration": {
+            "title": "3D samsetning með raunverulegum myndefnum",
+            "description": "Blandun CGI við raunverulega kvikmyndun fyrir slétt flæði milli þátta."
+          },
+          "environmentReplacement": {
+            "title": "Eftirlitsstaðsetning hluta og breytingar á umhverfi",
+            "description": "Breytingar á bakgrunni og aðlögun umhverfis fyrir kvikmyndaleg áhrif."
+          },
+          "particleSimulations": {
+            "title": "Hermun reyks, elds, vatns og agna",
+            "description": "Hönnun kraftmikilla sjónrænna áhrifa fyrir kvikmyndir, auglýsingar og leikjagerð."
+          }
+        }
+      },
+      "3DPrototyping": {
+        "title": "3D frumgerðagerð",
+        "features": {
+          "modelingFor3DPrinting": {
+            "title": "Undirbúningur líkana fyrir 3D-prentara",
+            "description": "Hönnun flókinna 3D-líkana fyrir prentun og leysirgröft."
+          },
+          "engravingServices": {
+            "title": "Gröftur á gleri, málmi og öðrum efnum",
+            "description": "Sérsmíði á nákvæmum grafískum útfærslum á ýmis efni."
+          }
+        }
+      }
     }
   },
   "privacy": {
@@ -934,6 +1021,11 @@
         "title": "Vefþróunarþjónusta - Gold Swan",
         "description": "Byggðu nýstárlegar, notendavænar og sveigjanlegar vefsíður og vefforrit með Gold Swan. Við sérhæfum okkur í UI/UX hönnun, full-stack þróun, áfangasíðum, PWA og LLM samþættingum fyrir fyrirtæki af öllum stærðum.",
         "keywords": "vefþróun, UI/UX hönnun, áfangasíður, full-stack þróun, PWA, CRM sjálfvirknivæðing, sérsniðnar samþættingar, netverslun, vefforrit, vefsíðuhönnun"
+      },
+      "3DForgeStudio": {
+        "title": "3D Smíðja Studio - Gold Swan",
+        "description": "Lífgaðu hugmyndir þínar með hágæða 3D-hreyfigrafík, sjónrænum áhrifum og CGI. Við sérhæfum okkur í að búa til grípandi 3D-myndbönd, arkitektónískar sýndarmyndir og ljósmyndaraunhæfa grafík.",
+        "keywords": "3D hreyfigrafík, CGI, sjónræn áhrif, VFX, 3D-líkangerð, arkitektónískar sýndarmyndir, ljósmyndaraunhæf framsetning, 3D samsetning, stafrænar myndir, hreyfihönnun, séráhrif"
       }
     },
     "privacy": {

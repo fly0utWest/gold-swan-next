@@ -1,9 +1,4 @@
-import { Camera } from "solar-icon-set";
-import { MoneyBag } from "solar-icon-set";
-import { Programming } from "solar-icon-set";
-import { Safe2 } from "solar-icon-set";
-import { Star2 } from "solar-icon-set";
-import { PieChart2 } from "solar-icon-set";
+import { Camera, SmartSpeaker2, MoneyBag, Programming, Safe2, Star2, Stars, PieChart2 } from "solar-icon-set";
 
 interface DepartmentButton {
   title: string;
@@ -41,6 +36,16 @@ const departmentButtons: DepartmentButton[] = [
     title: "webdev",
     icon: Programming,
     href: "/departments/webdev",
+  },
+  {
+    title: "3DForgeStudio",
+    icon: SmartSpeaker2,
+    href: "/departments/3DForgeStudio",
+  },
+  {
+    title: "castingAndProduction",
+    icon: Stars, 
+    href: "/departments/castingAndProduction",
   },
 ];
 
