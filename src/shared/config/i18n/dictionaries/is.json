@@ -79,7 +79,6 @@
       "description": "Viðskiptageirans nýsköpun ársins."
     }
   },
-
   "departments": {
     "section": {
       "heading": "Deildir",
@@ -88,7 +87,9 @@
       "reputationAndDataProtection": "Orðspor og Gögnavernd",
       "analyticsAndStrategy": "Greining og Stefnumótun",
       "photoVideoShooting": "Mynda- og Myndbandsupptökur",
-      "webdev": "Vefsíðugerð og Vefumsóknarþróun"
+      "webdev": "Vefsíðugerð og Vefumsóknarþróun",
+      "castingAndProduction": "Casting & Production",
+      "3DForgeStudio": "3D Smíðja Studio"
     },
     "digitalMarketing": {
       "title": {
@@ -652,6 +653,235 @@
           }
         }
       }
+    },
+    "3DForgeStudio": {
+      "title": {
+        "full": "3D Smíðja Studio",
+        "firstString": "Grípandi 3D-myndbönd",
+        "secondString": "VFX og sjónræn áhrif",
+        "thirdString": "Tölvugrafík og sýndarveruleiki"
+      },
+      "description": "Í nútíma stafrænum heimi skiptir hágæða myndræn framsetning sköpum fyrir ímynd vörumerkja. 3D Motion & CGI deildin okkar sérhæfir sig í gerð fyrsta flokks 3D-myndbanda, sjónrænna áhrifa og arkitektónískra sýndarmynda sem hjálpa fyrirtækjum að skera sig úr í samkeppni.",
+      "motionCGI": {
+        "title": "3D Motion & CGI",
+        "features": {
+          "brandPerception": {
+            "title": "Eflt vörumerkjaímynd",
+            "description": "Framleiðsla á fyrsta flokks 3D-myndböndum og sjónrænum áhrifum til að styrkja vörumerkjavitund."
+          },
+          "architecturalVisualization": {
+            "title": "Arkitektónískar sýndarmyndir",
+            "description": "Hönnun útlits, innréttinga, aðalskipulags og borgarhönnunar."
+          }
+        }
+      },
+      "designPostProduction": {
+        "title": "3D hönnun og eftirvinnsla",
+        "features": {
+          "photoRealisticCGI": {
+            "title": "Ljósmyndaraunhæf tölvugrafík",
+            "description": "Framleiðsla á tölvugerðri grafík fyrir auglýsingar og viðskiptanotkun."
+          },
+          "sceneModeling": {
+            "title": "3D-líkangerð hluta og sviðsmynda",
+            "description": "Þróun nákvæmra 3D-hluta fyrir ýmsar atvinnugreinar."
+          },
+          "photoRetouching": {
+            "title": "Myndvinnsla og litaleiðrétting",
+            "description": "Betrumbætur á myndum og endurgerðum til að ná fram faglegu útliti."
+          }
+        }
+      },
+      "fullCG": {
+        "title": "Full CG (Fullkomlega tölvugerð grafík)",
+        "features": {
+          "creativeFreedom": {
+            "title": "Ótakmarkað sköpunarfrelsi",
+            "description": "Gerð fullkomlega tölvugerðra 3D-myndbanda án notkunar á raunverulegri kvikmyndun."
+          },
+          "sceneAnimation": {
+            "title": "Hugmyndagerð, sviðsmyndir og hreyfimyndir",
+            "description": "Hönnun stafrænnar sviðsmyndar og hreyfimynda til að skapa dýpt."
+          },
+          "realisticRendering": {
+            "title": "Ljósmyndaraunhæf útlit og lýsing",
+            "description": "Notkun háþróaðra útlits- og lýsingartækni til að skapa raunhæfar myndir."
+          }
+        }
+      },
+      "VFX": {
+        "title": "VFX (Sjónræn áhrif)",
+        "features": {
+          "liveActionIntegration": {
+            "title": "3D samsetning með raunverulegum myndefnum",
+            "description": "Blandun CGI við raunverulega kvikmyndun fyrir slétt flæði milli þátta."
+          },
+          "environmentReplacement": {
+            "title": "Eftirlitsstaðsetning hluta og breytingar á umhverfi",
+            "description": "Breytingar á bakgrunni og aðlögun umhverfis fyrir kvikmyndaleg áhrif."
+          },
+          "particleSimulations": {
+            "title": "Hermun reyks, elds, vatns og agna",
+            "description": "Hönnun kraftmikilla sjónrænna áhrifa fyrir kvikmyndir, auglýsingar og leikjagerð."
+          }
+        }
+      },
+      "3DPrototyping": {
+        "title": "3D frumgerðagerð",
+        "features": {
+          "modelingFor3DPrinting": {
+            "title": "Undirbúningur líkana fyrir 3D-prentara",
+            "description": "Hönnun flókinna 3D-líkana fyrir prentun og leysirgröft."
+          },
+          "engravingServices": {
+            "title": "Gröftur á gleri, málmi og öðrum efnum",
+            "description": "Sérsmíði á nákvæmum grafískum útfærslum á ýmis efni."
+          }
+        }
+      }
+    },
+    "castingAndProduction": {
+      "title": {
+        "full": "Casting & Production",
+        "firstString": "Fyrirsætur og hæfileikar",
+        "secondString": "Kast & val",
+        "thirdString": "Ljósmyndun & myndbandsgerð"
+      },
+      "description": "Sjónræn framsetning skiptir sköpum í að byggja upp farsælt vörumerki. Deildin okkar, Casting & Production, býður upp á alhliða þjónustu við val á fyrirsætum og skipulag faglegra tökudaga fyrir auglýsingaherferðir, tískuiðnaðinn og viðskiptaverkefni.",
+      "castingAndModelSelection": {
+        "title": "Val og ráðning fyrirsæta",
+        "features": {
+          "professionalModelSearch": {
+            "title": "Leit og val á faglegum fyrirsætum",
+            "description": "Val á karlkyns og kvenkyns fyrirsætum fyrir auglýsingaherferðir, vörulista, tískuverkefni og myndbandsupptökur."
+          },
+          "modelDatabase": {
+            "title": "Uppbygging fyrirsætugagnagrunns",
+            "description": "Þróun og viðhald gagnagrunns yfir fyrirsætur fyrir ýmis auglýsinga- og viðskipta verkefni."
+          },
+          "actorSelection": {
+            "title": "Ráðning leikara og persóna",
+            "description": "Leit og ráðning leikara og hæfileikafólks fyrir auglýsingamyndbönd og kynningarefni."
+          }
+        }
+      },
+      "photoVideoShoots": {
+        "title": "Skipulag ljósmyndunar og myndbandsupptöku",
+        "features": {
+          "creativeConcept": {
+            "title": "Þróun skapandi handrits og hugmyndar",
+            "description": "Sköpun einstaka sjónrænna hugmynda fyrir vörumerki og auglýsingaherferðir."
+          },
+          "studioAndLocationRental": {
+            "title": "Leiga á faglegum myndverum og tökustöðum",
+            "description": "Aðgangur að hágæða stúdíóum og tökustöðum fyrir faglega framleiðslu."
+          },
+          "productionTeam": {
+            "title": "Samvinna við förðunarfræðinga, stílista og framleiðendur",
+            "description": "Samstarf við leiðandi sérfræðinga í greininni til að tryggja gæðaefni."
+          }
+        }
+      },
+      "advertisingContent": {
+        "title": "Sköpun auglýsingaefnis",
+        "features": {
+          "brandVisuals": {
+            "title": "Ljósmyndir og myndbönd fyrir vörumerki",
+            "description": "Gerð hágæða efnis fyrir skartgripamerki, úr, fatnað og lúxusmarkaðinn."
+          },
+          "adCampaigns": {
+            "title": "Sköpun auglýsingaherferða",
+            "description": "Þróun markaðsherferða fyrir stafrænan og hefðbundinn markað."
+          },
+          "fullProductionCycle": {
+            "title": "Heildarframleiðsluferli",
+            "description": "Skipulag og framkvæmd allrar framleiðslu, frá hugmynd til lokaafurðar."
+          }
+        }
+      }
+    }
+  },
+  "privacy": {
+    "heading": "Persónuverndarstefna",
+    "lastUpdated": "Uppfært: 16. febrúar 2025",
+    "description": "Gold Swan virðir friðhelgi einkalífs þíns og skuldbindur sig til að vernda persónuupplýsingar þínar.",
+    "sections": {
+      "dataCollection": {
+        "title": "Hvaða gögn söfnum við",
+        "description": "Við kunnum að safna eftirfarandi flokkum persónuupplýsinga:",
+        "items": {
+          "contactInfo": "Nafn, netfang, símanúmer.",
+          "websiteUsage": "IP-tala, staðsetning, tegund tækis, vafri.",
+          "businessInfo": "Nafn fyrirtækis, vefsíða, starfsemi (ef þú fyllir út form fyrir ráðgjöf).",
+          "marketingPreferences": "Kjörstillingar þínar um auglýsingar og samskipti.",
+          "cookiesTracking": "Nánari upplýsingar í kafla um vafrakökur og rekjartækni."
+        }
+      },
+      "dataUsage": {
+        "title": "Hvernig notum við gögnin þín",
+        "description": "Við notum söfnuð gögn í eftirfarandi tilgangi:",
+        "items": {
+          "serviceImprovement": "Til að bæta þjónustugæði okkar og sérsníða efni.",
+          "processInquiries": "Til að vinna úr fyrirspurnum og veita ráðgjöf.",
+          "marketingAnalysis": "Til að greina árangur markaðsherferða (Google Ads, Facebook Ads, Instagram Ads, LinkedIn Ads).",
+          "legalCompliance": "Til að uppfylla lagaskilyrði og vernda réttindi okkar.",
+          "advertisingOptimization": "Til að hámarka árangur auglýsinga í gegnum Facebook Pixel, Google Ads og LinkedIn Ads."
+        }
+      },
+      "dataSharing": {
+        "title": "Deiling gagna með þriðja aðila",
+        "description": "Við deilum ekki persónuupplýsingum þínum með þriðja aðila nema í eftirfarandi tilvikum:",
+        "items": {
+          "analyticsTools": "Notkun greiningartækja (Google Analytics, Facebook Pixel, Meta Ads, TikTok Pixel, LinkedIn Ads, Hotjar).",
+          "legalRequirement": "Þegar lög eða dómstólar krefjast þess.",
+          "userConsent": "Ef þú hefur veitt samþykki fyrir miðlun."
+        }
+      },
+      "dataProtection": {
+        "title": "Geymsla og vernd gagna",
+        "description": "Við notum nútímalegar aðferðir til að vernda gögnin þín og geymum þau í öruggum kerfum. Aðeins viðurkenndir starfsmenn hafa aðgang að persónuupplýsingum.",
+        "items": {
+          "compliance": "Við fylgjum persónuverndarreglum, þar á meðal GDPR (Almennu persónuverndarreglugerðinni) í ESB."
+        }
+      },
+      "cookies": {
+        "title": "Vafrakökur og rekjartækni",
+        "description": "Vefsíða okkar notar vafrakökur til að bæta upplifun þína.",
+        "items": {
+          "usagePreferences": "Muna stillingar þínar.",
+          "usageUserExperience": "Bæta notendaupplifun.",
+          "usageAdvertisingOptimization": "Hagræða auglýsingaherferðum og sérsníða auglýsingar.",
+          "typeEssential": "Nauðsynlegar vafrakökur – Nauðsynlegar fyrir rétta virkni vefsíðunnar.",
+          "typeAnalytical": "Greiningarkökur – Hjálpa okkur að greina heimsóknir og bæta virkni.",
+          "typeMarketing": "Markaðskökur – Notaðar til sérsniðinna auglýsinga og endurmarkaðssetningar.",
+          "management": "Þú getur stjórnað vafrakökustillingum í vafranum þínum eða á vefsíðu okkar."
+        }
+      },
+      "userRights": {
+        "title": "Réttindi þín",
+        "description": "Þú átt rétt á að:",
+        "items": {
+          "access": "Fá aðgang að gögnunum þínum.",
+          "modify": "Leiðrétta eða eyða gögnum þínum.",
+          "optOut": "Afþakka markaðssamskipti.",
+          "disableCookies": "Slökkva á vafrakökum og stjórna persónusniðnum auglýsingum.",
+          "contact": "Fyrirspurnir má senda á netfang: goldswaniceland@gmail.com"
+        }
+      },
+      "policyUpdates": {
+        "title": "Breytingar á persónuverndarstefnu",
+        "description": "Við kunnum að uppfæra þessa stefnu af og til. Breytingar verða tilkynntar á þessari síðu.",
+        "items": {}
+      },
+      "contactInfo": {
+        "title": "Hafðu samband",
+        "description": "Hvernig á að hafa samband við okkur:",
+        "items": {
+          "companyName": "Gold Swan",
+          "registeredAddress": "Lögheimili fyrirtækisins verður birt eftir skráningu.",
+          "email": "goldswaniceland@gmail.com"
+        }
+      }
     }
   },
   "privacy": {
@@ -934,6 +1164,16 @@
         "title": "Vefþróunarþjónusta - Gold Swan",
         "description": "Byggðu nýstárlegar, notendavænar og sveigjanlegar vefsíður og vefforrit með Gold Swan. Við sérhæfum okkur í UI/UX hönnun, full-stack þróun, áfangasíðum, PWA og LLM samþættingum fyrir fyrirtæki af öllum stærðum.",
         "keywords": "vefþróun, UI/UX hönnun, áfangasíður, full-stack þróun, PWA, CRM sjálfvirknivæðing, sérsniðnar samþættingar, netverslun, vefforrit, vefsíðuhönnun"
+      },
+      "3DForgeStudio": {
+        "title": "3D Smíðja Studio - Gold Swan",
+        "description": "Lífgaðu hugmyndir þínar með hágæða 3D-hreyfigrafík, sjónrænum áhrifum og CGI. Við sérhæfum okkur í að búa til grípandi 3D-myndbönd, arkitektónískar sýndarmyndir og ljósmyndaraunhæfa grafík.",
+        "keywords": "3D hreyfigrafík, CGI, sjónræn áhrif, VFX, 3D-líkangerð, arkitektónískar sýndarmyndir, ljósmyndaraunhæf framsetning, 3D samsetning, stafrænar myndir, hreyfihönnun, séráhrif"
+      },
+      "castingAndProduction": {
+        "title": "Casting & Production - Gold Swan",
+        "description": "Lífgaðu vörumerkið þitt með faglegum fyrirsætum, leikara- og hæfileikavali, ljósmyndun og myndbandsframleiðslu. Við búum til áhrifaríkt sjónrænt efni fyrir auglýsingaherferðir, tískuiðnaðinn og viðskiptaþarfir.",
+        "keywords": "kast, fyrirsætaval, faglegar fyrirsætur, hæfileikaval, ljósmyndaframleiðsla, myndbandsframleiðsla, tískuljósmyndun, auglýsingainnihald, sjónrænn vörumerking"
       }
     },
     "privacy": {

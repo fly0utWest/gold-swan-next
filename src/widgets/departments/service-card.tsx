@@ -25,7 +25,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           <Icon size={64} color="var(--primary-500)" iconStyle="Bold" />
           <Heading
             as="h3"
-            className="text-3xl text-center font-bold lg:text-left"
+            className="text-lg xl:text-2xl 2xl:text-3xl text-center font-bold lg:text-left"
           >
             {title}
           </Heading>

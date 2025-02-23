@@ -86,7 +86,9 @@
       "reputationAndDataProtection": "Reputation and Data Protection",
       "analyticsAndStrategy": "Analytics and Strategy",
       "photoVideoShooting": "Photo and Video Shooting",
-      "webdev": "Website and Web Application Development"
+      "webdev": "Website and Web Application Development",
+      "castingAndProduction": "Casting & Production",
+      "3DForgeStudio": "3D Forge Studio"
     },
     "digitalMarketing": {
       "title": {
@@ -650,6 +652,152 @@
           }
         }
       }
+    },
+    "3DForgeStudio": {
+      "title": {
+        "full": "3D Forge Studio",
+        "firstString": "Captivating 3D Videos",
+        "secondString": "VFX and Visual Effects",
+        "thirdString": "CG and Visualization"
+      },
+      "description": "Our 3D Forge Studio specializes in creating high-quality 3D videos, visual effects, and architectural visualizations. We provide cutting-edge CGI solutions to help brands achieve immersive digital experiences.",
+      "motionCGI": {
+        "title": "3D Motion & CGI",
+        "features": {
+          "brandPerception": {
+            "title": "Enhancing Brand Perception",
+            "description": "Creating top-tier 3D videos and visual effects that elevate brand identity."
+          },
+          "architecturalVisualization": {
+            "title": "Architectural Visualizations",
+            "description": "Designing stunning exteriors, interiors, and urban projects."
+          }
+        }
+      },
+      "designPostProduction": {
+        "title": "3D Design & Post-Production",
+        "features": {
+          "photoRealisticCGI": {
+            "title": "Photorealistic CGI",
+            "description": "Producing commercial and advertising-grade computer graphics."
+          },
+          "sceneModeling": {
+            "title": "3D Modeling of Objects and Scenes",
+            "description": "Developing detailed 3D assets for various industries."
+          },
+          "photoRetouching": {
+            "title": "Photo Retouching & Color Correction",
+            "description": "Enhancing images and renders for a professional and polished look."
+          }
+        }
+      },
+      "fullCG": {
+        "title": "Full CG (Fully Computer-Generated Graphics)",
+        "features": {
+          "creativeFreedom": {
+            "title": "Unlimited Creative Freedom",
+            "description": "Creating completely CGI-based 3D videos without real footage."
+          },
+          "sceneAnimation": {
+            "title": "Concept Development, Scene Design, and Animation",
+            "description": "Designing immersive digital experiences through advanced CGI techniques."
+          },
+          "realisticRendering": {
+            "title": "Photorealistic Rendering and Lighting",
+            "description": "Bringing scenes to life with advanced rendering and lighting techniques."
+          }
+        }
+      },
+      "VFX": {
+        "title": "VFX (Visual Effects)",
+        "features": {
+          "liveActionIntegration": {
+            "title": "3D Compositing with Live-Action Footage",
+            "description": "Blending CGI seamlessly with real-world video."
+          },
+          "environmentReplacement": {
+            "title": "Object Tracking and Environment Replacement",
+            "description": "Replacing and modifying backgrounds for enhanced cinematic effects."
+          },
+          "particleSimulations": {
+            "title": "Smoke, Fire, Water, and Particle Simulations",
+            "description": "Creating dynamic visual effects for movies, ads, and gaming."
+          }
+        }
+      },
+      "3DPrototyping": {
+        "title": "3D Prototyping",
+        "features": {
+          "modelingFor3DPrinting": {
+            "title": "3D Printing Model Development",
+            "description": "Designing intricate models for printing and laser engraving."
+          },
+          "engravingServices": {
+            "title": "Engraving on Various Materials",
+            "description": "Creating detailed engravings on glass, metal, and other materials."
+          }
+        }
+      }
+    },
+    "castingAndProduction": {
+      "title": {
+        "full": "Casting & Production",
+        "firstString": "Top Models & Talent",
+        "secondString": "Casting & Selection",
+        "thirdString": "Photo & Video Production"
+      },
+      "description": "Visual presentation plays a key role in building a successful brand. Our Casting & Production department offers a full range of services for model selection and professional shoots for advertising campaigns, the fashion industry, and commercial projects.",
+      "castingAndModelSelection": {
+        "title": "Casting and Model Selection",
+        "features": {
+          "professionalModelSearch": {
+            "title": "Search and Casting of Professional Models",
+            "description": "Selecting male and female models for advertising campaigns, catalogs, fashion projects, and video productions."
+          },
+          "modelDatabase": {
+            "title": "Creating a Model Database",
+            "description": "Building a diverse model database for various commercial and advertising projects."
+          },
+          "actorSelection": {
+            "title": "Selection of Actors and Characters",
+            "description": "Finding and selecting actors and personalities for commercial videos and promotional content."
+          }
+        }
+      },
+      "photoVideoShoots": {
+        "title": "Organization of Photo and Video Shoots",
+        "features": {
+          "creativeConcept": {
+            "title": "Developing a Creative Script and Concept",
+            "description": "Creating unique visual concepts tailored to brand needs and advertising goals."
+          },
+          "studioAndLocationRental": {
+            "title": "Renting Professional Studios and Locations",
+            "description": "Providing access to high-end studios and outdoor locations for production."
+          },
+          "productionTeam": {
+            "title": "Working with Makeup Artists, Stylists, and Producers",
+            "description": "Collaborating with top professionals in the industry to ensure high-quality visual content."
+          }
+        }
+      },
+      "advertisingContent": {
+        "title": "Creating Advertising Content",
+        "features": {
+          "brandVisuals": {
+            "title": "Photos and Videos for Brands",
+            "description": "Producing high-quality content for jewelry brands, watches, clothing, and luxury products."
+          },
+          "adCampaigns": {
+            "title": "Creating Advertising Campaigns",
+            "description": "Developing campaigns for digital marketing, social media, and offline promotions."
+          },
+          "fullProductionCycle": {
+            "title": "Full Production Cycle",
+            "description": "Managing the entire production process, from concept development to final content delivery."
+          }
+        }
+      }
     }
   },
   "privacy": {
@@ -934,6 +1082,16 @@
         "title": "Web Development Services - Gold Swan",
         "description": "Build innovative, user-friendly, and scalable web applications with Gold Swan. We specialize in UI/UX design, full-stack development, landing pages, PWA, and LLM integrations for businesses of all sizes.",
         "keywords": "web development, UI/UX design, landing pages, full-stack development, PWA, CRM automation, custom integrations, e-commerce solutions, web applications, website design"
+      },
+      "3DForgeStudio": {
+        "title": "3D Forge Studio - Gold Swan",
+        "description": "Bring your ideas to life with high-quality 3D motion, visual effects, and CGI. We specialize in creating captivating 3D videos, architectural visualizations, and photorealistic graphics.",
+        "keywords": "3D animation, CGI, visual effects, VFX, 3D modeling, architectural visualization, photorealistic rendering, 3D compositing, digital graphics, motion design, special effects"
+      },
+      "castingAndProduction": {
+        "title": "Casting & Production - Gold Swan",
+        "description": "Bring your brand to life with professional models, casting, and high-quality photo and video production. We create stunning visual content for advertising campaigns, the fashion industry, and commercial projects.",
+        "keywords": "casting, model selection, professional models, talent recruitment, photo production, video production, fashion photography, commercial videography, advertising content, visual branding"
       }
     },
     "privacy": {
