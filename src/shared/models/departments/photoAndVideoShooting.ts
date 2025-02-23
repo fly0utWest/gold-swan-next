@@ -2,8 +2,6 @@ import { Camera } from "solar-icon-set";
 import {
   photographyServices,
   videoProductionServices,
-  designAndPrintingServices,
-  postProductionServices,
   graphicDesignServices,
   musicalAccompanimentServices,
 } from "./features/photoAndVideoShooting";
@@ -26,10 +24,6 @@ const photoAndVideoShooting = {
     videoProduction: {
       title: "videoProduction.title",
       features: videoProductionServices,
-    },
-    designAndPostProduction: {
-      title: "designAndPostProduction.title",
-      features: [...designAndPrintingServices, ...postProductionServices],
     },
     graphicDesign: {
       title: "graphicDesign.title",

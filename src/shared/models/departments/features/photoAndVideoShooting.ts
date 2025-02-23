@@ -57,37 +57,6 @@ export const designAndPrintingServices = [
   },
 ];
 
-export const postProductionServices = [
-  {
-    Icon: PenNewSquare,
-    title:
-      "designAndPostProduction.features.photoRetouching.title",
-    description:
-      "designAndPostProduction.features.photoRetouching.description",
-  },
-  {
-    Icon: Scale,
-    title:
-      "designAndPostProduction.features.advancedColorCorrection.title",
-    description:
-      "designAndPostProduction.features.advancedColorCorrection.description",
-  },
-  {
-    Icon: Crop,
-    title:
-      "designAndPostProduction.features.targetedEdits.title",
-    description:
-      "designAndPostProduction.features.targetedEdits.description",
-  },
-  {
-    Icon: Layers,
-    title:
-      "designAndPostProduction.features.expertTools.title",
-    description:
-      "designAndPostProduction.features.expertTools.description",
-  },
-];
-
 export const graphicDesignServices = [
   {
     Icon: Pen,

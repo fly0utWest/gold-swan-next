@@ -87,7 +87,7 @@
       "analyticsAndStrategy": "Analytics and Strategy",
       "photoVideoShooting": "Photo and Video Shooting",
       "webdev": "Website and Web Application Development",
-      "castingAndProduction": "Casting and Production",
+      "castingAndProduction": "Casting & Production",
       "3DForgeStudio": "3D Forge Studio"
     },
     "digitalMarketing": {
@@ -738,6 +738,66 @@
           }
         }
       }
+    },
+    "castingAndProduction": {
+      "title": {
+        "full": "Casting & Production",
+        "firstString": "Top Models & Talent",
+        "secondString": "Casting & Selection",
+        "thirdString": "Photo & Video Production"
+      },
+      "description": "Visual presentation plays a key role in building a successful brand. Our Casting & Production department offers a full range of services for model selection and professional shoots for advertising campaigns, the fashion industry, and commercial projects.",
+      "castingAndModelSelection": {
+        "title": "Casting and Model Selection",
+        "features": {
+          "professionalModelSearch": {
+            "title": "Search and Casting of Professional Models",
+            "description": "Selecting male and female models for advertising campaigns, catalogs, fashion projects, and video productions."
+          },
+          "modelDatabase": {
+            "title": "Creating a Model Database",
+            "description": "Building a diverse model database for various commercial and advertising projects."
+          },
+          "actorSelection": {
+            "title": "Selection of Actors and Characters",
+            "description": "Finding and selecting actors and personalities for commercial videos and promotional content."
+          }
+        }
+      },
+      "photoVideoShoots": {
+        "title": "Organization of Photo and Video Shoots",
+        "features": {
+          "creativeConcept": {
+            "title": "Developing a Creative Script and Concept",
+            "description": "Creating unique visual concepts tailored to brand needs and advertising goals."
+          },
+          "studioAndLocationRental": {
+            "title": "Renting Professional Studios and Locations",
+            "description": "Providing access to high-end studios and outdoor locations for production."
+          },
+          "productionTeam": {
+            "title": "Working with Makeup Artists, Stylists, and Producers",
+            "description": "Collaborating with top professionals in the industry to ensure high-quality visual content."
+          }
+        }
+      },
+      "advertisingContent": {
+        "title": "Creating Advertising Content",
+        "features": {
+          "brandVisuals": {
+            "title": "Photos and Videos for Brands",
+            "description": "Producing high-quality content for jewelry brands, watches, clothing, and luxury products."
+          },
+          "adCampaigns": {
+            "title": "Creating Advertising Campaigns",
+            "description": "Developing campaigns for digital marketing, social media, and offline promotions."
+          },
+          "fullProductionCycle": {
+            "title": "Full Production Cycle",
+            "description": "Managing the entire production process, from concept development to final content delivery."
+          }
+        }
+      }
     }
   },
   "privacy": {
@@ -1027,6 +1087,11 @@
         "title": "3D Forge Studio - Gold Swan",
         "description": "Bring your ideas to life with high-quality 3D motion, visual effects, and CGI. We specialize in creating captivating 3D videos, architectural visualizations, and photorealistic graphics.",
         "keywords": "3D animation, CGI, visual effects, VFX, 3D modeling, architectural visualization, photorealistic rendering, 3D compositing, digital graphics, motion design, special effects"
+      },
+      "castingAndProduction": {
+        "title": "Casting & Production - Gold Swan",
+        "description": "Bring your brand to life with professional models, casting, and high-quality photo and video production. We create stunning visual content for advertising campaigns, the fashion industry, and commercial projects.",
+        "keywords": "casting, model selection, professional models, talent recruitment, photo production, video production, fashion photography, commercial videography, advertising content, visual branding"
       }
     },
     "privacy": {

@@ -88,7 +88,7 @@
       "analyticsAndStrategy": "Greining og Stefnumótun",
       "photoVideoShooting": "Mynda- og Myndbandsupptökur",
       "webdev": "Vefsíðugerð og Vefumsóknarþróun",
-      "castingAndProduction": "Hlutverkaval og Framleiðsla",
+      "castingAndProduction": "Casting & Production",
       "3DForgeStudio": "3D Smíðja Studio"
     },
     "digitalMarketing": {
@@ -739,6 +739,66 @@
           }
         }
       }
+    },
+    "castingAndProduction": {
+      "title": {
+        "full": "Casting & Production",
+        "firstString": "Fyrirsætur og hæfileikar",
+        "secondString": "Kast & val",
+        "thirdString": "Ljósmyndun & myndbandsgerð"
+      },
+      "description": "Sjónræn framsetning skiptir sköpum í að byggja upp farsælt vörumerki. Deildin okkar, Casting & Production, býður upp á alhliða þjónustu við val á fyrirsætum og skipulag faglegra tökudaga fyrir auglýsingaherferðir, tískuiðnaðinn og viðskiptaverkefni.",
+      "castingAndModelSelection": {
+        "title": "Val og ráðning fyrirsæta",
+        "features": {
+          "professionalModelSearch": {
+            "title": "Leit og val á faglegum fyrirsætum",
+            "description": "Val á karlkyns og kvenkyns fyrirsætum fyrir auglýsingaherferðir, vörulista, tískuverkefni og myndbandsupptökur."
+          },
+          "modelDatabase": {
+            "title": "Uppbygging fyrirsætugagnagrunns",
+            "description": "Þróun og viðhald gagnagrunns yfir fyrirsætur fyrir ýmis auglýsinga- og viðskipta verkefni."
+          },
+          "actorSelection": {
+            "title": "Ráðning leikara og persóna",
+            "description": "Leit og ráðning leikara og hæfileikafólks fyrir auglýsingamyndbönd og kynningarefni."
+          }
+        }
+      },
+      "photoVideoShoots": {
+        "title": "Skipulag ljósmyndunar og myndbandsupptöku",
+        "features": {
+          "creativeConcept": {
+            "title": "Þróun skapandi handrits og hugmyndar",
+            "description": "Sköpun einstaka sjónrænna hugmynda fyrir vörumerki og auglýsingaherferðir."
+          },
+          "studioAndLocationRental": {
+            "title": "Leiga á faglegum myndverum og tökustöðum",
+            "description": "Aðgangur að hágæða stúdíóum og tökustöðum fyrir faglega framleiðslu."
+          },
+          "productionTeam": {
+            "title": "Samvinna við förðunarfræðinga, stílista og framleiðendur",
+            "description": "Samstarf við leiðandi sérfræðinga í greininni til að tryggja gæðaefni."
+          }
+        }
+      },
+      "advertisingContent": {
+        "title": "Sköpun auglýsingaefnis",
+        "features": {
+          "brandVisuals": {
+            "title": "Ljósmyndir og myndbönd fyrir vörumerki",
+            "description": "Gerð hágæða efnis fyrir skartgripamerki, úr, fatnað og lúxusmarkaðinn."
+          },
+          "adCampaigns": {
+            "title": "Sköpun auglýsingaherferða",
+            "description": "Þróun markaðsherferða fyrir stafrænan og hefðbundinn markað."
+          },
+          "fullProductionCycle": {
+            "title": "Heildarframleiðsluferli",
+            "description": "Skipulag og framkvæmd allrar framleiðslu, frá hugmynd til lokaafurðar."
+          }
+        }
+      }
     }
   },
   "privacy": {
@@ -1026,6 +1086,11 @@
         "title": "3D Smíðja Studio - Gold Swan",
         "description": "Lífgaðu hugmyndir þínar með hágæða 3D-hreyfigrafík, sjónrænum áhrifum og CGI. Við sérhæfum okkur í að búa til grípandi 3D-myndbönd, arkitektónískar sýndarmyndir og ljósmyndaraunhæfa grafík.",
         "keywords": "3D hreyfigrafík, CGI, sjónræn áhrif, VFX, 3D-líkangerð, arkitektónískar sýndarmyndir, ljósmyndaraunhæf framsetning, 3D samsetning, stafrænar myndir, hreyfihönnun, séráhrif"
+      },
+      "castingAndProduction": {
+        "title": "Casting & Production - Gold Swan",
+        "description": "Lífgaðu vörumerkið þitt með faglegum fyrirsætum, leikara- og hæfileikavali, ljósmyndun og myndbandsframleiðslu. Við búum til áhrifaríkt sjónrænt efni fyrir auglýsingaherferðir, tískuiðnaðinn og viðskiptaþarfir.",
+        "keywords": "kast, fyrirsætaval, faglegar fyrirsætur, hæfileikaval, ljósmyndaframleiðsla, myndbandsframleiðsla, tískuljósmyndun, auglýsingainnihald, sjónrænn vörumerking"
       }
     },
     "privacy": {
