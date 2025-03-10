@@ -37,7 +37,20 @@ export default async function RootLayout(
       className="scroll-smooth overscroll-none *:selection:bg-primary-500 *:selection:text-foreground"
       suppressHydrationWarning
     >
-      <head>
+      <body className={`${oswaldSans.className}`}>
+        <NextIntlClientProvider messages={messages}>
+          <div className="fixed z-[999] w-max h-max" id="portal-container">
+            <CookiesAgreement />
+          </div>
+          <Inchat />
+          <ClientObserver />
+          <ThemeProvider defaultTheme="dark" attribute="class">
+            <div className="absolute top-0" id="top"></div>
+            <Header />
+            <main className="py-24 min-h-[90dvh]">{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </NextIntlClientProvider>
         <Script src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js" />
 
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
@@ -71,21 +84,6 @@ export default async function RootLayout(
             />
           </>
         )}
-      </head>
-      <body className={`${oswaldSans.className}`}>
-        <NextIntlClientProvider messages={messages}>
-          <div className="fixed z-[999] w-max h-max" id="portal-container">
-            <CookiesAgreement />
-          </div>
-          <Inchat />
-          <ClientObserver />
-          <ThemeProvider defaultTheme="dark" attribute="class">
-            <div className="absolute top-0" id="top"></div>
-            <Header />
-            <main className="py-24 min-h-[90dvh]">{children}</main>
-            <Footer />
-          </ThemeProvider>
-        </NextIntlClientProvider>
       </body>
     </html>
   );
