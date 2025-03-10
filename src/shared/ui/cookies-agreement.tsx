@@ -1,37 +1,58 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "./button";
 import Link from "./link";
 import { useTranslations } from "next-intl";
+import Cookies from "js-cookie";
 
 const CookiesAgreement = () => {
-  const [portalElement, setPortalElement] = useState<null | HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [cookieState, setCookieState] = useState<
+    "accepted" | "rejected" | "not-answered"
+  >("not-answered");
 
   const t = useTranslations("misc");
 
   useEffect(() => {
-    setPortalElement(document.getElementById("portal-container"));
+    setIsMounted(true);
+    const state = Cookies.get("cookie-consent-state");
 
-    if (localStorage.getItem("isCookiesAllowed") !== "true") {
-      setIsVisible(true);
-      setTimeout(() => {
-        setIsMounted(true);
-      }, 10);
+    if (state === "accepted" || state === "rejected") {
+      setCookieState(state);
+      updateConsent(state);
     }
   }, []);
 
-  const handleAccept = () => {
-    setIsMounted(false);
-    setTimeout(() => {
-      localStorage.setItem("isCookiesAllowed", "true");
-      setIsVisible(false);
-    }, 300);
+  const updateConsent = (state: "accepted" | "rejected") => {
+    if (
+      typeof window !== "undefined" &&
+      typeof (window as any).gtag === "function"
+    ) {
+      (window as any).gtag("consent", "update", {
+        ad_storage: state === "accepted" ? "granted" : "denied",
+        analytics_storage: state === "accepted" ? "granted" : "denied",
+      });
+
+      if (state === "accepted") {
+        (window as any).gtag(
+          "config",
+          process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID,
+          {
+            anonymize_ip: true,
+          }
+        );
+      }
+    }
   };
 
-  if (!portalElement || !isVisible) {
+  const handleAccept = () => {
+    Cookies.set("cookie-consent-state", "accepted", { expires: 365 });
+    setCookieState("accepted");
+    updateConsent("accepted");
+  };
+
+  if (cookieState !== "not-answered") {
     return null;
   }
 

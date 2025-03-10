@@ -8,9 +8,9 @@ import ClientObserver from "@/shared/utils/client-observer";
 import Footer from "@/shared/ui/footer/footer";
 import Script from "next/script";
 import Inchat from "@/shared/ui/inchat";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { Metadata } from "next";
 import CookiesAgreement from "@/shared/ui/cookies-agreement";
+import { Metadata } from "next";
+import Cookies from "js-cookie";
 
 const oswaldSans = Oswald({
   variable: "--font-oswald-sans",
@@ -27,11 +27,8 @@ export default async function RootLayout(
     params: { locale: string };
   }>
 ) {
-
   const { locale } = await props.params;
-
   const { children } = props;
-
   const messages = await getMessages();
 
   return (
@@ -42,6 +39,38 @@ export default async function RootLayout(
     >
       <head>
         <Script src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js" />
+
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+          <>
+            <Script
+              strategy="beforeInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+            />
+            <Script
+              id="ga-consent"
+              strategy="beforeInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){window.dataLayer.push(arguments);}
+                  
+                  gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied'
+                  });
+
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
+                    anonymize_ip: true,
+                    send_page_view: false
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className={`${oswaldSans.className}`}>
         <NextIntlClientProvider messages={messages}>
@@ -58,12 +87,6 @@ export default async function RootLayout(
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
-      {process.env.GOOGLE_ANALYTICS_ID && (
-        <GoogleAnalytics
-          gaId={process.env.GOOGLE_ANALYTICS_ID}
-          debugMode={process.env.NODE_ENV === "development"}
-        />
-      )}
     </html>
   );
 }
