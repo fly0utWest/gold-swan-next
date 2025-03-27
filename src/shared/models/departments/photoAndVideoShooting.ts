@@ -1,4 +1,4 @@
-import { Camera } from "solar-icon-set";
+import { Camera } from "lucide-react";
 import {
   photographyServices,
   videoProductionServices,

@@ -1,16 +1,16 @@
 import {
-  TrashBin2,
+  Trash,
   CheckCircle,
-  Globus,
+  Globe,
   Shield,
   Import,
   ArrowUp,
   UserCheck,
-} from "solar-icon-set";
+} from "lucide-react";
 
 export const reputationLifecycle = [
   {
-    Icon: TrashBin2,
+    Icon: Trash,
     title:
       "reputationLifecycle.features.undesirableInformation.features.negativeContentRemoval.title",
     description:
@@ -24,7 +24,7 @@ export const reputationLifecycle = [
       "reputationLifecycle.features.reputationImageCreation.features.careerGoals.description",
   },
   {
-    Icon: Globus,
+    Icon: Globe,
     title:
       "reputationLifecycle.features.businessExpansion.features.positiveInformationCreation.title",
     description:

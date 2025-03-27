@@ -1,20 +1,20 @@
 import {
-  Magnifer,
-  Graph,
+  SearchCheck,
+  ChartBarBig,
   Link,
   User,
   Target,
   Volume,
-  Global,
-  Cursor,
+  Globe,
+  MousePointer,
   Mailbox,
-  LinkRoundAngle,
-  Chart,
-} from "solar-icon-set";
+  Link2,
+  ChartBar,
+} from "lucide-react";
 
 export const smmServices = [
   {
-    Icon: Global,
+    Icon: Globe,
     title: "smm.features.profileManagement.title",
     description: "smm.features.profileManagement.description",
   },
@@ -24,7 +24,7 @@ export const smmServices = [
     description: "smm.features.contentPlanning.description",
   },
   {
-    Icon: Chart,
+    Icon: ChartBar,
     title: "smm.features.engagementAnalysis.title",
     description: "smm.features.engagementAnalysis.description",
   },
@@ -32,17 +32,17 @@ export const smmServices = [
 
 export const seoServices = [
   {
-    Icon: Magnifer,
+    Icon: SearchCheck,
     title: "seo.features.visibility.title",
     description: "seo.features.visibility.description",
   },
   {
-    Icon: Graph,
+    Icon: ChartBarBig,
     title: "seo.features.keywordOptimization.title",
     description: "seo.features.keywordOptimization.description",
   },
   {
-    Icon: Link,
+    Icon: Link2,
     title: "seo.features.backlinks.title",
     description: "seo.features.backlinks.description",
   },
@@ -55,7 +55,7 @@ export const contentMarketingServices = [
     description: "contentMarketing.features.valuableContent.description",
   },
   {
-    Icon: LinkRoundAngle,
+    Icon: Link2,
     title: "contentMarketing.features.distribution.title",
     description: "contentMarketing.features.distribution.description",
   },
@@ -81,7 +81,7 @@ export const targetedAdvertisingServices = [
     description: "targetedAdvertising.features.campaignSetup.description",
   },
   {
-    Icon: Global,
+    Icon: Globe,
     title: "targetedAdvertising.features.adOptimization.title",
     description: "targetedAdvertising.features.adOptimization.description",
   },
@@ -89,12 +89,12 @@ export const targetedAdvertisingServices = [
 
 export const ppcServices = [
   {
-    Icon: Cursor,
+    Icon: MousePointer,
     title: "ppc.features.payPerClick.title",
     description: "ppc.features.payPerClick.description",
   },
   {
-    Icon: Graph,
+    Icon: ChartBarBig,
     title: "ppc.features.campaignMonitoring.title",
     description: "ppc.features.campaignMonitoring.description",
   },
@@ -107,7 +107,7 @@ export const emailMarketingServices = [
     description: "emailMarketing.features.audienceEngagement.description",
   },
   {
-    Icon: Chart,
+    Icon: ChartBar,
     title: "emailMarketing.features.automation.title",
     description: "emailMarketing.features.automation.description",
   },
@@ -115,13 +115,13 @@ export const emailMarketingServices = [
 
 export const analyticsAndAuditsServices = [
   {
-    Icon: Chart,
+    Icon: ChartBar,
     title: "analyticsAndAudits.features.performanceEvaluation.title",
     description:
       "analyticsAndAudits.features.performanceEvaluation.description",
   },
   {
-    Icon: Global,
+    Icon: Globe,
     title: "analyticsAndAudits.features.competitiveBenchmarking.title",
     description:
       "analyticsAndAudits.features.competitiveBenchmarking.description",

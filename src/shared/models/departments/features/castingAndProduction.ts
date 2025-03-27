@@ -1,14 +1,13 @@
 import {
-  UsersGroupTwoRounded,
+  Group,
   UserCheck,
   Camera,
-  VideoFrame2,
-  Pen2,
-  MapArrowDown,
+  Video,
   Pen,
-  CameraAdd,
-  Gallery,
-} from "solar-icon-set";
+  MapPin,
+  Images,
+  Speech,
+} from "lucide-react";
 
 export const castingAndModelSelectionServices = [
   {
@@ -18,12 +17,12 @@ export const castingAndModelSelectionServices = [
       "castingAndModelSelection.features.professionalModelSearch.description",
   },
   {
-    Icon: UsersGroupTwoRounded,
+    Icon: Group,
     title: "castingAndModelSelection.features.modelDatabase.title",
     description: "castingAndModelSelection.features.modelDatabase.description",
   },
   {
-    Icon: CameraAdd,
+    Icon: Speech,
     title: "castingAndModelSelection.features.actorSelection.title",
     description: "castingAndModelSelection.features.actorSelection.description",
   },
@@ -31,12 +30,12 @@ export const castingAndModelSelectionServices = [
 
 export const photoVideoShootsServices = [
   {
-    Icon: Pen2,
+    Icon: Pen,
     title: "photoVideoShoots.features.creativeConcept.title",
     description: "photoVideoShoots.features.creativeConcept.description",
   },
   {
-    Icon: MapArrowDown,
+    Icon: MapPin,
     title: "photoVideoShoots.features.studioAndLocationRental.title",
     description:
       "photoVideoShoots.features.studioAndLocationRental.description",
@@ -55,12 +54,12 @@ export const advertisingContentServices = [
     description: "advertisingContent.features.brandVisuals.description",
   },
   {
-    Icon: VideoFrame2,
+    Icon: Video,
     title: "advertisingContent.features.adCampaigns.title",
     description: "advertisingContent.features.adCampaigns.description",
   },
   {
-    Icon: Gallery,
+    Icon: Images,
     title: "advertisingContent.features.fullProductionCycle.title",
     description: "advertisingContent.features.fullProductionCycle.description",
   },

@@ -3,7 +3,7 @@ import Heading from "@/shared/ui/heading";
 import DepartmentInnerCard, {
   DepartmentInnerCardProps,
 } from "./department-inner-card";
-import { Key } from "solar-icon-set";
+import { Key } from "lucide-react";
 
 interface DepartmentToolsProps {
   heading: string;

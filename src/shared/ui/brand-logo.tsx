@@ -12,6 +12,7 @@ const BrandLogo: React.FC<BrandLogoProps> = ({ className, size = 150 }) => {
     <Image
       width={size}
       height={size}
+      priority={true}
       className={className}
       src={Logo}
       alt="Gold Swan Agency"

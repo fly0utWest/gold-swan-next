@@ -1,7 +1,8 @@
+import { LucideIcon } from "lucide-react";
 import Link from "./link";
 
 type InfoItemProps = {
-  Icon: (_: any) => JSX.Element;
+  Icon: LucideIcon;
   title: string;
   content: string;
   link?: string;

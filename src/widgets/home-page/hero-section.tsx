@@ -4,7 +4,7 @@ import Button from "@/shared/ui/button";
 import Link from "@/shared/ui/link";
 import Marquee from "@/shared/ui/marquee";
 import { useTranslations } from "next-intl";
-import { ArrowDown } from "solar-icon-set";
+import { ArrowDown } from "lucide-react";
 import Heading from "@/shared/ui/heading";
 
 const HeroSection = () => {

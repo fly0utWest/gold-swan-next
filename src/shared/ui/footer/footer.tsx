@@ -1,5 +1,5 @@
 import Link from "../link";
-import { SquareArrowUp } from "solar-icon-set";
+import { SquareArrowUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import BrandLogo from "../brand-logo";
 import FooterLink from "./footer-link";
@@ -42,7 +42,7 @@ export default function Footer() {
             up
           </div>
           <div className="translate-y-32 group-hover:-translate-y-5 transition-transform h-0 duration-300 ease-in-out flex items-center">
-            <SquareArrowUp size={60} iconStyle="Bold" />
+            <SquareArrowUp size={60} />
           </div>
         </Link>
       </div>
@@ -75,7 +75,9 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <p className="text-border text-lg font-light w-full text-center lg:text-left">&copy; Gold Swan Agency, 2025</p>
+      <p className="text-border text-lg font-light w-full text-center lg:text-left">
+        &copy; Gold Swan Agency, 2025
+      </p>
     </footer>
   );
 }

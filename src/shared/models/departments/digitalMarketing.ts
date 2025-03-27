@@ -1,4 +1,4 @@
-import { MoneyBag } from "solar-icon-set";
+import { CircleDollarSign } from "lucide-react";
 import {
   seoServices,
   contentMarketingServices,
@@ -12,7 +12,7 @@ import {
 
 const digitalMarketing = {  
   slug: "digitalMarketing",
-  icon: MoneyBag,
+  icon: CircleDollarSign,
   title: {
     full: "title.full",
     firstString: "title.firstString",

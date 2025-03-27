@@ -3,8 +3,8 @@ import {
   Scale,
   ShieldCheck,
   Wallet,
-  ClockCircle,
-} from "solar-icon-set";
+  Clock,
+} from "lucide-react";
 
 export const aboutCards = [
   {
@@ -15,7 +15,7 @@ export const aboutCards = [
   {
     title: "speed.translated",
     content: "speed.explained",
-    icon: ClockCircle,
+    icon: Clock,
   },
   {
     title: "confidentiality.translated",

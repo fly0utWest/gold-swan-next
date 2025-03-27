@@ -1,9 +1,10 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
 import Link from "@/shared/ui/link";
+import { LucideIcon } from "lucide-react";
 
 interface ServiceCardProps {
-  Icon: (allProps: any) => JSX.Element;
+  Icon: LucideIcon;
   title: string;
   description: string;
 }
@@ -22,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div>
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <span className="w-5 lg:w-full border-2 border-primary-200"></span>
-          <Icon size={64} color="var(--primary-500)" iconStyle="Bold" />
+          <Icon size={64} color="var(--primary-500)" />
           <Heading
             as="h3"
             className="text-lg xl:text-2xl 2xl:text-3xl text-center font-bold lg:text-left"

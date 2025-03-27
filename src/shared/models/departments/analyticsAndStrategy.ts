@@ -1,4 +1,4 @@
-import { Chart, PieChart2 } from "solar-icon-set";
+import { PieChart } from "lucide-react";
 import {
   businessAnalyticsServices,
   marketResearchServices,
@@ -11,7 +11,7 @@ import {
 
 const analyticsAndStrategy = {
   slug: "analyticsAndStrategy",
-  icon: PieChart2,
+  icon: PieChart,
   title: {
     full: "title.full",
     firstString: "title.firstString",

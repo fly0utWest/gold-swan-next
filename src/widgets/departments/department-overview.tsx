@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
-import { QuestionCircle } from "solar-icon-set";
+import { FileQuestion } from "lucide-react";
 
 interface DepartmentOverviewProps {
   heading: string;
@@ -17,7 +17,7 @@ const DepartmentOverview: React.FC<DepartmentOverviewProps> = ({
     <div className="max-w-screen-2xl p-6 md:mx-auto w-full space-y-6">
       <div className="flex flex-col gap-4 text-xl">
         <div className="flex items-center gap-2">
-          <QuestionCircle size={32} color="var(--primary-500)" />
+          <FileQuestion size={32} color="var(--primary-500)" />
           <Heading as="h2" className="text-2xl text-primary-400 font-semibold">
             {heading}
           </Heading>

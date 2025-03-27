@@ -28,7 +28,7 @@ const AwardsSetion = () => {
               {awardChevrons.map((image, index) => (
                 <Image
                   key={index}
-                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  className="object-contain h-auto filter grayscale hover:grayscale-0 transition-all duration-300"
                   src={image}
                   alt="Partner logo"
                   width={200}

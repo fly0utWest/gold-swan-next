@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
 import { useTranslations } from "next-intl";
-import { DangerCircle } from "solar-icon-set";
+import { CircleAlert, LucideIcon } from "lucide-react";
 
 interface ProjectCardProps {
-  Icon: (allProps: any) => JSX.Element;
+  Icon: LucideIcon;
   title: string;
   description: string;
   features: string[];
@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="lg:w-1/2">
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <span className="w-[20px] lg:w-full border-2 border-primary-200"></span>
-          <Icon size={64} color="var(--primary-500)" iconStyle="Bold" />
+          <Icon size={64} color="var(--primary-500)" />
           <Heading
             as="h3"
             className="text-3xl text-center font-bold lg:text-left"
@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <p>{description}</p>
           {attention && (
             <div className="text-primary-500 mt-8 bg-card flex flex-col lg:flex-row gap-4 p-6 rounded-3xl items-center justify-center border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
-              <DangerCircle className="animate-pulse" size={32} iconStyle="Bold" />
+              <CircleAlert className="animate-pulse" size={60} />
               <span>{attention}</span>
             </div>
           )}

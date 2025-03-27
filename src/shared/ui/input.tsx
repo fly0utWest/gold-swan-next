@@ -1,8 +1,9 @@
+import { LucideIcon } from "lucide-react";
 import React, { forwardRef } from "react";
 import { FieldError } from "react-hook-form";
 
 type InputProps = {
-  Icon?: (allProps: any) => JSX.Element;
+  Icon?: LucideIcon;
   error?: FieldError;
 } & React.ComponentPropsWithoutRef<"input">;
 
@@ -23,7 +24,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               : "hover:cursor-text border-border bg-input"
           }`}
         >
-          {Icon ? <Icon size={32} color={error ? "var(--error)" : ""} /> : null}
+          {Icon ? <Icon size={32} color={error ? "var(--error)" : "var(--primary-500)"} /> : null}
           <input
             ref={ref}
             className={`w-full bg-transparent outline-none disabled:cursor-not-allowed ${

@@ -1,4 +1,4 @@
-import { SmartSpeaker2 } from "solar-icon-set";
+import { Box } from "lucide-react";
 import {
   motionCGIServices,
   designPostProductionServices,
@@ -9,7 +9,7 @@ import {
 
 const threeDForgeStudio = {
   slug: "3dForgeStudio",
-  icon: SmartSpeaker2,
+  icon: Box,
   title: {
     full: "title.full",
     firstString: "title.firstString",

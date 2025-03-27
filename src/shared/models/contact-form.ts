@@ -1,4 +1,4 @@
-import { User, Mailbox, Phone } from "solar-icon-set";;
+import { User, Mailbox, Phone } from "lucide-react";
 
 export const mainInputs = [
   { icon: User, placeholderKey: "name", name: "name" },

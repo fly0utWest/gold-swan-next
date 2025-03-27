@@ -1,18 +1,17 @@
 import {
-  SmartSpeaker,
-  VideoFrame2,
-  Camera,
-  Pen2,
-  Layers,
-  Fire,
-  Dropper,
   Box,
-  Global,
-} from "solar-icon-set";
+  Video,
+  Camera,
+  Pen,
+  Layers,
+  Sparkle,
+  Pipette,
+  Globe,
+} from "lucide-react";
 
 export const motionCGIServices = [
   {
-    Icon: VideoFrame2,
+    Icon: Video,
     title: "motionCGI.features.brandPerception.title",
     description: "motionCGI.features.brandPerception.description",
   },
@@ -30,12 +29,12 @@ export const designPostProductionServices = [
     description: "designPostProduction.features.photoRealisticCGI.description",
   },
   {
-    Icon: VideoFrame2,
+    Icon: Video,
     title: "designPostProduction.features.sceneModeling.title",
     description: "designPostProduction.features.sceneModeling.description",
   },
   {
-    Icon: Pen2,
+    Icon: Pen,
     title: "designPostProduction.features.photoRetouching.title",
     description: "designPostProduction.features.photoRetouching.description",
   },
@@ -43,7 +42,7 @@ export const designPostProductionServices = [
 
 export const fullCGServices = [
   {
-    Icon: SmartSpeaker,
+    Icon: Box,
     title: "fullCG.features.creativeFreedom.title",
     description: "fullCG.features.creativeFreedom.description",
   },
@@ -53,7 +52,7 @@ export const fullCGServices = [
     description: "fullCG.features.sceneAnimation.description",
   },
   {
-    Icon: VideoFrame2,
+    Icon: Video,
     title: "fullCG.features.realisticRendering.title",
     description: "fullCG.features.realisticRendering.description",
   },
@@ -61,12 +60,12 @@ export const fullCGServices = [
 
 export const vfxServices = [
   {
-    Icon: Fire,
+    Icon: Sparkle,
     title: "VFX.features.liveActionIntegration.title",
     description: "VFX.features.liveActionIntegration.description",
   },
   {
-    Icon: Dropper,
+    Icon: Pipette,
     title: "VFX.features.environmentReplacement.title",
     description: "VFX.features.environmentReplacement.description",
   },
@@ -84,7 +83,7 @@ export const prototypingServices = [
     description: "3DPrototyping.features.modelingFor3DPrinting.description",
   },
   {
-    Icon: Global,
+    Icon: Globe,
     title: "3DPrototyping.features.engravingServices.title",
     description: "3DPrototyping.features.engravingServices.description",
   },

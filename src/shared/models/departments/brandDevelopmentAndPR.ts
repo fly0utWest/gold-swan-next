@@ -1,4 +1,4 @@
-import { Star2 } from "solar-icon-set";
+import { Star } from "lucide-react";
 import {
   brandBookServices,
   brandPositioningServices,
@@ -12,7 +12,7 @@ import {
 
 const brandDevelopmentAndPR = {
   slug: "brandDevelopmentAndPR",
-  icon: Star2,
+  icon: Star,
   title: {
     full: "title.full",
     firstString: "title.firstString",

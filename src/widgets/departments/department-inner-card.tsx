@@ -1,8 +1,9 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
+import { LucideIcon } from "lucide-react";
 
 export interface DepartmentInnerCardProps {
-  Icon?: (allProps: any) => JSX.Element;
+  Icon?: LucideIcon;
   heading: {
     headingLevel: keyof JSX.IntrinsicElements;
     headingText: string;

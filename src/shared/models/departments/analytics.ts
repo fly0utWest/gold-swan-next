@@ -1,15 +1,15 @@
-import {Chart, Chart2, Shield, CardSearch, Bolt, PinList, Target, Flag, Graph, Satellite, Map, PieChart, PieChart2, Cup} from "solar-icon-set"
+import {ChartBar, ChartArea, Shield, Bolt, ChartNoAxesCombined, Target, Flag, Satellite, Map, PieChart, ChartBarBig, ChevronUp, CandlestickChart, SearchCheck} from "lucide-react"
 
 export const businessAnalyticsServices = [
   {
-    Icon: Chart,
+    Icon: ChartBar,
     title:
       "businessAnalytics.features.dataExploration.title",
     description:
       "businessAnalytics.features.dataExploration.description",
   },
   {
-    Icon: Chart2,
+    Icon: ChartArea,
     title:
       "businessAnalytics.features.trendIdentification.title",
     description:
@@ -19,7 +19,7 @@ export const businessAnalyticsServices = [
 
 export const marketResearchServices = [
   {
-    Icon: CardSearch,
+    Icon: SearchCheck,
     title:
       "marketResearch.features.customerAnalysis.title",
     description:
@@ -70,7 +70,7 @@ export const predictiveAnalyticsServices = [
 
 export const competitiveAnalysisServices = [
   {
-    Icon: Cup,
+    Icon: CandlestickChart,
     title:
       "competitiveAnalysis.features.competitorEvaluation.title",
     description:
@@ -87,14 +87,14 @@ export const competitiveAnalysisServices = [
 
 export const kpiMonitoringServices = [
   {
-    Icon: Graph,
+    Icon: ChevronUp,
     title:
       "kpiMonitoring.features.performanceIndicators.title",
     description:
       "kpiMonitoring.features.performanceIndicators.description",
   },
   {
-    Icon: PinList,
+    Icon: ChartNoAxesCombined,
     title: "kpiMonitoring.features.progressTracking.title",
     description:
       "kpiMonitoring.features.progressTracking.description",
@@ -103,7 +103,7 @@ export const kpiMonitoringServices = [
 
 export const dataVisualizationServices = [
   {
-    Icon: PieChart2,
+    Icon: ChartBarBig,
     title:
       "dataVisualization.features.dashboardCreation.title",
     description:

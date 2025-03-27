@@ -1,24 +1,24 @@
 import {
-  StarRainbow,
-  Cart3,
-  MagicStick3,
+  Star,
+  ShoppingCart,
+  Wand,
   Database,
   Crown,
-} from "solar-icon-set";
+} from "lucide-react";
 
 export const fullStackServices = [
   {
-    Icon: StarRainbow,
+    Icon: Star,
     title: "fullStackDev.features.landing.title",
     description: "fullStackDev.features.landing.description",
   },
   {
-    Icon: Cart3,
+    Icon: ShoppingCart,
     title: "fullStackDev.features.contentDrivenSite.title",
     description: "fullStackDev.features.contentDrivenSite.description",
   },
   {
-    Icon: MagicStick3,
+    Icon: Wand,
     title: "fullStackDev.features.PWA.title",
     description: "fullStackDev.features.PWA.description",
   },

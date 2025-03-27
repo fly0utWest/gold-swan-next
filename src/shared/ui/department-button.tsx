@@ -1,10 +1,11 @@
+import { LucideIcon } from "lucide-react";
 import Link from "./link";
 
 export type DepartmentButtonProps = {
   disabled?: boolean;
   href?: string;
   name: string;
-  Icon: (allProps: any) => JSX.Element;
+  Icon: LucideIcon;
 } & ({ disabled?: true } | { disabled?: false | undefined; href: string });
 
 export function DepartmentButton({

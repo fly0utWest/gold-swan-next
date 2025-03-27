@@ -1,9 +1,9 @@
-import { Programming } from "solar-icon-set";
+import { Terminal } from "lucide-react";
 import { fullStackServices, llmServices } from "./features/webdev";
 
 const webdev = {
   slug: "webdev",
-  icon: Programming,
+  icon: Terminal,
   title: {
     full: "title.full",
     firstString: "title.firstString",

@@ -1,8 +1,9 @@
 import Heading from "@/shared/ui/heading";
+import { LucideIcon } from "lucide-react";
 import React from "react";
 
 interface FeatureCardProps {
-  Icon: (allProps: any) => JSX.Element;
+  Icon: LucideIcon;
   title: string;
   content: string;
 }

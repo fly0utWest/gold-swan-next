@@ -5,13 +5,12 @@ import { useTranslations } from "next-intl";
 import Input from "./input";
 import React from "react";
 import {
-  Plain,
-  CheckSquare,
-  CloseSquare,
-  Traffic,
-  TrafficEconomy,
+  SendHorizonal,
+  Send,
+  Badge,
+  BadgeCheck,
   CheckCircle,
-} from "solar-icon-set";
+} from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -115,8 +114,8 @@ const ContactForm = () => {
         {services.map((service) => (
           <Checkbox
             type="checkbox"
-            Icon={CloseSquare}
-            CheckedIcon={CheckSquare}
+            Icon={Badge}
+            CheckedIcon={BadgeCheck}
             key={service.label}
             label={t(`services.${service.label}`)}
             {...register("services")}
@@ -136,8 +135,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="checkbox"
-          Icon={CloseSquare}
-          CheckedIcon={CheckSquare}
+          Icon={Badge}
+          CheckedIcon={BadgeCheck}
           label={t(`services.custom`)}
           onChange={(e) => {
             const isChecked = e.target.checked;
@@ -170,8 +169,8 @@ const ContactForm = () => {
           <Checkbox
             key={industry.label}
             type="radio"
-            Icon={Traffic}
-            CheckedIcon={TrafficEconomy}
+            Icon={Badge}
+            CheckedIcon={BadgeCheck}
             label={t(`industries.${industry.label}`)}
             value={industry.value}
             {...register("industry")}
@@ -185,8 +184,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          Icon={Traffic}
-          CheckedIcon={TrafficEconomy}
+          Icon={Badge}
+          CheckedIcon={BadgeCheck}
           label={t("industries.custom")}
           checked={!industries.some((ind) => ind.value === selectedIndustry)}
           onClick={() => {
@@ -221,8 +220,8 @@ const ContactForm = () => {
           <Checkbox
             key={experience.label}
             type="radio"
-            Icon={Traffic}
-            CheckedIcon={TrafficEconomy}
+            Icon={Badge}
+            CheckedIcon={BadgeCheck}
             label={t(`previousExperience.${experience.label}`)}
             value={experience.value}
             {...register("industry")}
@@ -236,8 +235,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          Icon={Traffic}
-          CheckedIcon={TrafficEconomy}
+          Icon={Badge}
+          CheckedIcon={BadgeCheck}
           label={t("previousExperience.custom")}
           checked={
             !previousExperience.some((exp) => exp.value === selectedExperience)
@@ -277,8 +276,8 @@ const ContactForm = () => {
           <Checkbox
             key={option.label}
             type="radio"
-            Icon={Traffic}
-            CheckedIcon={TrafficEconomy}
+            Icon={Badge}
+            CheckedIcon={BadgeCheck}
             label={t(`howDidYouHear.${option.label}`)}
             value={option.value}
             {...register("howDidYouHear")}
@@ -292,8 +291,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          Icon={Traffic}
-          CheckedIcon={TrafficEconomy}
+          Icon={Badge}
+          CheckedIcon={BadgeCheck}
           label={t("howDidYouHear.custom")}
           checked={
             !howDidYouHearOptions.some(
@@ -333,8 +332,8 @@ const ContactForm = () => {
           <Checkbox
             key={option.label}
             type="radio"
-            Icon={Traffic}
-            CheckedIcon={TrafficEconomy}
+            Icon={Badge}
+            CheckedIcon={BadgeCheck}
             label={t(`businessOperationDuration.${option.label}`)}
             value={option.value}
             {...register("businessOperationDuration")}
@@ -348,8 +347,8 @@ const ContactForm = () => {
 
         <Checkbox
           type="radio"
-          Icon={Traffic}
-          CheckedIcon={TrafficEconomy}
+          Icon={Badge}
+          CheckedIcon={BadgeCheck}
           label={t("businessOperationDuration.custom")}
           checked={
             !businessOperationDurationOptions.some(
@@ -401,12 +400,12 @@ const ContactForm = () => {
         }`}
       >
         {isSubmitting ? (
-          <Plain size={24} className="animate-spin" />
+          <Send size={24} className="animate-spin" />
         ) : isSubmitSuccessful ? (
           <CheckCircle size={24} />
         ) : (
           <>
-            <Plain size={24} />
+            <Send size={24} />
             {t("submit")}
           </>
         )}

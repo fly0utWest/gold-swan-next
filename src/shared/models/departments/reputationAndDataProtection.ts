@@ -1,9 +1,9 @@
-import { Safe2 } from "solar-icon-set";
+import { Lock } from "lucide-react";
 import { reputationLifecycle } from "./features/reputationAndDataProtection";
 
 const reputationAndDataProtection = {
   slug: "reputationAndDataProtection",
-  icon: Safe2,
+  icon: Lock,
   title: {
     full: "title.full",
     firstString: "title.firstString",

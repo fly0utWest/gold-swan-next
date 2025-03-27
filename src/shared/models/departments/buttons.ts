@@ -1,30 +1,40 @@
-import { Camera, SmartSpeaker2, MoneyBag, Programming, Safe2, Star2, Stars, PieChart2 } from "solar-icon-set";
+import {
+  Camera,
+  Box,
+  CircleDollarSign,
+  Terminal,
+  LockIcon,
+  Star,
+  Stars,
+  LucideIcon,
+  PieChart,
+} from "lucide-react";
 
 interface DepartmentButton {
   title: string;
-  icon: (allProps: any) => JSX.Element;
+  icon: LucideIcon;
   href: string;
 }
 
 const departmentButtons: DepartmentButton[] = [
   {
     title: "marketing",
-    icon: MoneyBag,
+    icon: CircleDollarSign,
     href: "/departments/digitalMarketing",
   },
   {
     title: "brandDevelopment",
-    icon: Star2,
+    icon: Star,
     href: "/departments/brandDevelopmentAndPR",
   },
   {
     title: "reputationAndDataProtection",
-    icon: Safe2,
+    icon: LockIcon,
     href: "/departments/reputationAndDataProtection",
   },
   {
     title: "analyticsAndStrategy",
-    icon: PieChart2,
+    icon: PieChart,
     href: "/departments/analyticsAndStrategy",
   },
   {
@@ -34,17 +44,17 @@ const departmentButtons: DepartmentButton[] = [
   },
   {
     title: "webdev",
-    icon: Programming,
+    icon: Terminal,
     href: "/departments/webdev",
   },
   {
     title: "3DForgeStudio",
-    icon: SmartSpeaker2,
+    icon: Box,
     href: "/departments/3DForgeStudio",
   },
   {
     title: "castingAndProduction",
-    icon: Stars, 
+    icon: Stars,
     href: "/departments/castingAndProduction",
   },
 ];

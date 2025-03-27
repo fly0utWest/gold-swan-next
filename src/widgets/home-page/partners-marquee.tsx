@@ -19,6 +19,7 @@ const PartnersMarquee: React.FC = () => {
               alt="Partner logo"
               width={150}
               height={150}
+              className="h-auto"
             />
           </div>
         ))}

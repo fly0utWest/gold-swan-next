@@ -1,10 +1,11 @@
 import React from "react";
 import {
-  PhoneCallingRounded,
-  CallMedicine,
-  LetterOpened,
-  Plain,
-} from "solar-icon-set";
+  PhoneCall,
+  Mail,
+  Plane,
+  PhoneOutgoing,
+  SendHorizonal
+} from "lucide-react";
 import ContactItem from "./contact-item";
 import Heading from "./heading";
 import { useTranslations } from "next-intl";
@@ -22,13 +23,13 @@ const StaticContacts = () => {
       </Heading>
       <div>
         <ContactItem
-          Icon={PhoneCallingRounded}
+          Icon={PhoneCall}
           title={t("phone")}
           link="tel:+354 788 8066"
           content="+354 788 8066"
         />
         <ContactItem
-          Icon={CallMedicine}
+          Icon={PhoneOutgoing}
           title="Whatsapp"
           link="https://wa.me/3547888066"
           content="+354 788 8066"
@@ -40,13 +41,13 @@ const StaticContacts = () => {
       </Heading>
       <div>
         <ContactItem
-          Icon={Plain}
+          Icon={SendHorizonal}
           title={t("people.devLead")}
           link="https://t.me/dark_aura"
           content="@dark_aura"
         />
         <ContactItem
-          Icon={Plain}
+          Icon={SendHorizonal}
           title={t("people.clientRelations")}
           link="https://t.me/gold_swanis"
           content="@gold_swanis"
@@ -55,7 +56,7 @@ const StaticContacts = () => {
       <hr className="w-full border-t border-foreground my-2" />
       <ContactItem
         title="Email"
-        Icon={LetterOpened}
+        Icon={Mail}
         link="mailto:goldswaniceland@gmail.com"
         content="goldswaniceland@gmail.com"
       />

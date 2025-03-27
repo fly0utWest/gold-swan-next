@@ -1,4 +1,4 @@
-import { Stars } from "solar-icon-set";
+import { Stars } from "lucide-react";
 import {
   castingAndModelSelectionServices,
   photoVideoShootsServices,

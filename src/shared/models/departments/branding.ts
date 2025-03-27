@@ -1,21 +1,20 @@
 import {
-  StarRainbow,
+  Star,
   ShieldCheck,
   Target,
-  StarFall2,
   User,
-  Star,
   Volume,
   UserPlus,
   Calendar,
-  DangerTriangle,
-  Global,
-  Star2,
-} from "solar-icon-set";
+  Globe,
+  Diff,
+  CirclePercent,
+  ShieldAlert,
+} from "lucide-react";
 
 export const brandBookServices = [
   {
-    Icon: StarRainbow,
+    Icon: Star,
     title:
       "brandBookCreation.features.identityGuide.title",
     description:
@@ -38,7 +37,7 @@ export const brandPositioningServices = [
       "brandPositioning.features.uvpHighlight.description",
   },
   {
-    Icon: StarFall2,
+    Icon: Diff,
     title:
       "brandPositioning.features.marketDifferentiation.title",
     description:
@@ -63,14 +62,14 @@ export const uspDevelopmentServices = [
 
 export const creativeAdvertisingServices = [
   {
-    Icon: Global,
+    Icon: Globe,
     title:
       "creativeAdvertising.features.audienceEngagement.title",
     description:
       "creativeAdvertising.features.audienceEngagement.description",
   },
   {
-    Icon: Star2,
+    Icon: CirclePercent,
     title:
       "creativeAdvertising.features.marketImpact.title",
     description:
@@ -138,7 +137,7 @@ export const crisisPrManagementServices = [
       "crisisPrManagement.features.brandProtection.description",
   },
   {
-    Icon: DangerTriangle,
+    Icon: ShieldAlert,
     title:
       "crisisPrManagement.features.strategicCrisisPlan.title",
     description:

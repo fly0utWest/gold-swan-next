@@ -1,9 +1,10 @@
+import { LucideIcon } from "lucide-react";
 import React from "react";
 import { forwardRef } from "react"; 
 
 type CheckboxProps = {
-  Icon: (allProps: any) => JSX.Element;
-  CheckedIcon: (allProps: any) => JSX.Element;
+  Icon:LucideIcon;
+  CheckedIcon: LucideIcon;
   label: string;
   type: "radio" | "checkbox";
 } & React.ComponentPropsWithoutRef<"input">;

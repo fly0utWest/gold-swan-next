@@ -1,8 +1,13 @@
-import { Help, Translation2, HandMoney, ChatRound } from "solar-icon-set";
+import {
+  BotMessageSquare,
+  Bitcoin,
+  SmartphoneNfc,
+  Activity,
+} from "lucide-react";
 
 export const upcomingProjects = [
   {
-    Icon: Help,
+    Icon: BotMessageSquare,
     title: "aiSupport.title",
     description: "aiSupport.description",
     features: [
@@ -18,7 +23,7 @@ export const upcomingProjects = [
     attention: "aiSupport.attention",
   },
   {
-    Icon: ChatRound,
+    Icon: Activity,
     title: "smmBot.title",
     description: "smmBot.description",
     features: [
@@ -38,7 +43,7 @@ export const upcomingProjects = [
     note: "smmBot.note",
   },
   {
-    Icon: Translation2,
+    Icon: SmartphoneNfc,
     title: "nfcReviews.title",
     description: "nfcReviews.description",
     features: [
@@ -53,7 +58,7 @@ export const upcomingProjects = [
     ],
   },
   {
-    Icon: HandMoney,
+    Icon: Bitcoin,
     title: "cryptoMarketing.title",
     description: "cryptoMarketing.description",
     features: [

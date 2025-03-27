@@ -1,8 +1,9 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
+import { LucideIcon } from "lucide-react";
 
 export interface StrategyStepsProps {
-  Icon?: (allProps: any) => JSX.Element;
+  Icon?: LucideIcon;
   heading: string;
   steps: string[];
   example?: string;

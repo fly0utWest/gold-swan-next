@@ -1,9 +1,10 @@
 import Heading from "@/shared/ui/heading";
+import { LucideIcon } from "lucide-react";
 import React from "react";
 
 interface DepartmentHeroSectionProps {
   heading: string[];
-  Icon: (allProps: any) => JSX.Element;
+  Icon: LucideIcon;
 }
 
 const DepartmentHeroSection: React.FC<DepartmentHeroSectionProps> = ({
