@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "@/shared/ui/heading";
 import { LucideIcon } from "lucide-react";
-
+import { JSX } from "react"; 
 export interface DepartmentInnerCardProps {
   Icon?: LucideIcon;
   heading: {
