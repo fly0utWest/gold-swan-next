@@ -1,4 +1,5 @@
 import React from "react";
+import { JSX } from "react";
 
 type HeadingProps = {
   as?: keyof JSX.IntrinsicElements;
