@@ -40,12 +40,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="text-xl text-center lg:text-left mt-4">
           <p>{description}</p>
-          {attention && (
+          {/* {attention && (
             <div className="text-primary-500 mt-8 bg-card flex flex-col lg:flex-row gap-4 p-6 rounded-3xl items-center justify-center border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
               <CircleAlert className="animate-pulse" size={60} />
               <span>{attention}</span>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       <div className="lg:w-1/2 mt-4 lg:mt-0">
