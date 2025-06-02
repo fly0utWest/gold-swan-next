@@ -4,7 +4,7 @@ import {
   Mail,
   Plane,
   PhoneOutgoing,
-  SendHorizonal
+  SendHorizonal,
 } from "lucide-react";
 import ContactItem from "./contact-item";
 import Heading from "./heading";
@@ -43,8 +43,8 @@ const StaticContacts = () => {
         <ContactItem
           Icon={SendHorizonal}
           title={t("people.devLead")}
-          link="https://t.me/dark_aura"
-          content="@dark_aura"
+          link="https://t.me/growplex"
+          content="@growplex"
         />
         <ContactItem
           Icon={SendHorizonal}
