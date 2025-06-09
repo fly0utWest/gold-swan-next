@@ -1,4 +1,4 @@
-import { Oswald } from "next/font/google";
+import { Libre_Bodoni } from "next/font/google";
 import "../_styles/globals.css";
 import Header from "@/shared/ui/header/header";
 import { NextIntlClientProvider } from "next-intl";
@@ -10,11 +10,12 @@ import Script from "next/script";
 import Inchat from "@/shared/ui/inchat";
 import CookiesAgreement from "@/shared/ui/cookies-agreement";
 import { Metadata } from "next";
-import Cookies from "js-cookie";
 
-const oswaldSans = Oswald({
-  variable: "--font-oswald-sans",
+const libreBodoni = Libre_Bodoni({
+  variable: "--font-libre-bodoni",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export default async function RootLayout(
       className="scroll-smooth overscroll-none *:selection:bg-primary-500 *:selection:text-foreground"
       suppressHydrationWarning
     >
-      <body className={`${oswaldSans.className}`}>
+      <body className={`${libreBodoni.className}`}>
         <NextIntlClientProvider messages={messages}>
           <div className="fixed z-[999] w-max h-max" id="portal-container">
             <CookiesAgreement />
