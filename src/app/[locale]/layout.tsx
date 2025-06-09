@@ -31,6 +31,9 @@ export default async function RootLayout(
   const { children } = props;
   const messages = await getMessages();
 
+  const CHAT_DOMAIN = process.env.NEXT_PUBLIC_CHAT_WIDGET_DOMAIN!;
+  const CHAT_ID = process.env.NEXT_PUBLIC_CHAT_WIDGET_ID!;
+
   return (
     <html
       lang={locale}
@@ -52,6 +55,41 @@ export default async function RootLayout(
           </ThemeProvider>
         </NextIntlClientProvider>
         <Script src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js" />
+
+        <Script
+          id="chat-widget-lib"
+          strategy="beforeInteractive"
+          src={`${CHAT_DOMAIN}/scripts/chat-widget.js`}
+          data-chat-id={CHAT_ID}
+        />
+        <Script id="chat-widget-init" strategy="afterInteractive">
+          {`
+            (function() {
+              const id = "${CHAT_ID}";
+              const domain = "${CHAT_DOMAIN}";
+
+              function boot() {
+                if (!window.ChatWidget) return;
+                if (!window.ChatWidget._loaded) {
+                  window.ChatWidget.init({
+                    id,
+                    domain,
+                    color: "var(--color-yellow-500)",
+                  });
+                } else {
+                  window.ChatWidget.reload();
+                }
+              }
+
+              // wait a tick in case lib is still downloading
+              if (!window.ChatWidget) {
+                document.addEventListener("DOMContentLoaded", boot);
+              } else {
+                boot();
+              }
+            })();
+          `}
+        </Script>
 
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
           <>

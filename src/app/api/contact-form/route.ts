@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const TG_TOKEN = process.env.TG_TOKEN;
 const TG_CHAT_ID = process.env.TG_CHAT_ID;
-const TG_API = `${process.env.TG_API_URL}${TG_TOKEN}/sendMessage`;
+const TG_API = `https://api.telegram.org/bot${TG_TOKEN}/sendMessage`;
 
 export async function POST(request: Request) {
   try {
