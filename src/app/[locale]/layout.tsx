@@ -74,7 +74,7 @@ export default async function RootLayout(
                   window.ChatWidget.init({
                     id,
                     domain,
-                    color: "var(--color-yellow-500)",
+                    color: "#C0AC72",
                   });
                 } else {
                   window.ChatWidget.reload();
