@@ -10,22 +10,21 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("metadata.home")
-  
+  const t = await getTranslations("metadata.home");
+
   return {
     title: t("title"),
     description: t("description"),
-    keywords: t("keywords") 
-  }
+    keywords: t("keywords"),
+  };
 }
-
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <DepartmentSection />
       <AwardsSetion />
-      <DepartmentSection/>
       <PartnersSection />
       <PartnersMarquee />
       <AboutSection />
