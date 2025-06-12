@@ -29,6 +29,8 @@ const ProjectsSection: React.FC = async () => {
               description={t(project.description)}
               features={project.features.map((feature) => t(feature))}
               attention={project.attention && t(project.attention)}
+              status={project.status}
+              link={project.link}
             />
           ))}
         </div>

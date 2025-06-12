@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "@/shared/ui/heading";
 import { useTranslations } from "next-intl";
 import { CircleAlert, LucideIcon } from "lucide-react";
+import Link from "next/link";
 
 interface ProjectCardProps {
   Icon: LucideIcon;
@@ -9,6 +10,8 @@ interface ProjectCardProps {
   description: string;
   features: string[];
   attention?: string;
+  status?: "coming-soon" | "beta" | "production";
+  link?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -17,14 +20,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   features,
   attention,
+  status
+  link
 }) => {
   const t = useTranslations("projects");
 
+const statusMap = {
+  "coming-soon": "Coming Soon",
+  beta: "Beta",
+  production: "Production",
+};
+
   return (
     <div className="flex flex-col lg:flex-row gap-4 bg-background  p-6 rounded-3xl border-2 border-border max-w-screen-xl relative">
-      {attention && (
+      {status && (
         <div className="absolute top-0 right-0 bg-primary-200 text-lg lg:text-xl font-semibold border-primary-500 border-b-2 border-l-4 text-primary-500 p-2 rounded-bl-3xl uppercase rounded-tr-3xl">
-          Coming Soon!
+          {statusMap[status]}
         </div>
       )}
       <div className="lg:w-1/2">
@@ -40,12 +51,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="text-xl text-center lg:text-left mt-4">
           <p>{description}</p>
-          {/* {attention && (
+          {attention && (
             <div className="text-primary-500 mt-8 bg-card flex flex-col lg:flex-row gap-4 p-6 rounded-3xl items-center justify-center border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
               <CircleAlert className="animate-pulse" size={60} />
-              <span>{attention}</span>
+              <p>{attention}</p>
+              {link && (
+                <Link href={link} className="text-primary-500">
+                  {link}
+                </Link>
+              )}
             </div>
-          )} */}
+          )}
         </div>
       </div>
       <div className="lg:w-1/2 mt-4 lg:mt-0">

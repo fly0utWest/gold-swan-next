@@ -21,6 +21,8 @@ export const upcomingProjects = [
       "aiSupport.features.interactions",
     ],
     attention: "aiSupport.attention",
+    status: "beta",
+    link: "https://growplex.dev/products/platform",
   },
   {
     Icon: Activity,
