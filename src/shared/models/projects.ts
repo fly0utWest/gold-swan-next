@@ -3,9 +3,22 @@ import {
   Bitcoin,
   SmartphoneNfc,
   Activity,
+  LucideIcon,
 } from "lucide-react";
 
-export const upcomingProjects = [
+
+export interface Project {
+  Icon: LucideIcon;
+  title: string;
+  description: string;
+  features: string[];
+  attention?: string;
+  status?: "coming-soon" | "beta" | "production";
+  link?: string;
+  note?: string;
+}
+
+export const upcomingProjects: Project[] = [
   {
     Icon: BotMessageSquare,
     title: "aiSupport.title",

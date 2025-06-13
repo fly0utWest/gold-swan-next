@@ -3,16 +3,9 @@ import Heading from "@/shared/ui/heading";
 import { useTranslations } from "next-intl";
 import { CircleAlert, LucideIcon } from "lucide-react";
 import Link from "next/link";
+import { Project } from "../models/projects";
 
-interface ProjectCardProps {
-  Icon: LucideIcon;
-  title: string;
-  description: string;
-  features: string[];
-  attention?: string;
-  status?: "coming-soon" | "beta" | "production";
-  link?: string;
-}
+interface ProjectCardProps extends Project {}
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   Icon,
