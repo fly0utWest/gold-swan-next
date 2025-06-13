@@ -20,16 +20,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   features,
   attention,
-  status
-  link
+  status,
+  link,
 }) => {
   const t = useTranslations("projects");
 
-const statusMap = {
-  "coming-soon": "Coming Soon",
-  beta: "Beta",
-  production: "Production",
-};
+  const statusMap = {
+    "coming-soon": "Coming Soon",
+    beta: "Beta",
+    production: "Production",
+  };
 
   return (
     <div className="flex flex-col lg:flex-row gap-4 bg-background  p-6 rounded-3xl border-2 border-border max-w-screen-xl relative">
@@ -54,12 +54,17 @@ const statusMap = {
           {attention && (
             <div className="text-primary-500 mt-8 bg-card flex flex-col lg:flex-row gap-4 p-6 rounded-3xl items-center justify-center border-primary-200 border-4 text-lg lg:text-xl font-semibold md:text-left text-center">
               <CircleAlert className="animate-pulse" size={60} />
-              <p>{attention}</p>
-              {link && (
-                <Link href={link} className="text-primary-500">
-                  {link}
-                </Link>
-              )}
+              <div className="space-y-2">
+                <p>{attention}</p>
+                {link && (
+                  <Link
+                    href={link}
+                    className="text-primary-500 underline font-semibold text-2xl"
+                  >
+                    {link}
+                  </Link>
+                )}
+              </div>
             </div>
           )}
         </div>
