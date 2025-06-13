@@ -31,6 +31,7 @@ const ProjectsSection: React.FC = async () => {
               attention={project.attention && t(project.attention)}
               status={project.status}
               link={project.link}
+              productName={project.productName}
             />
           ))}
         </div>

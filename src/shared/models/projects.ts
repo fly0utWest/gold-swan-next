@@ -16,6 +16,7 @@ export interface Project {
   status?: "coming-soon" | "beta" | "production";
   link?: string;
   note?: string;
+  productName?: string
 }
 
 export const upcomingProjects: Project[] = [
@@ -35,6 +36,7 @@ export const upcomingProjects: Project[] = [
     ],
     attention: "aiSupport.attention",
     status: "beta",
+    productName: "Thalia AI",
     link: "https://growplex.dev/products/platform",
   },
   {
