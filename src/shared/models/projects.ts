@@ -6,7 +6,6 @@ import {
   LucideIcon,
 } from "lucide-react";
 
-
 export interface Project {
   Icon: LucideIcon;
   title: string;
@@ -16,7 +15,7 @@ export interface Project {
   status?: "coming-soon" | "beta" | "production";
   link?: string;
   note?: string;
-  productName?: string
+  productName?: string;
 }
 
 export const upcomingProjects: Project[] = [
@@ -58,6 +57,7 @@ export const upcomingProjects: Project[] = [
       "smmBot.features.audioToText",
     ],
     note: "smmBot.note",
+    status: "coming-soon",
   },
   {
     Icon: SmartphoneNfc,
@@ -73,6 +73,7 @@ export const upcomingProjects: Project[] = [
       "nfcReviews.features.efficiency",
       "nfcReviews.features.engagement",
     ],
+    status: "coming-soon",
   },
   {
     Icon: Bitcoin,
@@ -88,5 +89,6 @@ export const upcomingProjects: Project[] = [
       "cryptoMarketing.features.pr",
       "cryptoMarketing.features.analytics",
     ],
+    status: "coming-soon",
   },
 ];
