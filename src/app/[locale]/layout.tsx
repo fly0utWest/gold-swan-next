@@ -55,7 +55,6 @@ export default async function RootLayout(
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
-        <Script src="https://staticinchatai.5dgo.dev/inchat-widget.iife.js" />
 
         <Script
           id="chat-widget-lib"
