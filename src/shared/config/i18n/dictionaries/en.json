@@ -1099,5 +1099,38 @@
       "description": "Gold Swan values your privacy. This policy explains how we collect, use, and protect your personal data when using our services.",
       "keywords": "privacy policy, data protection, GDPR compliance, Gold Swan privacy, personal data security, data usage, online privacy"
     }
+  },
+
+  "cases": {
+    "plastic": {
+      "situation": "40 inquiries per week, 12 consultations, 0 sales",
+      "name": "Large Plastic Surgery Center",
+      "problem": "A defamatory article about the clinic’s doctor was published in the media, triggering a wave of reposts on social networks → widespread negativity, clients’ fear, loss of trust",
+      "finDamage": "The clinic was losing $242,000 per month",
+      "tasks": {
+        "0": "Remove/suppress the article from search results and social media",
+        "1": "Suppress negativity and its spread",
+        "2": "Restore trust in the doctor and the clinic",
+        "3": "Align the funnel: inquiries → consultations → sales",
+        "4": "Ensure a steady influx of new clients"
+      },
+      "solutions": {
+        "0": "Removal of the defamatory publication using legal and technical measures",
+        "1": "Launch of positive media support (doctor interviews, patient stories, publications in industry outlets and blogs)",
+        "2": "SEO displacement of negativity from Google and social media",
+        "3": "Improvement of reviews and reputation profile"
+      },
+      "results": {
+        "0": "Inquiries per week: increased from 40 to 70",
+        "1": "Consultations per week: increased from 12 to 40",
+        "2": "Sales per week: increased from 0 to 8"
+      },
+      "finEffect": "The clinic restored trust and achieved a 30% increase in monthly revenue compared to the period before the reputational crisis",
+      "conclusions": {
+        "0": "In plastic surgery, a doctor’s reputation equals sales",
+        "1": "Even a single article can nullify all marketing efforts",
+        "2": "Timely ORM intervention restores client flow within 2–3 months"
+      }
+    }
   }
 }

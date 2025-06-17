@@ -1181,5 +1181,38 @@
       "description": "Gold Swan metur persónuvernd þína mikils. Þessi stefna útskýrir hvernig við söfnum, notum og verndum persónuupplýsingar þínar þegar þú notar þjónustu okkar.",
       "keywords": "persónuverndarstefna, gagnavernd, GDPR samræmi, Gold Swan persónuvernd, öryggi persónuupplýsinga, gagnanotkun, netöryggi"
     }
+  },
+
+  "cases": {
+    "plastic": {
+      "situation": "40 fyrirspurnir á viku, 12 ráðgjafir, 0 sala",
+      "name": "Stórt plastlækningamiðstöð",
+      "problem": "Smánargrein um lækninn á klíníkinni birtist í fjölmiðlum, sem leiddi til bylgju af deilingum á samfélagsmiðlum → almenn neikvæðni, ótti viðskiptavina, traust tapast",
+      "finDamage": "Klíníkin var að tapa $242.000 á mánuði",
+      "tasks": {
+        "0": "Fjarlægja/ýta greininni úr leitarniðurstöðum og samfélagsmiðlum",
+        "1": "Draga úr neikvæðni og útbreiðslu hennar",
+        "2": "Endurheimta traust til læknis og klíníkur",
+        "3": "Jafna sölurásina: fyrirspurnir → ráðgjafir → sala",
+        "4": "Tryggja stöðugan aðflutning nýrra viðskiptavina"
+      },
+      "solutions": {
+        "0": "Fjarlæging smánargreinarinnar með lögfræðilegum og tæknilegum úrræðum",
+        "1": "Upphaf jákvæðrar fjölmiðlaumfjöllunar (viðtöl við lækni, sjúklingasögur, birtingar í fagtímaritum og bloggum)",
+        "2": "SEO til að ýta neikvæðni úr Google og samfélagsmiðlum",
+        "3": "Auka umsagnir og styrkja orðspor"
+      },
+      "results": {
+        "0": "Fyrirspurnir á viku: jukust úr 40 í 70",
+        "1": "Ráðgjafir á viku: jukust úr 12 í 40",
+        "2": "Sala á viku: jukust úr 0 í 8"
+      },
+      "finEffect": "Klíníkin endurheimti traust og náði 30% tekjuaukningu á mánuði miðað við tímabilið fyrir orðsporskreppuna",
+      "conclusions": {
+        "0": "Í plastlækningum jafngildir orðspor læknis sölu",
+        "1": "Jafnvel ein grein getur ógilt allt markaðsstarf",
+        "2": "Tímanlegt ORM-inngrip endurheimtir flæði viðskiptavina á 2–3 mánuðum"
+      }
+    }
   }
 }
