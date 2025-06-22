@@ -1184,6 +1184,24 @@
   },
 
   "cases": {
+    "labels": {
+      "duration": "Tímalengd",
+      "budget": "Fjárhagsáætlun",
+      "difficulty": "Erfiðleikastig",
+      "industry": "Atvinnugrein",
+      "situation": "Aðstæður",
+      "financialDamage": "Fjárhagslegur skaði",
+      "problem": "Vandamál",
+      "tasks": "Verkefni",
+      "solutions": "Lausnir",
+      "results": "Niðurstöður",
+      "financialEffect": "Fjárhagsleg áhrif",
+      "conclusions": "Ályktanir",
+      "underNda": "Undir þagnarskyldu",
+      "featured": "Valin",
+      "previous": "Fyrri",
+      "next": "Næst"
+    },
     "plastic": {
       "situation": "40 fyrirspurnir á viku, 12 ráðgjafir, 0 sala",
       "name": "Stórt plastlækningamiðstöð",
@@ -1212,6 +1230,65 @@
         "0": "Í plastlækningum jafngildir orðspor læknis sölu",
         "1": "Jafnvel ein grein getur ógilt allt markaðsstarf",
         "2": "Tímanlegt ORM-inngrip endurheimtir flæði viðskiptavina á 2–3 mánuðum"
+      }
+    },
+    "gas-stations": {
+      "situation": "Meðalheimsóknir: 3.000 viðskiptavinir á dag, Tekjur: $86.000 á dag",
+      "name": "Stór keðja bensínstöðva",
+      "problem": "Mikil útbreiðsla neikvæðra ummæla um lága gæði bensíns → skarpur minnkun á trausti, flæði viðskiptavina, tap á tekjum allt að $600.000 á mánuði",
+      "finDamage": "Fyrirtækið var að tapa allt að $600.000 á mánuði",
+      "tasks": {
+        "0": "Kúga neikvæðni í leitarvélum og samfélagsmiðlum",
+        "1": "Einangra og hlutlægja uppsprettu sögunnar",
+        "2": "Mynda jákvætt fjölmiðlaumhverfi",
+        "3": "Endurheimta og auka viðskiptavinastraum",
+        "4": "Auka traust á vörumerkið með trúföstum samfélagi"
+      },
+      "solutions": {
+        "0": "Heildar eftirlit með ummælum um vörumerkið",
+        "1": "Kveikt á kerfi fyrir viðbrögð við neikvæðum umsögnum",
+        "2": "Framkvæmd útþrengingarherferðar í leitarvélum og umsagnasíðum",
+        "3": "Kveikt á efnis markaðssetningu: birtingar í fjölmiðlum, bloggum, samfélagsmiðlum",
+        "4": "Þátttaka trúfestra viðskiptavina og smááhrifavalda, kveikt á forriti fyrir myndun \"talsmanna vörumerkis\""
+      },
+      "results": {
+        "0": "Straumur jókst: úr 3.000 í 10.000 viðskiptavini á dag",
+        "1": "Tekjur jukust: úr $86.000 í $300.000 á dag",
+        "2": "Tekjuaukning: +$214.000 á dag, +$6,42 milljónir á mánuði"
+      },
+      "finEffect": "Fyrirtækið náði þreföldum aukningu á viðskiptavinastraumi og tekjum",
+      "conclusions": {
+        "0": "Orðspor er ekki um \"umsagnir\", heldur um peninga í kassanum",
+        "1": "Rétt stjórnun upplýsingaumhverfis getur þrefaldað straum",
+        "2": "Sambland af kúgun á neikvæðni og jákvæðu efni er lykillinn"
+      }
+    },
+    "baby-food": {
+      "situation": "Mánaðartekjur: $1.860.000",
+      "name": "Leiðandi framleiðandi barnafóðurs",
+      "problem": "Mikil útbreiðsla neikvæðra greina um að sýndar lágu gæði innihalds í netinu → minnkun á trausti, bylgja umræðna í samfélagsmiðlum, sterkur fall í sölu. Eftir 5 mánuði án virkra viðbragða tapaði fyrirtækið meira en $6 milljónum í tekjum",
+      "finDamage": "Fyrirtækið tapaði meira en $6 milljónum í tekjum yfir 5 mánuði",
+      "tasks": {
+        "0": "Eyða og ýta neikvæðu efni",
+        "1": "Endurheimta orðspor vörumerkis og traust foreldra",
+        "2": "Endurheimta fyrri söluumfang",
+        "3": "Mynda sjálfbært jákvætt upplýsingaumhverfi"
+      },
+      "solutions": {
+        "0": "Lögfræðileg og tæknileg vinna við að eyða falskaðum birtingum",
+        "1": "Búðu til afsagnarefni: greinar, sérfræðigreiningar, myndræn framsetning",
+        "2": "Birtingar í fjölmiðlum og vinna með bloggara",
+        "3": "Umsagnir foreldra, gæðakjör, óháðar prófanir, eftirlit með orðspori og umsögnum á vettvangi"
+      },
+      "results": {
+        "0": "Eftir 3 mánuði komu tekjur til baka á fyrri stig - $1.860.000/á mánuði",
+        "1": "Eftir 4 mánuði í viðbót: +150% vöxtur → $4.650.000 á mánuði"
+      },
+      "finEffect": "Fyrirtækið náði þreföldum aukningu á sölu eftir ORM-vinnu",
+      "conclusions": {
+        "0": "Skortur á hraðum viðbrögðum kostaði fyrirtækið milljónir",
+        "1": "ORM-vinna endurheimti ekki aðeins stöður heldur þrefaldaði sölu",
+        "2": "Tímanleg inngrip er lykill að velgengni í orðsporsstjórnun"
       }
     }
   }

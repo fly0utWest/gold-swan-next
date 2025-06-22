@@ -3,7 +3,7 @@
     "darkTheme": "Dark theme",
     "lightTheme": "Light Theme",
     "loading": "Loading...",
-    "slogan": "We’re an All In agency that bets everything on solving your problems.",
+    "slogan": "We're an All In agency that bets everything on solving your problems.",
     "contactUs": "Contact",
     "knowMore": "Know more",
     "cookiesUsage": "The site uses cookies",
@@ -17,7 +17,7 @@
     "contact": "Contact",
     "projects": "Projects",
     "privacy": "Privacy Policy",
-    "description": "We’re an All In agency that bets everything on solving your problems."
+    "description": "We're an All In agency that bets everything on solving your problems."
   },
   "about": {
     "heading": "About Us",
@@ -289,7 +289,7 @@
         "features": {
           "trustedVoices": {
             "title": "Leveraging Trusted Voices",
-            "description": "Leverages trusted voices in a niche to promote a brand’s products or services."
+            "description": "Leverages trusted voices in a niche to promote a brand's products or services."
           },
           "audienceReach": {
             "title": "Expanding Reach and Engagement",
@@ -315,7 +315,7 @@
         "features": {
           "brandProtection": {
             "title": "Protecting Brand Image",
-            "description": "Protects a brand’s image during negative situations or reputational threats."
+            "description": "Protects a brand's image during negative situations or reputational threats."
           },
           "strategicCrisisPlan": {
             "title": "Strategic Crisis Communication",
@@ -334,7 +334,7 @@
       "description": "Our clientele includes companies, politicians, business leaders, public figures, and even government institutions. We provide specialized reputation management and data protection services tailored to the needs of high-profile individuals and organizations that require expert assistance in safeguarding and enhancing their image",
       "overview": {
         "title": "Overview",
-        "definition": "Safeguard your brand’s reputation and data security through structured, effective strategies.",
+        "definition": "Safeguard your brand's reputation and data security through structured, effective strategies.",
         "benefits": {
           "proactiveReputationManagement": "Proactive reputation management to safeguard your brand.",
           "enhancedCustomerTrust": "Enhanced customer trust through robust data protection.",
@@ -1102,10 +1102,28 @@
   },
 
   "cases": {
+    "labels": {
+      "duration": "Duration",
+      "budget": "Budget",
+      "difficulty": "Difficulty",
+      "industry": "Industry",
+      "situation": "Situation",
+      "financialDamage": "Financial Damage",
+      "problem": "Problem",
+      "tasks": "Tasks",
+      "solutions": "Solutions",
+      "results": "Results",
+      "financialEffect": "Financial Effect",
+      "conclusions": "Conclusions",
+      "underNda": "Under NDA",
+      "featured": "Featured",
+      "previous": "Previous",
+      "next": "Next"
+    },
     "plastic": {
       "situation": "40 inquiries per week, 12 consultations, 0 sales",
       "name": "Large Plastic Surgery Center",
-      "problem": "A defamatory article about the clinic’s doctor was published in the media, triggering a wave of reposts on social networks → widespread negativity, clients’ fear, loss of trust",
+      "problem": "A defamatory article about the clinic's doctor was published in the media, triggering a wave of reposts on social networks → widespread negativity, clients' fear, loss of trust",
       "finDamage": "The clinic was losing $242,000 per month",
       "tasks": {
         "0": "Remove/suppress the article from search results and social media",
@@ -1127,9 +1145,68 @@
       },
       "finEffect": "The clinic restored trust and achieved a 30% increase in monthly revenue compared to the period before the reputational crisis",
       "conclusions": {
-        "0": "In plastic surgery, a doctor’s reputation equals sales",
+        "0": "In plastic surgery, a doctor's reputation equals sales",
         "1": "Even a single article can nullify all marketing efforts",
         "2": "Timely ORM intervention restores client flow within 2–3 months"
+      }
+    },
+    "gas-stations": {
+      "situation": "Average daily traffic: 3,000 customers per day, Revenue: $86,000 per day",
+      "name": "Large Gas Station Chain",
+      "problem": "Massive spread of negative feedback about low fuel quality → sharp decline in trust, customer outflow, revenue losses up to $600,000 per month",
+      "finDamage": "The company was losing up to $600,000 per month",
+      "tasks": {
+        "0": "Suppress negativity in search engines and social media",
+        "1": "Isolate and neutralize the source of rumors",
+        "2": "Form a positive media environment",
+        "3": "Restore and multiply customer traffic",
+        "4": "Increase brand trust through loyal community"
+      },
+      "solutions": {
+        "0": "Comprehensive monitoring of brand mentions",
+        "1": "Launch of a system for responding to negative reviews",
+        "2": "Conducted displacement campaign in search engines and review sites",
+        "3": "Launched content marketing: publications in media, blogs, social networks",
+        "4": "Engagement of loyal customers and micro-influencers, launched program for forming \"brand advocates\""
+      },
+      "results": {
+        "0": "Traffic grew: from 3,000 to 10,000 customers per day",
+        "1": "Revenue increased: from $86,000 to $300,000 per day",
+        "2": "Revenue growth: +$214,000 per day, +$6.42 million per month"
+      },
+      "finEffect": "The company achieved triple growth in customer traffic and revenue",
+      "conclusions": {
+        "0": "Reputation is not about \"reviews\", it's about money in the cash register",
+        "1": "Proper information environment management can triple traffic",
+        "2": "Combination of negativity suppression and positive content is the key"
+      }
+    },
+    "baby-food": {
+      "situation": "Monthly revenue: $1,860,000",
+      "name": "Leading Baby Food Manufacturer",
+      "problem": "Negative articles about allegedly low ingredient quality began spreading massively online → trust declined, wave of discussions on social media, sharp drop in sales. Over 5 months without active response, the company lost more than $6 million in revenue",
+      "finDamage": "The company lost more than $6 million in revenue over 5 months",
+      "tasks": {
+        "0": "Remove and displace negative content",
+        "1": "Restore brand reputation and parents' trust",
+        "2": "Return to previous sales volume",
+        "3": "Form a sustainable positive information environment"
+      },
+      "solutions": {
+        "0": "Legal and technical work to remove fake publications",
+        "1": "Creation of refuting materials: articles, expert analysis, infographics",
+        "2": "Publications in media and work with bloggers",
+        "3": "Parent reviews, quality cases, independent checks, reputation and review monitoring on platforms"
+      },
+      "results": {
+        "0": "After 3 months, revenue returned to previous level — $1,860,000/month",
+        "1": "After another 4 months: +150% growth → $4,650,000 per month"
+      },
+      "finEffect": "The company achieved triple growth in sales after ORM work",
+      "conclusions": {
+        "0": "Lack of quick response cost the company millions",
+        "1": "ORM work not only restored positions but tripled sales",
+        "2": "Timely intervention is the key to success in reputation management"
       }
     }
   }
