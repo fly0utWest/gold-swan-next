@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { Chip } from "@/components/ui/chip";
 import {
@@ -9,25 +9,26 @@ import {
 import { notFound } from "next/navigation";
 
 interface CasePageProps {
-  params: {
+  params: Promise<{
     locale: string;
     slug: string;
-  };
+  }>;
 }
 
-export default function CasePage({ params }: CasePageProps) {
-  const caseMetadata = getCaseBySlug(params.slug);
+export default async function CasePage({ params }: CasePageProps) {
+  const { locale, slug } = await params;
+  const caseMetadata = getCaseBySlug(slug);
 
   if (!caseMetadata) {
     notFound();
   }
 
-  const t = useTranslations(`cases.${params.slug}`);
-  const labels = useTranslations("cases.labels");
+  const t = await getTranslations(`cases.${slug}`);
+  const labels = await getTranslations("cases.labels");
 
   // Get navigation cases
-  const nextCase = getNextCase(params.slug);
-  const previousCase = getPreviousCase(params.slug);
+  const nextCase = getNextCase(slug);
+  const previousCase = getPreviousCase(slug);
 
   // Build arrays using counts from metadata
   const tasks = Array.from({ length: caseMetadata.counts.tasks }, (_, i) =>
