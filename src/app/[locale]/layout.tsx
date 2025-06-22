@@ -86,38 +86,6 @@ export default async function RootLayout(
             })();
           `}
         </Script>
-
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
-          <>
-            <Script
-              strategy="beforeInteractive"
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
-            />
-            <Script
-              id="ga-consent"
-              strategy="beforeInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){window.dataLayer.push(arguments);}
-                  
-                  gtag('consent', 'default', {
-                    'ad_storage': 'denied',
-                    'ad_user_data': 'denied',
-                    'ad_personalization': 'denied',
-                    'analytics_storage': 'denied'
-                  });
-
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
-                    anonymize_ip: true,
-                    send_page_view: false
-                  });
-                `,
-              }}
-            />
-          </>
-        )}
       </body>
     </html>
   );
