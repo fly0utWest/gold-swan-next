@@ -23,23 +23,23 @@
  */
 
 export const allTags = [
-  "Маркетинговая стратегия",
-  "Продвижение в соц сетях",
-  "3 д анимация",
-  "Создание контента",
-  "Разрабока сайта",
-  "Разработка приложения",
+  "Marketing Strategy",
+  "Social Media Marketing",
+  "3D Animation",
+  "Content Creation",
+  "Website Development",
+  "App Development",
   "SERM",
   "ORM",
-  "Мониторинг",
-  "Аналитика",
-  "Лидогенерация",
-  "SERM в Youtube",
-  "Деиндексация",
-  "Digital-PR",
-  "Репутация",
-  "Медицина",
-  "Кризис-менеджмент",
+  "Monitoring",
+  "Analytics",
+  "Lead Generation",
+  "YouTube SERM",
+  "Deindexing",
+  "Digital PR",
+  "Reputation Management",
+  "Healthcare",
+  "Crisis Management",
   "SEO",
 ];
 
@@ -77,7 +77,13 @@ export interface CaseMetadata {
 export const cases: CaseMetadata[] = [
   {
     slug: "plastic",
-    tags: ["ORM", "Репутация", "Медицина", "Кризис-менеджмент", "SEO"],
+    tags: [
+      "ORM",
+      "Reputation Management",
+      "Healthcare",
+      "Crisis Management",
+      "SEO",
+    ],
     counts: {
       tasks: 5,
       solutions: 4,
@@ -98,9 +104,9 @@ export const cases: CaseMetadata[] = [
     slug: "gas-stations",
     tags: [
       "ORM",
-      "Репутация",
-      "Кризис-менеджмент",
-      "Контент-маркетинг",
+      "Reputation Management",
+      "Crisis Management",
+      "Content Marketing",
       "SERM",
     ],
     counts: {
@@ -121,7 +127,7 @@ export const cases: CaseMetadata[] = [
   },
   {
     slug: "baby-food",
-    tags: ["ORM", "Репутация", "Кризис-менеджмент", "PR", "SERM"],
+    tags: ["ORM", "Reputation Management", "Crisis Management", "PR", "SERM"],
     counts: {
       tasks: 4,
       solutions: 4,

@@ -64,29 +64,25 @@ export default async function RootLayout(
         />
         <Script id="chat-widget-init" strategy="afterInteractive">
           {`
-            (function() {
-              const id = "${CHAT_ID}";
-              const domain = "${CHAT_DOMAIN}";
-
+            (function () {
+              const { id, domain } = document.currentScript.dataset;
               function boot() {
                 if (!window.ChatWidget) return;
                 if (!window.ChatWidget._loaded) {
                   window.ChatWidget.init({
                     id,
                     domain,
-                    color: "#C0AC72",
+                    color: "var(--primary-500)",
                   });
                 } else {
-                  window.ChatWidget.reload();
+                  window.ChatWidget.reload({
+                    id,
+                    domain,
+                    color: "var(--primary-500)",
+                  });
                 }
               }
-
-              // wait a tick in case lib is still downloading
-              if (!window.ChatWidget) {
-                document.addEventListener("DOMContentLoaded", boot);
-              } else {
-                boot();
-              }
+              boot();
             })();
           `}
         </Script>

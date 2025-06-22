@@ -1,5 +1,6 @@
 import AboutSection from "@/widgets/home-page/about-section/about-section";
 import AwardsSetion from "@/widgets/home-page/awards-section";
+import CasesSection from "@/widgets/home-page/cases-section";
 import DepartmentSection from "@/widgets/home-page/departments-section/departments-section";
 import HeroSection from "@/widgets/home-page/hero-section";
 import MarqeeSection from "@/widgets/home-page/marquee-section";
@@ -28,6 +29,7 @@ export default function HomePage() {
       <PartnersSection />
       <PartnersMarquee />
       <AboutSection />
+      <CasesSection />
       <MarqeeSection />
       <ProjectsSection />
     </>

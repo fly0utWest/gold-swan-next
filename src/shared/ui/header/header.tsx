@@ -15,6 +15,7 @@ const Header: React.FC = () => {
 
   const headerLinks = [
     { href: "/#departments", label: t("services") },
+    { href: "/#cases", label: t("cases") },
     { href: "/contact", label: t("contact") },
     { href: "/#upcoming-projects", label: t("projects") },
   ];
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-6">
           <HeaderMenu>
             {headerLinks.map((link, index) => (
-              <HeaderLink key={index} href={link.href} >
+              <HeaderLink key={index} href={link.href}>
                 {link.label}
               </HeaderLink>
             ))}

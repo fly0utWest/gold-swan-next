@@ -16,6 +16,7 @@
     "services": "Services",
     "contact": "Contact",
     "projects": "Projects",
+    "cases": "Cases",
     "privacy": "Privacy Policy",
     "description": "We're an All In agency that bets everything on solving your problems."
   },
@@ -1052,6 +1053,11 @@
       "description": "Oops! The page you are looking for does not exist. Return to the homepage or contact us for assistance.",
       "keywords": "404 error, page not found, Gold Swan error, broken link, website error, missing page, return to homepage"
     },
+    "cases": {
+      "title": "Case Studies - Gold Swan",
+      "description": "Explore our successful case studies and real-world projects. See how we've helped businesses achieve their goals through strategic marketing, reputation management, and digital solutions.",
+      "keywords": "case studies, marketing case studies, PR case studies, reputation management cases, digital marketing success stories, business case studies, Gold Swan projects, marketing results"
+    },
     "departments": {
       "digitalMarketing": {
         "title": "Digital Marketing Services - Gold Swan",
@@ -1100,13 +1106,46 @@
       "keywords": "privacy policy, data protection, GDPR compliance, Gold Swan privacy, personal data security, data usage, online privacy"
     }
   },
-
   "cases": {
+    "listing": {
+      "title": "Our Case Studies",
+      "description": "Real challenges, creative solutions, measurable results.",
+      "cta": {
+        "title": "Ready to Start Your Success Story?",
+        "description": "Let's discuss how we can help your business achieve similar results. Our team is ready to create a customized strategy for your unique challenges.",
+        "button": "Get Started"
+      }
+    },
+    "home": {
+      "title": "Explore Our Success Stories",
+      "cta": "View Case Studies"
+    },
     "labels": {
+      "totalCases": "Total Cases",
+      "categories": "Categories",
+      "industries": "Industries",
       "duration": "Duration",
       "budget": "Budget",
-      "difficulty": "Difficulty",
-      "industry": "Industry",
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+      },
+      "category": {
+        "reputation": "Reputation Management",
+        "marketing": "Digital Marketing",
+        "branding": "Brand Development",
+        "analytics": "Analytics & Strategy",
+        "development": "Web Development"
+      },
+      "industry": {
+        "healthcare": "Healthcare",
+        "retail": "Retail",
+        "technology": "Technology",
+        "finance": "Finance",
+        "education": "Education",
+        "other": "Other"
+      },
       "situation": "Situation",
       "financialDamage": "Financial Damage",
       "problem": "Problem",
@@ -1119,6 +1158,28 @@
       "featured": "Featured",
       "previous": "Previous",
       "next": "Next"
+    },
+    "tags": {
+      "marketingstrategy": "Marketing Strategy",
+      "socialmediamarketing": "Social Media Marketing",
+      "3danimation": "3D Animation",
+      "contentcreation": "Content Creation",
+      "websitedevelopment": "Website Development",
+      "appdevelopment": "App Development",
+      "serm": "SERM",
+      "orm": "ORM",
+      "monitoring": "Monitoring",
+      "analytics": "Analytics",
+      "leadgeneration": "Lead Generation",
+      "youtubeserm": "YouTube SERM",
+      "deindexing": "Deindexing",
+      "digitalpr": "Digital PR",
+      "reputationmanagement": "Reputation Management",
+      "healthcare": "Healthcare",
+      "crisismanagement": "Crisis Management",
+      "seo": "SEO",
+      "pr": "PR",
+      "contentmarketing": "Content Marketing"
     },
     "plastic": {
       "situation": "40 inquiries per week, 12 consultations, 0 sales",
