@@ -35,6 +35,8 @@ export default async function RootLayout(
   const CHAT_DOMAIN = process.env.NEXT_PUBLIC_CHAT_WIDGET_DOMAIN!;
   const CHAT_ID = process.env.NEXT_PUBLIC_CHAT_WIDGET_ID!;
 
+  console.log(CHAT_DOMAIN, CHAT_ID);
+
   return (
     <html
       lang={locale}
@@ -62,29 +64,26 @@ export default async function RootLayout(
           src={`${CHAT_DOMAIN}/scripts/chat-widget.js`}
           data-chat-id={CHAT_ID}
         />
-        <Script id="chat-widget-init" strategy="afterInteractive">
+        <Script
+          id="chat-widget-init"
+          strategy="afterInteractive"
+          data-chat-id={CHAT_ID}
+          data-chat-domain={CHAT_DOMAIN}
+        >
           {`
-            (function () {
-              const { id, domain } = document.currentScript.dataset;
-              function boot() {
-                if (!window.ChatWidget) return;
-                if (!window.ChatWidget._loaded) {
-                  window.ChatWidget.init({
-                    id,
-                    domain,
-                    color: "var(--primary-500)",
-                  });
-                } else {
-                  window.ChatWidget.reload({
-                    id,
-                    domain,
-                    color: "var(--primary-500)",
-                  });
-                }
-              }
-              boot();
-            })();
-          `}
+    (function () {
+      const { chatId: id, chatDomain: domain } = document.currentScript.dataset;
+      function boot() {
+        if (!window.ChatWidget) return;
+        if (!window.ChatWidget._loaded) {
+          window.ChatWidget.init({ id, domain, color: 'var(--primary-500)' });
+        } else {
+          window.ChatWidget.reload({ id, domain, color: 'var(--primary-500)' });
+        }
+      }
+      boot();
+    })();
+  `}
         </Script>
       </body>
     </html>
