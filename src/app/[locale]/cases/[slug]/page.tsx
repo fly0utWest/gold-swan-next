@@ -68,10 +68,10 @@ export default async function CasePage({ params }: CasePageProps) {
   );
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-50 dark:from-black dark:via-neutral-950 dark:to-black">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-r from-amber-900 via-yellow-900 to-amber-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-amber-700/50 dark:border-gray-700/50">
+        <section className="relative overflow-hidden bg-gradient-to-r from-amber-900 via-yellow-900 to-amber-900 dark:from-black dark:via-neutral-950 dark:to-black text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-amber-700/50 dark:border-gray-700/50">
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-amber-600/20"></div>
           <div className="relative max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
@@ -104,7 +104,7 @@ export default async function CasePage({ params }: CasePageProps) {
 
             {/* Case metadata */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm md:text-base">
-              <div className="text-center p-4 bg-white/10 dark:bg-gray-800/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
+              <div className="text-center p-4 bg-white/10 dark:bg-black/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
                 <div className="font-semibold text-gray-200 dark:text-gray-300 mb-1">
                   {labels("duration")}
                 </div>
@@ -112,7 +112,7 @@ export default async function CasePage({ params }: CasePageProps) {
                   {caseMetadata.duration}
                 </div>
               </div>
-              <div className="text-center p-4 bg-white/10 dark:bg-gray-800/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
+              <div className="text-center p-4 bg-white/10 dark:bg-black/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
                 <div className="font-semibold text-gray-200 dark:text-gray-300 mb-1">
                   {labels("budget")}
                 </div>
@@ -120,7 +120,7 @@ export default async function CasePage({ params }: CasePageProps) {
                   {caseMetadata.budget}
                 </div>
               </div>
-              <div className="text-center p-4 bg-white/10 dark:bg-gray-800/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
+              <div className="text-center p-4 bg-white/10 dark:bg-black/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
                 <div className="font-semibold text-gray-200 dark:text-gray-300 mb-1">
                   {labels("difficulty.easy")}
                 </div>
@@ -136,7 +136,7 @@ export default async function CasePage({ params }: CasePageProps) {
                   {getDifficultyLabel(caseMetadata.difficulty)}
                 </div>
               </div>
-              <div className="text-center p-4 bg-white/10 dark:bg-gray-800/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
+              <div className="text-center p-4 bg-white/10 dark:bg-black/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
                 <div className="font-semibold text-gray-200 dark:text-gray-300 mb-1">
                   {labels("industries")}
                 </div>
@@ -166,7 +166,7 @@ export default async function CasePage({ params }: CasePageProps) {
         {/* Main Content Grid */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Situation */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
               {labels("situation")}
@@ -177,7 +177,7 @@ export default async function CasePage({ params }: CasePageProps) {
           </div>
 
           {/* Financial Damage */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-red-500 rounded-full"></div>
               {labels("financialDamage")}
@@ -188,7 +188,7 @@ export default async function CasePage({ params }: CasePageProps) {
           </div>
 
           {/* Problem */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50 lg:col-span-2">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50 lg:col-span-2">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
               {labels("problem")}
@@ -199,7 +199,7 @@ export default async function CasePage({ params }: CasePageProps) {
           </div>
 
           {/* Tasks */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               {labels("tasks")}
@@ -220,7 +220,7 @@ export default async function CasePage({ params }: CasePageProps) {
           </div>
 
           {/* Solutions */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-amber-500 rounded-full"></div>
               {labels("solutions")}
@@ -241,7 +241,7 @@ export default async function CasePage({ params }: CasePageProps) {
           </div>
 
           {/* Results */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
               {labels("results")}
@@ -262,7 +262,7 @@ export default async function CasePage({ params }: CasePageProps) {
           </div>
 
           {/* Financial Effect */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
               {labels("financialEffect")}
@@ -274,7 +274,7 @@ export default async function CasePage({ params }: CasePageProps) {
         </section>
 
         {/* Conclusions – Full Width */}
-        <section className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl mb-12 border border-white/20 dark:border-gray-700/50">
+        <section className="bg-white/80 dark:bg-black/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl mb-12 border border-white/20 dark:border-gray-700/50">
           <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-3">
             <div className="w-4 h-4 bg-amber-500 rounded-full"></div>
             {labels("conclusions")}
@@ -283,10 +283,10 @@ export default async function CasePage({ params }: CasePageProps) {
             {conclusions.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-600 p-6 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-black dark:to-neutral-950 p-6 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-amber-500 font-bold text-xl mt-0.5 bg-white dark:bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center shadow-sm">
+                  <span className="text-amber-500 font-bold text-xl mt-0.5 bg-white dark:bg-black w-8 h-8 rounded-full flex items-center justify-center shadow-sm">
                     {idx + 1}
                   </span>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">

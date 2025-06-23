@@ -59,10 +59,10 @@ export default function CasesPageClient({
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-50 dark:from-black dark:via-neutral-950 dark:to-black">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-r from-amber-900 via-yellow-900 to-amber-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-amber-700/50 dark:border-gray-700/50">
+        <section className="relative overflow-hidden bg-gradient-to-r from-amber-900 via-yellow-900 to-amber-900 dark:from-black dark:via-neutral-950 dark:to-black text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-amber-700/50 dark:border-gray-700/50">
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-amber-600/20"></div>
           <div className="relative max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-black leading-tight bg-gradient-to-r from-white via-yellow-100 to-white dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent drop-shadow-lg mb-8">
@@ -76,7 +76,7 @@ export default function CasesPageClient({
 
         {/* Filters Section */}
         <section className="mb-12">
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20 dark:border-gray-700/50">
+          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
               <svg
                 className="w-6 h-6 text-yellow-600"
@@ -186,7 +186,7 @@ export default function CasesPageClient({
             <Link
               key={caseItem.slug}
               href={`/${locale}/cases/${caseItem.slug}`}
-              className="group block bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50 hover:border-yellow-300 dark:hover:border-yellow-600 overflow-hidden"
+              className="group block bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50 hover:border-yellow-300 dark:hover:border-yellow-600 overflow-hidden"
             >
               <div className="p-8">
                 <div className="flex items-start justify-between mb-6">
@@ -296,7 +296,7 @@ export default function CasesPageClient({
 
         {/* Call to Action */}
         <section className="mt-20 text-center">
-          <div className="relative overflow-hidden bg-gradient-to-r from-yellow-600 via-amber-600 to-amber-600 dark:from-yellow-500 dark:via-amber-500 dark:to-amber-500 text-white p-12 rounded-3xl shadow-2xl">
+          <div className="relative overflow-hidden bg-gradient-to-r from-yellow-600 via-amber-600 to-amber-600 dark:from-black dark:via-neutral-950 dark:to-black text-white p-12 rounded-3xl shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-amber-600/20"></div>
             <div className="relative">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
