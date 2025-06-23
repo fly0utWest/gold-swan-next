@@ -26,10 +26,10 @@ export default function HomePage() {
       <HeroSection />
       <DepartmentSection />
       <AwardsSetion />
+      <CasesSection />
       <PartnersSection />
       <PartnersMarquee />
       <AboutSection />
-      <CasesSection />
       <MarqeeSection />
       <ProjectsSection />
     </>

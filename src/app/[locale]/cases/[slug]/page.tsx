@@ -68,14 +68,14 @@ export default async function CasePage({ params }: CasePageProps) {
   );
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <main className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-slate-700/50 dark:border-gray-700/50">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        <section className="relative overflow-hidden bg-gradient-to-r from-amber-900 via-yellow-900 to-amber-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-amber-700/50 dark:border-gray-700/50">
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-amber-600/20"></div>
           <div className="relative max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-              <h1 className="text-4xl md:text-6xl font-black leading-tight bg-gradient-to-r from-white via-blue-100 to-white dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent drop-shadow-lg">
+              <h1 className="text-4xl md:text-6xl font-black leading-tight bg-gradient-to-r from-white via-yellow-100 to-white dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent drop-shadow-lg">
                 {t("name")}
               </h1>
               <div className="flex gap-2 flex-wrap">
@@ -87,7 +87,7 @@ export default async function CasePage({ params }: CasePageProps) {
                 </Chip>
                 <Chip
                   variant="outline"
-                  className="border-blue-400/50 text-blue-300 bg-blue-900/20 backdrop-blur-sm"
+                  className="border-yellow-400/50 text-yellow-300 bg-yellow-900/20 backdrop-blur-sm"
                 >
                   {getCategoryLabel(caseMetadata.category)}
                 </Chip>
@@ -168,7 +168,7 @@ export default async function CasePage({ params }: CasePageProps) {
           {/* Situation */}
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
-              <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
               {labels("situation")}
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -222,7 +222,7 @@ export default async function CasePage({ params }: CasePageProps) {
           {/* Solutions */}
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50">
             <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-3">
-              <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-amber-500 rounded-full"></div>
               {labels("solutions")}
             </h2>
             <ul className="space-y-3">
@@ -231,7 +231,7 @@ export default async function CasePage({ params }: CasePageProps) {
                   key={idx}
                   className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300"
                 >
-                  <span className="text-purple-500 font-bold mt-0.5 text-lg">
+                  <span className="text-amber-500 font-bold mt-0.5 text-lg">
                     •
                   </span>
                   <span className="leading-relaxed">{item}</span>
@@ -276,7 +276,7 @@ export default async function CasePage({ params }: CasePageProps) {
         {/* Conclusions – Full Width */}
         <section className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl mb-12 border border-white/20 dark:border-gray-700/50">
           <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-3">
-            <div className="w-4 h-4 bg-indigo-500 rounded-full"></div>
+            <div className="w-4 h-4 bg-amber-500 rounded-full"></div>
             {labels("conclusions")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -286,7 +286,7 @@ export default async function CasePage({ params }: CasePageProps) {
                 className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-600 p-6 rounded-xl border border-gray-200 dark:border-gray-600 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-indigo-500 font-bold text-xl mt-0.5 bg-white dark:bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center shadow-sm">
+                  <span className="text-amber-500 font-bold text-xl mt-0.5 bg-white dark:bg-gray-800 w-8 h-8 rounded-full flex items-center justify-center shadow-sm">
                     {idx + 1}
                   </span>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -303,7 +303,7 @@ export default async function CasePage({ params }: CasePageProps) {
           {previousCase ? (
             <Link
               href={`/${locale}/cases/${previousCase.slug}`}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-slate-700 hover:bg-slate-600 dark:bg-gray-700 dark:hover:bg-gray-600 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium border border-slate-600/50 dark:border-gray-600/50 shadow-md hover:shadow-xl"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 dark:from-yellow-500 dark:to-amber-500 dark:hover:from-yellow-600 dark:hover:to-amber-600 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium border border-yellow-500/50 dark:border-yellow-400/50 shadow-md hover:shadow-xl"
             >
               <svg
                 className="w-5 h-5"
@@ -330,7 +330,7 @@ export default async function CasePage({ params }: CasePageProps) {
           {nextCase && (
             <Link
               href={`/${locale}/cases/${nextCase.slug}`}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 dark:from-blue-500 dark:to-indigo-500 dark:hover:from-blue-600 dark:hover:to-indigo-600 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium border border-blue-500/50 dark:border-blue-400/50 shadow-md hover:shadow-xl"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 dark:from-yellow-500 dark:to-amber-500 dark:hover:from-yellow-600 dark:hover:to-amber-600 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium border border-yellow-500/50 dark:border-yellow-400/50 shadow-md hover:shadow-xl"
             >
               {labels("next")}:{" "}
               {nextCase.slug
