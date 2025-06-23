@@ -748,7 +748,7 @@
         "secondString": "Kast & val",
         "thirdString": "Ljósmyndun & myndbandsgerð"
       },
-      "description": "Sjónræn framsetning skiptir sköpum í að byggja upp farsælt vörumerki. Deildin okkar, Casting & Production, býður upp á alhliða þjónustu við val á fyrirsætum og skipulag faglegra tökudaga fyrir auglýsingaherferðir, tískuiðnaðinn og viðskiptaverkefni.",
+      "description": "Sjónræn framsetning skiptir sköpum í að byggja upp farsælt vörumerki. Deildin okkar, Casting & Production, býður upp á alhliða þjónustu við val á fyrirsætum og skipulag faglegra tökudaga fyrir auglýsingaherferðir, tískuiðnaðinn og viðskiptaþarfir.",
       "castingAndModelSelection": {
         "title": "Val og ráðning fyrirsæta",
         "features": {
@@ -1127,6 +1127,7 @@
       "duration": "Tímalengd",
       "budget": "Fjárhagsáætlun",
       "difficulty": {
+        "label": "Vigt",
         "easy": "Auðvelt",
         "medium": "Miðlungs",
         "hard": "Erfitt"
@@ -1179,7 +1180,8 @@
       "crisismanagement": "Kreppustjórnun",
       "seo": "SEO",
       "pr": "Almannatengsl",
-      "contentmarketing": "Efnis markaðssetning"
+      "contentmarketing": "Efnis markaðssetning",
+      "hr": "Mannauðsmál"
     },
     "plastic": {
       "situation": "40 fyrirspurnir á viku, 12 ráðgjafir, 0 sala",
@@ -1268,6 +1270,389 @@
         "0": "Skortur á hraðum viðbrögðum kostaði fyrirtækið milljónir",
         "1": "ORM-vinna endurheimti ekki aðeins stöður heldur þrefaldaði sölu",
         "2": "Tímanleg inngrip er lykill að velgengni í orðsporsstjórnun"
+      }
+    },
+    "taxi-service": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Leigubílaþjónusta",
+      "problem": "Lítil umfjöllun um vörumerkið meðal fagfólks (bílstjóra) á samfélagsmiðlum; Skortur á fullnægjandi upplýsingum um kosti þess að vinna með þjónustunni á samfélagsmiðlum.",
+      "finDamage": "Fjárhagsáætlun: 5.000.000 ₽/ár",
+      "tasks": {
+        "0": "Auka vitund og aðdráttarafl þjónustunnar meðal bílstjóra",
+        "1": "Upplýsa um laus störf og starfsskilyrði meðal íbúa í borgum þar sem þjónustan er að hefja starfsemi",
+        "2": "Vekja athygli bílstjóra á þjónustunni"
+      },
+      "solutions": {
+        "0": "Hvetja tryggða bílstjóra sem þegar starfa með þjónustunni til að deila reynslu sinni á samfélagsmiðlum",
+        "1": "Velja þematengd og borgartengd samfélög á samfélagsmiðlum til að birta upplýsingar um þjónustuna",
+        "2": "Guerilla-markaðssetning til að auka vitund um vörumerkið á samfélagsmiðlum"
+      },
+      "results": {
+        "0": "Umfjöllun um vörumerkið af notendum í forgangsborgum þrefaldaðist",
+        "1": "Aukin dreifing og vitund — yfir 200.000 raunverulegir notendur sáu umræður",
+        "2": "Yfir 1.000 notendur tóku þátt í umræðum um fyrirtækið",
+        "3": "Yfir 200 bílstjórar sögðu frá reynslu sinni af þjónustunni"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Munnleg kynning og reynslusögur bílstjóra eru öflug leið til að byggja upp traust og vitund í faglegum samfélögum.",
+        "1": "Markviss þátttaka í staðbundnum og þematengdum samfélögum eykur útbreiðslu og mikilvægi skilaboða.",
+        "2": "Guerilla-markaðssetning getur verið mjög áhrifarík til að auka sýnileika vörumerkis á samkeppnismörkuðum þar sem erfitt er að ná til markhópsins."
+      }
+    },
+    "metallurgy-mining": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Málmvinnslu- og námufyrirtæki",
+      "problem": "Neikvætt upplýsingaumhverfi í kringum vörumerkið: óánægja meðal íbúa á svæðum þar sem fyrirtækið starfar (umræðuefni — umhverfismál, stefna fyrirtækisins í einnar atvinnugreinar bæjum). Neikvætt viðhorf á ráðningavefjum.",
+      "finDamage": "Fjárhagsáætlun: 2.232.000 ₽/ár",
+      "tasks": {
+        "0": "Stofna og virkja áhrifavalda í svæðisbundnum samfélögum",
+        "1": "Þátttaka áhrifavalda í umræðum til að draga úr neikvæðu viðhorfi heimamanna",
+        "2": "Vinna með ráðningavefjum og ráðleggingakerfum"
+      },
+      "solutions": {
+        "0": "Skrifa og birta greinar um starfsemi viðskiptavinarins í staðbundnum fjölmiðlum",
+        "1": "Guerilla-markaðssetning til að auka hollustu við vörumerkið á samfélagsmiðlum",
+        "2": "Eftirlit og viðbrögð við öllum uppbyggilegum umfjöllunum um fyrirtækið sem opinber fulltrúi til að draga úr neikvæðni",
+        "3": "Fjarlæging keyptra neikvæðra myndbanda af YouTube"
+      },
+      "results": {
+        "0": "Dregið úr 70% neikvæðra umfjöllunar",
+        "1": "Einkunnir á ráðningavefjum hækkuðu úr 1,5 í 4*",
+        "2": "Aukin hollusta íbúa í starfssvæðum fyrirtækisins, hollustuvísitalan tvöfaldaðist úr 0,34 í 0,68%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Framsækin þátttaka í staðbundnum samfélögum er lykilatriði í orðsporsstjórnun í viðkvæmum atvinnugreinum.",
+        "1": "Sambland af opinberum svörum og guerilla-markaðssetningu getur dregið verulega úr neikvæðni og aukið hollustu.",
+        "2": "Stöðugt eftirlit og skjót viðbrögð við efni á netinu eru lykillinn að jákvæðri ímynd vörumerkis."
+      }
+    },
+    "sports-retail-leader": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Leiðandi smásali í íþróttavörumarkaði",
+      "problem": "Í upphafi verkefnis voru 41% niðurstaðna í Yandex-leit neikvæðar, aðallega vegna óskipulagðrar vöruafhendingar. Í heimsfaraldrinum varð að fækka starfsfólki, sem leiddi til tvöföldunar á neikvæðum umfjöllunum um vörumerkið á einum mánuði. Lág einkunn á ráðningavefjum (2–2,5*). Mikill fjöldi neikvæðra notendaumræðna: neikvæð umfjöllun var meira en tvöfalt meiri en jákvæð.",
+      "finDamage": "Fjárhagsáætlun: 4.800.000 ₽/ár",
+      "tasks": {
+        "0": "Vinna með neikvæðni í leitarniðurstöðum",
+        "1": "Styðja við talsmenn vörumerkisins á opinberum samfélagsmiðlum fyrirtækisins",
+        "2": "Vinna sem opinber fulltrúi",
+        "3": "Vinna með ráðleggingavefjum til að hækka einkunnir"
+      },
+      "solutions": {
+        "0": "Myndun samfélaga talsmanna vörumerkisins til að draga úr neikvæðum skilaboðum",
+        "1": "Búa til og efla nýja og núverandi jákvæða efniseyjur í efstu 10 leitarniðurstöðum Yandex og Google",
+        "2": "Þróa aðferðir til að hvetja trygga viðskiptavini og starfsmenn til að birta á mikilvægustu ráðleggingavefjum"
+      },
+      "results": {
+        "0": "Einkunnir á ráðleggingavefjum hækkuðu úr 2* í 4*",
+        "1": "90% jákvæðar síður í efstu 10 leitarniðurstöðum Yandex og Google",
+        "2": "Há einkunn á kortum í staðbundnum þjónustum: úr 2* í 4,4*"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Að byggja upp og styðja samfélög talsmanna vörumerkisins er lykilatriði í endurreisn orðspors í kreppu.",
+        "1": "Stefnumiðuð efnisgerð og SEO geta snúið hlutfalli jákvæðra og neikvæðra leitarniðurstaðna við.",
+        "2": "Að hvetja trygga viðskiptavini og starfsmenn til að deila reynslu sinni á lykilvettvangi eykur traust og einkunnir."
+      }
+    },
+    "large-construction-company": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stórt byggingarfyrirtæki",
+      "problem": "Neytendaöfgar: viðskiptavinir leituðu að ímynduðum göllum í keyptum íbúðum og kröfðust skaðabóta. Lögfræðingar sem græddu á málsóknum auglýstu þjónustu sína, buðu að endurheimta skaðabætur frá verktakanum af hvaða ástæðu sem er, auglýstu á neikvæðum fréttum um vörumerkið (oft sjálfir að búa þær til), eða stofnuðu samfélög á samfélagsmiðlum til að safna og magna upp þessar upplýsingar.",
+      "finDamage": "Fjárhagsáætlun: 3.408.000 ₽/ár",
+      "tasks": {
+        "0": "Stofna og virkja áhrifavalda í spjallhópum íbúa",
+        "1": "Eftirlit og skjót viðbrögð við upplýsingagjöf og krísum í spjallhópum og opinberu upplýsingarumhverfi",
+        "2": "Stjórna almenningsáliti í spjallhópum og opinberu upplýsingarumhverfi",
+        "3": "Draga úr hlutfalli neikvæðra umfjöllunar miðað við jákvæða",
+        "4": "Auka lífræna jákvæðni og hollustu notenda við vörumerkið",
+        "5": "Vinna með leitarniðurstöðum (SERM): draga úr neikvæðni, auka jákvæða efniseyjur, bæta einkunnir á iðnaðar- og almennum ráðleggingavefjum"
+      },
+      "solutions": {
+        "0": "Eftirlit og greining á upplýsingaflæði um vörumerkið, þar á meðal handvirkt í spjallhópum íbúa",
+        "1": "Greina virkustu notendur, greina aðgerðir þeirra, útbúa skýrslu um hvern aðgerðarsinna",
+        "2": "Stofna og efla óopinber samfélög á samfélagsmiðlum",
+        "3": "Búa til nýjar efniseyjur og koma þeim í efstu 10 leitarniðurstöður fyrir vörumerkja- og orðsporsleitarorð",
+        "4": "Þróa aðferðir til að hvetja trygga viðskiptavini og starfsmenn til að birta á forgangsráðleggingavefjum",
+        "5": "Guerilla-markaðssetning til að auka hollustu við vörumerkið á samfélagsmiðlum",
+        "6": "(frátekið/placeholder)",
+        "7": "(frátekið/placeholder)"
+      },
+      "results": {
+        "0": "Fjöldi einstaka vefslóða minnkaði úr 47 í 29",
+        "1": "Fjöldi endurtekninga minnkaði úr 143 í 99",
+        "2": "Hlutfall neikvæðni lækkaði úr 72% í 44%",
+        "3": "Hlutfall jákvæðrar umfjöllunar í efstu 10 Yandex/Google jókst, neikvæð minnkaði, þrátt fyrir stöðuga neikvæða herferð",
+        "4": "Jákvæð einkunn myndaðist á helstu ráðlegginga- og umræðuportölum",
+        "5": "Veruleg minnkun á trausti til lögfræðinga-aðgerðarsinna og frumkvöðlahóps undir stjórn atvinnu 'hótunarmanns'",
+        "6": "(frátekið/placeholder)",
+        "7": "(frátekið/placeholder)"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Framsækið eftirlit og þátttaka í samfélögum íbúa er lykilatriði í orðsporsstjórnun í byggingargeiranum.",
+        "1": "Sambland af SERM, efnisgerð og guerilla-markaðssetningu getur snúið hlutfalli netumræðu verulega við.",
+        "2": "Til að draga úr áhrifum neikvæðra aðgerðarsinna þarf bæði upplýsingastjórnun og samfélagsstjórnun.",
+        "3": "Að hvetja trygga viðskiptavini og starfsmenn til að deila reynslu sinni er lykill að bættum einkunnum og trausti.",
+        "4": "Að hvetja trygga viðskiptavini og starfsmenn til að deila reynslu sinni er lykill að bættum einkunnum og trausti.",
+        "5": "Að hvetja trygga viðskiptavini og starfsmenn til að deila reynslu sinni er lykill að bættum einkunnum og trausti.",
+        "6": "(frátekið/placeholder)",
+        "7": "(frátekið/placeholder)"
+      }
+    },
+    "regional-developer": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stórt svæðisbundið byggingarfyrirtæki",
+      "problem": "80% af efstu 10 leitarniðurstöðum voru óviðkomandi síður sem tengdust ekki eignum fyrirtækisins. Lág einkunn á staðsetningarþjónustum (niður í 2*). Neikvæðar umræður í spjallhópum íbúa.",
+      "finDamage": "Fjárhagsáætlun: 1.900.000 ₽/ár",
+      "tasks": {
+        "0": "Auka hlutfall jákvæðni í leitarniðurstöðum",
+        "1": "Búa til viðeigandi kort á ráðleggingavefjum",
+        "2": "Hækka einkunnir á staðsetningarþjónustum",
+        "3": "Nivellera neikvæðar umræður"
+      },
+      "solutions": {
+        "0": "Eftirlit og viðbrögð við öllum uppbyggilegum umfjöllunum sem opinber fulltrúi til að draga úr neikvæðni",
+        "1": "Búa til nýjar efniseyjur til að koma viðeigandi jákvæðum upplýsingum í efstu 10 leitarniðurstöður",
+        "2": "Þróa og innleiða aðferðir til að hvetja trygga viðskiptavini og starfsmenn til að birta á forgangsráðleggingavefjum",
+        "3": "Innleiðing í spjallhópa íbúa, eftirlit með upplýsingaflæði, greina mögulegar krísur til að leysa þær utan netsins"
+      },
+      "results": {
+        "0": "Einkunnir á ráðleggingavefjum hækkuðu úr 2* í 4*",
+        "1": "90% jákvæðar síður í efstu 10 leitarniðurstöðum Yandex og Google",
+        "2": "Há einkunn á kortum í staðbundnum þjónustum: úr 2* í 4,4*"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Viðeigandi og jákvæðar efniseyjur eru nauðsynlegar til að stjórna orðspori í leitarniðurstöðum.",
+        "1": "Virk þátttaka í spjallhópum íbúa hjálpar til við að draga úr neikvæðni við uppruna hennar.",
+        "2": "Að hvetja trygga viðskiptavini og starfsmenn til að deila reynslu sinni er lykill að bættum einkunnum og trausti.",
+        "3": "Að hvetja trygga viðskiptavini og starfsmenn til að deila reynslu sinni er lykill að bættum einkunnum og trausti."
+      }
+    },
+    "sanitaryware-manufacturer": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stórt fyrirtæki í framleiðslu á hreinlætistækjum",
+      "problem": "Óuppbyggilegur neikvæðni í leitarniðurstöðum bæði fyrir vöru og mannauð. Lág eða ómótuð einkunn á mikilvægustu ráðleggingavefjum.",
+      "finDamage": "Fjárhagsáætlun: yfir 3.000.000 ₽/ár",
+      "tasks": {
+        "0": "Draga úr núverandi neikvæðni í fjölmiðlarýminu",
+        "1": "Mynda stöðuga jákvæða einkunn á ráðleggingavefjum",
+        "2": "Fara fram úr samkeppnisaðilum í fjölda umtals á markaðstorgum og öðrum lykilvettvöngum"
+      },
+      "solutions": {
+        "0": "Eftirlit með samkeppnisumhverfi og birting upplýsinga um viðskiptavininn á netinu í meira magni en samkeppnisaðilar",
+        "1": "Byggja upp jákvæða ímynd fyrir viðskiptavininn á helstu markaðstorgum og e-commerce vettvöngum í Rússlandi og CIS",
+        "2": "Búa til efniseyjur í fjölmiðlum og samfélagsmiðlum til að auka vitund og leggja áherslu á lykilatriði (kostir vörumerkis, nýjar línur, nýjar söluleiðir, útsölur o.s.frv.)",
+        "3": "Stofna og viðhalda óopinberu samfélagi talsmanna vörumerkisins til að laða að tryggan hóp og staðsetja mögulega neikvæðni",
+        "4": "Fjarlægja órökstudda neikvæðni með kvörtunum frá opinberum fulltrúa vörumerkisins",
+        "5": "Kynna jákvæðar og hlutlausar upplýsingar um viðskiptavininn í leitarniðurstöðum",
+        "6": "Birta greinar um viðskiptavininn í helstu almennu og iðnaðartengdum fjölmiðlum",
+        "7": "Setja inn umtal um viðskiptavininn í viðeigandi Wikipedia-grein"
+      },
+      "results": {
+        "0": "Leitarniðurstöður Yandex batnuðu: jákvæðni jókst um 23%, neikvæðni minnkaði um 34%",
+        "1": "Einkunn á forgangsvettvangi viðskiptavinarins hækkaði úr 20% í 60%",
+        "2": "Yfir 30 efniseyjur voru búnar til og komust í topp 10 á Yandex og Google fyrir flestar vörumerkja- og orðsporsleitarniðurstöður",
+        "3": "5% neikvæðs efnis var fjarlægt af ráðleggingavefjum"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Framsækin efnisgerð og magn geta yfirbugað samkeppnisaðila og breytt viðhorfi til vörumerkisins.",
+        "1": "Að byggja upp trygg samfélög og talsmenn er lykillinn að því að staðsetja og hlutleysa neikvæðni.",
+        "2": "Stratégísk notkun e-commerce og fjölmiðlavettvanga styrkir jákvæða ímynd vörumerkisins."
+      }
+    },
+    "cosmetics-manufacturer": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stórt snyrtivörufyrirtæki",
+      "problem": "Seinkun á móttöku upplýsinga um krísur. Skortur á upplýsingum um nýjar vörur á mikilvægustu ráðleggingavefjum.",
+      "finDamage": "Fjárhagsáætlun: 2.500.000 ₽/ár",
+      "tasks": {
+        "0": "Skjótt að greina upplýsingavirkni og krísur",
+        "1": "Kynna nýjar vörur fyrir markhópi vörumerkisins",
+        "2": "Auka vitund notenda um vörur viðskiptavinarins",
+        "3": "Fræðsluáætlun fyrir viðskiptavini: setja ímynd og sértækar upplýsingar um vörur í allt efni sem birtist"
+      },
+      "solutions": {
+        "0": "Eftirlit með upplýsingasviði fyrir viðeigandi vörumerki og þróun viðmiðakerfis fyrir öll mál sem krefjast verndar",
+        "1": "Viðbrögð við krísum (t.d. neikvætt YouTube myndband): þróa varnarstefnu, búa til viðbragðsrök, dreifa öðrum sjónarmiðum",
+        "2": "Birta upplýsingar frá öráhrifavöldum um nýjar vörur á mikilvægustu vettvöngum til að auka vitund og byggja upp jákvæða ímynd fyrir þessar vörur"
+      },
+      "results": {
+        "0": "Yfir 300 UGC efnisatriði um nýjar vörur voru birt til að upplýsa notendur og hvetja þá til að búa til sitt eigið efni",
+        "1": "5 krísu- og mögulega krísuatburðir voru greindir og hlutleysaðir. Bráðaviðbrögð við 5 áhættusömum aðstæðum."
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Tímabær krísuefirlit og viðbrögð eru grundvöllur orðsporsverndar.",
+        "1": "Notkun öráhrifavalda og UGC eykur vitund og traust til nýrra vara.",
+        "2": "Fræðsluefni fyrir viðskiptavini styrkir tryggð og skilning á vörum."
+      }
+    },
+    "auto-manufacturer": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stórt bílaframleiðslufyrirtæki",
+      "problem": "Neikvætt almenningsálit um gæði vöru hefur myndast áratugum saman; vörumerkið varð að orðtaki. Engir opinberir fulltrúar vörumerkisins á samfélagsmiðlum eða sértækum vettvöngum.",
+      "finDamage": "Fjárhagsáætlun: 7.200.000 ₽/ár",
+      "tasks": {
+        "0": "Auka tryggð við vörumerkið",
+        "1": "Draga úr og hlutleysa neikvæðar umræður",
+        "2": "Eftirlit og greining á upplýsingasviði",
+        "3": "Greina og tilkynna vandamál til viðskiptavinarins"
+      },
+      "solutions": {
+        "0": "Eftirlit og greining á upplýsingasviði vörumerkisins til að greina krísur og meta viðhorf notenda",
+        "1": "Stofna og þróa opinberan fulltrúa vörumerkisins á forgangsvettvöngum",
+        "2": "Veita tæknilega aðstoð notendum í gegnum opinberan fulltrúa bæði í einkaskilaboðum og opinberum vettvangi",
+        "3": "Yfir 100 dagleg samtöl við notendur í gegnum opinberan fulltrúa á samfélagsmiðlum",
+        "4": "Safna núverandi vandamálum og flóknum spurningum notenda og senda til þjónustumiðstöðvar viðskiptavina"
+      },
+      "results": {
+        "0": "Yfir 60% neikvæðra umtala í upplýsingasviði vörumerkisins voru hlutleysuð",
+        "1": "Viðskiptavinir þökkuðu fyrir vandaða ráðgjöf, sem jók tryggð við vörumerkið verulega"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Samfelld og vönduð þjónusta við notendur getur breytt viðhorfi til vörumerkis, jafnvel eftir áratugi af neikvæðni.",
+        "1": "Opinber nærvera og þátttaka vörumerkisins á lykilvettvöngum er lykilatriði í orðsporsstjórnun.",
+        "2": "Framsækin söfnun vandamála og endurgjafar tryggir stöðugar umbætur og aukna tryggð."
+      }
+    },
+    "fitness-chain": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stór keðja líkamsræktarstöðva",
+      "problem": "67% neikvæðni í topp 10 leitarniðurstöðum Yandex og Google. Lág einkunn á stöðukortum niður í 3,5*. Lág einkunn fyrir farsímaforrit stöðvarinnar í AppStore og Google Play.",
+      "finDamage": "Fjárhagsáætlun: 4.200.000 ₽/ár",
+      "tasks": {
+        "0": "Draga úr hlutfalli neikvæðni í leitarniðurstöðum",
+        "1": "Auka hlutfall jákvæðni í leitarniðurstöðum",
+        "2": "Auka tryggð við vörumerkið",
+        "3": "Draga úr og hlutleysa neikvæðar umræður",
+        "4": "Auka einkunnir á ráðleggingavefjum",
+        "5": "Eftirlit og greining á upplýsingasviði"
+      },
+      "solutions": {
+        "0": "Búa til nýjar efniseyjur",
+        "1": "Þróa aðferðir til að hvetja trygga viðskiptavini og starfsmenn til að birta upplýsingar á mikilvægustu ráðleggingavefjum",
+        "2": "Skrifa og birta greinar um starfsemi viðskiptavinarins og koma þeim í topp 10 leitarniðurstaða Yandex og Google",
+        "3": "Skrá opinbera fulltrúa fyrirtækisins til að hlutleysa neikvæðni og auka tryggð við vörumerkið",
+        "4": "Senda inn kvartanir frá opinberum fulltrúa vörumerkisins vegna óuppbyggilegra og óupplýsandi neikvæðra umsagna til að fá þær fjarlægðar"
+      },
+      "results": {
+        "0": "Á tveimur árum jókst tryggð viðskiptavina við vörumerkið. Neikvæðni í upplýsingasviði vörumerkisins minnkaði um 60%",
+        "1": "Einkunnir á ráðleggingavefjum hækkuðu úr 2,8* í 4–5*",
+        "2": "Með því að hækka einkunnir á ráðleggingavefjum tókst að minnka neikvæðni í topp 10 leitarniðurstaða Yandex og Google úr 67% í 10%",
+        "3": "Yfir 50 jákvæðar efniseyjur voru búnar til, 30 þeirra komust í topp 10 leitarniðurstaða fyrir ýmsar vörumerkja- og orðsporsleitarniðurstöður"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Kerfisbundin vinna með efni og einkunnir getur dregið verulega úr neikvæðni í leitarniðurstöðum.",
+        "1": "Að virkja trygga viðskiptavini og starfsmenn er lykillinn að bættri orðsporsstjórnun á netinu.",
+        "2": "Opinber nærvera vörumerkisins og virkt kvartanastjórnun hjálpar til við að fjarlægja óuppbyggilega neikvæðni."
+      }
+    },
+    "travel-platform": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Vefur fyrir flugmiða og hótelbókanir",
+      "problem": "Neikvætt upplýsingasvið umhverfis vörumerkið í Rússlandi, Úkraínu, Kasakstan og Hvíta-Rússlandi. Óánægja viðskiptavina vegna óendurgreiddra miða.",
+      "finDamage": "Fjárhagsáætlun: 4.751.400 ₽/ár",
+      "tasks": {
+        "0": "Vinna með neikvæðni í leitarniðurstöðum",
+        "1": "Stuðningur talsmanna vörumerkisins í opinberum samfélagsmiðlum fyrirtækisins",
+        "2": "Vinna með ráðleggingavefjum til að hækka einkunnir",
+        "3": "Finna bloggara og vinna með bloggum til að auka vitund um fyrirtækið",
+        "4": "Samvinna við þjónustuver viðskiptavinarins til að leysa flókin mál"
+      },
+      "solutions": {
+        "0": "Reglulegt eftirlit og greining á upplýsingasviði umhverfis vörumerkið",
+        "1": "Fylgjast með og vinna úr öllum viðeigandi umtölum um fyrirtækið sem opinber fulltrúi til að hlutleysa neikvæðni",
+        "2": "Mynda samfélag talsmanna vörumerkisins og virkja þá til að hlutleysa neikvæðni",
+        "3": "Skrifa og birta greinar á sértækum rásum eins og Yandex.Zen",
+        "4": "Guerilla-markaðssetning til að auka vitund um vörumerkið á samfélagsmiðlum"
+      },
+      "results": {
+        "0": "Einkunnir á ráðleggingavefjum hækkuðu úr 2,5 í 4,0*",
+        "1": "Hlutfall jákvæðni jókst úr 25% í 42%, neikvæðni minnkaði um 25%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Samfélagsþátttaka og talsmenn vörumerkisins eru öflug tæki til að endurheimta orðspor.",
+        "1": "Framsækið eftirlit og opinber svör hjálpa til við að draga úr neikvæðni og hækka einkunnir.",
+        "2": "Guerilla-markaðssetning og bloggara samstarf getur aukið vitund um vörumerkið í mörgum löndum."
+      }
+    },
+    "shoe-retailer": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Stór skóbúðarkeðja",
+      "problem": "Mikil neikvæðni (34%) frá núverandi og fyrrverandi starfsmönnum í leitarniðurstöðum Yandex og Google. Kvartanir um laun, yfirvinnu og staðbundna stjórnendur.",
+      "finDamage": "Fjárhagsáætlun: 1.020.000 ₽/ár",
+      "tasks": {
+        "0": "Draga úr hlutfalli neikvæðni frá starfsmönnum á netinu",
+        "1": "Byggja upp samskipti milli stjórnenda og starfsfólks til að bæta vinnuaðstæður"
+      },
+      "solutions": {
+        "0": "Tengja YouScan eftirlitskerfi til að safna og greina HR-umtal og greina ágreiningsefni milli stjórnenda og undirmanna. Á grundvelli greiningarinnar hélt viðskiptavinurinn fundi með staðbundnum stjórnendum til að leysa tiltekin vandamál",
+        "1": "Framkvæmd var úttekt til að finna viðeigandi neikvæða vettvanga fyrir áframhaldandi vinnu á tveimur sviðum: (a) stofna opinbera reikninga til að svara uppbyggilegum neikvæðum umsögnum og hjálpa starfsmönnum; (b) þróa og innleiða innra hvatakerfi til að auka virkni og einkunnir á þessum vettvöngum"
+      },
+      "results": {
+        "0": "Upphaf: Jákvæðni — 18%; Neikvæðni — 34%; Hlutlaust — 48%",
+        "1": "Eftir 6 mánuði: Jákvæðni — 80%; Neikvæðni — 6%; Hlutlaust — 17%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Orðsporsstjórnun í HR krefst bæði ytri og innri samskiptastefnu.",
+        "1": "Eftirlit og greining hjálpa til við að finna og leysa rót vandans.",
+        "2": "Að hvetja starfsmenn til að taka þátt í orðsporsbótum getur skilað stórkostlegum árangri."
+      }
+    },
+    "gas-station-network": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Ein stærsta bensínstöðvakeðja landsins",
+      "problem": "Vandamál í upplýsingasviði: bilanir á bílum tengdar gæðum eldsneytis; kvartanir viðskiptavina um biðraðir og þjónustugæði. Í upphafi: 45% neikvæðni, 15% jákvæðni, 40% hlutlaust. Í leitarvélum var mest neikvæðni á ráðleggingavefjum í 5 landshlutum. Heildarhlutfall neikvæðni var um 60%.",
+      "finDamage": "Fjárhagsáætlun: 6.000.000 ₽/ár",
+      "tasks": {
+        "0": "Hlutleysa neikvæðni með þátttöku talsmanna vörumerkisins",
+        "1": "Auka lífræna virkni notenda"
+      },
+      "solutions": {
+        "0": "Mynda samfélag talsmanna vörumerkisins og virkja þá til að hlutleysa neikvæðni",
+        "1": "Vinna með almenningsálit með birtingu myndbanda frá bílasérfræðingum og bloggurum sem deildu öðrum sjónarmiðum og gáfu ráð til ökumanna"
+      },
+      "results": {
+        "0": "Með sameiginlegri virkni náðist jákvæð þróun: neikvæðni minnkaði úr 45% í 20% (–25%), jákvæðni jókst úr 15% í 38% (+23%, þar af 8% vegna áhrifaaðila), hlutlaust 42% (+2%)",
+        "1": "Með því að breyta tón og hækka einkunnir á ráðleggingavefjum tókst að minnka neikvæðni í leitarniðurstöðum úr 60% í 10%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Samfélög talsmanna vörumerkisins og sérfræðiefni geta breytt almenningsáliti og leitarniðurstöðum.",
+        "1": "Svæðisbundin áhersla og vettvangsvinna eru lykilatriði fyrir stóras keðjur.",
+        "2": "Stöðugt eftirlit og stýring á tón eru lykillinn að langtíma orðsporsbótum."
+      }
+    },
+    "premium-tech-retail": {
+      "situation": "Undir þagnarskyldu",
+      "name": "Keðja verslana með einnar vöru lúxustækni",
+      "problem": "Yfir 30% neikvæðni í topp 10 Yandex og Google; yfir 20% óviðkomandi síður tengdar samkeppnisaðilum eða endursöluaðilum; lág einkunn á ráðleggingavefjum — niður í 3,5*; dagleg neikvæðni á Yandex.Kortum og Yandex.Markaðnum; engin skjót svör frá opinberum fulltrúa; toppar neikvæðni hjá bloggurum.",
+      "finDamage": "Fjárhagsáætlun: 2.130.000 ₽/ár",
+      "tasks": {
+        "0": "Minnka álag á þjónustuver viðskiptavinarins með því að veita stofunni umboð til að vinna úr neikvæðum umtölum sem opinber fulltrúi á samfélagsmiðlum og staðsetningarþjónustum."
+      },
+      "solutions": {
+        "0": "Fylgjast með og vinna úr öllum viðeigandi umtölum um fyrirtækið til að hlutleysa neikvæðni",
+        "1": "Veita tæknilega aðstoð notendum sem opinber fulltrúi bæði í einkaskilaboðum og í öllu upplýsingasviðinu",
+        "2": "Búa til miða í UseDesk kerfinu til að leysa mál viðskiptavina með aðstoð þjónustudeildar viðskiptavinarins"
+      },
+      "results": {
+        "0": "Með sameiginlegri virkni náðist jákvæð þróun: neikvæðni minnkaði úr 45% í 20% (–25%), jákvæðni jókst úr 15% í 38% (+23%, þar af 8% vegna áhrifaaðila), hlutlaust 42% (+2%)",
+        "1": "Með því að breyta tón og hækka einkunnir á ráðleggingavefjum tókst að minnka neikvæðni í leitarniðurstöðum úr 60% í 10%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Að fela orðsporsstjórnun í hendur stofu getur dregið verulega úr álagi á innri þjónustu og bætt árangur.",
+        "1": "Skjót, opinber svör og tæknileg aðstoð eru lykillinn að því að hlutleysa daglega neikvæðni.",
+        "2": "Kerfisbundið eftirlit og miðakerfi tryggja skilvirka og gagnsæja lausn á málum viðskiptavina."
       }
     }
   }

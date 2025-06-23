@@ -1127,6 +1127,7 @@
       "duration": "Duration",
       "budget": "Budget",
       "difficulty": {
+        "label": "Difficulty",
         "easy": "Easy",
         "medium": "Medium",
         "hard": "Hard"
@@ -1179,7 +1180,8 @@
       "crisismanagement": "Crisis Management",
       "seo": "SEO",
       "pr": "PR",
-      "contentmarketing": "Content Marketing"
+      "contentmarketing": "Content Marketing",
+      "hr": "HR"
     },
     "plastic": {
       "situation": "40 inquiries per week, 12 consultations, 0 sales",
@@ -1268,6 +1270,381 @@
         "0": "Lack of quick response cost the company millions",
         "1": "ORM work not only restored positions but tripled sales",
         "2": "Timely intervention is the key to success in reputation management"
+      }
+    },
+    "taxi-service": {
+      "situation": "Under NDA",
+      "name": "Taxi Service",
+      "problem": "Low brand mention among the professional community (drivers) in social media; Lack of complete and sufficient information about the benefits of working with this service in social networks.",
+      "finDamage": "Budget: ₽5,000,000/year",
+      "tasks": {
+        "0": "Increase awareness and attractiveness of the service among drivers",
+        "1": "Inform about job openings and working conditions among the population in cities where the service is launching",
+        "2": "Attract drivers' attention to the service"
+      },
+      "solutions": {
+        "0": "Encourage loyal drivers already working with the service to share their experiences on social media",
+        "1": "Select thematic and city communities in social networks for posting information about the service",
+        "2": "Guerrilla marketing to increase brand awareness in social media"
+      },
+      "results": {
+        "0": "Brand mentions by users in priority cities increased 3x",
+        "1": "Reach and awareness increased — more than 200,000 real users saw the discussions",
+        "2": "Over 1,000 users engaged in company discussions",
+        "3": "Over 200 drivers shared their experience working with the service"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Peer advocacy among drivers is a powerful tool for building trust and awareness in professional communities.",
+        "1": "Targeted engagement in local and thematic communities amplifies message reach and relevance.",
+        "2": "Guerrilla marketing can be highly effective for increasing brand visibility in competitive and hard-to-penetrate markets."
+      }
+    },
+    "metallurgy-mining": {
+      "situation": "Under NDA",
+      "name": "Metallurgy and Mining Company",
+      "problem": "Negative information environment around the brand: dissatisfaction among citizens in the regions of the company's presence (topics — ecology, company policy in single-industry towns). Negative tone on HR recommendation platforms.",
+      "finDamage": "Budget: ₽2,232,000/year",
+      "tasks": {
+        "0": "Create and deploy influence agents in regional communities",
+        "1": "Engage influence agents in discussions to reduce negative sentiment among local residents",
+        "2": "Work with HR recommendation platforms"
+      },
+      "solutions": {
+        "0": "Writing and publishing articles about the client's activities in local media",
+        "1": "Guerrilla marketing to increase brand loyalty in social networks",
+        "2": "Monitoring and addressing all constructive mentions of the company as an official representative to neutralize negativity",
+        "3": "Removal of commissioned negative videos from YouTube"
+      },
+      "results": {
+        "0": "Neutralization of 70% of negative mentions",
+        "1": "Ratings on recommendation platforms increased from 1.5 to 4*",
+        "2": "Increased loyalty among residents in the company's cities, loyalty index doubled from 0.34 to 0.68%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Proactive engagement in local communities is essential for reputation management in sensitive industries.",
+        "1": "Combining official responses with guerrilla marketing can significantly reduce negativity and improve loyalty.",
+        "2": "Continuous monitoring and rapid response to online content are key to maintaining a positive brand image."
+      }
+    },
+    "sports-retail-leader": {
+      "situation": "Under NDA",
+      "name": "Sports Retail Market Leader",
+      "problem": "At the start of the project, 41% of Yandex search results were negative, mostly due to disorganized product delivery. During the pandemic, staff reductions led to a twofold increase in negative brand mentions in a month. Low ratings on HR platforms (2–2.5*). High volume of user negativity: negative mentions outnumbered positive ones by more than 2x.",
+      "finDamage": "Budget: ₽4,800,000/year",
+      "tasks": {
+        "0": "Work with negativity in search results",
+        "1": "Support brand advocates in the company's official social networks",
+        "2": "Act as an official representative",
+        "3": "Work with recommendation platforms to increase ratings"
+      },
+      "solutions": {
+        "0": "Forming communities of brand advocates to neutralize negative messages",
+        "1": "Creating and promoting new and existing positive content islands in the top-10 of Yandex and Google search results",
+        "2": "Developing methods to encourage loyal customers and employees to post on the most relevant recommendation platforms"
+      },
+      "results": {
+        "0": "Ratings on recommendation platforms increased from 2* to 4*",
+        "1": "90% positive sites in the top-10 of Yandex and Google search results",
+        "2": "High rating on geo-services cards: from 2* to 4.4*"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Building and supporting brand advocate communities is crucial for reputation recovery during crises.",
+        "1": "Strategic content creation and SEO can dramatically shift the balance of positive vs. negative search results.",
+        "2": "Motivating loyal customers and employees to share their experiences on key platforms boosts ratings and trust."
+      }
+    },
+    "large-construction-company": {
+      "situation": "Under NDA",
+      "name": "Large Construction Company",
+      "problem": "Consumer extremism: clients sought out non-existent defects in purchased apartments and demanded penalties. Lawyers profiting from litigation advertised their services, offered to recover penalties from the developer for any reason, advertised on negative news about the brand (often generating it themselves), or created social media communities to collect and amplify this information.",
+      "finDamage": "Budget: ₽3,408,000/year",
+      "tasks": {
+        "0": "Create and deploy influence agents in residents' messenger groups",
+        "1": "Monitor and promptly identify information triggers and crises in messengers and open information space",
+        "2": "Manage public opinion in messengers and open information space",
+        "3": "Reduce the ratio of negative to positive mentions",
+        "4": "Increase organic positivity and user loyalty to the brand",
+        "5": "Work with search results (SERM): reduce negativity, increase positive content islands, improve ratings on industry and general recommendation platforms",
+        "6": "(reserved/placeholder)",
+        "7": "(reserved/placeholder)"
+      },
+      "solutions": {
+        "0": "Monitoring and analytics of the information field around the brand, including manual monitoring in messenger communities organized by shareholders/residents",
+        "1": "Identifying the most active users, analyzing their actions, compiling reports on each activist",
+        "2": "Creating and promoting unofficial communities on social networks",
+        "3": "Creating new content islands and promoting them in the top-10 search results for brand and reputation queries",
+        "4": "Developing methods to stimulate loyal clients and employees to publish on priority recommendation platforms",
+        "5": "Guerrilla marketing to increase brand loyalty in social networks"
+      },
+      "results": {
+        "0": "Number of unique URLs decreased from 47 to 29",
+        "1": "Number of repeats reduced from 143 to 99",
+        "2": "Share of negativity dropped from 72% to 44%",
+        "3": "Share of positive information in Yandex/Google top-10 increased, negative share decreased, despite ongoing negative campaigns",
+        "4": "Positive ratings formed on key recommendation and thematic portals",
+        "5": "Significant decrease in trust towards activist lawyers and the initiative group led by a professional 'blackmailer'"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Proactive monitoring and engagement in resident communities is crucial for managing reputation in the construction sector.",
+        "1": "Combining SERM, content creation, and guerrilla marketing can significantly shift the balance of online sentiment.",
+        "2": "Reducing the influence of negative activists requires both information and community management strategies."
+      }
+    },
+    "regional-developer": {
+      "situation": "Under NDA",
+      "name": "Major Regional Developer",
+      "problem": "80% of the top-10 search results were irrelevant sites not related to the company's properties. Low ratings on geo-services (down to 2*). Negative discussions in residential community messenger groups.",
+      "finDamage": "Budget: ₽1,900,000/year",
+      "tasks": {
+        "0": "Increase the share of positivity in search results",
+        "1": "Create relevant cards on recommendation portals",
+        "2": "Increase ratings on geo-services",
+        "3": "Neutralize negative discussions"
+      },
+      "solutions": {
+        "0": "Monitoring and addressing all constructive mentions as an official representative to neutralize negativity",
+        "1": "Creating new content islands to promote relevant positive information in the top-10 search results",
+        "2": "Developing and implementing methods to stimulate loyal clients and employees to publish on priority recommendation platforms",
+        "3": "Embedding in residential chats, monitoring the information field, identifying potential crises for offline resolution"
+      },
+      "results": {
+        "0": "Ratings on recommendation platforms increased from 2* to 4*",
+        "1": "90% positive sites in the top-10 of Yandex and Google search results",
+        "2": "High rating on geo-services cards: from 2* to 4.4*"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Relevant and positive content islands are essential for controlling search reputation.",
+        "1": "Active engagement in messenger groups helps neutralize negativity at its source.",
+        "2": "Motivating loyal clients and employees to share their experiences is key to improving ratings and trust."
+      }
+    },
+    "sanitaryware-manufacturer": {
+      "situation": "Under NDA",
+      "name": "Major Sanitaryware Manufacturer",
+      "problem": "Non-constructive negativity in search results for both product and HR directions. Low or unformed ratings on reputation-critical recommendation platforms.",
+      "finDamage": "Budget: ₽3,000,000+/year",
+      "tasks": {
+        "0": "Neutralize existing negativity in the media space",
+        "1": "Form a stable positive rating on recommendation platforms",
+        "2": "Outperform competitors in the number of mentions on marketplaces and other key platforms"
+      },
+      "solutions": {
+        "0": "Monitor the competitive field and place information about the client online in volumes exceeding those of competing brands",
+        "1": "Build a positive image for the client on major marketplaces and e-commerce platforms in Russia and the CIS",
+        "2": "Create content islands in media and social networks to increase brand awareness and highlight key aspects (brand advantages, new collections, new sales formats, promotions, etc.)",
+        "3": "Create and maintain an unofficial brand advocate community to attract a loyal audience and localize potential negativity",
+        "4": "Remove unjustified negativity by submitting complaints from the official brand representative",
+        "5": "Promote positive and neutral information about the client in search results",
+        "6": "Publish articles about the client in major general and industry media",
+        "7": "Integrate client mentions into a thematic Wikipedia article"
+      },
+      "results": {
+        "0": "Yandex search results improved: positivity up 23%, negativity down 34%",
+        "1": "Rating on the client's priority platform increased from 20% to 60%",
+        "2": "Created over 30 content islands promoted to the top-10 of Yandex and Google for most brand and reputation queries",
+        "3": "Removed 5% of negative content from recommendation platforms"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Proactive content creation and volume can outpace competitors and shift brand sentiment.",
+        "1": "Building loyal communities and advocates is key to localizing and neutralizing negativity.",
+        "2": "Strategic use of e-commerce and media platforms amplifies positive brand perception."
+      }
+    },
+    "cosmetics-manufacturer": {
+      "situation": "Under NDA",
+      "name": "Major Cosmetics Manufacturer",
+      "problem": "Delayed receipt of information about crisis situations. Lack of information about new brand products on reputation-critical platforms.",
+      "finDamage": "Budget: ₽2,500,000/year",
+      "tasks": {
+        "0": "Promptly identify information triggers and crises",
+        "1": "Promote new products to the brand's target audience",
+        "2": "Increase user awareness of the client's products",
+        "3": "Educational program for brand clients: include image and specialized product information in all published content"
+      },
+      "solutions": {
+        "0": "Monitor the information field for relevant brands and develop a system of criteria for connecting to all cases requiring protection",
+        "1": "Respond to crises (e.g., negative viral YouTube video): develop a brand defense line, create response theses, spread alternative opinions",
+        "2": "Place information from micro-influencers about new products on reputation-critical platforms to increase user awareness and build positive reputation for these products"
+      },
+      "results": {
+        "0": "Published over 300 UGC content pieces about new products to inform users and engage them in creating original UGC about these products",
+        "1": "Identified and neutralized 5 crisis and potentially crisis situations. Emergency response to 5 high-risk situations."
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Timely crisis monitoring and response is essential for reputation protection.",
+        "1": "Leveraging micro-influencers and UGC increases awareness and trust in new products.",
+        "2": "Educational content for clients strengthens brand loyalty and product understanding."
+      }
+    },
+    "auto-manufacturer": {
+      "situation": "Under NDA",
+      "name": "Major Auto Manufacturer",
+      "problem": "Decades-old negative public opinion about product quality; the brand name became a byword. No official brand representatives on social networks and thematic platforms.",
+      "finDamage": "Budget: ₽7,200,000/year",
+      "tasks": {
+        "0": "Increase brand loyalty",
+        "1": "Reduce and neutralize negative discussions",
+        "2": "Monitor and analyze the information field",
+        "3": "Identify and report issues to the client"
+      },
+      "solutions": {
+        "0": "Monitor and analyze the brand's information field to identify crises and assess user opinion",
+        "1": "Create and develop an official brand representative on priority platforms",
+        "2": "Provide technical support to users via the official representative in both private messages and public forums",
+        "3": "Over 100 daily dialogues with users via the official representative on social networks",
+        "4": "Collect current brand issues and complex user questions and forward them to the Customer Satisfaction Center"
+      },
+      "results": {
+        "0": "Neutralized over 60% of negative mentions in the brand's information field",
+        "1": "Received client gratitude for quality consultations, significantly increasing brand loyalty"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Consistent, high-quality user support can transform brand perception, even after decades of negativity.",
+        "1": "Official brand presence and engagement on key platforms is critical for reputation management.",
+        "2": "Proactive issue collection and feedback loops drive continuous improvement and loyalty."
+      }
+    },
+    "fitness-chain": {
+      "situation": "Under NDA",
+      "name": "Major Fitness Club Chain",
+      "problem": "67% negativity in the top-10 of Yandex and Google search results. Low club card ratings down to 3.5*. Low rating for the club's mobile app in AppStore and Google Play.",
+      "finDamage": "Budget: ₽4,200,000/year",
+      "tasks": {
+        "0": "Reduce the share of negativity in search results",
+        "1": "Increase the share of positivity in search results",
+        "2": "Increase brand loyalty",
+        "3": "Reduce and neutralize negative discussions",
+        "4": "Increase ratings on recommendation platforms",
+        "5": "Monitor and analyze the information field"
+      },
+      "solutions": {
+        "0": "Create new content islands",
+        "1": "Develop a methodology to stimulate loyal clients and employees to publish information on the most important recommendation platforms",
+        "2": "Write and publish articles about the client's activities and promote them to the top-10 of Yandex and Google search results",
+        "3": "Register official company representatives to neutralize negativity and increase brand loyalty",
+        "4": "Submit complaints from the official brand representative about unconstructive and uninformative negative reviews for their removal"
+      },
+      "results": {
+        "0": "In 2 years, client loyalty to the brand increased. Negativity in the brand's information field decreased by 60%",
+        "1": "Ratings on recommendation portals grew from 2.8* to 4–5*",
+        "2": "By increasing ratings on recommendation platforms, negativity in the top-10 of Yandex and Google search results dropped from 67% to 10%",
+        "3": "Created over 50 positive content islands, 30 of which were promoted to the top-10 of search results for various brand and reputation queries"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Systematic work with content and ratings can dramatically reduce negativity in search results.",
+        "1": "Engaging loyal clients and employees is key to improving online reputation.",
+        "2": "Official brand representation and proactive complaint management help remove unconstructive negativity."
+      }
+    },
+    "travel-platform": {
+      "situation": "Under NDA",
+      "name": "Flight and Hotel Booking Platform",
+      "problem": "Negative information field around the brand in Russia, Ukraine, Kazakhstan, and Belarus. Customer dissatisfaction due to non-refunded ticket purchases.",
+      "finDamage": "Budget: ₽4,751,400/year",
+      "tasks": {
+        "0": "Work with negativity in search results",
+        "1": "Support brand advocates in official company social networks",
+        "2": "Work with recommendation platforms to increase ratings",
+        "3": "Find bloggers and work with blogs to increase company awareness",
+        "4": "Collaborate with the client's call center to resolve complex cases"
+      },
+      "solutions": {
+        "0": "Regular monitoring and analytics of the information field around the brand",
+        "1": "Track and process all relevant mentions of the company as an official representative to neutralize negativity",
+        "2": "Form a community of brand advocates and involve them in neutralizing negativity",
+        "3": "Write and publish articles on thematic channels like Yandex.Zen",
+        "4": "Guerrilla marketing to increase brand awareness in social networks"
+      },
+      "results": {
+        "0": "Ratings on recommendation platforms increased from 2.5 to 4.0*",
+        "1": "Share of positivity grew from 25% to 42%, negativity decreased by 25%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Community engagement and advocacy are powerful tools for reputation recovery.",
+        "1": "Proactive monitoring and official responses help reduce negativity and increase ratings.",
+        "2": "Guerrilla marketing and blogger outreach can boost brand awareness in multiple countries."
+      }
+    },
+    "shoe-retailer": {
+      "situation": "Under NDA",
+      "name": "Major Shoe Retailer",
+      "problem": "Large share of negativity (34%) from current and former employees in Yandex and Google search results. Complaints about salary, overtime, and local management.",
+      "finDamage": "Budget: ₽1,020,000/year",
+      "tasks": {
+        "0": "Reduce the share of employee negativity online",
+        "1": "Build communication between management and staff to improve working conditions"
+      },
+      "solutions": {
+        "0": "Connected YouScan monitoring system to collect and analyze HR mentions and identify controversial topics between managers and subordinates. Based on analytics, the client held meetings with local managers to resolve specific issues",
+        "1": "Conducted an audit to identify relevant negative resources for further work in two directions: (a) creating official accounts to respond to constructive negative reviews and help employees; (b) developed and implemented an internal motivation system to increase activity and ratings on identified negative resources"
+      },
+      "results": {
+        "0": "Start: Positive — 18%; Negative — 34%; Neutral — 48%",
+        "1": "After 6 months: Positive — 80%; Negative — 6%; Neutral — 17%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "HR reputation management requires both external and internal communication strategies.",
+        "1": "Monitoring and analytics help identify and resolve root causes of negativity.",
+        "2": "Motivating employees to participate in reputation improvement can yield dramatic results."
+      }
+    },
+    "gas-station-network": {
+      "situation": "Under NDA",
+      "name": "Major Gas Station Network",
+      "problem": "Problems in the information field: car breakdowns linked to fuel quality; customer complaints about queues and service quality. At the start: 45% negativity, 15% positivity, 40% neutral. In search engines, most negativity was on recommendation platforms in 5 regions. Total negativity was about 60%.",
+      "finDamage": "Budget: ₽6,000,000/year",
+      "tasks": {
+        "0": "Neutralize negativity by engaging brand advocates",
+        "1": "Increase organic user activity"
+      },
+      "solutions": {
+        "0": "Form a community of brand advocates and involve them in neutralizing negativity",
+        "1": "Work with public opinion by publishing videos from auto experts and bloggers sharing alternative views and advice for motorists"
+      },
+      "results": {
+        "0": "Achieved positive dynamics: negativity dropped from 45% to 20% (–25%), positivity increased from 15% to 38% (+23%, 8% due to influence agents), neutral 42% (+2%)",
+        "1": "By changing tone and increasing ratings on recommendation platforms, negativity in search results dropped from 60% to 10%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Brand advocate communities and expert content can shift public sentiment and search results.",
+        "1": "Regional focus and platform-specific work are crucial for large networks.",
+        "2": "Continuous monitoring and tone management are key to long-term reputation improvement."
+      }
+    },
+    "premium-tech-retail": {
+      "situation": "Under NDA",
+      "name": "Premium Tech Monobrand Retail Chain",
+      "problem": "Over 30% negativity in the top-10 of Yandex and Google; over 20% irrelevant pages related to competitors or resellers; low ratings on recommendation platforms (down to 3.5*); daily negativity on Yandex.Maps and Yandex.Market; no prompt response from an official representative; spikes of negativity from bloggers.",
+      "finDamage": "Budget: ₽2,130,000/year",
+      "tasks": {
+        "0": "Reduce the load on the client's customer service by authorizing the Agency to handle negative mentions as the official representative on social networks and geo-services."
+      },
+      "solutions": {
+        "0": "Track and process all relevant mentions of the company to neutralize negativity",
+        "1": "Provide technical support to users as the official representative both in private messages and in the entire information field",
+        "2": "Create tickets in the UseDesk system to resolve client issues with the client's support service"
+      },
+      "results": {
+        "0": "Achieved positive dynamics: negativity dropped from 45% to 20% (–25%), positivity increased from 15% to 38% (+23%, 8% due to influence agents), neutral 42% (+2%)",
+        "1": "By changing tone and increasing ratings on recommendation platforms, negativity in search results dropped from 60% to 10%"
+      },
+      "finEffect": "—",
+      "conclusions": {
+        "0": "Delegating reputation management to an agency can significantly reduce the burden on internal support and improve results.",
+        "1": "Prompt, official responses and technical support are key to neutralizing daily negativity.",
+        "2": "Systematic monitoring and ticketing ensure that client issues are resolved efficiently and transparently."
       }
     }
   }

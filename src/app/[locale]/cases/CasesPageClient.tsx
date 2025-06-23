@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Chip } from "@/components/ui/chip";
 import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
+import { allTags } from "@/shared/models/cases/data";
 
 interface CasesPageClientProps {
   allCases: any[];
@@ -25,11 +26,12 @@ export default function CasesPageClient({
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedIndustry, setSelectedIndustry] = useState<string>("all");
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>("all");
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const difficulties = ["easy", "medium", "hard"];
 
   const filteredCases = useMemo(() => {
-    return allCases.filter((caseItem) => {
+    let filtered = allCases.filter((caseItem) => {
       const categoryMatch =
         selectedCategory === "all" || caseItem.category === selectedCategory;
       const industryMatch =
@@ -37,10 +39,25 @@ export default function CasesPageClient({
       const difficultyMatch =
         selectedDifficulty === "all" ||
         caseItem.difficulty === selectedDifficulty;
-
-      return categoryMatch && industryMatch && difficultyMatch;
+      // AND logic for tags
+      const tagsMatch =
+        selectedTags.length === 0 ||
+        selectedTags.every((tag) => caseItem.tags.includes(tag));
+      return categoryMatch && industryMatch && difficultyMatch && tagsMatch;
     });
-  }, [allCases, selectedCategory, selectedIndustry, selectedDifficulty]);
+    // Featured first
+    filtered = [
+      ...filtered.filter((c) => c.featured),
+      ...filtered.filter((c) => !c.featured),
+    ];
+    return filtered;
+  }, [
+    allCases,
+    selectedCategory,
+    selectedIndustry,
+    selectedDifficulty,
+    selectedTags,
+  ]);
 
   const getDifficultyLabel = (difficulty: string) => {
     return labels(`difficulty.${difficulty}`);
@@ -61,121 +78,124 @@ export default function CasesPageClient({
   return (
     <main className="min-h-screen bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-50 dark:from-black dark:via-neutral-950 dark:to-black">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
-        {/* Hero Section */}
+        {/* Hero Section with Filters */}
         <section className="relative overflow-hidden bg-gradient-to-r from-amber-900 via-yellow-900 to-amber-900 dark:from-black dark:via-neutral-950 dark:to-black text-white p-12 md:p-16 rounded-3xl mb-16 shadow-2xl border border-amber-700/50 dark:border-gray-700/50">
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-amber-600/20"></div>
           <div className="relative max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-black leading-tight bg-gradient-to-r from-white via-yellow-100 to-white dark:from-gray-100 dark:via-white dark:to-gray-100 bg-clip-text text-transparent drop-shadow-lg mb-8">
               {t("title")}
             </h1>
-            <p className="text-xl md:text-2xl text-yellow-100 dark:text-yellow-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-yellow-100 dark:text-yellow-200 max-w-3xl mx-auto leading-relaxed mb-8">
               {t("description")}
             </p>
-          </div>
-        </section>
-
-        {/* Filters Section */}
-        <section className="mb-12">
-          <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20 dark:border-gray-700/50">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-              <svg
-                className="w-6 h-6 text-yellow-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.207A1 1 0 013 6.5V4z"
-                />
-              </svg>
-              Filter Cases
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Category Filter */}
-              <div className="space-y-2">
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  Category
-                </label>
-                <select
-                  value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 shadow-sm"
-                >
-                  <option value="all">All Categories</option>
-                  {categories.map((category) => (
-                    <option key={category} value={category}>
-                      {getCategoryLabel(category)}
-                    </option>
-                  ))}
-                </select>
+            {/* Filters moved here */}
+            <div className="bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20 dark:border-gray-700/50 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                {/* Category Filter */}
+                <div className="space-y-2">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Category
+                  </label>
+                  <select
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 shadow-sm"
+                  >
+                    <option value="all">All Categories</option>
+                    {categories.map((category) => (
+                      <option key={category} value={category}>
+                        {getCategoryLabel(category)}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {/* Industry Filter */}
+                <div className="space-y-2">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Industry
+                  </label>
+                  <select
+                    value={selectedIndustry}
+                    onChange={(e) => setSelectedIndustry(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 shadow-sm"
+                  >
+                    <option value="all">All Industries</option>
+                    {industries.map((industry) => (
+                      <option key={industry} value={industry}>
+                        {getIndustryLabel(industry)}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {/* Difficulty Filter */}
+                <div className="space-y-2">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Difficulty
+                  </label>
+                  <select
+                    value={selectedDifficulty}
+                    onChange={(e) => setSelectedDifficulty(e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 shadow-sm"
+                  >
+                    <option value="all">All Difficulties</option>
+                    {difficulties.map((difficulty) => (
+                      <option key={difficulty} value={difficulty}>
+                        {getDifficultyLabel(difficulty)}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
-
-              {/* Industry Filter */}
-              <div className="space-y-2">
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  Industry
-                </label>
-                <select
-                  value={selectedIndustry}
-                  onChange={(e) => setSelectedIndustry(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 shadow-sm"
-                >
-                  <option value="all">All Industries</option>
-                  {industries.map((industry) => (
-                    <option key={industry} value={industry}>
-                      {getIndustryLabel(industry)}
-                    </option>
-                  ))}
-                </select>
+              {/* Tag Filter Chips */}
+              <div className="flex flex-wrap gap-2 mb-4 justify-center">
+                {allTags.map((tag) => (
+                  <Chip
+                    key={tag}
+                    variant={selectedTags.includes(tag) ? "default" : "outline"}
+                    className={`cursor-pointer text-sm border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-600/50 transition-colors ${
+                      selectedTags.includes(tag)
+                        ? "bg-yellow-200 dark:bg-yellow-700/70 border-yellow-400 dark:border-yellow-500 text-yellow-900 dark:text-yellow-100"
+                        : ""
+                    }`}
+                    onClick={() => {
+                      setSelectedTags((prev) =>
+                        prev.includes(tag)
+                          ? prev.filter((t) => t !== tag)
+                          : [...prev, tag]
+                      );
+                    }}
+                  >
+                    {getTagLabel(tag)}
+                  </Chip>
+                ))}
               </div>
-
-              {/* Difficulty Filter */}
-              <div className="space-y-2">
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  Difficulty
-                </label>
-                <select
-                  value={selectedDifficulty}
-                  onChange={(e) => setSelectedDifficulty(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 shadow-sm"
-                >
-                  <option value="all">All Difficulties</option>
-                  {difficulties.map((difficulty) => (
-                    <option key={difficulty} value={difficulty}>
-                      {getDifficultyLabel(difficulty)}
-                    </option>
-                  ))}
-                </select>
+              {/* Results Count & Clear Filters */}
+              <div className="mt-2 flex items-center justify-between">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Showing{" "}
+                  <span className="font-semibold text-yellow-600 dark:text-yellow-400">
+                    {filteredCases.length}
+                  </span>{" "}
+                  of <span className="font-semibold">{allCases.length}</span>{" "}
+                  cases
+                </div>
+                {(selectedCategory !== "all" ||
+                  selectedIndustry !== "all" ||
+                  selectedDifficulty !== "all" ||
+                  selectedTags.length > 0) && (
+                  <button
+                    onClick={() => {
+                      setSelectedCategory("all");
+                      setSelectedIndustry("all");
+                      setSelectedDifficulty("all");
+                      setSelectedTags([]);
+                    }}
+                    className="text-sm text-yellow-600 dark:text-yellow-400 hover:text-yellow-800 dark:hover:text-yellow-300 font-medium transition-colors"
+                  >
+                    Clear all filters
+                  </button>
+                )}
               </div>
-            </div>
-
-            {/* Results Count */}
-            <div className="mt-6 flex items-center justify-between">
-              <div className="text-sm text-gray-600 dark:text-gray-400">
-                Showing{" "}
-                <span className="font-semibold text-yellow-600 dark:text-yellow-400">
-                  {filteredCases.length}
-                </span>{" "}
-                of <span className="font-semibold">{allCases.length}</span>{" "}
-                cases
-              </div>
-              {(selectedCategory !== "all" ||
-                selectedIndustry !== "all" ||
-                selectedDifficulty !== "all") && (
-                <button
-                  onClick={() => {
-                    setSelectedCategory("all");
-                    setSelectedIndustry("all");
-                    setSelectedDifficulty("all");
-                  }}
-                  className="text-sm text-yellow-600 dark:text-yellow-400 hover:text-yellow-800 dark:hover:text-yellow-300 font-medium transition-colors"
-                >
-                  Clear all filters
-                </button>
-              )}
             </div>
           </div>
         </section>

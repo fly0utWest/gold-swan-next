@@ -122,7 +122,7 @@ export default async function CasePage({ params }: CasePageProps) {
               </div>
               <div className="text-center p-4 bg-white/10 dark:bg-black/30 rounded-xl backdrop-blur-sm border border-white/20 dark:border-gray-700/50">
                 <div className="font-semibold text-gray-200 dark:text-gray-300 mb-1">
-                  {labels("difficulty.easy")}
+                  {labels("difficulty.label")}
                 </div>
                 <div
                   className={`font-medium ${
