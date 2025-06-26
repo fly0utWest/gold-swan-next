@@ -50,7 +50,7 @@ export default async function RootLayout(
           </div>
           <Inchat />
           <ClientObserver />
-          <ThemeProvider defaultTheme="dark" attribute="class">
+          <ThemeProvider defaultTheme="dark" attribute="data-theme">
             <div className="absolute top-0" id="top"></div>
             <Header />
             <main className="py-24 min-h-[90dvh]">{children}</main>
