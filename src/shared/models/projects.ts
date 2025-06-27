@@ -35,8 +35,8 @@ export const upcomingProjects: Project[] = [
     ],
     attention: "aiSupport.attention",
     status: "beta",
-    productName: "Thalia AI",
-    link: "https://growplex.dev/products/platform",
+    productName: "Thalia",
+    link: "https://growplex.dev/products/thalia",
   },
   {
     Icon: Activity,
