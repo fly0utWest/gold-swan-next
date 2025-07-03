@@ -72,13 +72,13 @@ export default async function RootLayout(
         >
           {`
     (function () {
-      const { chatId: id, chatDomain: domain } = document.currentScript.dataset;
+      const { chatId, chatDomain: domain } = document.currentScript.dataset;
       function boot() {
         if (!window.ChatWidget) return;
         if (!window.ChatWidget._loaded) {
-          window.ChatWidget.init({ id, domain, color: 'var(--primary-500)' });
+          window.ChatWidget.init({ chatId, domain, color: 'var(--primary-500)' });
         } else {
-          window.ChatWidget.reload({ id, domain, color: 'var(--primary-500)' });
+          window.ChatWidget.reload({ chatId, domain, color: 'var(--primary-500)' });
         }
       }
       boot();
