@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+import Link from "@/shared/ui/link";
 import { Chip } from "@/components/ui/chip";
 import {
   getCaseBySlug,
@@ -302,7 +302,7 @@ export default async function CasePage({ params }: CasePageProps) {
         <section className="flex justify-between items-center">
           {previousCase ? (
             <Link
-              href={`/${locale}/cases/${previousCase.slug}`}
+              href={`/cases/${previousCase.slug}`}
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 dark:from-yellow-500 dark:to-amber-500 dark:hover:from-yellow-600 dark:hover:to-amber-600 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium border border-yellow-500/50 dark:border-yellow-400/50 shadow-md hover:shadow-xl"
             >
               <svg
@@ -329,7 +329,7 @@ export default async function CasePage({ params }: CasePageProps) {
 
           {nextCase && (
             <Link
-              href={`/${locale}/cases/${nextCase.slug}`}
+              href={`/cases/${nextCase.slug}`}
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 dark:from-yellow-500 dark:to-amber-500 dark:hover:from-yellow-600 dark:hover:to-amber-600 text-white rounded-xl hover:shadow-lg transition-all duration-200 font-medium border border-yellow-500/50 dark:border-yellow-400/50 shadow-md hover:shadow-xl"
             >
               {labels("next")}:{" "}

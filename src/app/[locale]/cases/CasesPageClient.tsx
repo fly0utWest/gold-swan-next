@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/shared/ui/link";
 import { Chip } from "@/components/ui/chip";
 import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
@@ -205,7 +205,7 @@ export default function CasesPageClient({
           {filteredCases.map((caseItem) => (
             <Link
               key={caseItem.slug}
-              href={`/${locale}/cases/${caseItem.slug}`}
+              href={`/cases/${caseItem.slug}`}
               className="group block bg-white/80 dark:bg-black/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 dark:border-gray-700/50 hover:border-yellow-300 dark:hover:border-yellow-600 overflow-hidden"
             >
               <div className="p-8">
@@ -326,7 +326,7 @@ export default function CasesPageClient({
                 {t("cta.description")}
               </p>
               <Link
-                href={`/${locale}/contact`}
+                href="/contact"
                 className="inline-flex items-center gap-3 px-10 py-4 bg-white text-yellow-600 dark:bg-gray-800 dark:text-yellow-400 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <svg
