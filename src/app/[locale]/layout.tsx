@@ -74,7 +74,7 @@ export default async function RootLayout(
 
       
       if (!window.ChatWidget) return;
-      window.ChatWidget.init({ chatId, domain: 'https://growplex.dev', listenTheme: false, initOpen: open);
+      window.ChatWidget.init({ chatId, domain: 'https://growplex.dev', listenTheme: false, initOpen: open });
       
     })();
   `}
