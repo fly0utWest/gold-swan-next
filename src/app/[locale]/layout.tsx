@@ -32,10 +32,7 @@ export default async function RootLayout(
   const { children } = props;
   const messages = await getMessages();
 
-  const CHAT_DOMAIN = process.env.NEXT_PUBLIC_CHAT_WIDGET_DOMAIN!;
   const CHAT_ID = process.env.NEXT_PUBLIC_CHAT_WIDGET_ID!;
-
-  console.log(CHAT_DOMAIN, CHAT_ID);
 
   return (
     <html
@@ -61,27 +58,24 @@ export default async function RootLayout(
         <Script
           id="chat-widget-lib"
           strategy="beforeInteractive"
-          src={`${CHAT_DOMAIN}/scripts/chat-widget.js`}
-          data-chat-id={CHAT_ID}
+          src={`https://growplex.dev/scripts/chat-widget.js`}
         />
         <Script
           id="chat-widget-init"
           strategy="afterInteractive"
           data-chat-id={CHAT_ID}
-          data-chat-domain={CHAT_DOMAIN}
         >
           {`
     (function () {
-      const { chatId, chatDomain: domain } = document.currentScript.dataset;
-      function boot() {
-        if (!window.ChatWidget) return;
-        if (!window.ChatWidget._loaded) {
-          window.ChatWidget.init({ chatId, domain, color: 'var(--primary-500)' });
-        } else {
-          window.ChatWidget.reload({ chatId, domain, color: 'var(--primary-500)' });
-        }
-      }
-      boot();
+      const { chatId } = document.currentScript.dataset;
+
+      const theme = document.documentElement.getAttribute("data-theme");
+      const open = localStorage.getItem("chat-widget-open") === "true";
+
+      
+      if (!window.ChatWidget) return;
+      window.ChatWidget.init({ chatId, domain: 'https://growplex.dev', listenTheme: false, initOpen: open);
+      
     })();
   `}
         </Script>
